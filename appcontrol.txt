@@ -1,0 +1,346 @@
+~ $ su -c '
+echo "=== NETD TETHER CONTROL ==="
+ls -la /data/misc/netd
+
+echo
+
+echo "=== ANDROID TETHER SETTINGS ==="
+settings list global | grep -Ei "tether|hotspot|wi
+fi"
+
+echo
+
+echo "=== RADIO INTERFACES ==="
+ip link
+
+echo
+
+echo "=== MTK WIFI SERVICE ==="
+dumpsys wifi | grep -i -A20 -B5 softap
+'
+=== NETD TETHER CONTROL ===
+ls: /data/misc/netd: No such file or directory
+
+=== ANDROID TETHER SETTINGS ===                   
+
+=== RADIO INTERFACES ===
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqu
+eue state UNKNOWN mode DEFAULT group default qlen 
+1
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:0
+0:00:00
+2: ccmni0: <NOARP,UP,LOWER_UP> mtu 1500 qdisc mq s
+tate UP mode DEFAULT group default qlen 1000
+    link/ppp 32:5e:22:37:43:a3 brd ff:ff:ff:ff:ff:
+ff
+3: ccmni1: <NOARP> mtu 1500 qdisc mq state DOWN mo
+de DEFAULT group default qlen 1000
+    link/ppp be:de:28:7e:37:4b brd ff:ff:ff:ff:ff:
+ff
+4: ccmni2: <NOARP> mtu 1500 qdisc noop state DOWN 
+mode DEFAULT group default qlen 1000
+    link/ppp 5e:d6:63:43:6a:0b brd ff:ff:ff:ff:ff:
+ff
+5: ccmni3: <NOARP> mtu 1500 qdisc noop state DOWN 
+mode DEFAULT group default qlen 1000
+    link/ppp 7e:e1:e7:5a:d3:7e brd ff:ff:ff:ff:ff:
+ff
+6: ccmni4: <NOARP> mtu 1500 qdisc noop state DOWN 
+mode DEFAULT group default qlen 1000
+    link/ppp 4a:08:43:63:2c:81 brd ff:ff:ff:ff:ff:
+ff
+7: ccmni5: <NOARP> mtu 1500 qdisc noop state DOWN 
+mode DEFAULT group default qlen 1000
+    link/ppp ae:0b:e5:d6:21:5b brd ff:ff:ff:ff:ff:
+ff
+8: ccmni6: <NOARP> mtu 1500 qdisc noop state DOWN 
+mode DEFAULT group default qlen 1000
+    link/ppp 1a:4e:90:8b:b1:a6 brd ff:ff:ff:ff:ff:
+ff
+9: ccmni7: <NOARP> mtu 1500 qdisc noop state DOWN 
+mode DEFAULT group default qlen 1000
+    link/ppp 46:dd:c4:14:92:90 brd ff:ff:ff:ff:ff:
+ff
+10: ccmni8: <NOARP> mtu 1500 qdisc noop state DOWN
+ mode DEFAULT group default qlen 1000
+    link/ppp 62:c4:e1:8a:b3:67 brd ff:ff:ff:ff:ff:
+ff
+11: ccmni9: <NOARP> mtu 1500 qdisc noop state DOWN
+ mode DEFAULT group default qlen 1000
+    link/ppp ce:98:88:85:0f:38 brd ff:ff:ff:ff:ff:
+ff
+12: ccmni10: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp 2e:ef:4c:61:53:a1 brd ff:ff:ff:ff:ff:
+ff
+13: ccmni11: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp d6:10:a6:47:6e:30 brd ff:ff:ff:ff:ff:
+ff
+14: ccmni12: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp f6:da:c7:75:86:fe brd ff:ff:ff:ff:ff:
+ff
+15: ccmni13: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp b6:e0:95:47:5f:74 brd ff:ff:ff:ff:ff:
+ff
+16: ccmni14: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp ce:3d:10:7d:cc:5e brd ff:ff:ff:ff:ff:
+ff
+17: ccmni15: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp b2:d6:b0:b5:86:fc brd ff:ff:ff:ff:ff:
+ff
+18: ccmni16: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp 0a:68:1f:11:3a:06 brd ff:ff:ff:ff:ff:
+ff
+19: ccmni17: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp 22:29:b2:a7:d5:a7 brd ff:ff:ff:ff:ff:
+ff
+20: ccmni18: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp 02:8c:a0:78:0d:62 brd ff:ff:ff:ff:ff:
+ff
+21: ccmni19: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp b2:95:ef:66:45:f9 brd ff:ff:ff:ff:ff:
+ff
+22: ccmni20: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp 16:f9:b3:6d:0e:c8 brd ff:ff:ff:ff:ff:
+ff
+23: ccmni-lan: <BROADCAST,MULTICAST> mtu 1500 qdis
+c noop state DOWN mode DEFAULT group default qlen 
+1000
+    link/ether 92:d5:b7:fb:6d:c0 brd ff:ff:ff:ff:f
+f:ff
+24: ifb0: <BROADCAST,NOARP> mtu 1500 qdisc noop st
+ate DOWN mode DEFAULT group default qlen 32
+    link/ether 8e:dd:0c:a4:f0:d0 brd ff:ff:ff:ff:f
+f:ff
+25: ifb1: <BROADCAST,NOARP> mtu 1500 qdisc noop st
+ate DOWN mode DEFAULT group default qlen 32
+    link/ether d6:b9:59:d4:45:e8 brd ff:ff:ff:ff:f
+f:ff
+26: tunl0@NONE: <NOARP> mtu 1480 qdisc noop state 
+DOWN mode DEFAULT group default qlen 1
+    link/ipip 0.0.0.0 brd 0.0.0.0
+27: ip_vti0@NONE: <NOARP> mtu 1480 qdisc noop stat
+e DOWN mode DEFAULT group default qlen 1
+    link/ipip 0.0.0.0 brd 0.0.0.0
+28: ip6_vti0@NONE: <NOARP> mtu 1500 qdisc noop sta
+te DOWN mode DEFAULT group default qlen 1
+    link/tunnel6 :: brd ::
+29: sit0@NONE: <NOARP> mtu 1480 qdisc noop state D
+OWN mode DEFAULT group default qlen 1
+    link/sit 0.0.0.0 brd 0.0.0.0
+30: ip6tnl0@NONE: <NOARP> mtu 1452 qdisc noop stat
+e DOWN mode DEFAULT group default qlen 1
+    link/tunnel6 :: brd ::
+31: wlan0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu
+ 1460 qdisc mq state DOWN mode DEFAULT group defau
+lt qlen 3000
+    link/ether 00:08:22:bc:3e:69 brd ff:ff:ff:ff:f
+f:ff
+49: ap0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 150
+0 qdisc mq state UP mode DEFAULT group default qle
+n 1000
+    link/ether 02:08:22:bc:3e:69 brd ff:ff:ff:ff:f
+f:ff
+
+=== MTK WIFI SERVICE ===
+Multicast Locks held:
+
+Dump of WifiStateMachinePrime
+Current wifi mode: WifiDisabledState
+NumActiveModeManagers: 1
+--Dump of SoftApManager--
+current StateMachine mode: StartedState
+mApInterfaceName: ap0
+mIfaceIsUp: true
+mMode: 1
+mCountryCode: PK
+mApConfig.SSID: Infinix HOT 8
+mApConfig.apBand: 1
+mApConfig.hiddenSSID: false
+mNumAssociatedStations: 1
+mTimeoutEnabled: false
+mReportedFrequency: -1
+mReportedBandwidth: -1
+
+WifiStateMachine:
+ total records=389
+ rec[0]: time=09-25 11:21:17.865 processed=Default
+State org=DisconnectedState dest=DefaultState what
+=131144(0x20048) !CMD_SET_OPERATIONAL_MODE rt=2110
+3879/47235496 0 0
+ rec[1]: time=09-25 11:21:17.875 processed=Default
+State org=DefaultState dest=<null> what=131133(0x2
+003d) !CMD_GET_SUPPORTED_FEATURES uid=1000 rt=2110
+3889/47235506 0 0
+ rec[2]: time=09-25 11:21:17.875 processed=Default
+State org=DefaultState dest=<null> what=131205(0x2
+0085) !(-5)CMD_DISABLE_P2P_RSP uid=1000 rt=2110388
+9/47235506 0 0
+ rec[3]: time=09-25 11:21:17.875 processed=Default
+State org=DefaultState dest=<null> what=131205(0x2
+0085) !(-5)CMD_DISABLE_P2P_RSP uid=1000 rt=2110388
+9/47235506 0 0
+ rec[4]: time=09-25 11:21:17.881 processed=Default
+State org=DefaultState dest=<null> what=131133(0x2
+003d) !CMD_GET_SUPPORTED_FEATURES uid=1000 rt=2110
+3895/47235512 0 0
+--
+mWifiLogProto.numHotspot2R1NetworkScanResults=0
+mWifiLogProto.numHotspot2R2NetworkScanResults=0
+mWifiLogProto.numScans=34
+mWifiLogProto.WifiScoreCount: [0, 60]
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0
+mWifiLogProto.SoftApManagerReturnCodeCounts:
+  SUCCESS: 2
+  FAILED_GENERAL_ERROR: 0
+  FAILED_NO_CHANNEL: 0
+
+mWifiLogProto.numHalCrashes=0
+mWifiLogProto.numWificondCrashes=1
+mWifiLogProto.numSupplicantCrashes=0
+mWifiLogProto.numHostapdCrashes=0
+mWifiLogProto.numSetupClientInterfaceFailureDueToH
+al=0
+mWifiLogProto.numSetupClientInterfaceFailureDueToW
+ificond=0
+mWifiLogProto.numSetupClientInterfaceFailureDueToS
+upplicant=0
+mWifiLogProto.numSetupSoftApInterfaceFailureDueToH
+al=0
+mWifiLogProto.numSetupSoftApInterfaceFailureDueToW
+ificond=0
+mWifiLogProto.numSetupSoftApInterfaceFailureDueToH
+ostapd=0
+StaEventList:
+09-25 08:20:13.595 CONNECT_NETWORK, ConfigInfo: al
+lowed_key_management=2 allowed_protocols=0 allowed
+_auth_algorithms=0 allowed_pairwise_ciphers=0 allo
+wed_group_ciphers=0 hidden_ssid=false is_passpoint
+=false is_ephemeral=false has_ever_connected=false
+ scan_rssi=-127 scan_freq=-1
+09-25 08:20:13.640 CMD_START_CONNECT, ConfigInfo: 
+allowed_key_management=2 allowed_protocols=3 allow
+ed_auth_algorithms=1 allowed_pairwise_ciphers=6 al
+lowed_group_ciphers=15 hidden_ssid=false is_passpo
+int=false is_ephemeral=false has_ever_connected=fa
+lse scan_rssi=-127 scan_freq=-1
+09-25 08:20:26.506 ASSOCIATION_REJECTION_EVENT tim
+edOut=false status=16:AUTH_TIMEOUT, supplicantStat
+eChangeEvents: { SCANNING ASSOCIATING}
+09-25 08:20:27.576 ASSOCIATION_REJECTION_EVENT tim
+edOut=false status=16:AUTH_TIMEOUT, supplicantStat
+eChangeEvents: { DISCONNECTED SCANNING ASSOCIATING
+}
+09-25 08:20:29.111 ASSOCIATION_REJECTION_EVENT tim
+edOut=false status=16:AUTH_TIMEOUT, supplicantStat
+eChangeEvents: { DISCONNECTED SCANNING ASSOCIATING
+}
+09-25 08:20:31.039 ASSOCIATION_REJECTION_EVENT tim
+edOut=false status=16:AUTH_TIMEOUT, supplicantStat
+eChangeEvents: { DISCONNECTED SCANNING ASSOCIATING
+}
+mWifiLogProto.numPasspointProviders=0
+mWifiLogProto.numPasspointProviderInstallation=0
+mWifiLogProto.numPasspointProviderInstallSuccess=0
+mWifiLogProto.numPasspointProviderUninstallation=0
+mWifiLogProto.numPasspointProviderUninstallSuccess
+=0
+mWifiLogProto.numPasspointProvidersSuccessfullyCon
+nected=0
+mWifiLogProto.numRadioModeChangeToMcc=0
+mWifiLogProto.numRadioModeChangeToScc=0
+mWifiLogProto.numRadioModeChangeToSbs=0
+mWifiLogProto.numRadioModeChangeToDbs=0
+mWifiLogProto.numSoftApUserBandPreferenceUnsatisfi
+ed=0
+mTotalSsidsInScanHistogram:{0=34}
+mTotalBssidsInScanHistogram:{0=34}
+mAvailableOpenSsidsInScanHistogram:{0=34}
+mAvailableOpenBssidsInScanHistogram:{0=34}
+mAvailableSavedSsidsInScanHistogram:{0=34}
+mAvailableSavedBssidsInScanHistogram:{0=34}
+mAvailableOpenOrSavedSsidsInScanHistogram:{0=34}
+mAvailableOpenOrSavedBssidsInScanHistogram:{0=34}
+mAvailableSavedPasspointProviderProfilesInScanHist
+ogram:{0=34}
+mAvailableSavedPasspointProviderBssidsInScanHistog
+ram:{0=34}
+mWifiLogProto.partialAllSingleScanListenerResults=
+0
+mWifiLogProto.fullBandAllSingleScanListenerResults
+=34
+mWifiAwareMetrics:
+mLastEnableUsageMs:0
+mLastEnableUsageInThisSampleWindowMs:0
+mAvailableTimeMs:0
+mHistogramAwareAvailableDurationMs:
+mLastEnableAwareMs:0
+mLastEnableAwareInThisSampleWindowMs:0
+mEnabledTimeMs:0
+--
+mWifiLogProto.observedHotspotR1EssInScanHistogram=
+{0=34}
+mWifiLogProto.observedHotspotR2EssInScanHistogram=
+{0=34}
+mWifiLogProto.observedHotspotR1ApsPerEssInScanHist
+ogram={}
+mWifiLogProto.observedHotspotR2ApsPerEssInScanHist
+ogram={}
+mWifiLogProto.observed80211mcSupportingApsInScanHi
+stogram{0=34}
+mSoftApTetheredEvents:
+event_type=0,time_stamp_millis=49315170,num_connec
+ted_clients=0,channel_frequency=0,channel_bandwidt
+h=0
+event_type=2,time_stamp_millis=49505220,num_connec
+ted_clients=1,channel_frequency=0,channel_bandwidt
+h=0
+event_type=1,time_stamp_millis=50181739,num_connec
+ted_clients=0,channel_frequency=0,channel_bandwidt
+h=0
+event_type=0,time_stamp_millis=50195616,num_connec
+ted_clients=0,channel_frequency=0,channel_bandwidt
+h=0
+event_type=2,time_stamp_millis=50199008,num_connec
+ted_clients=1,channel_frequency=0,channel_bandwidt
+h=0
+event_type=2,time_stamp_millis=50479710,num_connec
+ted_clients=0,channel_frequency=0,channel_bandwidt
+h=0
+event_type=2,time_stamp_millis=50482387,num_connec
+ted_clients=1,channel_frequency=0,channel_bandwidt
+h=0
+mSoftApLocalOnlyEvents:
+mWpsMetrics.numWpsAttempts=0
+mWpsMetrics.numWpsSuccess=0
+mWpsMetrics.numWpsStartFailure=0
+mWpsMetrics.numWpsOverlapFailure=0
+mWpsMetrics.numWpsTimeoutFailure=0
+mWpsMetrics.numWpsOtherConnectionFailure=0
+mWpsMetrics.numWpsSupplicantFailure=0
+mWpsMetrics.numWpsCancellation=0
+Wifi power metrics:
+Logging duration (time on battery): 16384224
+Energy consumed by wifi (mAh): 0.0
+Amount of time wifi is in idle (ms): 0
+Amount of time wifi is in rx (ms): 0
+Amount of time wifi is in tx (ms): 0
+-------WifiWake metrics-------
+mTotalSessions: 0
+mTotalWakeups: 0
+mIgnoredStarts: 5
+mIsInSession: false
+Stored Sessions: 0
+~ $

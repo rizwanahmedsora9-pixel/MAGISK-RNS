@@ -1,0 +1,31 @@
+~ $ su -c '
+echo "=== MAGISK ==="
+magisk -v
+                                                  
+echo
+echo "=== MODULES ==="                            
+ls -la /data/adb/modules
+                                                  
+echo
+echo "=== BOOT SCRIPTS ==="
+ls -la /data/adb/post-fs-data.d 2>/dev/null
+ls -la /data/adb/service.d 2>/dev/null
+'
+=== MAGISK ===
+30.7:MAGISK:R
+                                                  
+=== MODULES ===
+total 9                                           
+drwxr-xr-x 3 root root 3488 2026-09-24 22:14 .
+drwx------ 6 root root 3488 2026-09-24 22:14 ..   
+drwxr-xr-x 3 root root 3488 2026-09-24 22:14 ARCor
+e_enabler
+
+=== BOOT SCRIPTS ===
+total 6
+drwxr-xr-x 2 root root 3488 2026-09-23 17:23 .
+drwx------ 6 root root 3488 2026-09-24 22:14 ..
+total 6
+drwxr-xr-x 2 root root 3488 2026-09-23 17:23 .
+drwx------ 6 root root 3488 2026-09-24 22:14 ..
+~ $

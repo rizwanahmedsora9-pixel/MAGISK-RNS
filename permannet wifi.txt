@@ -1,0 +1,44 @@
+~ $ su -c '
+echo "=== WIFI HAL ==="                           
+ls -la /vendor/bin/hw | grep wifi                 
+
+echo
+echo "=== INIT WIFI FILES ==="
+ls -la /vendor/etc/init | grep wifi
+
+echo
+echo "=== NETD ==="
+ps -A | grep netd
+
+echo
+echo "=== TETHER MODULES ==="
+lsmod 2>/dev/null
+'
+=== WIFI HAL ===
+-rwxr-xr-x 1 root        shell        410864 2008-
+12-31 21:00 android.hardware.wifi@1.0-service-medi
+atek
+
+=== INIT WIFI FILES ===
+-rw-r--r--  1 root root   182 2008-12-31 21:00 and
+roid.hardware.wifi@1.0-service-mediatek.rc
+
+=== NETD ===
+root          1937     1 2159460   4584 binder_ioc
+tl_write_read 0 S netd
+shell         1938     1 2124160   2628 futex_wait
+_queue_me 0 S netdiag
+system        1989     1   19156   2820 hrtimer_na
+nosleep   0 S netdagent
+
+=== TETHER MODULES ===
+Module                  Size  Used by
+wlan_drv_gen4m       1642496  0
+wmt_chrdev_wifi        28672  1 wlan_drv_gen4m
+gps_drv                61440  0
+fmradio_drv           172032  0
+bt_drv                 28672  0
+wmt_drv              1167360  6 wlan_drv_gen4m,wmt
+_chrdev_wifi,gps_drv,fmradio_drv,bt_drv
+fpsgo                  16384  0
+~ $

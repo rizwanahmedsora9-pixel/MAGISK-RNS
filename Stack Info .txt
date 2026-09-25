@@ -1,0 +1,2000 @@
+eatureSetCommand::handleResponse for 12           
+09-25 12:10:25.226   457   457 D WifiHAL : vendor_
+id = 0x0, subcmd = 0x0                            
+09-25 12:10:25.226   457   457 I WifiHAL : feature
+_matrix 0: 16
+09-25 12:10:25.226   457   457 I WifiHAL : feature
+_matrix 1: 8                                      
+09-25 12:10:25.227  2173  2307 D WifiConnectivityH
+elper: Firmware roaming supported with capabilitie
+s: max num blacklist bssid=16 max num whitelist ss
+id=8
+09-25 12:10:25.227   457   457 I WifiHAL : Configu
+re roaming                                        
+09-25 12:10:25.227   457   457 D WifiHAL : [WIFI H
+AL] Configure roaming                             
+09-25 12:10:25.227   457   457 D WifiHAL : WifiReq
+uest::create vendor command to iface 31, vendor_id
+=0x1a11, subcmd=0x000a, res=0                     
+09-25 12:10:25.228  2173  2307 D WifiConnectivityM
+anager: startConnectivityScan: screenOn=true wifiS
+tate=transitioning scanImmediately=true wifiEnable
+d=true wifiConnectivityManagerEnabled=true        
+09-25 12:10:25.228  2173  2307 I WifiStateMachine:
+ disconnectedstate enter                          
+09-25 12:10:25.228  2173  2307 D WifiConnectivityM
+anager: handleConnectionStateChanged: state=discon
+nected
+09-25 12:10:25.228  2173  2307 D WifiConnectivityM
+anager: scheduleWatchdogTimer
+09-25 12:10:25.228  2173  2307 D WifiConnectivityM
+anager: startConnectivityScan: screenOn=true wifiS
+tate=disconnected scanImmediately=true wifiEnabled
+=true wifiConnectivityManagerEnabled=true
+09-25 12:10:25.229  2173  2307 D WifiConnectivityM
+anager: schedulePeriodicScanTimer, intervalMs: 200
+00                                                
+09-25 12:10:25.229  2173  2308 D WifiScanningServi
+ce: addSingleScanRequest: ClientInfo[uid=1000,andr
+oid.os.Messenger@8a37ef8],Id=45,WorkSource{1010}, 
+ScanSettings {  type:HIGH ACCURACY band:24Ghz & 5G
+hz (DFS incl) period:0 reportEvents:3 numBssidsPer
+Scan:0 maxScansToCache:0 channels:[  ]  hiddenNetw
+orks:[  ]  }
+09-25 12:10:25.230   457   457 D WifiHAL : WifiReq
+uest::create vendor command to iface 31, vendor_id
+=0x1a11, subcmd=0x0002, res=0                     
+09-25 12:10:25.230   457   457 D WifiHAL : In GetF
+eatureSetCommand::handleResponse for 5            
+09-25 12:10:25.230   457   457 D WifiHAL : vendor_
+id = 0x0, subcmd = 0x0                            
+09-25 12:10:25.230   457   457 I WifiHAL : feature
+_set=0x488141a                                    
+09-25 12:10:25.230  2173  2309 D SupplicantP2pIfac
+eHal: leaving getNetwork(1) with result = android.
+hardware.wifi.supplicant@1.0::ISupplicantP2pNetwor
+k@Proxy                                           
+09-25 12:10:25.230   457   457 D WifiHAL : WifiReq
+uest::create vendor command to iface 31, vendor_id
+=0x1a11, subcmd=0x0002, res=0                     
+09-25 12:10:25.230   457   457 D WifiHAL : In GetF
+eatureSetCommand::handleResponse for 5            
+09-25 12:10:25.230   457   457 D WifiHAL : vendor_
+id = 0x0, subcmd = 0x0                            
+09-25 12:10:25.230   457   457 I WifiHAL : feature
+_set=0x488141a                                    
+09-25 12:10:25.234  2173  2309 D SupplicantP2pIfac
+eHal: leaving getNetwork(2) with result = android.
+hardware.wifi.supplicant@1.0::ISupplicantP2pNetwor
+k@Proxy                                           
+09-25 12:10:25.235  2173  2196 E BatteryExternalSt
+atsWorker: no controller energy info supplied for 
+wifi                                              
+09-25 12:10:25.239   457   457 D WifiHAL : WifiReq
+uest::create vendor command to iface 31, vendor_id
+=0x1a11, subcmd=0x0002, res=0                     
+09-25 12:10:25.239  2173  2309 D SupplicantP2pIfac
+eHal: leaving getNetwork(3) with result = android.
+hardware.wifi.supplicant@1.0::ISupplicantP2pNetwor
+k@Proxy                                           
+09-25 12:10:25.239   457   457 D WifiHAL : In GetF
+eatureSetCommand::handleResponse for 5            
+09-25 12:10:25.239   457   457 D WifiHAL : vendor_
+id = 0x0, subcmd = 0x0                            
+09-25 12:10:25.239   457   457 I WifiHAL : feature
+_set=0x488141a                                    
+09-25 12:10:25.240   457   457 D WifiHAL : WifiReq
+uest::create vendor command to iface 31, vendor_id
+=0x1a11, subcmd=0x0002, res=0                     
+09-25 12:10:25.240   457   457 D WifiHAL : In GetF
+eatureSetCommand::handleResponse for 5            
+09-25 12:10:25.240   457   457 D WifiHAL : vendor_
+id = 0x0, subcmd = 0x0                            
+09-25 12:10:25.240   457   457 I WifiHAL : feature
+_set=0x488141a                                    
+09-25 12:10:25.243  2173  2309 D SupplicantP2pIfac
+eHal: leaving getNetwork(4) with result = android.
+hardware.wifi.supplicant@1.0::ISupplicantP2pNetwor
+k@Proxy                                           
+09-25 12:10:25.244  2173  2196 E BatteryExternalSt
+atsWorker: no controller energy info supplied for 
+wifi                                              
+09-25 12:10:25.249  2173  2309 D WifiP2pService: s
+ending p2p persistent groups changed broadcast    
+09-25 12:10:25.250  2173  2309 D WifiP2pService: I
+nactiveState                                      
+09-25 12:10:25.250  2173  2309 D WifiP2pNative: P2
+P InterfaceAvailableListener false                
+09-25 12:10:25.250  2173  2309 I WifiP2pNative: Ma
+sking interface non-availability callback because 
+we created a P2P iface                            
+09-25 12:10:25.250  2173  2309 D WifiP2pService: I
+nactiveState{ when=-38ms what=147457 target=com.an
+droid.internal.util.StateMachine$SmHandler }      
+09-25 12:10:25.250  2173  2309 D WifiP2pService: P
+2pEnabledState{ when=-38ms what=147457 target=com.
+android.internal.util.StateMachine$SmHandler }    
+09-25 12:10:25.250  2173  2309 D WifiP2pService: D
+efaultState{ when=-38ms what=147457 target=com.and
+roid.internal.util.StateMachine$SmHandler }       
+09-25 12:10:25.250  2173  2309 D WifiP2pService: I
+nactiveState{ when=-35ms what=131203 target=com.an
+droid.internal.util.StateMachine$SmHandler }      
+09-25 12:10:25.250  2173  2309 D WifiP2pService: P
+2pEnabledState{ when=-35ms what=131203 target=com.
+android.internal.util.StateMachine$SmHandler }    
+09-25 12:10:25.250  2173  2309 D WifiP2pService: D
+efaultState{ when=-35ms what=131203 target=com.and
+roid.internal.util.StateMachine$SmHandler }       
+09-25 12:10:25.250  2173  2309 E WifiP2pService: U
+nhandled message { when=-35ms what=131203 target=c
+om.android.internal.util.StateMachine$SmHandler } 
+09-25 12:10:25.250  2173  2309 D WifiP2pService: I
+nactiveState{ when=-22ms what=131203 target=com.an
+droid.internal.util.StateMachine$SmHandler }      
+09-25 12:10:25.250  2173  2309 D WifiP2pService: P
+2pEnabledState{ when=-22ms what=131203 target=com.
+android.internal.util.StateMachine$SmHandler }    
+09-25 12:10:25.250  2173  2309 D WifiP2pService: D
+efaultState{ when=-22ms what=131203 target=com.and
+roid.internal.util.StateMachine$SmHandler }       
+09-25 12:10:25.250  2173  2309 E WifiP2pService: U
+nhandled message { when=-22ms what=131203 target=c
+om.android.internal.util.StateMachine$SmHandler } 
+09-25 12:10:25.250  2173  2309 D WifiP2pService: I
+nactiveState{ when=0 what=139323 arg2=43 obj=WFD e
+nabled: falseWFD DeviceInfo: 0                    
+09-25 12:10:25.250  2173  2309 D WifiP2pService:  
+WFD CtrlPort: 0                                   
+09-25 12:10:25.250  2173  2309 D WifiP2pService:  
+WFD MaxThroughput: 0 target=com.android.internal.u
+til.StateMachine$SmHandler }                      
+09-25 12:10:25.250  2173  2309 D WifiP2pService: P
+2pEnabledState{ when=-1ms what=139323 arg2=43 obj=
+WFD enabled: falseWFD DeviceInfo: 0               
+09-25 12:10:25.250  2173  2309 D WifiP2pService:  
+WFD CtrlPort: 0                                   
+09-25 12:10:25.250  2173  2309 D WifiP2pService:  
+WFD MaxThroughput: 0 target=com.android.internal.u
+til.StateMachine$SmHandler }                      
+09-25 12:10:26.116  2173  2696 D WificondControl: 
+Scan result ready event                           
+09-25 12:10:26.116  5961  5971 D VoLTE IMSM: monit
+or_wifi_tech: mutex lock (module/mdagent/volte_ims
+m_93/src/wireless.c:589)                          
+09-25 12:10:26.117  5961  5971 D VoLTE IMSM: monit
+or_wifi_tech: mutex unlock (module/mdagent/volte_i
+msm_93/src/wireless.c:597)                        
+09-25 12:10:26.123  6704  6704 I wificond: Unexpec
+ted empty scan result!                            
+09-25 12:10:26.124  2173  2308 D WifiScanningServi
+ce: singleScanResults: ClientInfo[uid=1000,android
+.os.Messenger@8a37ef8],Id=45,results=0            
+09-25 12:10:26.125  2173  2308 D WifiScanningServi
+ce: singleScanResults: ClientInfo[uid=1000,android
+.os.Messenger@8a37ef8],Id=2,results=0             
+09-25 12:10:26.127  2173  2307 D WifiConnectivityM
+anager: AllSingleScanListener onResults: start net
+work selection                                    
+09-25 12:10:26.127  2173  2307 D WifiNetworkSelect
+or: Empty connectivity scan result                
+09-25 12:10:26.133  4357  4357 D PowerSaveUtils: c
+onfig details is : bright->255wifiEnable-> truewif
+iApEnable->falsebtEnable->falsedataEnable->truegps
+Enable->falsethreeGEnable->trueautoSyncEnable->tru
+eisScreenModeOn->falseisUltraModeOn->falseisBatter
+ySaverOn->false                                   
+09-25 12:10:32.280  2348  2665 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=true,wifiConnected=false,air
+planeModeEnabled=false,mobileSignalIconId=1283,dat
+aTypeIconId=2131232008,activityIn=true,activityOut
+=true,enabledDesc=Jazz,noSim=false]               
+09-25 12:10:32.332  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=true,wifiConnected=false,airplaneMod
+eEnabled=false,mobileSignalIconId=1283,dataTypeIco
+nId=2131232008,activityIn=true,activityOut=true,en
+abledDesc=Jazz,noSim=false]
+09-25 12:10:32.348  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=true,wifiConnected=false,airplaneMod
+eEnabled=false,mobileSignalIconId=1283,dataTypeIco
+nId=2131232008,activityIn=true,activityOut=true,en
+abledDesc=Jazz,noSim=false]                       
+09-25 12:10:32.360  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=true,wifiConnected=false,airplaneMod
+eEnabled=false,mobileSignalIconId=1283,dataTypeIco
+nId=2131232008,activityIn=true,activityOut=true,en
+abledDesc=Jazz,noSim=false]
+09-25 12:10:32.384  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=true,wifiConnected=false,airplaneMod
+eEnabled=false,mobileSignalIconId=1283,dataTypeIco
+nId=2131232008,activityIn=true,activityOut=true,en
+abledDesc=Jazz,noSim=false]                       
+09-25 12:10:32.451  2348  2665 D WifiSignalControl
+ler: mCurrentState.inetCondition = 0
+09-25 12:10:32.454  4439 11755 I Bugle   : Carrier
+ configs loaded: Bundle[{mtk_show_clir_setting_boo
+l=true, mtk_default_enhanced_4g_mode_bool=true, ca
+rrier_volte_provisioned_bool=false, disable_charge
+_indication_bool=false, httpSocketTimeout=60000, m
+tk_resume_hold_call_after_active_call_end_by_remot
+e=false, carrier_wfc_supports_wifi_only_bool=false
+, carrier_default_actions_on_default_network_avail
+able_string_array=[Ljava.lang.String;@3e7a352, mtk
+_ct_volte_status_bool=false, mtk_carrier_ss_need_c
+heck_data_roaming=false, operator_selection_expand
+_bool=true, disable_cdma_activation_code_bool=fals
+e, simplified_network_settings_bool=false, call_ba
+rring_visibility_bool=true, enable_apps_string_arr
+ay=null, carrier_default_wfc_ims_roaming_enabled_b
+ool=false, mtk_show_call_barring_password_bool=fal
+se, cdma_nonroaming_networks_string_array=null, al
+iasMinChars=2, mtk_key_multiline_allow_cross_line_
+conference_bool=false, wfc_data_spn_format_idx_int
+=0, hide_sim_lock_settings_bool=false, drop_video_
+call_when_answering_audio_call_bool=false, mtk_sho
+w_open_mobile_data_dialog_bool=false, ci_action_on
+_sys_update_bool=false, convert_cdma_caller_id_mmi
+_codes_while_roaming_on_3gpp_bool=false, support_e
+nhanced_call_blocking_bool=false, vvm_port_number_
+int=0, carrier_default_wfc_ims_enabled_bool=false,
+ dial_string_replace_string_array=null, gsm_nonroa
+ming_networks_string_array=null, hide_ims_apn_bool
+=false, show_toast_when_conference_full=true, vvm_
+destination_number_string=, dtmf_type_enabled_bool
+=false, allow_video_calling_fallback_bool=true, mt
+k_carrier_ims_ecbm_supported=false, mtk_domestic_r
+oaming_enabled_only_by_mobile_data_setting=false, 
+config_ims_package_override_string=com.google.andr
+oid.ims, mtk_support_enhanced_call_blocking_bool=f
+alse, support_auto_decline_upgrade_request_bool=tr
+ue, mtk_video_call_background_transmission=false, 
+smsToMmsTextThreshold=-1, disable_severe_when_extr
+eme_disabled_bool=true, force_home_network_bool=fa
+lse, enableSMSDeliveryReports=true, auto_retry_ena
+bled_bool=false, play_call_recording_tone_bool=fal
+se, carrier_force_disable_etws_cmas_test_bool=fals
+e, allow_emergency_video_calls_bool=false, csp_ena
+bled_bool=false, mtk_dialer_call_pull_bool=false, 
+default_sim_call_manager_string=, mtk_carrier_swap
+_vt_conference_to_foreground_before_merge=false, c
+all_forwarding_blocks_while_roaming_string_array=n
+ull, emergency_notification_delay_int=-1, support_
+video_conference_call_bool=false, ims_dtmf_tone_de
+lay_int=0, show_signal_strength_in_sim_status_bool
+=true, data_rapid_notification_bool=true, carrier_
+instant_lettering_escaped_chars_string=, carrier_d
+efault_wfc_ims_roaming_mode_int=2, mtk_carrier_swi
+tch_wfc_mode_required_bool=false, editable_wfc_mod
+e_bool=true, mtk_cdma_sms_7bit_encoding_type_int=9
+, support_direct_fdn_dialing_bool=false, carrier_w
+ifi_string_array=null, treat_downgraded_video_call
+s_as_video_calls_bool=false, wifi_calls_can_be_hd_
+audio=true, support_downgrade_vt_to_audio_bool=tru
+e, notify_handover_video_from_lte_to_wifi_bool=fal
+se, use_otasp_for_provisioning_bool=false, always_
+play_remote_hold_tone_bool=false, maxMessageTextSi
+ze=-1, duration_blocking_disabled_after_emergency_
+int=7200, carrier_metered_roaming_apn_types_string
+s=[Ljava.lang.String;@cfb623, no_merge_req_after_m
+ax_connection=true, show_video_call_charges_alert_
+dialog_bool=false, carrier_network_service_wlan_pa
+ckage_override_string=, show_apn_setting_cdma_bool
+=false, carrier_instant_lettering_length_limit_int
+=64, carrier_instant_lettering_invalid_chars_strin
+g=, carrier_setup_app_string=, editable_wfc_roamin
+g_mode_bool=false, supportMmsContentDisposition=tr
+ue, support_manage_ims_conference_call_bool=true, 
+allow_non_emergency_calls_in_ecm_bool=true, mtk_ca
+rrier_ss_not_support_call_identity=false, mtk_key_
+roaming_bar_guard_bool=false, carrier_data_service
+_wlan_package_override_string=, use_rcs_presence_b
+ool=false, config_telephony_use_own_number_for_voi
+cemail_bool=false, cdma_dtmf_tone_delay_int=100, e
+ditable_voicemail_number_bool=false, carrier_data_
+call_apn_retry_after_disconnect_long=10000, filter
+ed_cnap_names_string_array=null, enabledTransID=fa
+lse                                               
+09-25 12:10:32.485  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=true,wifiConnected=false,air
+planeModeEnabled=false,mobileSignalIconId=1283,dat
+aTypeIconId=2131232008,activityIn=true,activityOut
+=true,enabledDesc=Jazz,noSim=false]               
+09-25 12:10:32.488  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=true,wifiConnected=false,airplaneMod
+eEnabled=false,mobileSignalIconId=1283,dataTypeIco
+nId=2131232008,activityIn=true,activityOut=true,en
+abledDesc=Jazz,noSim=false]                       
+09-25 12:10:32.502  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=true,wifiConnected=false,airplaneMod
+eEnabled=false,mobileSignalIconId=1283,dataTypeIco
+nId=2131232008,activityIn=true,activityOut=true,en
+abledDesc=Jazz,noSim=false]                       
+09-25 12:10:32.517  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=true,wifiConnected=false,airplaneMod
+eEnabled=false,mobileSignalIconId=1283,dataTypeIco
+nId=2131232008,activityIn=true,activityOut=true,en
+abledDesc=Jazz,noSim=false]                       
+09-25 12:10:32.532  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=true,wifiConnected=false,airplaneMod
+eEnabled=false,mobileSignalIconId=1283,dataTypeIco
+nId=2131232008,activityIn=true,activityOut=true,en
+abledDesc=Jazz,noSim=false]                       
+09-25 12:10:32.545  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=true,wifiConnected=false,airplaneMod
+eEnabled=false,mobileSignalIconId=1283,dataTypeIco
+nId=2131232008,activityIn=true,activityOut=true,en
+abledDesc=Jazz,noSim=false]                       
+09-25 12:10:32.561  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=true,wifiConnected=false,airplaneMod
+eEnabled=false,mobileSignalIconId=1283,dataTypeIco
+nId=2131232008,activityIn=true,activityOut=true,en
+abledDesc=Jazz,noSim=false]                       
+09-25 12:10:33.149  2648  2699 I PowerMonitorHookC
+lient: unkown network interface:ap0               
+09-25 12:10:36.116  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=true,wifiConnected=false,air
+planeModeEnabled=false,mobileSignalIconId=1283,dat
+aTypeIconId=2131232008,activityIn=false,activityOu
+t=false,enabledDesc=Jazz,noSim=false]             
+09-25 12:10:36.116  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=true,wifiConnected=false,airplaneMod
+eEnabled=false,mobileSignalIconId=1283,dataTypeIco
+nId=2131232008,activityIn=false,activityOut=false,
+enabledDesc=Jazz,noSim=false]                     
+09-25 12:10:37.226  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=true,wifiConnected=false,air
+planeModeEnabled=false,mobileSignalIconId=1284,dat
+aTypeIconId=2131232008,activityIn=false,activityOu
+t=false,enabledDesc=Jazz,noSim=false]             
+09-25 12:10:37.226  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=true,wifiConnected=false,airplaneMod
+eEnabled=false,mobileSignalIconId=1284,dataTypeIco
+nId=2131232008,activityIn=false,activityOut=false,
+enabledDesc=Jazz,noSim=false]                     
+09-25 12:10:37.913  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=true,wifiConnected=false,air
+planeModeEnabled=false,mobileSignalIconId=1283,dat
+aTypeIconId=2131232008,activityIn=false,activityOu
+t=false,enabledDesc=Jazz,noSim=false]             
+09-25 12:10:37.914  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=true,wifiConnected=false,airplaneMod
+eEnabled=false,mobileSignalIconId=1283,dataTypeIco
+nId=2131232008,activityIn=false,activityOut=false,
+enabledDesc=Jazz,noSim=false]                     
+09-25 12:10:38.134  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=true,wifiConnected=false,air
+planeModeEnabled=false,mobileSignalIconId=1283,dat
+aTypeIconId=2131232008,activityIn=true,activityOut
+=true,enabledDesc=Jazz,noSim=false]               
+09-25 12:10:38.134  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=true,wifiConnected=false,airplaneMod
+eEnabled=false,mobileSignalIconId=1283,dataTypeIco
+nId=2131232008,activityIn=true,activityOut=true,en
+abledDesc=Jazz,noSim=false]                       
+09-25 12:10:38.317  2348  2665 I ConnectivityManag
+er: startTethering caller:com.android.systemui    
+09-25 12:10:38.320  2173  9305 I WifiService: star
+tSoftAp uid=1000                                  
+09-25 12:10:38.320  2173  2306 D WifiController: D
+eviceActiveState CMD_SET_AP{ when=0 what=155658 ar
+g1=1 obj=com.android.server.wifi.SoftApModeConfigu
+ration@cec694a target=com.android.internal.util.St
+ateMachine$SmHandler }
+09-25 12:10:38.320  2173  2306 D WifiController: S
+taEnabledState CMD_SET_AP{ when=0 what=155658 arg1
+=1 obj=com.android.server.wifi.SoftApModeConfigura
+tion@cec694a target=com.android.internal.util.Stat
+eMachine$SmHandler }                              
+09-25 12:10:38.321  2173  2306 D WifiController: D
+efaultState CMD_SET_AP{ when=-1ms what=155658 arg1
+=1 obj=com.android.server.wifi.SoftApModeConfigura
+tion@cec694a target=com.android.internal.util.Stat
+eMachine$SmHandler }                              
+09-25 12:10:38.321  2173  2307 D WifiStateMachineP
+rime: Starting SoftApModeManager
+09-25 12:10:38.330  2173  2307 I android_os_HwBind
+er: HwBinder: Starting thread pool for default::an
+droid.hardware.wifi.supplicant@1.0::ISupplicant   
+09-25 12:10:38.332  2173  2307 I android_os_HwBind
+er: HwBinder: Starting thread pool for default::an
+droid.hardware.wifi.supplicant@1.0::ISupplicant   
+09-25 12:10:38.336  6704  6704 I wificond: Unsubsc
+ribe scan result for interface with index: 31
+09-25 12:10:38.426  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=true,wifiConnected=false,air
+planeModeEnabled=false,mobileSignalIconId=1282,dat
+aTypeIconId=2131232008,activityIn=true,activityOut
+=true,enabledDesc=Jazz,noSim=false]               
+09-25 12:10:38.427  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=true,wifiConnected=false,airplaneMod
+eEnabled=false,mobileSignalIconId=1282,dataTypeIco
+nId=2131232008,activityIn=true,activityOut=true,en
+abledDesc=Jazz,noSim=false]
+09-25 12:10:38.457  2173  2307 D WifiClientModeMan
+ager: STA iface wlan0 was destroyed, stopping clie
+nt mode                                           
+09-25 12:10:38.457  2173  2309 D WifiP2pService: I
+nactiveState{ when=0 what=143375 target=com.androi
+d.internal.util.StateMachine$SmHandler }          
+09-25 12:10:38.457  2173  2309 D WifiP2pService: P
+2pEnabledState{ when=0 what=143375 target=com.andr
+oid.internal.util.StateMachine$SmHandler }        
+09-25 12:10:38.458  2173  2307 I WifiNative: Succe
+ssfully torn down Iface:{Name=wlan0,Id=14,Type=STA
+}
+09-25 12:10:38.459  2173  2200 I WifiDisplayContro
+ller: Received NETWORK_STATE_CHANGED,con:false,SSI
+D:null,Freq:0,netId:-1, updated:false             
+09-25 12:10:38.466  2173  2309 D WifiP2pNative: P2
+P InterfaceDestroyedListener p2p0                 
+09-25 12:10:38.466  2173  2309 D WifiP2pService: I
+nactiveState{ when=0 what=143377 target=com.androi
+d.internal.util.StateMachine$SmHandler }          
+09-25 12:10:38.466  2173  2309 D WifiP2pService: P
+2pEnabledState{ when=0 what=143377 target=com.andr
+oid.internal.util.StateMachine$SmHandler }        
+09-25 12:10:38.466  2173  2309 D WifiP2pService: s
+ending p2p persistent groups changed broadcast    
+09-25 12:10:38.467  2173  2309 D WifiP2pNative: Te
+ardown P2P interface                              
+09-25 12:10:38.467  2173  2309 D WifiP2pService: P
+2pDisablingState                                  
+09-25 12:10:38.467  2173  2309 D WifiP2pService: P
+2pDisablingState{ when=0 what=147458 target=com.an
+droid.internal.util.StateMachine$SmHandler }      
+09-25 12:10:38.467  2173  2309 D WifiP2pService: p
+2p socket connection lost                         
+09-25 12:10:38.467  2173  2309 D WifiP2pService: P
+2pDisabledState                                   
+09-25 12:10:38.468   457   457 I android.hardware.
+wifi@1.0-service-mediatek: Reconfiguring chip from
+ mode 0 to mode 1                                 
+09-25 12:10:38.468   457 11747 E WifiHAL : wifi_ev
+ent_loop: Read after POLL returned 4, error no = 0
+ (Success)                                        
+09-25 12:10:38.468   457 11747 D WifiHAL : Got a s
+ignal to exit!!!                                  
+09-25 12:10:38.468   457 11747 I WifiHAL : Exit wi
+fi_event_loop                                     
+09-25 12:10:38.468   457   457 E WifiHAL : wifi_cl
+eanup: Read after POLL returned 4, error no = 13 (
+Permission denied)
+09-25 12:10:38.468   457   457 E WifiHAL : Event p
+rocessing terminated                              
+09-25 12:10:38.468   457   457 I android.hardware.
+wifi@1.0-service-mediatek: Legacy HAL stop complet
+e callback received                               
+09-25 12:10:38.469   457   457 I WifiHAL : Interna
+l cleanup completed                               
+09-25 12:10:38.518   457   457 I WifiHAL : Wifi HA
+L initializing                                    
+09-25 12:10:38.518   457   457 I WifiHAL : Creatin
+g socket                                          
+09-25 12:10:38.518   457   457 I WifiHAL : Get nl8
+0211_family_id                                    
+09-25 12:10:38.519   457   457 I WifiHAL : init wi
+fi interfaces
+09-25 12:10:38.519  2173  2330 I EthernetTracker: 
+maybeTrackInterface ap0                           
+09-25 12:10:38.519  2173  2198 I EthernetTracker: 
+interfaceLinkStateChanged, iface: ap0, up: false  
+09-25 12:10:38.519   457   457 D WifiHAL : found a
+n interface : ap0, id = 49                        
+09-25 12:10:38.519   457   457 D WifiHAL : found a
+n interface : wlan0, id = 31                      
+09-25 12:10:38.520   457   457 D WifiHAL : Add mem
+bership for group scan successfully               
+09-25 12:10:38.520   457   457 D WifiHAL : Add mem
+bership for group mlme successfully               
+09-25 12:10:38.520   457   457 D WifiHAL : Add mem
+bership for group regulatory successfully         
+09-25 12:10:38.520   457   457 D WifiHAL : Add mem
+bership for group vendor successfully             
+09-25 12:10:38.520   457   457 D WifiHAL : Wifi HA
+L initialized successfully: nl80211_family_id=19, 
+found 2 interfaces                                
+09-25 12:10:38.520   457   457 I android.hardware.
+wifi@1.0-service-mediatek: Adding interface handle
+ for ap0                                          
+09-25 12:10:38.520   457   457 I android.hardware.
+wifi@1.0-service-mediatek: Adding interface handle
+ for wlan0                                        
+09-25 12:10:38.520   457   457 E android.hardware.
+wifi@1.0-service-mediatek: Failed to register radi
+o mode change callback                            
+09-25 12:10:38.522  2173  2199 D Tethering: sendTe
+therStateChangedBroadcast avail=[ap0] local_only=[
+] tether=[] error=[]
+09-25 12:10:38.523  2173  2311 I MtkTethering: Int
+ent:Intent { act=android.net.conn.TETHER_STATE_CHA
+NGED flg=0x24000010 (has extras) }                
+09-25 12:10:38.524  2173  2311 I MtkTethering: sho
+wTetheredNotification:false:0                     
+09-25 12:10:38.524  2173  2311 I MtkTethering: Ign
+ore                                               
+09-25 12:10:38.525   457   457 I android.hardware.
+wifi@1.0-service-mediatek: Configured chip in mode
+ 1
+09-25 12:10:38.526   457   457 E android.hardware.
+wifi@1.0-service-mediatek: We use ap0 for AP inter
+face                                              
+09-25 12:10:38.541  2173  2307 D WificondControl: 
+Setting up interface for soft ap mode
+09-25 12:10:38.546  2173  2307 I WifiNative: Succe
+ssfully setup Iface:{Name=ap0,Id=15,Type=AP}      
+09-25 12:10:38.547  2348  7973 V WifiManager: Soft
+ApCallbackProxy: onStateChanged: state=12, failure
+Reason=0                                          
+09-25 12:10:38.549  2173  2173 D WifiService: hand
+leWifiApStateChange: currentState=12 previousState
+=11 errorCode= -1 ifaceName=ap0 mode=1            
+09-25 12:10:38.550  2173  2189 W BroadcastQueue: B
+ackground execution not allowed: receiving Intent 
+{ act=android.net.wifi.WIFI_AP_STATE_CHANGED flg=0
+x4000010 (has extras) } to com.google.android.gms/
+.chimera.GmsIntentOperationService$PersistentTrust
+edReceiver                                        
+09-25 12:10:38.552  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:10:38.552   457   457 D WifiHAL : WifiReq
+uest::create vendor command to iface 49, vendor_id
+=0x1a11, subcmd=0x0006, res=0                     
+09-25 12:10:38.553  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:10:38.554  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:10:38.555  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:10:38.555  2173  2364 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:10:38.618 11797 11797 I hostapd : Process
+ing hidl events on FD 3                           
+09-25 12:10:38.625  2173  2323 I android_os_HwBind
+er: HwBinder: Starting thread pool for default::an
+droid.hardware.wifi.hostapd@1.0::IHostapd         
+09-25 12:10:38.627  2173  2323 I HostapdHal: Compl
+eted initialization of IHostapd.                  
+09-25 12:10:38.669  2173  2307 D MtkSoftApManager:
+ getAllowedDevices                                
+09-25 12:10:38.672  2173  2307 I android_os_HwBind
+er: HwBinder: Starting thread pool for default::ve
+ndor.mediatek.hardware.wifi.hostapd@2.0::IHostapd 
+09-25 12:10:38.674 11797 11797 I hostapd : /data/v
+endor/wifi/hostapd/accept_mac_update.conf:        
+09-25 12:10:38.675 11797 11797 I hostapd : /data/v
+endor/wifi/hostapd/hostapd_ap0.conf:              
+09-25 12:10:38.675 11797 11797 I hostapd : interfa
+ce=ap0                                            
+09-25 12:10:38.675 11797 11797 I hostapd : driver=
+nl80211                                           
+09-25 12:10:38.675 11797 11797 I hostapd : ctrl_in
+terface=/data/vendor/wifi/hostapd/ctrl            
+09-25 12:10:38.675 11797 11797 I hostapd : ssid2=4
+96e66696e697820484f542038                         
+09-25 12:10:38.675 11797 11797 I hostapd : channel
+=157                                              
+09-25 12:10:38.675 11797 11797 I hostapd : ieee802
+11n=1                                             
+09-25 12:10:38.675 11797 11797 I hostapd : ieee802
+11ac=0                                            
+09-25 12:10:38.675 11797 11797 I hostapd : hw_mode
+=a                                                
+09-25 12:10:38.675 11797 11797 I hostapd :        
+09-25 12:10:38.675 11797 11797 I hostapd : ignore_
+broadcast_ssid=0                                  
+09-25 12:10:38.675 11797 11797 I hostapd : wowlan_
+triggers=any                                      
+09-25 12:10:38.675 11797 11797 I hostapd :        
+09-25 12:10:38.675 11797 11797 I hostapd : max_num
+_sta=10                                           
+09-25 12:10:38.675 11797 11797 I hostapd : macaddr
+_acl=0                                            
+09-25 12:10:38.675 11797 11797 I hostapd : accept_
+mac_file=/data/vendor/wifi/hostapd/accept_mac_upda
+te.conf                                           
+09-25 12:10:38.675 11797 11797 I hostapd : device_
+name=AndroidAP                                    
+09-25 12:10:38.675 11797 11797 I hostapd : manufac
+turer=MediaTek Inc.                               
+09-25 12:10:38.675 11797 11797 I hostapd : model_n
+ame=MTK Wireless Model                            
+09-25 12:10:38.675 11797 11797 I hostapd : model_n
+umber=66xx                                        
+09-25 12:10:38.675 11797 11797 I hostapd : serial_
+number=1.0                                        
+09-25 12:10:38.675 11797 11797 I hostapd : device_
+type=10-0050F204-5                                
+09-25 12:10:38.680 11797 11797 I hostapd : Add int
+erface 'ap0'                                      
+09-25 12:10:38.683 11797 11797 I hostapd : rfkill:
+ Cannot open RFKILL control device                
+09-25 12:10:38.686  2173  2198 I EthernetTracker: 
+interfaceLinkStateChanged, iface: ap0, up: false  
+09-25 12:10:38.689  2173  2198 I WifiNative: Inter
+face state changed on Iface:{Name=ap0,Id=15,Type=A
+P}, isUp=true                                     
+09-25 12:10:38.689 11797 11797 E hostapd : Using i
+nterface ap0 with hwaddr 02:08:22:bc:3e:69 and ssi
+d "Infinix HOT 8"                                 
+09-25 12:10:38.689 11797 11797 I hostapd : wpa_dri
+ver_nl80211_driver_cmd: ap0 recv cmd set_max_clien
+t 10                                              
+09-25 12:10:38.692 11797 11797 I hostapd : ap0: in
+terface state UNINITIALIZED->ENABLED              
+09-25 12:10:38.692 11797 11797 I hostapd : ap0: AP
+-ENABLED                                          
+09-25 12:10:38.693  2173  2198 I EthernetTracker: 
+interfaceLinkStateChanged, iface: ap0, up: true   
+09-25 12:10:38.699  2173  2307 I android_os_HwBind
+er: HwBinder: Starting thread pool for default::ve
+ndor.mediatek.hardware.wifi.hostapd@2.0::IHostapd 
+09-25 12:10:38.704  2173  2307 D MtkSoftApManager:
+ Soft AP is started                               
+09-25 12:10:38.704  2173  2307 D MtkWifiApMonitor:
+ startMonitoring(ap0)
+09-25 12:10:38.708  2173  2307 D MtkSoftApManager:
+ SoftAp is ready for use
+09-25 12:10:38.708  2348  7973 V WifiManager: Soft
+ApCallbackProxy: onStateChanged: state=13, failure
+Reason=0                                          
+09-25 12:10:38.710  2173  2307 D MtkSoftApManager:
+ Timeout delay: 600000                            
+09-25 12:10:38.710  2173  2173 D WifiService: hand
+leWifiApStateChange: currentState=13 previousState
+=12 errorCode= -1 ifaceName=ap0 mode=1            
+09-25 12:10:38.711  2173  2189 W BroadcastQueue: B
+ackground execution not allowed: receiving Intent 
+{ act=android.net.wifi.WIFI_AP_STATE_CHANGED flg=0
+x4000010 (has extras) } to com.google.android.gms/
+.chimera.GmsIntentOperationService$PersistentTrust
+edReceiver                                        
+09-25 12:10:38.711  2348  7973 V WifiManager: Soft
+ApCallbackProxy: onNumClientsChanged: numClients=0
+09-25 12:10:38.712  2173  2199 D Tethering: Tether
+ing ap0                                           
+09-25 12:10:38.714  2173  2307 D MtkSoftApManager:
+ Resetting num stations on start                  
+09-25 12:10:38.716  2173  2307 D WifiClientModeMan
+ager: interface destroyed - client mode stopping  
+09-25 12:10:38.716  2173  2307 D WifiStateMachineP
+rime: State changed from client mode. state = 0   
+09-25 12:10:38.716  2173  2173 D MtkSoftApManager:
+ [STA+SAP] Received WIFI_P2P_CONNECTION_CHANGED_AC
+TION: isConnected = false                         
+09-25 12:10:38.720  1937  2074 D TetherController:
+ tetherInterface(ap0)                             
+09-25 12:10:38.725  2173  2307 D WifiStateMachineP
+rime: State changed from client mode. state = 1   
+09-25 12:10:38.727  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=true,wifiConnected=false,air
+planeModeEnabled=false,mobileSignalIconId=1283,dat
+aTypeIconId=2131232008,activityIn=true,activityOut
+=true,enabledDesc=Jazz,noSim=false]               
+09-25 12:10:38.731  2173  2307 D WifiClientModeMan
+ager: entering IdleState                          
+09-25 12:10:38.731  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=true,wifiConnected=false,airplaneMod
+eEnabled=false,mobileSignalIconId=1283,dataTypeIco
+nId=2131232008,activityIn=true,activityOut=true,en
+abledDesc=Jazz,noSim=false]                       
+09-25 12:10:38.732  2173  2307 D WifiConnectivityM
+anager: handleConnectionStateChanged: state=transi
+tioning
+09-25 12:10:38.732  2173  2307 D WifiConnectivityM
+anager: startConnectivityScan: screenOn=true wifiS
+tate=transitioning scanImmediately=false wifiEnabl
+ed=true wifiConnectivityManagerEnabled=true       
+09-25 12:10:38.735  6045  6045 I [epdg_wo]: [WOA] 
+wo_msg_sensitive_print: [wowifien=0,0,0](14)      
+09-25 12:10:38.735  6045  6045 I [epdg_wo]: [WOA] 
+wo_msg_sensitive_print: [wowifien:0,0](12)        
+09-25 12:10:38.735  2173  2173 D WifiP2pService: W
+ifi enabled=false, P2P Interface availability=true
+09-25 12:10:38.735  2173  2309 D WifiP2pService: P
+2pDisabledState{ when=0 what=143377 target=com.and
+roid.internal.util.StateMachine$SmHandler }       
+09-25 12:10:38.735  2173  2309 D WifiP2pService: D
+efaultState{ when=0 what=143377 target=com.android
+.internal.util.StateMachine$SmHandler }           
+09-25 12:10:38.736  2173  2173 D MtkWapi : onRecei
+ve WIFI_STATE_CHANGED_ACTION state --> 0          
+09-25 12:10:38.736  2173  2173 D WifiP2pService: W
+ifi enabled=false, P2P Interface availability=true
+09-25 12:10:38.737  2173  2309 D WifiP2pService: P
+2pDisabledState{ when=0 what=143377 target=com.and
+roid.internal.util.StateMachine$SmHandler }       
+09-25 12:10:38.737  2173  2309 D WifiP2pService: D
+efaultState{ when=0 what=143377 target=com.android
+.internal.util.StateMachine$SmHandler }           
+09-25 12:10:38.737  2173  2200 D WifiDisplayContro
+ller: Received WIFI_P2P_STATE_CHANGED_ACTION: enab
+led=false                                         
+09-25 12:10:38.737  2173  2200 I WifiDisplayContro
+ller: updateWfdEnableState(), mWifiDisplayOnSettin
+g:false, mWifiP2pEnabled:false                    
+09-25 12:10:38.737  2173  2200 I WifiDisplayContro
+ller: updateWfdInfo(), enable:false,mWfdEnabling:f
+alse                                              
+09-25 12:10:38.738  2173  2173 D MtkWapi : onRecei
+ve WIFI_STATE_CHANGED_ACTION state --> 1          
+09-25 12:10:38.738  2173  2200 D WifiDisplayContro
+ller: reportFeatureState(), featureState = 2      
+09-25 12:10:38.738  2173  2200 I WifiDisplayContro
+ller: updateScanState(), mSinkEnabled:falsemDiscov
+erPeersInProgress:false                           
+09-25 12:10:38.738  2173  2200 I WifiDisplayContro
+ller: disconnect, mRemoteDisplayInterface = null  
+09-25 12:10:38.738  2173  2309 D WifiP2pService: P
+2pDisabledState{ when=-1ms what=139323 arg2=44 obj
+=WFD enabled: falseWFD DeviceInfo: 0              
+09-25 12:10:38.738  2173  2309 D WifiP2pService:  
+WFD CtrlPort: 0                                   
+09-25 12:10:38.738  2173  2309 D WifiP2pService:  
+WFD MaxThroughput: 0 target=com.android.internal.u
+til.StateMachine$SmHandler }                      
+09-25 12:10:38.739  2173  2200 I WifiDisplayContro
+ller: updateScanState(), mSinkEnabled:falsemDiscov
+erPeersInProgress:false                           
+09-25 12:10:38.739  2173  2309 D WifiP2pService: D
+efaultState{ when=-1ms what=139323 arg2=44 obj=WFD
+ enabled: falseWFD DeviceInfo: 0                  
+09-25 12:10:38.739  2173  2309 D WifiP2pService:  
+WFD CtrlPort: 0                                   
+09-25 12:10:38.739  2173  2309 D WifiP2pService:  
+WFD MaxThroughput: 0 target=com.android.internal.u
+til.StateMachine$SmHandler }                      
+09-25 12:10:38.739  2173  2200 D WifiDisplayContro
+ller: Received WIFI_P2P_STATE_CHANGED_ACTION: enab
+led=false                                         
+09-25 12:10:38.739  2173  2200 I WifiDisplayContro
+ller: updateWfdEnableState(), mWifiDisplayOnSettin
+g:false, mWifiP2pEnabled:false                    
+09-25 12:10:38.739  2173  2200 I WifiDisplayContro
+ller: updateWfdInfo(), enable:false,mWfdEnabling:f
+alse                                              
+09-25 12:10:38.739  2173  2200 D WifiDisplayContro
+ller: reportFeatureState(), featureState = 2      
+09-25 12:10:38.739  2173  2200 I WifiDisplayContro
+ller: updateScanState(), mSinkEnabled:falsemDiscov
+erPeersInProgress:false                           
+09-25 12:10:38.739  2173  2200 I WifiDisplayContro
+ller: disconnect, mRemoteDisplayInterface = null  
+09-25 12:10:38.740  2173  2307 D WifiConnectivityM
+anager: Set WiFi disabled                         
+09-25 12:10:38.740  2173  2200 I WifiDisplayContro
+ller: updateScanState(), mSinkEnabled:falsemDiscov
+erPeersInProgress:false                           
+09-25 12:10:38.740  2173  2200 D WifiDisplayContro
+ller: callback onFeatureStateChanged(): featureSta
+te = 2                                            
+09-25 12:10:38.740  2173  2307 D WifiConnectivityM
+anager: Stopping WifiConnectivityManager          
+09-25 12:10:38.740  2173  2307 D WifiConnectivityM
+anager: Failed to set firmware roaming configurati
+on.                                               
+09-25 12:10:38.740  1937  2074 E Netd    : getIfIn
+dex: cannot find interface ap0                    
+09-25 12:10:38.740  1937  2074 E Netd    : inconce
+ivable! added interface ap0 with no index         
+09-25 12:10:38.740  2173  2307 E WifiStateMachine:
+ Failed to remove networks on exiting connect mode
+09-25 12:10:38.740  2173  2307 D WifiStateMachine:
+ skip clearScanResults().                         
+09-25 12:10:38.740  2173  2200 D WifiDisplayContro
+ller: callback onFeatureStateChanged(): featureSta
+te = 2                                            
+09-25 12:10:38.741  2173  2309 D WifiP2pService: P
+2pDisabledState{ when=-1ms what=139323 arg2=45 obj
+=WFD enabled: falseWFD DeviceInfo: 0              
+09-25 12:10:38.741  2173  2309 D WifiP2pService:  
+WFD CtrlPort: 0                                   
+09-25 12:10:38.741  2173  2309 D WifiP2pService:  
+WFD MaxThroughput: 0 target=com.android.internal.u
+til.StateMachine$SmHandler }                      
+09-25 12:10:38.742  2173  2309 D WifiP2pService: D
+efaultState{ when=-1ms what=139323 arg2=45 obj=WFD
+ enabled: falseWFD DeviceInfo: 0                  
+09-25 12:10:38.742  2173  2309 D WifiP2pService:  
+WFD CtrlPort: 0                                   
+09-25 12:10:38.742  2173  2309 D WifiP2pService:  
+WFD MaxThroughput: 0 target=com.android.internal.u
+til.StateMachine$SmHandler }                      
+09-25 12:10:38.744  2173  2309 D WifiP2pService: P
+2pDisabledState{ when=-1ms what=131204 target=com.
+android.internal.util.StateMachine$SmHandler }    
+09-25 12:10:38.744  2173  2309 D WifiP2pService: D
+efaultState{ when=-1ms what=131204 target=com.andr
+oid.internal.util.StateMachine$SmHandler }        
+09-25 12:10:38.744  2173  2309 E WifiP2pService: U
+nhandled message { when=-1ms what=131204 target=co
+m.android.internal.util.StateMachine$SmHandler }  
+09-25 12:10:38.751  2173  2307 D WifiStateMachineP
+rime: ClientMode stopped, return to WifiDisabledSt
+ate.                                              
+09-25 12:10:38.751  2173  2307 D WifiController: C
+lientMode stopped                                 
+09-25 12:10:38.751  2173  2307 D WifiClientModeMan
+ager:  currentstate: StateMachine not active      
+09-25 12:10:38.751  2173  2307 D WifiStateMachineP
+rime: Entering WifiDisabledState                  
+09-25 12:10:38.751  2173  2306 D WifiController: D
+eviceActiveState CMD_STA_STOPPED{ when=0 what=1556
+68 target=com.android.internal.util.StateMachine$S
+mHandler }                                        
+09-25 12:10:38.751  2173  2306 D WifiController: S
+taEnabledState CMD_STA_STOPPED{ when=-1ms what=155
+668 target=com.android.internal.util.StateMachine$
+SmHandler }                                       
+09-25 12:10:38.751  2173  2306 D WifiController: A
+pStaDisabledState.enter()                         
+09-25 12:10:38.752  2173  2307 D WifiStateMachineP
+rime: skip clearScanResults().                    
+09-25 12:10:38.754  2173  2308 I WifiScanningServi
+ce: wifi driver unloaded                          
+09-25 12:10:38.754  2173  2308 E WificondControl: 
+No valid wificond scanner interface handler       
+09-25 12:10:38.757   457   457 D WifiHAL : WifiReq
+uest::create vendor command to iface 31, vendor_id
+=0x1a11, subcmd=0x0002, res=0
+09-25 12:10:38.757   457   457 D WifiHAL : In GetF
+eatureSetCommand::handleResponse for 5            
+09-25 12:10:38.757   457   457 D WifiHAL : vendor_
+id = 0x0, subcmd = 0x0
+09-25 12:10:38.757   457   457 I WifiHAL : feature
+_set=0x488141a                                    
+09-25 12:10:38.770  2173  2199 D Tethering: sendTe
+therStateChangedBroadcast avail=[] local_only=[] t
+ether=[ap0] error=[]                              
+09-25 12:10:38.770  2173  2311 I MtkTethering: Int
+ent:Intent { act=android.net.conn.TETHER_STATE_CHA
+NGED flg=0x24000010 (has extras) }
+09-25 12:10:38.771  2173  2311 I MtkTethering: sho
+wTetheredNotification:true:0                      
+09-25 12:10:38.771  2173  2199 I WifiService: upda
+teInterfaceIpState uid=1000                       
+09-25 12:10:38.772  2173  2306 D WifiService: upda
+teInterfaceIpState: ifaceName=ap0 mode=1 previous 
+mode= null                                        
+09-25 12:10:38.774  1937  2074 D TetherController:
+ Setting IP forward enable = 1                    
+09-25 12:10:38.779  2173  2307 D WifiStateMachineP
+rime: received a message in WifiDisabledState: { w
+hen=-27ms what=3 target=com.android.internal.util.
+StateMachine$SmHandler }                          
+09-25 12:10:38.779  2173  2196 E BatteryExternalSt
+atsWorker: no controller energy info supplied for 
+wifi
+09-25 12:10:38.779  2173  2307 D WifiStateMachineP
+rime: Switching from WifiDisabledState to WifiDisa
+bled                                              
+09-25 12:10:38.779  2173  2307 D WifiStateMachineP
+rime: Entering WifiDisabledState                  
+09-25 12:10:38.778  1937  2074 D TetherController:
+ Starting tethering services                      
+09-25 12:10:38.777  2173  2311 D MtkWifiService: g
+etHotspotClients                                  
+09-25 12:10:38.781  2173  2307 D WifiStateMachineP
+rime: skip clearScanResults().                    
+09-25 12:10:38.781  2173  2311 I MtkTethering: get
+HotspotClientInfo:0:0                             
+09-25 12:10:38.784  1937  2074 D TetherController:
+ Sending update msg to dnsmasq [update_ifaces|ap0]
+09-25 12:10:38.784  1937  2074 D TetherController:
+ Tethering services running                       
+09-25 12:10:38.785  2949 29501 W NearbyMediums: [W
+IFI_RADIO] State was changed outside of our contro
+l. Updating the snapshot to match current radio st
+ate.                                              
+09-25 12:10:38.789  2173  2308 I WifiScanningServi
+ce: wifi driver unloaded                          
+09-25 12:10:38.789  2173  2308 E WificondControl: 
+No valid wificond scanner interface handler       
+09-25 12:10:38.798   403   403 W hwservicemanager:
+ getTransport: Cannot find entry android.hardware.
+tetheroffload.config@1.0::IOffloadConfig/default i
+n either framework or device manifest.            
+09-25 12:10:38.799  2173  2199 I Tethering: [Offlo
+adController] tethering offload config not support
+ed                                                
+09-25 12:10:38.801  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1283,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]
+09-25 12:10:38.801  2173  2307 D WIFI_UT : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1088, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 1000] ] with score 50                    
+09-25 12:10:38.801  2173  2307 D WIFI    : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1088, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 1000] ] with score 50
+09-25 12:10:38.805 11800 11800 W dnsmasq : type=14
+00 audit(0.0:11298): avc: denied { getattr } for p
+ath="pipe:[27372]" dev="pipefs" ino=27372 scontext
+=u:r:dnsmasq:s0 tcontext=u:r:netd:s0 tclass=fifo_f
+ile permissive=0                                  
+09-25 12:10:38.812  2568  2939 D PhoneInterfaceMan
+ager: [PhoneIntfMgr] getTetherApnRequired: subId=1
+ phoneId=0                                        
+09-25 12:10:38.816  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:10:38.816  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:10:38.819  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:10:38.820  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:10:38.821  2173  2364 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:10:38.824 11800 11800 I dnsmasq : started
+, version 2.51 cachesize 150                      
+09-25 12:10:38.824 11800 11800 I dnsmasq : compile
+ time options: IPv6 GNU-getopt no-I18N DHCP no-scr
+ipts                                              
+09-25 12:10:38.824 11800 11800 W dnsmasq : warning
+: no upstream servers configured
+09-25 12:10:38.824 11800 11800 I dnsmasq : DHCP, I
+P range 192.168.49.2 -- 192.168.49.254, lease time
+ 1h                                               
+09-25 12:10:38.824 11800 11800 I dnsmasq : DHCP, I
+P range 192.168.48.2 -- 192.168.48.254, lease time
+ 1h
+09-25 12:10:38.824 11800 11800 I dnsmasq : DHCP, I
+P range 192.168.47.2 -- 192.168.47.254, lease time
+ 1h                                               
+09-25 12:10:38.824 11800 11800 I dnsmasq : DHCP, I
+P range 192.168.46.2 -- 192.168.46.254, lease time
+ 1h
+09-25 12:10:38.824 11800 11800 I dnsmasq : DHCP, I
+P range 192.168.45.2 -- 192.168.45.254, lease time
+ 1h                                               
+09-25 12:10:38.824 11800 11800 I dnsmasq : DHCP, I
+P range 192.168.44.2 -- 192.168.44.254, lease time
+ 1h
+09-25 12:10:38.824 11800 11800 I dnsmasq : DHCP, I
+P range 192.168.43.2 -- 192.168.43.254, lease time
+ 1h                                               
+09-25 12:10:38.824 11800 11800 I dnsmasq : DHCP, I
+P range 192.168.42.2 -- 192.168.42.254, lease time
+ 1h                                               
+09-25 12:10:38.824 11800 11800 I dnsmasq : read /e
+tc/hosts - 2 addresses                            
+09-25 12:10:38.825 11800 11800 I dnsmasq : Closing
+ wildcard listener family=2                       
+09-25 12:10:38.826 11800 11800 I dnsmasq : Closing
+ wildcard listener family=10
+09-25 12:10:38.834  2173  2199 I Tethering: [Upstr
+eamNetworkMonitor] requesting mobile upstream netw
+ork: NetworkRequest [ NONE id=0, [ Transports: CEL
+LULAR Capabilities: INTERNET&NOT_RESTRICTED&TRUSTE
+D&NOT_VPN Unwanted: ] ]                           
+09-25 12:10:38.835  2173  2199 D MtkIPv6TetheringC
+oordinator: updateUpstreamNetworkState: NetworkSta
+te{null}                                          
+09-25 12:10:38.837  2173  2307 D WIFI_UT : got req
+uest NetworkRequest [ REQUEST id=1089, legacyType=
+5, [ Transports: CELLULAR Capabilities: INTERNET&N
+OT_RESTRICTED&TRUSTED&NOT_VPN Unwanted: ] ] with s
+core 50                                           
+09-25 12:10:38.837  2173  2307 D WIFI    : got req
+uest NetworkRequest [ REQUEST id=1089, legacyType=
+5, [ Transports: CELLULAR Capabilities: INTERNET&N
+OT_RESTRICTED&TRUSTED&NOT_VPN Unwanted: ] ] with s
+core 50
+09-25 12:10:38.845  2568 21813 D PhoneInterfaceMan
+ager: [PhoneIntfMgr] getTetherApnRequired: subId=1
+ phoneId=0                                        
+09-25 12:10:38.856  2173  2199 I Tethering: Lookin
+g for default routes on: {InterfaceName: ccmni0 Li
+nkAddresses: [10.60.99.185/32,]  Routes: [0.0.0.0/
+0 -> 10.60.99.185 ccmni0,10.60.99.185/32 -> 0.0.0.
+0 ccmni0,] DnsAddresses: [119.160.112.48,119.160.8
+0.146,] UsePrivateDns: false PrivateDnsServerName:
+ null Domains: null MTU: 1500 TcpBufferSizes: 2097
+152,4194304,8388608,262144,524288,1048576}        
+09-25 12:10:38.857  2173  2199 D MtkTethering: get
+TetheringInterfaces if4: ccmni0 if6: null         
+09-25 12:10:38.858  2173  2199 I Tethering: Found 
+upstream interface(s): [ccmni0]                   
+09-25 12:10:38.860  1937  2074 D TetherController:
+ setDnsForwarders(0xf0074 0 = '119.160.112.48')   
+09-25 12:10:38.860  1937  2074 D TetherController:
+ setDnsForwarders(0xf0074 1 = '119.160.80.146')   
+09-25 12:10:38.860  1937  2074 D TetherController:
+ Sending update msg to dnsmasq [update_dns|0xf0074
+|119.160.112.48|119.160.80.146]
+09-25 12:10:38.860 11800 11800 I dnsmasq : using n
+ameserver 119.160.80.146#53
+09-25 12:10:38.860 11800 11800 I dnsmasq : using n
+ameserver 119.160.112.48#53                       
+09-25 12:10:38.861  2648  2648 I Athena  : WIFI已 
+断开,移动数据已连接
+09-25 12:10:38.868  2648  2648 I Athena  : WIFI已 
+断开,移动数据已连接                               
+09-25 12:10:38.870  2173  2199 D MtkIPv6TetheringC
+oordinator: updateUpstreamNetworkState: NetworkSta
+te{116, [ Transports: CELLULAR Capabilities: INTER
+NET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_R
+OAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED Unwa
+nted:  LinkUpBandwidth>=51200Kbps LinkDnBandwidth>
+=102400Kbps Specifier: <1>], {InterfaceName: ccmni
+0 LinkAddresses: [10.60.99.185/32,]  Routes: [0.0.
+0.0/0 -> 10.60.99.185 ccmni0,10.60.99.185/32 -> 0.
+0.0.0 ccmni0,] DnsAddresses: [119.160.112.48,119.1
+60.80.146,] UsePrivateDns: false PrivateDnsServerN
+ame: null Domains: null MTU: 1500 TcpBufferSizes: 
+2097152,4194304,8388608,262144,524288,1048576}}   
+09-25 12:10:38.871  2173  2199 D MtkIPv6TetheringC
+oordinator: Check clatd:false:false               
+09-25 12:10:38.872  2348  2665 D WifiSignalControl
+ler: mCurrentState.inetCondition = 0              
+09-25 12:10:38.881  2648  2648 I Athena  : WIFI已 
+断开,移动数据已连接                               
+09-25 12:10:38.881  2568  2860 D PhoneInterfaceMan
+ager: [PhoneIntfMgr] getTetherApnRequired: subId=1
+ phoneId=0
+09-25 12:10:38.883  2173  2199 I Tethering: Lookin
+g for default routes on: {InterfaceName: ccmni0 Li
+nkAddresses: [10.60.99.185/32,]  Routes: [0.0.0.0/
+0 -> 10.60.99.185 ccmni0,10.60.99.185/32 -> 0.0.0.
+0 ccmni0,] DnsAddresses: [119.160.112.48,119.160.8
+0.146,] UsePrivateDns: false PrivateDnsServerName:
+ null Domains: null MTU: 1500 TcpBufferSizes: 2097
+152,4194304,8388608,262144,524288,1048576}        
+09-25 12:10:38.883  2173  2199 D MtkTethering: get
+TetheringInterfaces if4: ccmni0 if6: null         
+09-25 12:10:38.883  2173  2199 I Tethering: Found 
+upstream interface(s): [ccmni0]                   
+09-25 12:10:38.883  2648  2648 I Athena  : WIFI已 
+断开,移动数据已连接                               
+09-25 12:10:38.884  1937  2074 D TetherController:
+ setDnsForwarders(0xf0074 0 = '119.160.112.48')   
+09-25 12:10:38.884  1937  2074 D TetherController:
+ setDnsForwarders(0xf0074 1 = '119.160.80.146')   
+09-25 12:10:38.884  1937  2074 D TetherController:
+ Sending update msg to dnsmasq [update_dns|0xf0074
+|119.160.112.48|119.160.80.146]                   
+09-25 12:10:38.884 11800 11800 I dnsmasq : using n
+ameserver 119.160.80.146#53                       
+09-25 12:10:38.884 11800 11800 I dnsmasq : using n
+ameserver 119.160.112.48#53                       
+09-25 12:10:38.885  2173  2199 D MtkIPv6TetheringC
+oordinator: updateUpstreamNetworkState: NetworkSta
+te{116, [ Transports: CELLULAR Capabilities: INTER
+NET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_R
+OAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED Unwa
+nted:  LinkUpBandwidth>=51200Kbps LinkDnBandwidth>
+=102400Kbps Specifier: <1>], {InterfaceName: ccmni
+0 LinkAddresses: [10.60.99.185/32,]  Routes: [0.0.
+0.0/0 -> 10.60.99.185 ccmni0,10.60.99.185/32 -> 0.
+0.0.0 ccmni0,] DnsAddresses: [119.160.112.48,119.1
+60.80.146,] UsePrivateDns: false PrivateDnsServerN
+ame: null Domains: null MTU: 1500 TcpBufferSizes: 
+2097152,4194304,8388608,262144,524288,1048576}}   
+09-25 12:10:38.885  2173  2199 D MtkIPv6TetheringC
+oordinator: Check clatd:false:false               
+09-25 12:10:38.916  2648  2648 I Athena  : WIFI已 
+断开,移动数据已连接                               
+09-25 12:10:38.924  2648  2648 I Athena  : WIFI已 
+断开,移动数据已连接                               
+09-25 12:10:38.929  2348  2665 D WifiSignalControl
+ler: mCurrentState.inetCondition = 0              
+09-25 12:10:38.931  2348  2665 D WifiSignalControl
+ler: mCurrentState.inetCondition = 0              
+09-25 12:10:38.932  2568  2871 D PhoneInterfaceMan
+ager: [PhoneIntfMgr] getTetherApnRequired: subId=1
+ phoneId=0                                        
+09-25 12:10:38.934  2173  2199 I Tethering: Lookin
+g for default routes on: {InterfaceName: ccmni0 Li
+nkAddresses: [10.60.99.185/32,]  Routes: [0.0.0.0/
+0 -> 10.60.99.185 ccmni0,10.60.99.185/32 -> 0.0.0.
+0 ccmni0,] DnsAddresses: [119.160.112.48,119.160.8
+0.146,] UsePrivateDns: false PrivateDnsServerName:
+ null Domains: null MTU: 1500 TcpBufferSizes: 2097
+152,4194304,8388608,262144,524288,1048576}        
+09-25 12:10:38.934  2173  2199 D MtkTethering: get
+TetheringInterfaces if4: ccmni0 if6: null
+09-25 12:10:38.934  2173  2199 I Tethering: Found 
+upstream interface(s): [ccmni0]                   
+09-25 12:10:38.935  2348  2665 D WifiSignalControl
+ler: mCurrentState.inetCondition = 0
+09-25 12:10:38.935  1937  2074 D TetherController:
+ setDnsForwarders(0xf0074 0 = '119.160.112.48')
+09-25 12:10:38.935  1937  2074 D TetherController:
+ setDnsForwarders(0xf0074 1 = '119.160.80.146')   
+09-25 12:10:38.935  1937  2074 D TetherController:
+ Sending update msg to dnsmasq [update_dns|0xf0074
+|119.160.112.48|119.160.80.146]                   
+09-25 12:10:38.935 11800 11800 I dnsmasq : using n
+ameserver 119.160.80.146#53                       
+09-25 12:10:38.935 11800 11800 I dnsmasq : using n
+ameserver 119.160.112.48#53                       
+09-25 12:10:38.936  2173  2199 D MtkIPv6TetheringC
+oordinator: updateUpstreamNetworkState: NetworkSta
+te{116, [ Transports: CELLULAR Capabilities: INTER
+NET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_R
+OAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED Unwa
+nted:  LinkUpBandwidth>=51200Kbps LinkDnBandwidth>
+=102400Kbps Specifier: <1>], {InterfaceName: ccmni
+0 LinkAddresses: [10.60.99.185/32,]  Routes: [0.0.
+0.0/0 -> 10.60.99.185 ccmni0,10.60.99.185/32 -> 0.
+0.0.0 ccmni0,] DnsAddresses: [119.160.112.48,119.1
+60.80.146,] UsePrivateDns: false PrivateDnsServerN
+ame: null Domains: null MTU: 1500 TcpBufferSizes: 
+2097152,4194304,8388608,262144,524288,1048576}}   
+09-25 12:10:38.936  2173  2199 D MtkIPv6TetheringC
+oordinator: Check clatd:false:false
+09-25 12:10:38.963  2568  3042 D PhoneInterfaceMan
+ager: [PhoneIntfMgr] getTetherApnRequired: subId=1
+ phoneId=0                                        
+09-25 12:10:38.965  2173  2199 I Tethering: Lookin
+g for default routes on: {InterfaceName: ccmni0 Li
+nkAddresses: [10.60.99.185/32,]  Routes: [0.0.0.0/
+0 -> 10.60.99.185 ccmni0,10.60.99.185/32 -> 0.0.0.
+0 ccmni0,] DnsAddresses: [119.160.112.48,119.160.8
+0.146,] UsePrivateDns: false PrivateDnsServerName:
+ null Domains: null MTU: 1500 TcpBufferSizes: 2097
+152,4194304,8388608,262144,524288,1048576}        
+09-25 12:10:38.965  2173  2199 D MtkTethering: get
+TetheringInterfaces if4: ccmni0 if6: null         
+09-25 12:10:38.966  2173  2199 I Tethering: Found 
+upstream interface(s): [ccmni0]                   
+09-25 12:10:38.967  1937  2074 D TetherController:
+ setDnsForwarders(0xf0074 0 = '119.160.112.48')   
+09-25 12:10:38.967  1937  2074 D TetherController:
+ setDnsForwarders(0xf0074 1 = '119.160.80.146')   
+09-25 12:10:38.967  1937  2074 D TetherController:
+ Sending update msg to dnsmasq [update_dns|0xf0074
+|119.160.112.48|119.160.80.146]                   
+09-25 12:10:38.967 11800 11800 I dnsmasq : using n
+ameserver 119.160.80.146#53                       
+09-25 12:10:38.967 11800 11800 I dnsmasq : using n
+ameserver 119.160.112.48#53                       
+09-25 12:10:38.969  2173  2199 D MtkIPv6TetheringC
+oordinator: updateUpstreamNetworkState: NetworkSta
+te{116, [ Transports: CELLULAR Capabilities: INTER
+NET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_R
+OAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED Unwa
+nted:  LinkUpBandwidth>=51200Kbps LinkDnBandwidth>
+=102400Kbps Specifier: <1>], {InterfaceName: ccmni
+0 LinkAddresses: [10.60.99.185/32,]  Routes: [0.0.
+0.0/0 -> 10.60.99.185 ccmni0,10.60.99.185/32 -> 0.
+0.0.0 ccmni0,] DnsAddresses: [119.160.112.48,119.1
+60.80.146,] UsePrivateDns: false PrivateDnsServerN
+ame: null Domains: null MTU: 1500 TcpBufferSizes: 
+2097152,4194304,8388608,262144,524288,1048576}}   
+09-25 12:10:38.969  2173  2199 D MtkIPv6TetheringC
+oordinator: Check clatd:false:false               
+09-25 12:10:38.969  4439 11802 I Bugle   : Carrier
+ configs loaded: Bundle[{mtk_show_clir_setting_boo
+l=true, mtk_default_enhanced_4g_mode_bool=true, ca
+rrier_volte_provisioned_bool=false, disable_charge
+_indication_bool=false, httpSocketTimeout=60000, m
+tk_resume_hold_call_after_active_call_end_by_remot
+e=false, carrier_wfc_supports_wifi_only_bool=false
+, carrier_default_actions_on_default_network_avail
+able_string_array=[Ljava.lang.String;@a4cd850, mtk
+_ct_volte_status_bool=false, mtk_carrier_ss_need_c
+heck_data_roaming=false, operator_selection_expand
+_bool=true, disable_cdma_activation_code_bool=fals
+e, simplified_network_settings_bool=false, call_ba
+rring_visibility_bool=true, enable_apps_string_arr
+ay=null, carrier_default_wfc_ims_roaming_enabled_b
+ool=false, mtk_show_call_barring_password_bool=fal
+se, cdma_nonroaming_networks_string_array=null, al
+iasMinChars=2, mtk_key_multiline_allow_cross_line_
+conference_bool=false, wfc_data_spn_format_idx_int
+=0, hide_sim_lock_settings_bool=false, drop_video_
+call_when_answering_audio_call_bool=false, mtk_sho
+w_open_mobile_data_dialog_bool=false, ci_action_on
+_sys_update_bool=false, convert_cdma_caller_id_mmi
+_codes_while_roaming_on_3gpp_bool=false, support_e
+nhanced_call_blocking_bool=false, vvm_port_number_
+int=0, carrier_default_wfc_ims_enabled_bool=false,
+ dial_string_replace_string_array=null, gsm_nonroa
+ming_networks_string_array=null, hide_ims_apn_bool
+=false, show_toast_when_conference_full=true, vvm_
+destination_number_string=, dtmf_type_enabled_bool
+=false, allow_video_calling_fallback_bool=true, mt
+k_carrier_ims_ecbm_supported=false, mtk_domestic_r
+oaming_enabled_only_by_mobile_data_setting=false, 
+config_ims_package_override_string=com.google.andr
+oid.ims, mtk_support_enhanced_call_blocking_bool=f
+alse, support_auto_decline_upgrade_request_bool=tr
+ue, mtk_video_call_background_transmission=false, 
+smsToMmsTextThreshold=-1, disable_severe_when_extr
+eme_disabled_bool=true, force_home_network_bool=fa
+lse, enableSMSDeliveryReports=true, auto_retry_ena
+bled_bool=false, play_call_recording_tone_bool=fal
+se, carrier_force_disable_etws_cmas_test_bool=fals
+e, allow_emergency_video_calls_bool=false, csp_ena
+bled_bool=false, mtk_dialer_call_pull_bool=false, 
+default_sim_call_manager_string=, mtk_carrier_swap
+_vt_conference_to_foreground_before_merge=false, c
+all_forwarding_blocks_while_roaming_string_array=n
+ull, emergency_notification_delay_int=-1, support_
+video_conference_call_bool=false, ims_dtmf_tone_de
+lay_int=0, show_signal_strength_in_sim_status_bool
+=true, data_rapid_notification_bool=true, carrier_
+instant_lettering_escaped_chars_string=, carrier_d
+efault_wfc_ims_roaming_mode_int=2, mtk_carrier_swi
+tch_wfc_mode_required_bool=false, editable_wfc_mod
+e_bool=true, mtk_cdma_sms_7bit_encoding_type_int=9
+, support_direct_fdn_dialing_bool=false, carrier_w
+ifi_string_array=null, treat_downgraded_video_call
+s_as_video_calls_bool=false, wifi_calls_can_be_hd_
+audio=true, support_downgrade_vt_to_audio_bool=tru
+e, notify_handover_video_from_lte_to_wifi_bool=fal
+se, use_otasp_for_provisioning_bool=false, always_
+play_remote_hold_tone_bool=false, maxMessageTextSi
+ze=-1, duration_blocking_disabled_after_emergency_
+int=7200, carrier_metered_roaming_apn_types_string
+s=[Ljava.lang.String;@a80aa49, no_merge_req_after_
+max_connection=true, show_video_call_charges_alert
+_dialog_bool=false, carrier_network_service_wlan_p
+ackage_override_string=, show_apn_setting_cdma_boo
+l=false, carrier_instant_lettering_length_limit_in
+t=64, carrier_instant_lettering_invalid_chars_stri
+ng=, carrier_setup_app_string=, editable_wfc_roami
+ng_mode_bool=false, supportMmsContentDisposition=t
+rue, support_manage_ims_conference_call_bool=true,
+ allow_non_emergency_calls_in_ecm_bool=true, mtk_c
+arrier_ss_not_support_call_identity=false, mtk_key
+_roaming_bar_guard_bool=false, carrier_data_servic
+e_wlan_package_override_string=, use_rcs_presence_
+bool=false, config_telephony_use_own_number_for_vo
+icemail_bool=false, cdma_dtmf_tone_delay_int=100, 
+editable_voicemail_number_bool=false, carrier_data
+_call_apn_retry_after_disconnect_long=10000, filte
+red_cnap_names_string_array=null, enabledTransID=f
+als                                               
+09-25 12:10:38.980  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1283,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:10:38.990  2568  2871 D PhoneInterfaceMan
+ager: [PhoneIntfMgr] getTetherApnRequired: subId=1
+ phoneId=0                                        
+09-25 12:10:38.992  2173  2199 I Tethering: Lookin
+g for default routes on: {InterfaceName: ccmni0 Li
+nkAddresses: [10.60.99.185/32,]  Routes: [0.0.0.0/
+0 -> 10.60.99.185 ccmni0,10.60.99.185/32 -> 0.0.0.
+0 ccmni0,] DnsAddresses: [119.160.112.48,119.160.8
+0.146,] UsePrivateDns: false PrivateDnsServerName:
+ null Domains: null MTU: 1500 TcpBufferSizes: 2097
+152,4194304,8388608,262144,524288,1048576}        
+09-25 12:10:38.992  2173  2199 D MtkTethering: get
+TetheringInterfaces if4: ccmni0 if6: null         
+09-25 12:10:38.992  2173  2199 I Tethering: Found 
+upstream interface(s): [ccmni0]                   
+09-25 12:10:38.993  1937  2074 D TetherController:
+ setDnsForwarders(0xf0074 0 = '119.160.112.48')   
+09-25 12:10:38.993  1937  2074 D TetherController:
+ setDnsForwarders(0xf0074 1 = '119.160.80.146')   
+09-25 12:10:38.993  1937  2074 D TetherController:
+ Sending update msg to dnsmasq [update_dns|0xf0074
+|119.160.112.48|119.160.80.146]
+09-25 12:10:38.993 11800 11800 I dnsmasq : using n
+ameserver 119.160.80.146#53                       
+09-25 12:10:38.993 11800 11800 I dnsmasq : using n
+ameserver 119.160.112.48#53                       
+09-25 12:10:38.994  2173  2199 D MtkIPv6TetheringC
+oordinator: updateUpstreamNetworkState: NetworkSta
+te{116, [ Transports: CELLULAR Capabilities: INTER
+NET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_R
+OAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED Unwa
+nted:  LinkUpBandwidth>=51200Kbps LinkDnBandwidth>
+=102400Kbps Specifier: <1>], {InterfaceName: ccmni
+0 LinkAddresses: [10.60.99.185/32,]  Routes: [0.0.
+0.0/0 -> 10.60.99.185 ccmni0,10.60.99.185/32 -> 0.
+0.0.0 ccmni0,] DnsAddresses: [119.160.112.48,119.1
+60.80.146,] UsePrivateDns: false PrivateDnsServerN
+ame: null Domains: null MTU: 1500 TcpBufferSizes: 
+2097152,4194304,8388608,262144,524288,1048576}}   
+09-25 12:10:38.994  2173  2199 D MtkIPv6TetheringC
+oordinator: Check clatd:false:false               
+09-25 12:10:39.000  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1283,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:10:39.013  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1283,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:10:39.024  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1283,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:10:39.037  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1283,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:10:39.049  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1283,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:10:39.061  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1283,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:10:39.929  4357  4357 D PowerSaveUtils: c
+onfig details is : bright->255wifiEnable-> falsewi
+fiApEnable->truebtEnable->falsedataEnable->truegps
+Enable->falsethreeGEnable->trueautoSyncEnable->tru
+eisScreenModeOn->falseisUltraModeOn->falseisBatter
+ySaverOn->false                                   
+09-25 12:10:39.930  2648  2723 I Athena  : WIFI已 
+断开,移动数据已连接                               
+09-25 12:10:39.986  2648  2723 I Athena  : WIFI已 
+断开,移动数据已连接                               
+09-25 12:10:42.098 11797 11797 I hostapd : ap0: ST
+A a4:4e:31:83:ec:3c IEEE 802.11: associated       
+09-25 12:10:42.098  6704  6704 I wificond: New sta
+tion a4:4e:31:83:ec:3c associated with hotspot    
+09-25 12:10:42.099  2173  2307 D MtkSoftApManager:
+ Setting num stations on CMD_NUM_ASSOCIATED_STATIO
+NS_CHANGED                                        
+09-25 12:10:42.099 11797 11797 I hostapd : ap0: ST
+A a4:4e:31:83:ec:3c IEEE 802.11: associated       
+09-25 12:10:42.100 11797 11797 I hostapd : ap0: AP
+-STA-CONNECTED a4:4e:31:83:ec:3c                  
+09-25 12:10:42.100 11797 11797 I hostapd : Notifyi
+ng AP STA authorized to hidl control a4:4e:31:83:e
+c:3c                                              
+09-25 12:10:42.100  2173  2324 E MtkHostapdHalCall
+back: STA: a4:4e:31:83:ec:3cis connected          
+09-25 12:10:42.101  2173  2307 D MtkSoftApManager:
+ AP STA CONNECTED:a4:4e:31:83:ec:3c               
+09-25 12:10:42.101  2173  2307 D MtkSoftApManager:
+ Number of associated stations changed: 1         
+09-25 12:10:42.102  2173  2311 I MtkTethering: Int
+ent:Intent { act=android.net.wifi.WIFI_HOTSPOT_CLI
+ENTS_CHANGED flg=0x4000010 }                      
+09-25 12:10:42.102  2173  2307 D MtkSoftApManager:
+ Timeout message canceled                         
+09-25 12:10:42.102  2348  7795 V WifiManager: Soft
+ApCallbackProxy: onNumClientsChanged: numClients=1
+09-25 12:10:42.102  2173  2311 D MtkWifiService: g
+etHotspotClients                                  
+09-25 12:10:42.102  2173  2311 I MtkTethering: get
+HotspotClientInfo:1:0                             
+09-25 12:10:42.318 11800 11800 I dnsmasq : DHCPREQ
+UEST(ap0) 192.168.43.228 a4:4e:31:83:ec:3c        
+09-25 12:10:42.318 11800 11800 I dnsmasq : DHCPACK
+(ap0) 192.168.43.228 a4:4e:31:83:ec:3c DESKTOP-EIQ
+7K6O                                              
+09-25 12:10:43.155  2648  2699 I PowerMonitorHookC
+lient: unkown network interface:ap0               
+09-25 12:10:43.156  2648  2699 I PowerMonitorHookC
+lient: unkown network interface:ap0               
+09-25 12:10:43.470  2173  2309 D WifiP2pService: P
+2pDisabledState{ when=-4ms what=143366 arg1=7 targ
+et=com.android.internal.util.StateMachine$SmHandle
+r }                                               
+09-25 12:10:43.470  2173  2309 D WifiP2pService: D
+efaultState{ when=-4ms what=143366 arg1=7 target=c
+om.android.internal.util.StateMachine$SmHandler } 
+09-25 12:10:44.103  2173  2307 D MtkWifiService: g
+etClientIp deviceAddress = a4:4e:31:83:ec:3c      
+09-25 12:10:44.104  2173  2307 D MtkWifiService: g
+etClientDeviceName deviceAddress = a4:4e:31:83:ec:
+3c                                                
+09-25 12:10:44.105  2173  2307 D MtkSoftApManager:
+ CMD_POLL_IP_ADDRESS ,deviceAddress = a4:4e:31:83:
+ec:3c ipAddress = 192.168.43.228, count = 1       
+09-25 12:10:44.340  2648  2723 I Athena  : WIFI已 
+断开,移动数据已连接
+09-25 12:10:44.361  2648  2723 I Athena  : WIFI已 
+断开,移动数据已连接                               
+09-25 12:10:44.407  2648  2723 I Athena  : WIFI已 
+断开,移动数据已连接                               
+09-25 12:10:44.425  2648  2723 I Athena  : WIFI已 
+断开,移动数据已连接                               
+09-25 12:10:45.750  2348  2665 D WifiSignalControl
+ler: mCurrentState.inetCondition = 0              
+09-25 12:10:45.841  4439 11855 I Bugle   : Carrier
+ configs loaded: Bundle[{mtk_show_clir_setting_boo
+l=true, mtk_default_enhanced_4g_mode_bool=true, ca
+rrier_volte_provisioned_bool=false, disable_charge
+_indication_bool=false, httpSocketTimeout=60000, m
+tk_resume_hold_call_after_active_call_end_by_remot
+e=false, carrier_wfc_supports_wifi_only_bool=false
+, carrier_default_actions_on_default_network_avail
+able_string_array=[Ljava.lang.String;@64bb7b9, mtk
+_ct_volte_status_bool=false, mtk_carrier_ss_need_c
+heck_data_roaming=false, operator_selection_expand
+_bool=true, disable_cdma_activation_code_bool=fals
+e, simplified_network_settings_bool=false, call_ba
+rring_visibility_bool=true, enable_apps_string_arr
+ay=null, carrier_default_wfc_ims_roaming_enabled_b
+ool=false, mtk_show_call_barring_password_bool=fal
+se, cdma_nonroaming_networks_string_array=null, al
+iasMinChars=2, mtk_key_multiline_allow_cross_line_
+conference_bool=false, wfc_data_spn_format_idx_int
+=0, hide_sim_lock_settings_bool=false, drop_video_
+call_when_answering_audio_call_bool=false, mtk_sho
+w_open_mobile_data_dialog_bool=false, ci_action_on
+_sys_update_bool=false, convert_cdma_caller_id_mmi
+_codes_while_roaming_on_3gpp_bool=false, support_e
+nhanced_call_blocking_bool=false, vvm_port_number_
+int=0, carrier_default_wfc_ims_enabled_bool=false,
+ dial_string_replace_string_array=null, gsm_nonroa
+ming_networks_string_array=null, hide_ims_apn_bool
+=false, show_toast_when_conference_full=true, vvm_
+destination_number_string=, dtmf_type_enabled_bool
+=false, allow_video_calling_fallback_bool=true, mt
+k_carrier_ims_ecbm_supported=false, mtk_domestic_r
+oaming_enabled_only_by_mobile_data_setting=false, 
+config_ims_package_override_string=com.google.andr
+oid.ims, mtk_support_enhanced_call_blocking_bool=f
+alse, support_auto_decline_upgrade_request_bool=tr
+ue, mtk_video_call_background_transmission=false, 
+smsToMmsTextThreshold=-1, disable_severe_when_extr
+eme_disabled_bool=true, force_home_network_bool=fa
+lse, enableSMSDeliveryReports=true, auto_retry_ena
+bled_bool=false, play_call_recording_tone_bool=fal
+se, carrier_force_disable_etws_cmas_test_bool=fals
+e, allow_emergency_video_calls_bool=false, csp_ena
+bled_bool=false, mtk_dialer_call_pull_bool=false, 
+default_sim_call_manager_string=, mtk_carrier_swap
+_vt_conference_to_foreground_before_merge=false, c
+all_forwarding_blocks_while_roaming_string_array=n
+ull, emergency_notification_delay_int=-1, support_
+video_conference_call_bool=false, ims_dtmf_tone_de
+lay_int=0, show_signal_strength_in_sim_status_bool
+=true, data_rapid_notification_bool=true, carrier_
+instant_lettering_escaped_chars_string=, carrier_d
+efault_wfc_ims_roaming_mode_int=2, mtk_carrier_swi
+tch_wfc_mode_required_bool=false, editable_wfc_mod
+e_bool=true, mtk_cdma_sms_7bit_encoding_type_int=9
+, support_direct_fdn_dialing_bool=false, carrier_w
+ifi_string_array=null, treat_downgraded_video_call
+s_as_video_calls_bool=false, wifi_calls_can_be_hd_
+audio=true, support_downgrade_vt_to_audio_bool=tru
+e, notify_handover_video_from_lte_to_wifi_bool=fal
+se, use_otasp_for_provisioning_bool=false, always_
+play_remote_hold_tone_bool=false, maxMessageTextSi
+ze=-1, duration_blocking_disabled_after_emergency_
+int=7200, carrier_metered_roaming_apn_types_string
+s=[Ljava.lang.String;@24dc7fe, no_merge_req_after_
+max_connection=true, show_video_call_charges_alert
+_dialog_bool=false, carrier_network_service_wlan_p
+ackage_override_string=, show_apn_setting_cdma_boo
+l=false, carrier_instant_lettering_length_limit_in
+t=64, carrier_instant_lettering_invalid_chars_stri
+ng=, carrier_setup_app_string=, editable_wfc_roami
+ng_mode_bool=false, supportMmsContentDisposition=t
+rue, support_manage_ims_conference_call_bool=true,
+ allow_non_emergency_calls_in_ecm_bool=true, mtk_c
+arrier_ss_not_support_call_identity=false, mtk_key
+_roaming_bar_guard_bool=false, carrier_data_servic
+e_wlan_package_override_string=, use_rcs_presence_
+bool=false, config_telephony_use_own_number_for_vo
+icemail_bool=false, cdma_dtmf_tone_delay_int=100, 
+editable_voicemail_number_bool=false, carrier_data
+_call_apn_retry_after_disconnect_long=10000, filte
+red_cnap_names_string_array=null, enabledTransID=f
+als                                               
+09-25 12:10:50.379  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:10:50.379  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats
+09-25 12:10:50.380  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:10:50.381  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats
+09-25 12:10:50.381  2173  2364 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:10:53.161  2648  2699 I PowerMonitorHookC
+lient: unkown network interface:ap0               
+09-25 12:10:53.162  2648  2699 I PowerMonitorHookC
+lient: unkown network interface:ap0               
+09-25 12:10:54.528  4357  4357 D PowerSaveUtils: c
+onfig details is : bright->255wifiEnable-> falsewi
+fiApEnable->truebtEnable->falsedataEnable->truegps
+Enable->falsethreeGEnable->trueautoSyncEnable->tru
+eisScreenModeOn->falseisUltraModeOn->falseisBatter
+ySaverOn->false                                   
+09-25 12:11:03.171  2648  2699 I PowerMonitorHookC
+lient: unkown network interface:ap0               
+09-25 12:11:03.173  2648  2699 I PowerMonitorHookC
+lient: unkown network interface:ap0               
+^Z
+[1]+  Stopped                    su -c '          
+logcat -c                                         
+logcat | grep -iE "softap|hostapd|tether|ap0|wifi|
+dnsmasq"                                          
+'                                                 
+~ $ 09-25 12:11:13.169  2648  2699 I PowerMonitorH
+ookClient: unkown network interface:ap0           
+09-25 12:11:13.170  2648  2699 I PowerMonitorHookC
+lient: unkown network interface:ap0               
+~ $ 09-25 12:11:16.158  2173  2303 W NetworkStatsR
+ecorder: unknown interfaces [ap0, ccmni-lan, wlan0
+, lo, ccmni1], ignoring those stats               
+09-25 12:11:16.159  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:11:16.160  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:11:16.161  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:11:16.161  2173  2364 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+09-25 12:10:24.672  2173  2311 I MtkTethering: sho
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+wTetheredNotification:false:0
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+09-25 12:10:24.672  2173  2311 I MtkTethering: Ign
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+wifi@1.0-service-mediatek: Wifi HAL stopped       
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+09-25 12:10:24.829  2173  2307 I WifiVendorHal: Ve
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+09-25 12:10:24.829  2173  2307 I WifiNative: Succe
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+ssfully torn down Iface:{Name=ap0,Id=13,Type=AP}  
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+09-25 12:10:24.832  2173  2307 I WifiNative: Succe
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+ssfully initiated teardown for iface=ap0          
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+09-25 12:10:24.832  2173  2307 D MtkSoftApManager:
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+09-25 12:10:24.833  2173  2307 D MtkSoftApManager:
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+09-25 12:10:24.833  2173  2307 D MtkSoftApManager:
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+09-25 12:10:24.835  2173  2307 D MtkWifiApMonitor:
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+ stopMonitoring(ap0)                              
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+09-25 12:10:24.835  2173  2307 D MtkWifiApMonitor:
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+09-25 12:10:24.835  2348  7973 V WifiManager: Soft
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+{ act=android.net.wifi.WIFI_AP_STATE_CHANGED flg=0
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+09-25 12:10:24.836  2173  2173 D WifiService: hand
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+leWifiApStateChange: currentState=11 previousState
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+=10 errorCode= -1 ifaceName=ap0 mode=1            
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+09-25 12:10:24.836  2173  2173 I WifiService: upda
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+09-25 12:10:24.836  2173  2306 D WifiController: S
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+09-25 12:10:24.836  2173  2306 D WifiController: D
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+09-25 12:10:24.836  2173  2306 D WifiController: S
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+09-25 12:10:24.836  2173  2306 D WifiController: S
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+09-25 12:10:24.836  2173  2306 D WifiController: D
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+09-25 12:10:24.836  2173  2306 D WifiService: upda
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+09-25 12:10:24.839  2173  2307 D WifiStateMachineP
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+rime: received a message in WifiDisabledState: { w
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+09-25 12:10:24.839  2173  2307 D WifiStateMachineP
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+rime: Switching from WifiDisabledState to ClientMo
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+09-25 12:10:24.839  2173  2311 I MtkTethering: Int
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+ent:Intent { act=android.net.wifi.WIFI_HOTSPOT_CLI
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+09-25 12:10:24.839  2173  2307 D WifiStateMachineP
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+09-25 12:10:24.840  2173  2307 D WifiClientModeMan
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+09-25 12:10:24.840  2173  2307 D WifiStateMachineP
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+wifi                                              
+09-25 12:11:16.266  2173  2501 I ActivityManager: 
+09-25 12:10:24.847  2173  2173 D WifiP2pService: W
+~ $ 09-25 12:11:18.581  2173  2307 D WIFI_UT : got
+ request NetworkRequest [ TRACK_DEFAULT id=1091, [
+ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Unw
+anted:  Uid: 10147] ] with score 50               
+09-25 12:11:18.581  2173  2307 D WIFI    : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1091, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10147] ] with score 50                   
+09-25 12:11:18.599  2173  2307 D WIFI_UT : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1092, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10147] ] with score 50                   
+09-25 12:11:18.599  2173  2307 D WIFI    : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1092, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10147] ] with score 50                   
+09-25 12:11:19.103  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats
+09-25 12:11:19.103  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats
+09-25 12:11:19.104  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:11:19.105  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:11:19.105  2173  2364 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:11:20.649  4439 12004 I Bugle   : Carrier
+ configs loaded: Bundle[{mtk_show_clir_setting_boo
+l=true, mtk_default_enhanced_4g_mode_bool=true, ca
+rrier_volte_provisioned_bool=false, disable_charge
+_indication_bool=false, httpSocketTimeout=60000, m
+tk_resume_hold_call_after_active_call_end_by_remot
+e=false, carrier_wfc_supports_wifi_only_bool=false
+, carrier_default_actions_on_default_network_avail
+able_string_array=[Ljava.lang.String;@6ac4474, mtk
+_ct_volte_status_bool=false, mtk_carrier_ss_need_c
+heck_data_roaming=false, operator_selection_expand
+_bool=true, disable_cdma_activation_code_bool=fals
+e, simplified_network_settings_bool=false, call_ba
+rring_visibility_bool=true, enable_apps_string_arr
+ay=null, carrier_default_wfc_ims_roaming_enabled_b
+ool=false, mtk_show_call_barring_password_bool=fal
+se, cdma_nonroaming_networks_string_array=null, al
+iasMinChars=2, mtk_key_multiline_allow_cross_line_
+conference_bool=false, wfc_data_spn_format_idx_int
+=0, hide_sim_lock_settings_bool=false, drop_video_
+call_when_answering_audio_call_bool=false, mtk_sho
+w_open_mobile_data_dialog_bool=false, ci_action_on
+_sys_update_bool=false, convert_cdma_caller_id_mmi
+_codes_while_roaming_on_3gpp_bool=false, support_e
+nhanced_call_blocking_bool=false, vvm_port_number_
+int=0, carrier_default_wfc_ims_enabled_bool=false,
+ dial_string_replace_string_array=null, gsm_nonroa
+ming_networks_string_array=null, hide_ims_apn_bool
+=false, show_toast_when_conference_full=true, vvm_
+destination_number_string=, dtmf_type_enabled_bool
+=false, allow_video_calling_fallback_bool=true, mt
+k_carrier_ims_ecbm_supported=false, mtk_domestic_r
+oaming_enabled_only_by_mobile_data_setting=false, 
+config_ims_package_override_string=com.google.andr
+oid.ims, mtk_support_enhanced_call_blocking_bool=f
+alse, support_auto_decline_upgrade_request_bool=tr
+ue, mtk_video_call_background_transmission=false, 
+smsToMmsTextThreshold=-1, disable_severe_when_extr
+eme_disabled_bool=true, force_home_network_bool=fa
+lse, enableSMSDeliveryReports=true, auto_retry_ena
+bled_bool=false, play_call_recording_tone_bool=fal
+se, carrier_force_disable_etws_cmas_test_bool=fals
+e, allow_emergency_video_calls_bool=false, csp_ena
+bled_bool=false, mtk_dialer_call_pull_bool=false, 
+default_sim_call_manager_string=, mtk_carrier_swap
+_vt_conference_to_foreground_before_merge=false, c
+all_forwarding_blocks_while_roaming_string_array=n
+ull, emergency_notification_delay_int=-1, support_
+video_conference_call_bool=false, ims_dtmf_tone_de
+lay_int=0, show_signal_strength_in_sim_status_bool
+=true, data_rapid_notification_bool=true, carrier_
+instant_lettering_escaped_chars_string=, carrier_d
+efault_wfc_ims_roaming_mode_int=2, mtk_carrier_swi
+tch_wfc_mode_required_bool=false, editable_wfc_mod
+e_bool=true, mtk_cdma_sms_7bit_encoding_type_int=9
+, support_direct_fdn_dialing_bool=false, carrier_w
+ifi_string_array=null, treat_downgraded_video_call
+s_as_video_calls_bool=false, wifi_calls_can_be_hd_
+audio=true, support_downgrade_vt_to_audio_bool=tru
+e, notify_handover_video_from_lte_to_wifi_bool=fal
+se, use_otasp_for_provisioning_bool=false, always_
+play_remote_hold_tone_bool=false, maxMessageTextSi
+ze=-1, duration_blocking_disabled_after_emergency_
+int=7200, carrier_metered_roaming_apn_types_string
+s=[Ljava.lang.String;@9ecad9d, no_merge_req_after_
+max_connection=true, show_video_call_charges_alert
+_dialog_bool=false, carrier_network_service_wlan_p
+ackage_override_string=, show_apn_setting_cdma_boo
+l=false, carrier_instant_lettering_length_limit_in
+t=64, carrier_instant_lettering_invalid_chars_stri
+ng=, carrier_setup_app_string=, editable_wfc_roami
+ng_mode_bool=false, supportMmsContentDisposition=t
+rue, support_manage_ims_conference_call_bool=true,
+ allow_non_emergency_calls_in_ecm_bool=true, mtk_c
+arrier_ss_not_support_call_identity=false, mtk_key
+_roaming_bar_guard_bool=false, carrier_data_servic
+e_wlan_package_override_string=, use_rcs_presence_
+bool=false, config_telephony_use_own_number_for_vo
+icemail_bool=false, cdma_dtmf_tone_delay_int=100, 
+editable_voicemail_number_bool=false, carrier_data
+_call_apn_retry_after_disconnect_long=10000, filte
+red_cnap_names_string_array=null, enabledTransID=f
+als
+09-25 12:11:22.082  4439 12008 I Bugle   : Carrier
+ configs loaded: Bundle[{mtk_show_clir_setting_boo
+l=true, mtk_default_enhanced_4g_mode_bool=true, ca
+rrier_volte_provisioned_bool=false, disable_charge
+_indication_bool=false, httpSocketTimeout=60000, m
+tk_resume_hold_call_after_active_call_end_by_remot
+e=false, carrier_wfc_supports_wifi_only_bool=false
+, carrier_default_actions_on_default_network_avail
+able_string_array=[Ljava.lang.String;@879380d, mtk
+_ct_volte_status_bool=false, mtk_carrier_ss_need_c
+heck_data_roaming=false, operator_selection_expand
+_bool=true, disable_cdma_activation_code_bool=fals
+e, simplified_network_settings_bool=false, call_ba
+rring_visibility_bool=true, enable_apps_string_arr
+ay=null, carrier_default_wfc_ims_roaming_enabled_b
+ool=false, mtk_show_call_barring_password_bool=fal
+se, cdma_nonroaming_networks_string_array=null, al
+iasMinChars=2, mtk_key_multiline_allow_cross_line_
+conference_bool=false, wfc_data_spn_format_idx_int
+=0, hide_sim_lock_settings_bool=false, drop_video_
+call_when_answering_audio_call_bool=false, mtk_sho
+w_open_mobile_data_dialog_bool=false, ci_action_on
+_sys_update_bool=false, convert_cdma_caller_id_mmi
+_codes_while_roaming_on_3gpp_bool=false, support_e
+nhanced_call_blocking_bool=false, vvm_port_number_
+int=0, carrier_default_wfc_ims_enabled_bool=false,
+ dial_string_replace_string_array=null, gsm_nonroa
+ming_networks_string_array=null, hide_ims_apn_bool
+=false, show_toast_when_conference_full=true, vvm_
+destination_number_string=, dtmf_type_enabled_bool
+=false, allow_video_calling_fallback_bool=true, mt
+k_carrier_ims_ecbm_supported=false, mtk_domestic_r
+oaming_enabled_only_by_mobile_data_setting=false, 
+config_ims_package_override_string=com.google.andr
+oid.ims, mtk_support_enhanced_call_blocking_bool=f
+alse, support_auto_decline_upgrade_request_bool=tr
+ue, mtk_video_call_background_transmission=false, 
+smsToMmsTextThreshold=-1, disable_severe_when_extr
+eme_disabled_bool=true, force_home_network_bool=fa
+lse, enableSMSDeliveryReports=true, auto_retry_ena
+bled_bool=false, play_call_recording_tone_bool=fal
+se, carrier_force_disable_etws_cmas_test_bool=fals
+e, allow_emergency_video_calls_bool=false, csp_ena
+bled_bool=false, mtk_dialer_call_pull_bool=false, 
+default_sim_call_manager_string=, mtk_carrier_swap
+_vt_conference_to_foreground_before_merge=false, c
+all_forwarding_blocks_while_roaming_string_array=n
+ull, emergency_notification_delay_int=-1, support_
+video_conference_call_bool=false, ims_dtmf_tone_de
+lay_int=0, show_signal_strength_in_sim_status_bool
+=true, data_rapid_notification_bool=true, carrier_
+instant_lettering_escaped_chars_string=, carrier_d
+efault_wfc_ims_roaming_mode_int=2, mtk_carrier_swi
+tch_wfc_mode_required_bool=false, editable_wfc_mod
+e_bool=true, mtk_cdma_sms_7bit_encoding_type_int=9
+, support_direct_fdn_dialing_bool=false, carrier_w
+ifi_string_array=null, treat_downgraded_video_call
+s_as_video_calls_bool=false, wifi_calls_can_be_hd_
+audio=true, support_downgrade_vt_to_audio_bool=tru
+e, notify_handover_video_from_lte_to_wifi_bool=fal
+se, use_otasp_for_provisioning_bool=false, always_
+play_remote_hold_tone_bool=false, maxMessageTextSi
+ze=-1, duration_blocking_disabled_after_emergency_
+int=7200, carrier_metered_roaming_apn_types_string
+s=[Ljava.lang.String;@1bf03c2, no_merge_req_after_
+max_connection=true, show_video_call_charges_alert
+_dialog_bool=false, carrier_network_service_wlan_p
+ackage_override_string=, show_apn_setting_cdma_boo
+l=false, carrier_instant_lettering_length_limit_in
+t=64, carrier_instant_lettering_invalid_chars_stri
+ng=, carrier_setup_app_string=, editable_wfc_roami
+ng_mode_bool=false, supportMmsContentDisposition=t
+rue, support_manage_ims_conference_call_bool=true,
+ allow_non_emergency_calls_in_ecm_bool=true, mtk_c
+arrier_ss_not_support_call_identity=false, mtk_key
+_roaming_bar_guard_bool=false, carrier_data_servic
+e_wlan_package_override_string=, use_rcs_presence_
+bool=false, config_telephony_use_own_number_for_vo
+icemail_bool=false, cdma_dtmf_tone_delay_int=100, 
+editable_voicemail_number_bool=false, carrier_data
+_call_apn_retry_after_disconnect_long=10000, filte
+red_cnap_names_string_array=null, enabledTransID=f
+als                                               
+09-25 12:11:23.172  2648  2699 I PowerMonitorHookC
+lient: unkown network interface:ap0               
+09-25 12:11:25.983  2648  2723 I Athena  : WIFI已 
+断开,移动数据已连接
+09-25 12:11:26.007  2648  2723 I Athena  : WIFI已 
+断开,移动数据已连接                               
+09-25 12:11:26.057  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:11:26.057  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:11:26.059  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:11:26.060  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:11:26.060  2173  2364 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:11:32.158  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:11:32.159  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:11:32.160  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:11:32.161  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:11:32.161  2173  2364 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:11:33.179  2648  2699 I PowerMonitorHookC
+lient: unkown network interface:ap0               
+09-25 12:11:34.137  2648  2723 I Athena  : WIFI已 
+断开,移动数据已连接                               
+09-25 12:11:34.159  2648  2723 I Athena  : WIFI已 
+断开,移动数据已连接                               
+09-25 12:11:34.201  2648  2723 I Athena  : WIFI已 
+断开,移动数据已连接                               
+09-25 12:11:34.219  2648  2723 I Athena  : WIFI已 
+断开,移动数据已连接                               
+09-25 12:11:34.273  2648  2723 I Athena  : WIFI已 
+断开,移动数据已连接                               
+09-25 12:11:34.291  2648  2723 I Athena  : WIFI已 
+断开,移动数据已连接                               
+09-25 12:11:35.400  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:11:35.400  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:11:35.401  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:11:35.402  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:11:35.403  2173  2364 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:11:41.825  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:11:41.826  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:11:41.827  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:11:41.828  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:11:41.829  2173  2364 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:11:43.179  2648  2699 I PowerMonitorHookC
+lient: unkown network interface:ap0               
+09-25 12:11:43.180  2648  2699 I PowerMonitorHookC
+lient: unkown network interface:ap0               
+09-25 12:11:45.069  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:11:45.069  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:11:45.070  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:11:45.071  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:11:45.072  2173  2364 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+~ $ 09-25 12:11:53.180  2648  2699 I PowerMonitorH
+ookClient: unkown network interface:ap0           
+09-25 12:11:54.912  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:11:54.913  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:11:54.915  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:11:54.915  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:11:54.916  2173  2364 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:11:59.107  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:11:59.107  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:11:59.110  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:11:59.112  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:11:59.113  2173  2364 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:12:03.192  2648  2699 I PowerMonitorHookC
+lient: unkown network interface:ap0               
+~ $ 09-25 12:12:05.788  4357  4357 D PowerSaveUtil
+s: config details is : bright->255wifiEnable-> fal
+sewifiApEnable->truebtEnable->falsedataEnable->tru
+egpsEnable->falsethreeGEnable->trueautoSyncEnable-
+>trueisScreenModeOn->falseisUltraModeOn->falseisBa
+tterySaverOn->false
+~ $

@@ -1,0 +1,609 @@
+=== ROOT ANDROID HOTSPOT CAPABILITY REPORT ===
+Generated: Fri Sep 25 11:10:46 PKT 2026
+
+===== DEVICE =====
+INFINIX MOBILITY LIMITED
+Infinix X650C
+9
+28
+mt6765
+mt6765
+
+===== WIFI INTERFACE =====
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: ccmni0: <NOARP> mtu 1428 qdisc mq state DOWN mode DEFAULT group default qlen 1000
+    link/ppp 32:5e:22:37:43:a3 brd ff:ff:ff:ff:ff:ff
+3: ccmni1: <NOARP,UP,LOWER_UP> mtu 1500 qdisc mq state UNKNOWN mode DEFAULT group default qlen 1000
+    link/ppp be:de:28:7e:37:4b brd ff:ff:ff:ff:ff:ff
+4: ccmni2: <NOARP> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ppp 5e:d6:63:43:6a:0b brd ff:ff:ff:ff:ff:ff
+5: ccmni3: <NOARP> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ppp 7e:e1:e7:5a:d3:7e brd ff:ff:ff:ff:ff:ff
+6: ccmni4: <NOARP> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ppp 4a:08:43:63:2c:81 brd ff:ff:ff:ff:ff:ff
+7: ccmni5: <NOARP> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ppp ae:0b:e5:d6:21:5b brd ff:ff:ff:ff:ff:ff
+8: ccmni6: <NOARP> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ppp 1a:4e:90:8b:b1:a6 brd ff:ff:ff:ff:ff:ff
+9: ccmni7: <NOARP> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ppp 46:dd:c4:14:92:90 brd ff:ff:ff:ff:ff:ff
+10: ccmni8: <NOARP> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ppp 62:c4:e1:8a:b3:67 brd ff:ff:ff:ff:ff:ff
+11: ccmni9: <NOARP> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ppp ce:98:88:85:0f:38 brd ff:ff:ff:ff:ff:ff
+12: ccmni10: <NOARP> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ppp 2e:ef:4c:61:53:a1 brd ff:ff:ff:ff:ff:ff
+13: ccmni11: <NOARP> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ppp d6:10:a6:47:6e:30 brd ff:ff:ff:ff:ff:ff
+14: ccmni12: <NOARP> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ppp f6:da:c7:75:86:fe brd ff:ff:ff:ff:ff:ff
+15: ccmni13: <NOARP> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ppp b6:e0:95:47:5f:74 brd ff:ff:ff:ff:ff:ff
+16: ccmni14: <NOARP> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ppp ce:3d:10:7d:cc:5e brd ff:ff:ff:ff:ff:ff
+17: ccmni15: <NOARP> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ppp b2:d6:b0:b5:86:fc brd ff:ff:ff:ff:ff:ff
+18: ccmni16: <NOARP> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ppp 0a:68:1f:11:3a:06 brd ff:ff:ff:ff:ff:ff
+19: ccmni17: <NOARP> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ppp 22:29:b2:a7:d5:a7 brd ff:ff:ff:ff:ff:ff
+20: ccmni18: <NOARP> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ppp 02:8c:a0:78:0d:62 brd ff:ff:ff:ff:ff:ff
+21: ccmni19: <NOARP> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ppp b2:95:ef:66:45:f9 brd ff:ff:ff:ff:ff:ff
+22: ccmni20: <NOARP> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ppp 16:f9:b3:6d:0e:c8 brd ff:ff:ff:ff:ff:ff
+23: ccmni-lan: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ether 92:d5:b7:fb:6d:c0 brd ff:ff:ff:ff:ff:ff
+24: ifb0: <BROADCAST,NOARP> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 32
+    link/ether 8e:dd:0c:a4:f0:d0 brd ff:ff:ff:ff:ff:ff
+25: ifb1: <BROADCAST,NOARP> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 32
+    link/ether d6:b9:59:d4:45:e8 brd ff:ff:ff:ff:ff:ff
+26: tunl0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN mode DEFAULT group default qlen 1
+    link/ipip 0.0.0.0 brd 0.0.0.0
+27: ip_vti0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN mode DEFAULT group default qlen 1
+    link/ipip 0.0.0.0 brd 0.0.0.0
+28: ip6_vti0@NONE: <NOARP> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1
+    link/tunnel6 :: brd ::
+29: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN mode DEFAULT group default qlen 1
+    link/sit 0.0.0.0 brd 0.0.0.0
+30: ip6tnl0@NONE: <NOARP> mtu 1452 qdisc noop state DOWN mode DEFAULT group default qlen 1
+    link/tunnel6 :: brd ::
+
+===== WIFI DRIVER MODULES =====
+Module                  Size  Used by
+wlan_drv_gen4m       1642496  0 
+wmt_chrdev_wifi        28672  1 wlan_drv_gen4m
+gps_drv                61440  0 
+fmradio_drv           172032  0 
+bt_drv                 28672  0 
+wmt_drv              1167360  6 wlan_drv_gen4m,wmt_chrdev_wifi,gps_drv,fmradio_drv,bt_drv
+fpsgo                  16384  0 
+
+===== WIFI LOGS =====
+[20208.875358] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(457, 1437),input_w =[1]
+[20208.883841] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(457, 1437),input_w =[1]
+[20209.223581] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(592, 1145),input_w =[1]
+[20209.231930] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(592, 1145),input_w =[1]
+[20209.422405] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(478, 1431),input_w =[1]
+[20209.431143] (0)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(478, 1431),input_w =[1]
+[20209.720867] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(174, 1147),input_w =[1]
+[20209.729266] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(174, 1147),input_w =[1]
+[20210.035886] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(251, 1351),input_w =[1]
+[20210.044246] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(251, 1351),input_w =[1]
+[20210.301176] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(321, 1193),input_w =[1]
+[20210.309833] (0)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(321, 1193),input_w =[1]
+[20210.483422] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(405, 1433),input_w =[1]
+[20210.492039] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(405, 1433),input_w =[1]
+[20210.765241] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(654, 1149),input_w =[1]
+[20210.773557] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(654, 1149),input_w =[1]
+[20211.527924] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(676, 1346),input_w =[1]
+[20211.536267] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(676, 1346),input_w =[1]
+[20212.257185] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(293, 1338),input_w =[1]
+[20212.265592] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(293, 1338),input_w =[1]
+[20212.422993] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(590, 1133),input_w =[1]
+[20212.431734] (0)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(590, 1133),input_w =[1]
+[20212.605331] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(578, 1336),input_w =[1]
+[20212.613720] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(578, 1336),input_w =[1]
+[20212.754509] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(580, 1350),input_w =[1]
+[20212.762913] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(580, 1350),input_w =[1]
+[20213.036362] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(515, 1362),input_w =[1]
+[20213.044751] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(515, 1362),input_w =[1]
+[20213.235219] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(208, 1265),input_w =[1]
+[20213.243783] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(208, 1265),input_w =[1]
+[20213.384437] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(445, 1434),input_w =[1]
+[20213.392986] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(445, 1434),input_w =[1]
+[20213.749226] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(75, 1253),input_w =[1]
+[20213.757608] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(75, 1253),input_w =[1]
+[20213.898357] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(513, 1344),input_w =[1]
+[20213.906902] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(513, 1344),input_w =[1]
+[20214.047591] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(216, 1246),input_w =[1]
+[20214.055970] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(216, 1246),input_w =[1]
+[20214.147126] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(431, 1436),input_w =[1]
+[20214.155473] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(431, 1436),input_w =[1]
+[20214.760385] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(394, 1264),input_w =[1]
+[20214.768819] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(394, 1264),input_w =[1]
+[20214.959283] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(526, 1143),input_w =[1]
+[20214.967661] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(526, 1143),input_w =[1]
+[20215.207988] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(340, 1356),input_w =[1]
+[20215.216329] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(340, 1356),input_w =[1]
+[20215.423467] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(172, 1157),input_w =[1]
+[20215.431866] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(172, 1157),input_w =[1]
+[20215.672265] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(430, 1425),input_w =[1]
+[20215.680685] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(430, 1425),input_w =[1]
+[20216.070033] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(57, 1246),input_w =[1]
+[20216.078384] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(57, 1246),input_w =[1]
+[20216.202837] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(453, 1436),input_w =[1]
+[20216.211159] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(453, 1436),input_w =[1]
+[20216.749855] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(283, 1236),input_w =[1]
+[20216.758032] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(283, 1236),input_w =[1]
+[20216.915488] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(539, 1136),input_w =[1]
+[20216.923851] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(539, 1136),input_w =[1]
+[20217.114439] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(502, 1369),input_w =[1]
+[20217.122802] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(502, 1369),input_w =[1]
+[20217.346456] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(665, 1232),input_w =[1]
+[20217.354854] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(665, 1232),input_w =[1]
+[20217.545433] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(502, 1426),input_w =[1]
+[20217.553800] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(502, 1426),input_w =[1]
+[20217.777636] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(612, 1144),input_w =[1]
+[20217.786004] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(612, 1144),input_w =[1]
+[20217.976491] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(456, 1179),input_w =[1]
+[20217.984848] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(456, 1179),input_w =[1]
+[20218.208517] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(329, 1162),input_w =[1]
+[20218.216877] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(329, 1162),input_w =[1]
+[20218.490558] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(680, 1145),input_w =[1]
+[20218.498775] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(680, 1145),input_w =[1]
+[20218.722584] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(496, 1162),input_w =[1]
+[20218.730812] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(496, 1162),input_w =[1]
+[20219.087186] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(309, 1138),input_w =[1]
+[20219.095571] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(309, 1138),input_w =[1]
+[20219.269456] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(428, 1436),input_w =[1]
+[20219.277839] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(428, 1436),input_w =[1]
+[20224.325601] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(347, 1153),input_w =[1]
+[20224.333952] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(347, 1153),input_w =[1]
+[20224.590878] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(223, 1333),input_w =[1]
+[20224.599219] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(223, 1333),input_w =[1]
+[20224.756603] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(321, 1174),input_w =[1]
+[20224.765141] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(321, 1174),input_w =[1]
+[20224.999904] (6)[478:fuelgauged]MTK_FG: [fg_find_ui_low_limit]vbat=38440 ith:0 34800,limitsoc:200
+[20225.003598] (6)[478:fuelgauged]MTK_FG: [fg_bat_int1_handler]g_bat_cycle_ncar=37832
+[20225.011999] (5)[478:fuelgauged]MTK_FG: [FGADC_info] tmp:40 40 40 rdnafg:0 vc:0 disable_fg:0:0 fg_v:0:10000:43792:-19771:48602:4067:5933:5933 low_temp:0 0 0
+[20225.012077] (5)[478:fuelgauged]MTK_FG: [FGADC_intr_end][FG_INTR_UISOC_LT]soc:5933 fg_c_soc:6281 fg_v_soc:5933 ui_soc:6292 vc_diff:348 vc_mode 0 VBAT 38460 T:[40 V 40 C 40] D0_C 10000 D0_V 10000 CAR[c:-18078 v:-19771] Q:[48602 48602 48602 48602] aging 10000 bat_cycle 23 Trk[0(-3780):0:0] UI[0:1] Chr[0:9999:10000] pseudo1 -79  DC_ratio 100 dodinit[13][0],I:-6300
+[20225.016807] (7)[29764:kworker/7:1]line:506 [mtk_power_misc_psy_event] tmp = 40 
+[20225.017449] -(7)[478:fuelgauged]mtk_rtc_hal_common: hal_rtc_get_spare_register: cmd[0], get rg[0x5aa, 0xff , 8] = 0xbf
+[20225.017471] -(7)[478:fuelgauged]mtk_rtc_hal_common: hal_rtc_set_spare_register: cmd[0], set rg[0x5aa, 0xff , 8] = 0xbf
+[20225.181586] (4)[412:logd.auditd]type=1400 audit(1790316399.456:10060): avc: denied { read } for pid=30651 comm="re-initialized>" name="u:object_r:mtk_amslog_prop:s0" dev="tmpfs" ino=9754 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:mtk_amslog_prop:s0 tclass=file permissive=0
+[20225.486048] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(616, 1017),input_w =[1]
+[20225.494376] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(616, 1017),input_w =[1]
+[20228.304259] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(174, 1594),input_w =[1]
+[20228.312612] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(174, 1594),input_w =[1]
+[20229.547469] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(719, 1093),input_w =[1]
+[20229.555789] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(719, 1093),input_w =[1]
+[20229.962187] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(432, 919),input_w =[1]
+[20229.970292] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(432, 919),input_w =[1]
+[20230.083459] (4)[412:logd.auditd]type=1400 audit(1790316399.456:10060): avc: denied { read } for pid=30651 comm="re-initialized>" name="u:object_r:mtk_amslog_prop:s0" dev="tmpfs" ino=9754 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:mtk_amslog_prop:s0 tclass=file permissive=0
+[20230.741159] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(0, 655),input_w =[1]
+[20230.749410] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(0, 655),input_w =[1]
+[20231.735751] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(2, 653),input_w =[1]
+[20231.744179] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(2, 653),input_w =[1]
+[20233.194555] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(6, 651),input_w =[1]
+[20233.202831] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(6, 651),input_w =[1]
+[20233.570226] (5)[478:fuelgauged]MTK_FG: get_kernel_cmd:1 0
+[20233.573585] (5)[478:fuelgauged]MTK_FG: [FGTEST]car:-18097 mah_ocv:39667 ocv_v:39405 vbat:37740,cur1:-9429,cur2:-8600,iavg:-5400
+[20233.576730] (6)[478:fuelgauged]MTK_FG: {FGADC}soc:5933 fg_c_soc:6281 fg_v_soc:5933 ui_soc:6292 vc_diff:348 vc_mode 0 VBAT 37950 T:[40 V 40 C 40] D0_C 10000 D0_V 10000 CAR[c:-18078 v:-19771]Q:[48602 48602 48602 48602] aging 10000 bat_cycle 23 Trk[0:0:0] UI[0:1] Chr[0:9999:10000] pseudo1 -79 DC_ratio 100 vboot:35474 35474 dod_init[13]
+[20233.924018] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(3, 663),input_w =[1]
+[20233.932318] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(3, 663),input_w =[1]
+[20234.935210] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(2, 655),input_w =[1]
+[20234.943519] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(2, 655),input_w =[1]
+[20236.609510] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(199, 1589),input_w =[1]
+[20236.618086] (0)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(199, 1589),input_w =[1]
+[20237.338987] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(704, 982),input_w =[1]
+[20237.347263] (2)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(704, 982),input_w =[1]
+[20237.703596] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(403, 900),input_w =[1]
+[20237.711921] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(403, 900),input_w =[1]
+[20240.123936] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(39, 780),input_w =[1]
+[20240.132249] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(39, 780),input_w =[1]
+[20241.466769] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(9, 751),input_w =[1]
+[20241.475268] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(9, 751),input_w =[1]
+[20244.517183] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(137, 987),input_w =[1]
+[20244.525302] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(137, 987),input_w =[1]
+[20250.949161] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(10, 717),input_w =[1]
+[20250.957450] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(10, 717),input_w =[1]
+[20251.479575] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(45, 803),input_w =[1]
+[20251.487830] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(45, 803),input_w =[1]
+[20251.943806] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(18, 752),input_w =[1]
+[20251.952068] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(18, 752),input_w =[1]
+[20252.490844] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(12, 787),input_w =[1]
+[20252.499132] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(12, 787),input_w =[1]
+[20253.236834] (0)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(103, 834),input_w =[1]
+[20253.245209] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(103, 834),input_w =[1]
+[20254.944197] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(185, 1180),input_w =[1]
+[20254.952496] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(185, 1180),input_w =[1]
+[20255.425004] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(218, 1224),input_w =[1]
+[20255.433317] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(218, 1224),input_w =[1]
+[20255.922317] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(231, 1231),input_w =[1]
+[20255.930596] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(231, 1231),input_w =[1]
+[20256.502480] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(259, 1239),input_w =[1]
+[20256.510826] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(259, 1239),input_w =[1]
+[20256.933797] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(640, 767),input_w =[1]
+[20256.941878] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(640, 767),input_w =[1]
+[20257.629715] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(319, 1573),input_w =[1]
+[20257.638112] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(319, 1573),input_w =[1]
+[20258.574647] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(13, 742),input_w =[1]
+[20258.582958] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(13, 742),input_w =[1]
+[20259.353790] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(365, 86),input_w =[1]
+[20259.362116] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(365, 86),input_w =[1]
+[20259.519622] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(353, 84),input_w =[1]
+[20259.527884] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(353, 84),input_w =[1]
+[20259.967055] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(621, 418),input_w =[1]
+[20259.975443] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(621, 418),input_w =[1]
+[20260.094118] (4)[412:logd.auditd]type=1400 audit(1790316434.368:10069): avc: denied { read } for pid=30792 comm="re-initialized>" name="u:object_r:mtk_amslog_prop:s0" dev="tmpfs" ino=9754 scontext=u:r:untrusted_app:s0:c157,c256,c512,c768 tcontext=u:object_r:mtk_amslog_prop:s0 tclass=file permissive=0
+[20260.310284] (5)[412:logd.auditd]type=1400 audit(1790316434.368:10069): avc: denied { read } for pid=30792 comm="re-initialized>" name="u:object_r:mtk_amslog_prop:s0" dev="tmpfs" ino=9754 scontext=u:r:untrusted_app:s0:c157,c256,c512,c768 tcontext=u:object_r:mtk_amslog_prop:s0 tclass=file permissive=0
+[20262.055851] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(358, 688),input_w =[1]
+[20262.064159] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(358, 688),input_w =[1]
+[20262.884766] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(348, 608),input_w =[1]
+[20262.893130] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(348, 608),input_w =[1]
+[20265.505500] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(348, 608),input_w =[1]
+[20265.513676] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(348, 608),input_w =[1]
+[20265.522403] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(348, 608),input_w =[1]
+[20265.529242] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(348, 608),input_w =[1]
+[20265.538932] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(348, 608),input_w =[1]
+[20265.547173] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(348, 608),input_w =[1]
+[20265.555501] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(348, 608),input_w =[1]
+[20265.563723] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(348, 608),input_w =[1]
+[20265.571879] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(348, 608),input_w =[1]
+[20265.580182] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(348, 608),input_w =[1]
+[20265.588481] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(348, 608),input_w =[1]
+[20265.596812] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(348, 608),input_w =[1]
+[20265.620183] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(633, 1473),input_w =[5]
+[20265.628581] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(633, 1473),input_w =[5]
+[20274.621610] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(223, 1558),input_w =[5]
+[20274.630027] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(223, 1558),input_w =[5]
+[20275.284676] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(494, 1165),input_w =[1]
+[20275.293105] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(494, 1165),input_w =[1]
+[20275.864878] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(519, 1171),input_w =[1]
+[20275.873194] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(519, 1171),input_w =[1]
+[20276.478285] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(519, 1137),input_w =[1]
+[20276.486626] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(519, 1137),input_w =[1]
+[20277.141314] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(235, 767),input_w =[1]
+[20277.149692] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(235, 767),input_w =[1]
+[20279.677726] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(68, 846),input_w =[1]
+[20279.686009] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(68, 846),input_w =[1]
+[20280.589464] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(226, 1566),input_w =[1]
+[20280.597846] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(226, 1566),input_w =[1]
+[20281.418325] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(518, 1139),input_w =[1]
+[20281.426659] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(518, 1139),input_w =[1]
+[20282.097987] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(525, 1149),input_w =[1]
+[20282.106307] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(525, 1149),input_w =[1]
+[20283.275000] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(518, 1091),input_w =[1]
+[20283.283344] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(518, 1091),input_w =[1]
+[20283.755741] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(237, 840),input_w =[1]
+[20283.764090] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(237, 840),input_w =[1]
+[20284.982560] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(3, 665),input_w =[1]
+[20284.991106] (1)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(3, 665),input_w =[1]
+[20287.154217] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(646, 581),input_w =[1]
+[20287.162555] (2)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(646, 581),input_w =[1]
+[20287.634872] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(689, 152),input_w =[1]
+[20287.643182] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(689, 152),input_w =[1]
+[20288.977664] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(631, 444),input_w =[1]
+[20288.985975] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(631, 444),input_w =[1]
+[20289.707054] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(655, 397),input_w =[1]
+[20289.715366] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(655, 397),input_w =[1]
+[20290.154660] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(712, 248),input_w =[1]
+[20290.162954] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(712, 248),input_w =[1]
+[20290.602381] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(714, 205),input_w =[1]
+[20290.610591] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(714, 205),input_w =[1]
+[20291.009058] (6)[30358:kworker/6:1]line:506 [mtk_power_misc_psy_event] tmp = 40 
+[20291.011262] (5)[478:fuelgauged]MTK_FG: [fg_bat_int1_handler]g_bat_cycle_ncar=37832
+[20291.015489] (5)[478:fuelgauged]MTK_FG: [fg_bat_int2_handler]car:-18212 pre_car:-18078 ht:69 lt:218 u_type:0 type:2
+[20291.023447] (7)[478:fuelgauged]MTK_FG: [FGADC_info] tmp:40 40 40 rdnafg:0 vc:0 disable_fg:0:0 fg_v:0:10000:43792:-20029:48602:4121:5879:5879 low_temp:0 0 0
+[20291.023524] (7)[478:fuelgauged]MTK_FG: [FGADC_intr_end][FG_INTR_NAFG_VOLTAGE]soc:5879 fg_c_soc:6253 fg_v_soc:5879 ui_soc:6292 vc_diff:374 vc_mode 0 VBAT 37620 T:[40 V 40 C 40] D0_C 10000 D0_V 10000 CAR[c:-18212 v:-20029] Q:[48602 48602 48602 48602] aging 10000 bat_cycle 23 Trk[0(-3780):0:0] UI[0:1] Chr[0:9999:10000] pseudo1 -79  DC_ratio 100 dodinit[13][0],I:-5400
+[20291.026740] (7)[29764:kworker/7:1]line:506 [mtk_power_misc_psy_event] tmp = 41 
+[20291.033439] (1)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(687, 207),input_w =[1]
+[20291.041716] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(687, 207),input_w =[1]
+[20291.050696] (1)[478:fuelgauged]MTK_FG: [GM3_old_data] soc:5879 fg_c_soc:6253 fg_v_soc:5879 ui_soc:6292 vc_diff:374 vc_mode 0 VBAT 37620 T:[40 V 40 C 40] D0_C 10000 D0_V 10000 CAR[c:-18212 v:-20029] Q:[48602 48602 48602 48602] aging 10000 bat_cycle 23 Trk[0(-3780):0:0] UI[0:1] Chr[0:9999:10000] pseudo1 -79  DC_ratio 100 dodinit[13][0] Iavg:-5400,dis[0 0 0],ncar[37832]
+[20291.050761] -(1)[478:fuelgauged]mtk_rtc_hal_common: hal_rtc_get_spare_register: cmd[0], get rg[0x5aa, 0xff , 8] = 0xbf
+[20291.050769] -(1)[478:fuelgauged]mtk_rtc_hal_common: hal_rtc_set_spare_register: cmd[0], set rg[0x5aa, 0xff , 8] = 0xbf
+[20291.051002] -(1)[478:fuelgauged]mtk_rtc_hal_common: hal_rtc_get_spare_register: cmd[0], get rg[0x5aa, 0xff , 8] = 0xbf
+[20291.051012] -(1)[478:fuelgauged]mtk_rtc_hal_common: hal_rtc_set_spare_register: cmd[0], set rg[0x5aa, 0xff , 8] = 0xbf
+[20292.027900] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(689, 311),input_w =[1]
+[20292.036262] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(689, 311),input_w =[1]
+[20292.458924] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(718, 174),input_w =[1]
+[20292.467260] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(718, 174),input_w =[1]
+[20293.575645] (4)[29843:kworker/4:1]line:506 [mtk_power_misc_psy_event] tmp = 41 
+[20293.586712] (7)[478:fuelgauged]MTK_FG: [fg_compensate_battery_voltage_from_low] h_percent=[10038,9935],high=97,fg_volt_withIR=34753 > ori_voltage=34500
+[20293.586776] (7)[478:fuelgauged]MTK_FG: [fg_compensate_battery_voltage_from_low]fg_volt=35449,97,IR=-881,orig_v:34500,+IR=34568,percent=9958,
+[20293.588074] (7)[478:fuelgauged]MTK_FG: [fg_compensate_battery_voltage_from_low] h_percent=[10080,9976],high=97,fg_volt_withIR=34350 > ori_voltage=33500
+[20293.588132] (7)[478:fuelgauged]MTK_FG: [fg_compensate_battery_voltage_from_low]fg_volt=34925,97,IR=-1351,orig_v:33500,+IR=33574,percent=10070,
+[20293.595558] (7)[478:fuelgauged]MTK_FG: [FGADC_info] tmp:40 41 40 rdnafg:0 vc:0 disable_fg:0:0 fg_v:0:10000:43792:-20029:48598:4121:5879:5879 low_temp:0 0 0
+[20293.595618] (7)[478:fuelgauged]MTK_FG: [FGADC_intr_end][FG_INTR_BAT_TEMP_HT]soc:5879 fg_c_soc:6253 fg_v_soc:5879 ui_soc:6292 vc_diff:374 vc_mode 0 VBAT 37530 T:[40 V 41 C 40] D0_C 10000 D0_V 10000 CAR[c:-18212 v:-20029] Q:[48598 48598 48602 48602] aging 10000 bat_cycle 23 Trk[0(-3780):0:0] UI[0:1] Chr[0:9999:10000] pseudo1 -69  DC_ratio 100 dodinit[13][0],I:-7320
+[20293.598606] (4)[29843:kworker/4:1]line:506 [mtk_power_misc_psy_event] tmp = 41 
+[20293.599187] -(6)[478:fuelgauged]mtk_rtc_hal_common: hal_rtc_get_spare_register: cmd[0], get rg[0x5aa, 0xff , 8] = 0xbf
+[20293.599203] -(6)[478:fuelgauged]mtk_rtc_hal_common: hal_rtc_set_spare_register: cmd[0], set rg[0x5aa, 0xff , 8] = 0xbf
+[20293.604615] (5)[478:fuelgauged]MTK_FG: get_kernel_cmd:0 0
+[20294.066922] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(628, 403),input_w =[1]
+[20294.075275] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(628, 403),input_w =[1]
+[20295.824219] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(660, 393),input_w =[1]
+[20295.832569] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(660, 393),input_w =[1]
+[20296.221983] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(675, 321),input_w =[1]
+[20296.230319] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(675, 321),input_w =[1]
+[20297.133812] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(662, 324),input_w =[1]
+[20297.142106] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(662, 324),input_w =[1]
+[20300.217214] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(712, 252),input_w =[1]
+[20300.225502] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(712, 252),input_w =[1]
+[20301.941226] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(654, 262),input_w =[1]
+[20301.949546] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(654, 262),input_w =[1]
+[20302.637510] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(684, 223),input_w =[1]
+[20302.645795] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(684, 223),input_w =[1]
+[20303.333777] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(692, 213),input_w =[1]
+[20303.342075] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(692, 213),input_w =[1]
+[20304.925242] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(680, 202),input_w =[1]
+[20304.933502] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(680, 202),input_w =[1]
+[20306.035902] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(642, 283),input_w =[1]
+[20306.044203] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(642, 283),input_w =[1]
+[20306.599493] (1)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(665, 257),input_w =[1]
+[20306.607791] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(665, 257),input_w =[1]
+[20307.312322] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(652, 320),input_w =[1]
+[20307.320619] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(652, 320),input_w =[1]
+[20307.892502] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(670, 302),input_w =[1]
+[20307.900833] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(670, 302),input_w =[1]
+[20308.904163] (3)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(663, 227),input_w =[1]
+[20308.912223] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(663, 227),input_w =[1]
+[20309.782420] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(180, 1579),input_w =[1]
+[20309.790927] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(180, 1579),input_w =[1]
+[20310.578069] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(695, 1087),input_w =[1]
+[20310.586439] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(695, 1087),input_w =[1]
+[20311.108793] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(719, 1042),input_w =[1]
+[20311.116891] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(719, 1042),input_w =[1]
+[20311.556189] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(402, 768),input_w =[1]
+[20311.564739] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(402, 768),input_w =[1]
+[20314.755623] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(206, 1590),input_w =[1]
+[20314.763951] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(206, 1590),input_w =[1]
+[20315.468462] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(709, 1128),input_w =[1]
+[20315.476762] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(709, 1128),input_w =[1]
+[20316.015471] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(717, 1124),input_w =[1]
+[20316.023852] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(717, 1124),input_w =[1]
+[20316.396821] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(403, 905),input_w =[1]
+[20316.405260] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(403, 905),input_w =[1]
+[20317.640084] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(115, 800),input_w =[1]
+[20317.648417] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(115, 800),input_w =[1]
+[20319.442706] (7)[31715:MtkOmxVdecDecod]vcodec_open pid = 31715, Driver_Open_Count 1
+[20319.445590] (3)[31715:MtkOmxVdecDecod]vcodec_open pid = 31715, Driver_Open_Count 2
+[20319.507903] (6)[412:logd.auditd]type=1400 audit(1790316493.780:10090): avc: denied { read } for pid=1942 comm="MtkOmxVdecDecod" name="u:object_r:default_prop:s0" dev="tmpfs" ino=9699 scontext=u:r:mediacodec:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
+[20319.508846] (3)[31715:MtkOmxVdecDecod]audit: audit_lost=3373 audit_rate_limit=5 audit_backlog_limit=64
+[20319.508867] (3)[31715:MtkOmxVdecDecod]audit: rate limit exceeded
+[20325.259925] (7)[29764:kworker/7:1]line:506 [mtk_power_misc_psy_event] tmp = 41 
+[20325.267365] (6)[478:fuelgauged]MTK_FG: [fg_compensate_battery_voltage_from_low] h_percent=[10038,9935],high=97,fg_volt_withIR=34753 > ori_voltage=34500
+[20325.267498] (6)[478:fuelgauged]MTK_FG: [fg_compensate_battery_voltage_from_low]fg_volt=35449,97,IR=-881,orig_v:34500,+IR=34568,percent=9958,
+[20325.272057] (6)[478:fuelgauged]MTK_FG: [fg_compensate_battery_voltage_from_low] h_percent=[10080,9976],high=97,fg_volt_withIR=34350 > ori_voltage=33500
+[20325.272211] (6)[478:fuelgauged]MTK_FG: [fg_compensate_battery_voltage_from_low]fg_volt=34925,97,IR=-1351,orig_v:33500,+IR=33574,percent=10070,
+[20325.280309] (4)[478:fuelgauged]MTK_FG: [FGADC_info] tmp:41 41 40 rdnafg:0 vc:0 disable_fg:0:0 fg_v:0:10000:43792:-20029:48598:4121:5879:5879 low_temp:0 0 0
+[20325.280492] (4)[478:fuelgauged]MTK_FG: [FGADC_intr_end][FG_INTR_BAT_TEMP_HT]soc:5879 fg_c_soc:6253 fg_v_soc:5879 ui_soc:6292 vc_diff:374 vc_mode 0 VBAT 38380 T:[41 V 41 C 40] D0_C 10000 D0_V 10000 CAR[c:-18212 v:-20029] Q:[48598 48598 48602 48602] aging 10000 bat_cycle 23 Trk[0(-3780):0:0] UI[0:1] Chr[0:9999:10000] pseudo1 -69  DC_ratio 100 dodinit[13][0],I:-7320
+[20325.288087] -(4)[478:fuelgauged]mtk_rtc_hal_common: hal_rtc_get_spare_register: cmd[0], get rg[0x5aa, 0xff , 8] = 0xbf
+[20325.288141] -(4)[478:fuelgauged]mtk_rtc_hal_common: hal_rtc_set_spare_register: cmd[0], set rg[0x5aa, 0xff , 8] = 0xbf
+[20325.290480] (4)[29843:kworker/4:1]line:506 [mtk_power_misc_psy_event] tmp = 41 
+[20325.296796] (4)[478:fuelgauged]MTK_FG: [fg_find_ui_low_limit]vbat=38370 ith:0 34800,limitsoc:200
+[20325.303343] (7)[478:fuelgauged]MTK_FG: [fg_bat_int1_handler]g_bat_cycle_ncar=38053
+[20325.311830] (1)[478:fuelgauged]MTK_FG: [FGADC_info] tmp:41 41 40 rdnafg:0 vc:0 disable_fg:0:0 fg_v:0:10000:43792:-20029:48598:4121:5879:5879 low_temp:0 0 0
+[20325.311915] (1)[478:fuelgauged]MTK_FG: [FGADC_intr_end][FG_INTR_UISOC_LT]soc:5879 fg_c_soc:6235 fg_v_soc:5879 ui_soc:6241 vc_diff:356 vc_mode 0 VBAT 38460 T:[41 V 41 C 40] D0_C 10000 D0_V 10000 CAR[c:-18299 v:-20029] Q:[48598 48598 48602 48602] aging 10000 bat_cycle 23 Trk[0(-3780):0:0] UI[0:1] Chr[0:9999:10000] pseudo1 -69  DC_ratio 100 dodinit[13][0],I:-7320
+[20325.316443] (6)[30358:kworker/6:1]line:506 [mtk_power_misc_psy_event] tmp = 41 
+[20325.354101] (3)[478:fuelgauged]MTK_FG: [GM3_old_data] soc:5879 fg_c_soc:6235 fg_v_soc:5879 ui_soc:6241 vc_diff:356 vc_mode 0 VBAT 38460 T:[41 V 41 C 40] D0_C 10000 D0_V 10000 CAR[c:-18299 v:-20029] Q:[48598 48598 48602 48602] aging 10000 bat_cycle 23 Trk[0(-3780):0:0] UI[0:1] Chr[0:9999:10000] pseudo1 -69  DC_ratio 100 dodinit[13][0] Iavg:-7320,dis[0 0 0],ncar[38053]
+[20325.354242] -(3)[478:fuelgauged]mtk_rtc_hal_common: hal_rtc_get_spare_register: cmd[0], get rg[0x5aa, 0xff , 8] = 0xbf
+[20325.354257] -(3)[478:fuelgauged]mtk_rtc_hal_common: hal_rtc_set_spare_register: cmd[0], set rg[0x5aa, 0xff , 8] = 0xbe
+[20325.354574] -(3)[478:fuelgauged]mtk_rtc_hal_common: hal_rtc_get_spare_register: cmd[0], get rg[0x5aa, 0xff , 8] = 0xbe
+[20325.354608] -(3)[478:fuelgauged]mtk_rtc_hal_common: hal_rtc_set_spare_register: cmd[0], set rg[0x5aa, 0xff , 8] = 0xbe
+[20327.145327] (4)[412:logd.auditd]type=1400 audit(1790316493.780:10098): avc: denied { read } for pid=1942 comm="MtkOmxVdecDecod" name="u:object_r:default_prop:s0" dev="tmpfs" ino=9699 scontext=u:r:mediacodec:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0 duplicate messages suppressed
+[20336.562999] (7)[412:logd.auditd]type=1400 audit(1790316510.836:10101): avc: denied { read } for pid=31757 comm="re-initialized>" name="u:object_r:mtk_amslog_prop:s0" dev="tmpfs" ino=9754 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:mtk_amslog_prop:s0 tclass=file permissive=0
+[20337.159858] (7)[412:logd.auditd]type=1400 audit(1790316510.836:10101): avc: denied { read } for pid=31757 comm="re-initialized>" name="u:object_r:mtk_amslog_prop:s0" dev="tmpfs" ino=9754 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:mtk_amslog_prop:s0 tclass=file permissive=0
+[20352.916974] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(144, 969),input_w =[1]
+[20352.925271] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(144, 969),input_w =[1]
+[20353.590138] (7)[478:fuelgauged]MTK_FG: get_kernel_cmd:1 0
+[20353.594639] (7)[478:fuelgauged]MTK_FG: [FGTEST]car:-18337 mah_ocv:39626 ocv_v:39363 vbat:38350,cur1:-4982,cur2:-4890,iavg:-7080
+[20353.598244] (7)[478:fuelgauged]MTK_FG: [GM3_boot_data] soc:6285 fg_c_soc:6273 fg_v_soc:6285 ui_soc:6444 vc_diff:-12 vc_mode 0 VBAT 38260 T:[42 V 42 C 42] D0_C 5611 D0_V 5578 CAR[c:3222 v:3440] Q:[48602 48602 48602 48602] aging 10000 bat_cycle 23 Trk[0(0):0:0] UI[0:0] Chr[0:0:0] pseudo1 -79\x09DC_ratio 100 dodinit[8][0] Iavg:-7200,dis[0 0 0],ncar[11386]\x0a
+[20353.598495] (7)[478:fuelgauged]MTK_FG: {FGADC}soc:5879 fg_c_soc:6235 fg_v_soc:5879 ui_soc:6241 vc_diff:356 vc_mode 0 VBAT 38350 T:[40 V 41 C 40] D0_C 10000 D0_V 10000 CAR[c:-18299 v:-20029]Q:[48598 48598 48602 48602] aging 10000 bat_cycle 23 Trk[0:0:0] UI[0:1] Chr[0:9999:10000] pseudo1 -69 DC_ratio 100 vboot:35449 35474 dod_init[13]
+[20404.323603] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(282, 1031),input_w =[1]
+[20404.331966] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(282, 1031),input_w =[1]
+[20413.597584] (7)[29764:kworker/7:1]line:506 [mtk_power_misc_psy_event] tmp = 40 
+[20413.610585] (5)[478:fuelgauged]MTK_FG: [fg_compensate_battery_voltage_from_low] h_percent=[10034,9930],high=97,fg_volt_withIR=34767 > ori_voltage=34500
+[20413.610758] (5)[478:fuelgauged]MTK_FG: [fg_compensate_battery_voltage_from_low]fg_volt=35474,97,IR=-896,orig_v:34500,+IR=34578,percent=9954,
+[20413.614176] (5)[478:fuelgauged]MTK_FG: [fg_compensate_battery_voltage_from_low] h_percent=[10079,9975],high=97,fg_volt_withIR=34824 > ori_voltage=33500
+[20413.614330] (5)[478:fuelgauged]MTK_FG: [fg_compensate_battery_voltage_from_low]fg_volt=34888,97,IR=-885,orig_v:33500,+IR=34003,percent=10079,
+[20413.622012] (7)[478:fuelgauged]MTK_FG: [FGADC_info] tmp:40 40 41 rdnafg:0 vc:0 disable_fg:0:0 fg_v:0:10000:43792:-20029:48602:4121:5879:5879 low_temp:0 0 0
+[20413.622246] (7)[478:fuelgauged]MTK_FG: [FGADC_intr_end][FG_INTR_BAT_TEMP_LT]soc:5879 fg_c_soc:6235 fg_v_soc:5879 ui_soc:6241 vc_diff:356 vc_mode 0 VBAT 38540 T:[40 V 40 C 40] D0_C 10000 D0_V 10000 CAR[c:-18299 v:-20029] Q:[48602 48602 48602 48602] aging 10000 bat_cycle 23 Trk[0(-3780):0:0] UI[0:1] Chr[0:9999:10000] pseudo1 -79  DC_ratio 100 dodinit[13][0],I:-4680
+[20413.627626] (5)[29044:kworker/5:1]line:506 [mtk_power_misc_psy_event] tmp = 40 
+[20413.628765] -(5)[478:fuelgauged]mtk_rtc_hal_common: hal_rtc_get_spare_register: cmd[0], get rg[0x5aa, 0xff , 8] = 0xbe
+[20413.628819] -(5)[478:fuelgauged]mtk_rtc_hal_common: hal_rtc_set_spare_register: cmd[0], set rg[0x5aa, 0xff , 8] = 0xbe
+[20413.634409] (7)[478:fuelgauged]MTK_FG: get_kernel_cmd:0 0
+[20414.170602] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(360, 992),input_w =[1]
+[20414.178922] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(360, 992),input_w =[1]
+[20421.133176] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(473, 1040),input_w =[1]
+[20421.141438] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(473, 1040),input_w =[1]
+[20434.013858] (0)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(589, 1042),input_w =[1]
+[20434.022198] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(589, 1042),input_w =[1]
+[20440.522604] (4)[478:fuelgauged]MTK_FG: [fg_bat_int1_handler]g_bat_cycle_ncar=38053
+[20440.527119] (4)[478:fuelgauged]MTK_FG: [fg_bat_int2_handler]car:-18452 pre_car:-18299 ht:74 lt:213 u_type:0 type:2
+[20440.535562] (4)[478:fuelgauged]MTK_FG: [FGADC_info] tmp:40 40 41 rdnafg:0 vc:0 disable_fg:0:0 fg_v:0:10000:43792:-20282:48602:4173:5827:5827 low_temp:0 0 0
+[20440.535795] (4)[478:fuelgauged]MTK_FG: [FGADC_intr_end][FG_INTR_NAFG_VOLTAGE]soc:5827 fg_c_soc:6204 fg_v_soc:5827 ui_soc:6241 vc_diff:377 vc_mode 0 VBAT 38520 T:[40 V 40 C 40] D0_C 10000 D0_V 10000 CAR[c:-18452 v:-20282] Q:[48602 48602 48602 48602] aging 10000 bat_cycle 23 Trk[0(-3780):0:0] UI[0:1] Chr[0:9999:10000] pseudo1 -79  DC_ratio 100 dodinit[13][0],I:-4680
+[20440.539287] (4)[29843:kworker/4:1]line:506 [mtk_power_misc_psy_event] tmp = 40 
+[20440.540385] -(4)[478:fuelgauged]mtk_rtc_hal_common: hal_rtc_get_spare_register: cmd[0], get rg[0x5aa, 0xff , 8] = 0xbe
+[20440.540424] -(4)[478:fuelgauged]mtk_rtc_hal_common: hal_rtc_set_spare_register: cmd[0], set rg[0x5aa, 0xff , 8] = 0xbe
+[20460.388518] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(63, 1055),input_w =[1]
+[20460.396864] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(63, 1055),input_w =[1]
+[20461.946862] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(206, 1550),input_w =[1]
+[20461.955331] (2)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(206, 1550),input_w =[1]
+[20463.156935] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(498, 1096),input_w =[1]
+[20463.165231] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(498, 1096),input_w =[1]
+[20463.450301] (4)[31714:MtkOmxVdecThrea]vcodec_release pid = 31714, Driver_Open_Count 2
+[20463.451818] (4)[31714:MtkOmxVdecThrea]vcodec_release pid = 31714, Driver_Open_Count 1
+[20463.836770] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(552, 1062),input_w =[1]
+[20463.844897] (7)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(552, 1062),input_w =[1]
+[20464.333894] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(221, 710),input_w =[1]
+[20464.342238] (5)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(221, 710),input_w =[1]
+[20466.538808] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(504, 1357),input_w =[1]
+[20466.546984] (4)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(504, 1357),input_w =[1]
+[20467.284871] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(676, 1469),input_w =[1]
+[20467.293033] (6)[283:mtk-tpd][NVT36xxx-ts] touch_event_handler 1188: touch up input_id = 31,(input_x,input_y)=(676, 1469),input_w =[1]
+[20469.593932] (6)[1:init]init: PropSet [persist.vendor.radio.mtk_data_type]=[0] Done
+[20469.853151] (5)[412:logd.auditd]type=1400 audit(1790316644.124:10127): avc: denied { read } for pid=31973 comm="re-initialized>" name="u:object_r:mtk_amslog_prop:s0" dev="tmpfs" ino=9754 scontext=u:r:system_app:s0 tcontext=u:object_r:mtk_amslog_prop:s0 tclass=file permissive=0
+[20470.069641] (5)[412:logd.auditd]type=1400 audit(1790316644.124:10127): avc: denied { read } for pid=31973 comm="re-initialized>" name="u:object_r:mtk_amslog_prop:s0" dev="tmpfs" ino=9754 scontext=u:r:system_app:s0 tcontext=u:object_r:mtk_amslog_prop:s0 tclass=file permissive=0
+[20470.069690] (5)[412:logd.auditd]type=1400 audit(1790316644.340:10128): avc: denied { read } for pid=32002 comm="re-initialized>" name="u:object_r:mtk_amslog_prop:s0" dev="tmpfs" ino=9754 scontext=u:r:system_app:s0 tcontext=u:object_r:mtk_amslog_prop:s0 tclass=file permissive=0
+[20470.308288] (6)[412:logd.auditd]type=1400 audit(1790316644.340:10128): avc: denied { read } for pid=32002 comm="re-initialized>" name="u:object_r:mtk_amslog_prop:s0" dev="tmpfs" ino=9754 scontext=u:r:system_app:s0 tcontext=u:object_r:mtk_amslog_prop:s0 tclass=file permissive=0
+
+===== AP MODE SUPPORT =====
+/system/bin/sh: iw: not found
+
+===== HOSTAPD SEARCH =====
+/vendor/bin/hw/hostapd
+
+===== DNSMASQ SEARCH =====
+/system/bin/dnsmasq
+
+===== TETHERING FILES =====
+total 14
+drwxrwx---  4 wifi   wifi   3488 2026-09-25 08:21 .
+drwxrwx--t 43 system misc   3488 2010-01-01 05:01 ..
+-rw-------  1 system system 2512 2026-09-25 08:21 WifiConfigStore.xml
+-rw-------  1 system system  107 2026-09-23 22:18 dhcp_lease.conf
+drwxrwx---  2 wifi   wifi   3488 2010-01-01 05:01 sockets
+-rw-------  1 system system   31 2026-09-24 09:07 softap.conf
+drwxrwx---  2 wifi   wifi   3488 2010-01-01 05:01 wpa_supplicant
+ls: /data/misc/apexdata/com.android.tethering/: No such file or directory
+
+===== FIREWALL =====
+iptables v1.6.1
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+bw_INPUT   all  --  0.0.0.0/0            0.0.0.0/0           
+fw_INPUT   all  --  0.0.0.0/0            0.0.0.0/0           
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+oem_fwd    all  --  0.0.0.0/0            0.0.0.0/0           
+fw_FORWARD  all  --  0.0.0.0/0            0.0.0.0/0           
+bw_FORWARD  all  --  0.0.0.0/0            0.0.0.0/0           
+tetherctrl_FORWARD  all  --  0.0.0.0/0            0.0.0.0/0           
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+oem_out    all  --  0.0.0.0/0            0.0.0.0/0           
+fw_OUTPUT  all  --  0.0.0.0/0            0.0.0.0/0           
+st_OUTPUT  all  --  0.0.0.0/0            0.0.0.0/0           
+bw_OUTPUT  all  --  0.0.0.0/0            0.0.0.0/0           
+
+Chain bw_FORWARD (1 references)
+target     prot opt source               destination         
+bw_costly_ccmni1  all  --  0.0.0.0/0            0.0.0.0/0           
+bw_costly_ccmni1  all  --  0.0.0.0/0            0.0.0.0/0           
+
+Chain bw_INPUT (1 references)
+target     prot opt source               destination         
+           all  --  0.0.0.0/0            0.0.0.0/0            ! quota globalAlert: 2097152 bytes 
+bw_costly_ccmni1  all  --  0.0.0.0/0            0.0.0.0/0           
+RETURN     esp  --  0.0.0.0/0            0.0.0.0/0           
+RETURN     all  --  0.0.0.0/0            0.0.0.0/0            mark match 0x100000/0x100000
+           all  --  0.0.0.0/0            0.0.0.0/0            owner socket exists
+MARK       all  --  0.0.0.0/0            0.0.0.0/0            MARK or 0x100000
+
+Chain bw_OUTPUT (1 references)
+target     prot opt source               destination         
+           all  --  0.0.0.0/0            0.0.0.0/0            ! quota globalAlert: 2097152 bytes 
+bw_costly_ccmni1  all  --  0.0.0.0/0            0.0.0.0/0           
+RETURN     all  --  0.0.0.0/0            0.0.0.0/0           
+RETURN     all  --  0.0.0.0/0            0.0.0.0/0            policy match dir out pol ipsec
+           all  --  0.0.0.0/0            0.0.0.0/0            owner socket exists
+
+Chain bw_costly_ccmni1 (4 references)
+target     prot opt source               destination         
+bw_penalty_box  all  --  0.0.0.0/0            0.0.0.0/0           
+REJECT     all  --  0.0.0.0/0            0.0.0.0/0            ! quota ccmni1: 9223372036854775807 bytes  reject-with icmp-port-unreachable
+
+Chain bw_costly_shared (0 references)
+target     prot opt source               destination         
+bw_penalty_box  all  --  0.0.0.0/0            0.0.0.0/0           
+
+Chain bw_data_saver (1 references)
+target     prot opt source               destination         
+RETURN     all  --  0.0.0.0/0            0.0.0.0/0           
+
+Chain bw_happy_box (1 references)
+target     prot opt source               destination         
+RETURN     all  --  0.0.0.0/0            0.0.0.0/0            owner UID match 10013
+RETURN     all  --  0.0.0.0/0            0.0.0.0/0            owner UID match 10014
+RETURN     all  --  0.0.0.0/0            0.0.0.0/0            owner UID match 10041
+RETURN     all  --  0.0.0.0/0            0.0.0.0/0            owner UID match 0-9999
+bw_data_saver  all  --  0.0.0.0/0            0.0.0.0/0           
+
+Chain bw_penalty_box (2 references)
+target     prot opt source               destination         
+bw_happy_box  all  --  0.0.0.0/0            0.0.0.0/0           
+
+Chain fw_FORWARD (1 references)
+target     prot opt source               destination         
+
+Chain fw_INPUT (1 references)
+target     prot opt source               destination         
+
+Chain fw_OUTPUT (1 references)
+target     prot opt source               destination         
+
+Chain oem_data (1 references)
+target     prot opt source               destination         
+
+Chain oem_fwd (1 references)
+target     prot opt source               destination         
+
+Chain oem_mobile (5 references)
+target     prot opt source               destination         
+
+Chain oem_out (1 references)
+target     prot opt source               destination         
+oem_mobile  all  --  0.0.0.0/0            0.0.0.0/0           
+oem_mobile  all  --  0.0.0.0/0            0.0.0.0/0           
+oem_mobile  all  --  0.0.0.0/0            0.0.0.0/0           
+oem_mobile  all  --  0.0.0.0/0            0.0.0.0/0           
+oem_mobile  all  --  0.0.0.0/0            0.0.0.0/0           
+oem_wifi   all  --  0.0.0.0/0            0.0.0.0/0           
+oem_data   all  --  0.0.0.0/0            0.0.0.0/0           
+
+Chain oem_wifi (1 references)
+target     prot opt source               destination         
+
+Chain st_OUTPUT (1 references)
+target     prot opt source               destination         
+
+Chain st_clear_caught (2 references)
+target     prot opt source               destination         
+
+Chain st_clear_detect (0 references)
+target     prot opt source               destination         
+REJECT     all  --  0.0.0.0/0            0.0.0.0/0            connmark match  0x2000000/0x2000000 reject-with icmp-port-unreachable
+RETURN     all  --  0.0.0.0/0            0.0.0.0/0            connmark match  0x1000000/0x1000000
+CONNMARK   tcp  --  0.0.0.0/0            0.0.0.0/0            u32 "0x0>>0x16&0x3c@0xc>>0x1a&0x3c@0x0&0xffff0000=0x16030000&&0x0>>0x16&0x3c@0xc>>0x1a&0x3c@0x4&0xff0000=0x10000" CONNMARK or 0x1000000
+CONNMARK   udp  --  0.0.0.0/0            0.0.0.0/0            u32 "0x0>>0x16&0x3c@0x8&0xffff0000=0x16fe0000&&0x0>>0x16&0x3c@0x14&0xff0000=0x10000" CONNMARK or 0x1000000
+RETURN     all  --  0.0.0.0/0            0.0.0.0/0            connmark match  0x1000000/0x1000000
+st_clear_caught  tcp  --  0.0.0.0/0            0.0.0.0/0            state ESTABLISHED u32 "0x0>>0x16&0x3c@0xc>>0x1a&0x3c@0x0&0x0=0x0"
+st_clear_caught  udp  --  0.0.0.0/0            0.0.0.0/0           
+
+Chain st_penalty_log (0 references)
+target     prot opt source               destination         
+CONNMARK   all  --  0.0.0.0/0            0.0.0.0/0            CONNMARK or 0x1000000
+NFLOG      all  --  0.0.0.0/0            0.0.0.0/0           
+
+Chain st_penalty_reject (0 references)
+target     prot opt source               destination         
+CONNMARK   all  --  0.0.0.0/0            0.0.0.0/0            CONNMARK or 0x2000000
+NFLOG      all  --  0.0.0.0/0            0.0.0.0/0           
+REJECT     all  --  0.0.0.0/0            0.0.0.0/0            reject-with icmp-port-unreachable
+
+Chain tetherctrl_FORWARD (1 references)
+target     prot opt source               destination         
+DROP       all  --  0.0.0.0/0            0.0.0.0/0           
+
+Chain tetherctrl_counters (0 references)
+target     prot opt source               destination         
+
+===== NETWORK ROUTES =====
+10.0.0.0/8 dev ccmni1 proto kernel scope link src 10.55.248.101 
+
+===== COMPLETE =====

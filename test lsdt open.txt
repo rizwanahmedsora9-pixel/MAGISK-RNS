@@ -1,0 +1,1999 @@
+e, mtk_video_call_background_transmission=false, s
+msToMmsTextThreshold=-1, disable_severe_when_extre
+me_disabled_bool=true, force_home_network_bool=fal
+se, enableSMSDeliveryReports=true, auto_retry_enab
+led_bool=false, play_call_recording_tone_bool=fals
+e, carrier_force_disable_etws_cmas_test_bool=false
+, allow_emergency_video_calls_bool=false, csp_enab
+led_bool=false, mtk_dialer_call_pull_bool=false, d
+efault_sim_call_manager_string=, mtk_carrier_swap_
+vt_conference_to_foreground_before_merge=false, ca
+ll_forwarding_blocks_while_roaming_string_array=nu
+ll, emergency_notification_delay_int=-1, support_v
+ideo_conference_call_bool=false, ims_dtmf_tone_del
+ay_int=0, show_signal_strength_in_sim_status_bool=
+true, data_rapid_notification_bool=true, carrier_i
+nstant_lettering_escaped_chars_string=, carrier_de
+fault_wfc_ims_roaming_mode_int=2, mtk_carrier_swit
+ch_wfc_mode_required_bool=false, editable_wfc_mode
+_bool=true, mtk_cdma_sms_7bit_encoding_type_int=9,
+ support_direct_fdn_dialing_bool=false, carrier_wi
+fi_string_array=null, treat_downgraded_video_calls
+_as_video_calls_bool=false, wifi_calls_can_be_hd_a
+udio=true, support_downgrade_vt_to_audio_bool=true
+, notify_handover_video_from_lte_to_wifi_bool=fals
+e, use_otasp_for_provisioning_bool=false, always_p
+lay_remote_hold_tone_bool=false, maxMessageTextSiz
+e=-1, duration_blocking_disabled_after_emergency_i
+nt=7200, carrier_metered_roaming_apn_types_strings
+=[Ljava.lang.String;@c5691b8, no_merge_req_after_m
+ax_connection=true, show_video_call_charges_alert_
+dialog_bool=false, carrier_network_service_wlan_pa
+ckage_override_string=, show_apn_setting_cdma_bool
+=false, carrier_instant_lettering_length_limit_int
+=64, carrier_instant_lettering_invalid_chars_strin
+g=, carrier_setup_app_string=, editable_wfc_roamin
+g_mode_bool=false, supportMmsContentDisposition=tr
+ue, support_manage_ims_conference_call_bool=true, 
+allow_non_emergency_calls_in_ecm_bool=true, mtk_ca
+rrier_ss_not_support_call_identity=false, mtk_key_
+roaming_bar_guard_bool=false, carrier_data_service
+_wlan_package_override_string=, use_rcs_presence_b
+ool=false, config_telephony_use_own_number_for_voi
+cemail_bool=false, cdma_dtmf_tone_delay_int=100, e
+ditable_voicemail_number_bool=false, carrier_data_
+call_apn_retry_after_disconnect_long=10000, filter
+ed_cnap_names_string_array=null, enabledTransID=fa
+lse                                               
+09-25 12:20:06.475 14250 14312 I Bugle   : BugleMd
+dTaskScheduler: Scheduling MDD job, tag: MDD.WIFI.
+CHARGING.PERIODIC.TASK, period: 3600              
+09-25 12:20:06.475 14250 14312 I Bugle   : BugleMd
+dTaskScheduler: Successfully updated period. tag: 
+MDD.WIFI.CHARGING.PERIODIC.TASK, period: 3600     
+09-25 12:20:09.747  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:20:09.748  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:20:20.633  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=false,activityO
+ut=true,enabledDesc=Jazz,noSim=false]             
+09-25 12:20:20.634  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=false,activityOut=true,
+enabledDesc=Jazz,noSim=false]                     
+09-25 12:20:21.652  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:20:21.657  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:20:25.145  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1283,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:20:25.146  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1283,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:20:27.659  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:20:27.663  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:20:31.751  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=false,activityO
+ut=false,enabledDesc=Jazz,noSim=false]            
+09-25 12:20:31.751  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=false,activityOut=false
+,enabledDesc=Jazz,noSim=false]                    
+09-25 12:20:32.054  4357  4357 D PowerSaveUtils: c
+onfig details is : bright->255wifiEnable-> falsewi
+fiApEnable->truebtEnable->falsedataEnable->truegps
+Enable->falsethreeGEnable->trueautoSyncEnable->tru
+eisScreenModeOn->falseisUltraModeOn->falseisBatter
+ySaverOn->false                                   
+09-25 12:20:32.766  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:20:32.767  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:20:37.985  2173  2307 D WIFI_UT : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1122, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10050] ] with score 50                   
+09-25 12:20:37.985  2173  2307 D WIFI    : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1122, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10050] ] with score 50                   
+09-25 12:20:38.144  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1281,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:20:38.145  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1281,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:20:43.091  2648  2699 I PowerMonitorHookC
+lient: unkown network interface:ap0               
+09-25 12:20:45.741  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:20:45.742  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:20:52.954  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=false,activityO
+ut=true,enabledDesc=Jazz,noSim=false]             
+09-25 12:20:52.955  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=false,activityOut=true,
+enabledDesc=Jazz,noSim=false]                     
+09-25 12:20:53.968  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:20:53.969  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:20:54.302  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1281,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:20:54.305  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1281,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:20:54.573 14250 14428 I Bugle   : Carrier
+ configs loaded: Bundle[{mtk_show_clir_setting_boo
+l=true, mtk_default_enhanced_4g_mode_bool=true, ca
+rrier_volte_provisioned_bool=false, disable_charge
+_indication_bool=false, httpSocketTimeout=60000, m
+tk_resume_hold_call_after_active_call_end_by_remot
+e=false, carrier_wfc_supports_wifi_only_bool=false
+, carrier_default_actions_on_default_network_avail
+able_string_array=[Ljava.lang.String;@4d82a25, mtk
+_ct_volte_status_bool=false, mtk_carrier_ss_need_c
+heck_data_roaming=false, operator_selection_expand
+_bool=true, disable_cdma_activation_code_bool=fals
+e, simplified_network_settings_bool=false, call_ba
+rring_visibility_bool=true, enable_apps_string_arr
+ay=null, carrier_default_wfc_ims_roaming_enabled_b
+ool=false, mtk_show_call_barring_password_bool=fal
+se, cdma_nonroaming_networks_string_array=null, al
+iasMinChars=2, mtk_key_multiline_allow_cross_line_
+conference_bool=false, wfc_data_spn_format_idx_int
+=0, hide_sim_lock_settings_bool=false, drop_video_
+call_when_answering_audio_call_bool=false, mtk_sho
+w_open_mobile_data_dialog_bool=false, ci_action_on
+_sys_update_bool=false, convert_cdma_caller_id_mmi
+_codes_while_roaming_on_3gpp_bool=false, support_e
+nhanced_call_blocking_bool=false, vvm_port_number_
+int=0, carrier_default_wfc_ims_enabled_bool=false,
+ dial_string_replace_string_array=null, gsm_nonroa
+ming_networks_string_array=null, hide_ims_apn_bool
+=false, show_toast_when_conference_full=true, vvm_
+destination_number_string=, dtmf_type_enabled_bool
+=false, allow_video_calling_fallback_bool=true, mt
+k_carrier_ims_ecbm_supported=false, mtk_domestic_r
+oaming_enabled_only_by_mobile_data_setting=false, 
+config_ims_package_override_string=com.google.andr
+oid.ims, mtk_support_enhanced_call_blocking_bool=f
+alse, support_auto_decline_upgrade_request_bool=tr
+ue, mtk_video_call_background_transmission=false, 
+smsToMmsTextThreshold=-1, disable_severe_when_extr
+eme_disabled_bool=true, force_home_network_bool=fa
+lse, enableSMSDeliveryReports=true, auto_retry_ena
+bled_bool=false, play_call_recording_tone_bool=fal
+se, carrier_force_disable_etws_cmas_test_bool=fals
+e, allow_emergency_video_calls_bool=false, csp_ena
+bled_bool=false, mtk_dialer_call_pull_bool=false, 
+default_sim_call_manager_string=, mtk_carrier_swap
+_vt_conference_to_foreground_before_merge=false, c
+all_forwarding_blocks_while_roaming_string_array=n
+ull, emergency_notification_delay_int=-1, support_
+video_conference_call_bool=false, ims_dtmf_tone_de
+lay_int=0, show_signal_strength_in_sim_status_bool
+=true, data_rapid_notification_bool=true, carrier_
+instant_lettering_escaped_chars_string=, carrier_d
+efault_wfc_ims_roaming_mode_int=2, mtk_carrier_swi
+tch_wfc_mode_required_bool=false, editable_wfc_mod
+e_bool=true, mtk_cdma_sms_7bit_encoding_type_int=9
+, support_direct_fdn_dialing_bool=false, carrier_w
+ifi_string_array=null, treat_downgraded_video_call
+s_as_video_calls_bool=false, wifi_calls_can_be_hd_
+audio=true, support_downgrade_vt_to_audio_bool=tru
+e, notify_handover_video_from_lte_to_wifi_bool=fal
+se, use_otasp_for_provisioning_bool=false, always_
+play_remote_hold_tone_bool=false, maxMessageTextSi
+ze=-1, duration_blocking_disabled_after_emergency_
+int=7200, carrier_metered_roaming_apn_types_string
+s=[Ljava.lang.String;@a7f67fa, no_merge_req_after_
+max_connection=true, show_video_call_charges_alert
+_dialog_bool=false, carrier_network_service_wlan_p
+ackage_override_string=, show_apn_setting_cdma_boo
+l=false, carrier_instant_lettering_length_limit_in
+t=64, carrier_instant_lettering_invalid_chars_stri
+ng=, carrier_setup_app_string=, editable_wfc_roami
+ng_mode_bool=false, supportMmsContentDisposition=t
+rue, support_manage_ims_conference_call_bool=true,
+ allow_non_emergency_calls_in_ecm_bool=true, mtk_c
+arrier_ss_not_support_call_identity=false, mtk_key
+_roaming_bar_guard_bool=false, carrier_data_servic
+e_wlan_package_override_string=, use_rcs_presence_
+bool=false, config_telephony_use_own_number_for_vo
+icemail_bool=false, cdma_dtmf_tone_delay_int=100, 
+editable_voicemail_number_bool=false, carrier_data
+_call_apn_retry_after_disconnect_long=10000, filte
+red_cnap_names_string_array=null, enabledTransID=f
+als                                               
+09-25 12:20:56.833  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:20:56.834  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:20:59.014  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=false,activityO
+ut=true,enabledDesc=Jazz,noSim=false]             
+09-25 12:20:59.015  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=false,activityOut=true,
+enabledDesc=Jazz,noSim=false]                     
+09-25 12:21:00.029  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:21:00.030  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:21:03.107  2648  2699 I PowerMonitorHookC
+lient: unkown network interface:ap0               
+09-25 12:21:04.071  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=false,activityO
+ut=false,enabledDesc=Jazz,noSim=false]            
+09-25 12:21:04.072  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=false,activityOut=false
+,enabledDesc=Jazz,noSim=false]                    
+09-25 12:21:05.084  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=false,activityO
+ut=true,enabledDesc=Jazz,noSim=false]             
+09-25 12:21:05.085  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=false,activityOut=true,
+enabledDesc=Jazz,noSim=false]                     
+09-25 12:21:05.905  4357  4357 D PowerSaveUtils: c
+onfig details is : bright->255wifiEnable-> falsewi
+fiApEnable->truebtEnable->falsedataEnable->truegps
+Enable->falsethreeGEnable->trueautoSyncEnable->tru
+eisScreenModeOn->falseisUltraModeOn->falseisBatter
+ySaverOn->false                                   
+09-25 12:21:06.097  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:21:06.098  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:21:22.527  4357  4357 D PowerSaveUtils: c
+onfig details is : bright->255wifiEnable-> falsewi
+fiApEnable->truebtEnable->falsedataEnable->truegps
+Enable->falsethreeGEnable->trueautoSyncEnable->tru
+eisScreenModeOn->falseisUltraModeOn->falseisBatter
+ySaverOn->false                                   
+09-25 12:21:23.119  2648  2699 I PowerMonitorHookC
+lient: unkown network interface:ap0               
+09-25 12:21:30.259 14250 14548 I Bugle   : Carrier
+ configs loaded: Bundle[{mtk_show_clir_setting_boo
+l=true, mtk_default_enhanced_4g_mode_bool=true, ca
+rrier_volte_provisioned_bool=false, disable_charge
+_indication_bool=false, httpSocketTimeout=60000, m
+tk_resume_hold_call_after_active_call_end_by_remot
+e=false, carrier_wfc_supports_wifi_only_bool=false
+, carrier_default_actions_on_default_network_avail
+able_string_array=[Ljava.lang.String;@c0b1e02, mtk
+_ct_volte_status_bool=false, mtk_carrier_ss_need_c
+heck_data_roaming=false, operator_selection_expand
+_bool=true, disable_cdma_activation_code_bool=fals
+e, simplified_network_settings_bool=false, call_ba
+rring_visibility_bool=true, enable_apps_string_arr
+ay=null, carrier_default_wfc_ims_roaming_enabled_b
+ool=false, mtk_show_call_barring_password_bool=fal
+se, cdma_nonroaming_networks_string_array=null, al
+iasMinChars=2, mtk_key_multiline_allow_cross_line_
+conference_bool=false, wfc_data_spn_format_idx_int
+=0, hide_sim_lock_settings_bool=false, drop_video_
+call_when_answering_audio_call_bool=false, mtk_sho
+w_open_mobile_data_dialog_bool=false, ci_action_on
+_sys_update_bool=false, convert_cdma_caller_id_mmi
+_codes_while_roaming_on_3gpp_bool=false, support_e
+nhanced_call_blocking_bool=false, vvm_port_number_
+int=0, carrier_default_wfc_ims_enabled_bool=false,
+ dial_string_replace_string_array=null, gsm_nonroa
+ming_networks_string_array=null, hide_ims_apn_bool
+=false, show_toast_when_conference_full=true, vvm_
+destination_number_string=, dtmf_type_enabled_bool
+=false, allow_video_calling_fallback_bool=true, mt
+k_carrier_ims_ecbm_supported=false, mtk_domestic_r
+oaming_enabled_only_by_mobile_data_setting=false, 
+config_ims_package_override_string=com.google.andr
+oid.ims, mtk_support_enhanced_call_blocking_bool=f
+alse, support_auto_decline_upgrade_request_bool=tr
+ue, mtk_video_call_background_transmission=false, 
+smsToMmsTextThreshold=-1, disable_severe_when_extr
+eme_disabled_bool=true, force_home_network_bool=fa
+lse, enableSMSDeliveryReports=true, auto_retry_ena
+bled_bool=false, play_call_recording_tone_bool=fal
+se, carrier_force_disable_etws_cmas_test_bool=fals
+e, allow_emergency_video_calls_bool=false, csp_ena
+bled_bool=false, mtk_dialer_call_pull_bool=false, 
+default_sim_call_manager_string=, mtk_carrier_swap
+_vt_conference_to_foreground_before_merge=false, c
+all_forwarding_blocks_while_roaming_string_array=n
+ull, emergency_notification_delay_int=-1, support_
+video_conference_call_bool=false, ims_dtmf_tone_de
+lay_int=0, show_signal_strength_in_sim_status_bool
+=true, data_rapid_notification_bool=true, carrier_
+instant_lettering_escaped_chars_string=, carrier_d
+efault_wfc_ims_roaming_mode_int=2, mtk_carrier_swi
+tch_wfc_mode_required_bool=false, editable_wfc_mod
+e_bool=true, mtk_cdma_sms_7bit_encoding_type_int=9
+, support_direct_fdn_dialing_bool=false, carrier_w
+ifi_string_array=null, treat_downgraded_video_call
+s_as_video_calls_bool=false, wifi_calls_can_be_hd_
+audio=true, support_downgrade_vt_to_audio_bool=tru
+e, notify_handover_video_from_lte_to_wifi_bool=fal
+se, use_otasp_for_provisioning_bool=false, always_
+play_remote_hold_tone_bool=false, maxMessageTextSi
+ze=-1, duration_blocking_disabled_after_emergency_
+int=7200, carrier_metered_roaming_apn_types_string
+s=[Ljava.lang.String;@b6c9313, no_merge_req_after_
+max_connection=true, show_video_call_charges_alert
+_dialog_bool=false, carrier_network_service_wlan_p
+ackage_override_string=, show_apn_setting_cdma_boo
+l=false, carrier_instant_lettering_length_limit_in
+t=64, carrier_instant_lettering_invalid_chars_stri
+ng=, carrier_setup_app_string=, editable_wfc_roami
+ng_mode_bool=false, supportMmsContentDisposition=t
+rue, support_manage_ims_conference_call_bool=true,
+ allow_non_emergency_calls_in_ecm_bool=true, mtk_c
+arrier_ss_not_support_call_identity=false, mtk_key
+_roaming_bar_guard_bool=false, carrier_data_servic
+e_wlan_package_override_string=, use_rcs_presence_
+bool=false, config_telephony_use_own_number_for_vo
+icemail_bool=false, cdma_dtmf_tone_delay_int=100, 
+editable_voicemail_number_bool=false, carrier_data
+_call_apn_retry_after_disconnect_long=10000, filte
+red_cnap_names_string_array=null, enabledTransID=f
+als                                               
+09-25 12:21:32.629  2648  2723 I Athena  : endJson
+:{"tid":10230007,"tz":"GMT+05:00","gaid":"d8853647
+-4a7d-492d-b8fb-0275bb491d9f","vid":"9","event":"e
+xce_ther","_ap":43000,"_md":42000,"_cpu":65700,"__
+ver":1,"_batt":42000,"_pmic":48580,"_wifi":50000,"
+_curts":1790320724000,"ts":1790320891477,"scode":"
+e377e81b-ab4a-4eb4-acac-7feecb9f1fdd"}            
+09-25 12:21:33.115  2648  2699 I PowerMonitorHookC
+lient: unkown network interface:ap0               
+09-25 12:21:33.656  2648  2723 I Athena  : WIFI已 
+断开,移动数据已连接                               
+09-25 12:21:33.670  2648  2723 I Athena  : WIFI已 
+断开,移动数据已连接                               
+09-25 12:21:33.684  2648  2723 I Athena  : WIFI已 
+断开,移动数据已连接                               
+09-25 12:21:33.698  2648  2723 I Athena  : WIFI已 
+断开,移动数据已连接                               
+09-25 12:21:33.723  2648  2723 I Athena  : WIFI已 
+断开,移动数据已连接                               
+09-25 12:21:33.733  2648  2723 I Athena  : WIFI已 
+断开,移动数据已连接                               
+09-25 12:21:42.965  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1281,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:21:42.966  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1281,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:21:43.124  2648  2699 I PowerMonitorHookC
+lient: unkown network interface:ap0               
+09-25 12:21:43.493  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1281,da
+taTypeIconId=2131232008,activityIn=false,activityO
+ut=true,enabledDesc=Jazz,noSim=false]             
+09-25 12:21:43.496  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1281,dataTypeIc
+onId=2131232008,activityIn=false,activityOut=true,
+enabledDesc=Jazz,noSim=false]                     
+09-25 12:21:44.506  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1281,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:21:44.507  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1281,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:21:45.529  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:21:45.529  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:21:53.127  2648  2699 I PowerMonitorHookC
+lient: unkown network interface:ap0               
+09-25 12:21:57.445  2173  2307 D WIFI_UT : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1123, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10098] ] with score 50                   
+09-25 12:21:57.446  2173  2307 D WIFI    : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1123, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10098] ] with score 50                   
+09-25 12:22:03.128  2648  2699 I PowerMonitorHookC
+lient: unkown network interface:ap0               
+09-25 12:22:05.880  4357  4357 D PowerSaveUtils: c
+onfig details is : bright->255wifiEnable-> falsewi
+fiApEnable->truebtEnable->falsedataEnable->truegps
+Enable->falsethreeGEnable->trueautoSyncEnable->tru
+eisScreenModeOn->falseisUltraModeOn->falseisBatter
+ySaverOn->false                                   
+09-25 12:22:12.983  2173  2307 D WIFI_UT : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1125, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10098] ] with score 50                   
+09-25 12:22:12.984  2173  2307 D WIFI    : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1125, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10098] ] with score 50                   
+09-25 12:22:13.133  2648  2699 I PowerMonitorHookC
+lient: unkown network interface:ap0               
+09-25 12:22:23.134  2648  2699 I PowerMonitorHookC
+lient: unkown network interface:ap0               
+09-25 12:22:26.064  2173  2307 D WIFI_UT : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1127, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10147] ] with score 50                   
+09-25 12:22:26.066  2173  2307 D WIFI    : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1127, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10147] ] with score 50                   
+09-25 12:22:26.078  2173  2307 D WIFI_UT : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1128, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10147] ] with score 50                   
+09-25 12:22:26.078  2173  2307 D WIFI    : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1128, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10147] ] with score 50                   
+09-25 12:22:31.581  4357  4357 D PowerSaveUtils: c
+onfig details is : bright->255wifiEnable-> falsewi
+fiApEnable->truebtEnable->falsedataEnable->truegps
+Enable->falsethreeGEnable->trueautoSyncEnable->tru
+eisScreenModeOn->falseisUltraModeOn->falseisBatter
+ySaverOn->false                                   
+09-25 12:22:33.140  2648  2699 I PowerMonitorHookC
+lient: unkown network interface:ap0               
+09-25 12:22:43.143  2648  2699 I PowerMonitorHookC
+lient: unkown network interface:ap0               
+09-25 12:22:52.963  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:22:52.964  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:22:52.966  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:22:52.968  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:22:52.968  2173  2364 W NetworkStatsRecor
+der: unknown interfaces [ap0, ccmni-lan, wlan0, lo
+, ccmni1], ignoring those stats                   
+09-25 12:22:53.968  4357  4357 D PowerSaveUtils: c
+onfig details is : bright->255wifiEnable-> falsewi
+fiApEnable->truebtEnable->falsedataEnable->truegps
+Enable->falsethreeGEnable->trueautoSyncEnable->tru
+eisScreenModeOn->falseisUltraModeOn->falseisBatter
+ySaverOn->false
+09-25 12:23:03.152  2648  2699 I PowerMonitorHookC
+lient: unkown network interface:ap0               
+09-25 12:23:13.155  2648  2699 I PowerMonitorHookC
+lient: unkown network interface:ap0               
+09-25 12:23:25.638  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1283,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:23:25.639  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1283,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:23:30.754  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:23:30.754  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:23:41.061  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1283,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:23:41.063  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1283,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:23:43.179  2648  2699 I PowerMonitorHookC
+lient: unkown network interface:ap0               
+09-25 12:23:46.247  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:23:46.247  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+~ $ ~~09-25 12:23:48.985  2348  2348 D Tile.Mobile
+DataTile: setMobileDataIndicators mInfo=CallbackIn
+fo[enabled=true,wifiEnabled=false,wifiConnected=fa
+lse,airplaneModeEnabled=false,mobileSignalIconId=1
+283,dataTypeIconId=2131232008,activityIn=true,acti
+vityOut=true,enabledDesc=Jazz,noSim=false]        
+09-25 12:23:48.986  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1283,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:23:56.732  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:23:56.735  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+~ $ ~~09-25 12:24:04.000  2648  2723 I Athena  : W
+IFI已断开,移动数据已连接                          
+09-25 12:24:04.014  2648  2723 I Athena  : WIFI已 
+断开,移动数据已连接                               
+09-25 12:24:04.046  2648  2723 I Athena  : WIFI已 
+断开,移动数据已连接                               
+09-25 12:24:04.056  2648  2723 I Athena  : WIFI已 
+断开,移动数据已连接                               
+09-25 12:24:05.901  4357  4357 D PowerSaveUtils: c
+onfig details is : bright->255wifiEnable-> falsewi
+fiApEnable->truebtEnable->falsedataEnable->truegps
+Enable->falsethreeGEnable->trueautoSyncEnable->tru
+eisScreenModeOn->falseisUltraModeOn->falseisBatter
+ySaverOn->false                                   
+09-25 12:24:08.068  2173  2307 D WIFI_UT : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1129, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10147] ] with score 50                   
+09-25 12:24:08.068  2173  2307 D WIFI    : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1129, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10147] ] with score 50                   
+09-25 12:24:08.078  2173  2307 D WIFI_UT : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1130, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10147] ] with score 50                   
+09-25 12:24:08.078  2173  2307 D WIFI    : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1130, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10147] ] with score 50                   
+09-25 12:24:18.553  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=false,activityO
+ut=false,enabledDesc=Jazz,noSim=false]            
+09-25 12:24:18.553  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=false,activityOut=false
+,enabledDesc=Jazz,noSim=false]                    
+09-25 12:24:19.567  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:24:19.568  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:24:20.989 15204 15204 I MtkSystemServiceR
+egistry: setMtkSystemServiceName start names{class
+ android.net.wifi.RttManager=rttmanager, class and
+roid.app.KeyguardManager=keyguard, class android.a
+pp.WallpaperManager=wallpaper, class android.os.Dr
+opBoxManager=dropbox, class android.os.PowerManage
+r=power, class android.telephony.SubscriptionManag
+er=telephony_subscription_service, class android.h
+ardware.usb.UsbManager=usb, class android.os.Syste
+mUpdateManager=system_update, class android.os.sto
+rage.StorageManager=storage, class android.telepho
+ny.CarrierConfigManager=carrier_config, class andr
+oid.telephony.euicc.EuiccCardManager=euicc_card, c
+lass android.net.ConnectivityManager=connectivity,
+ class android.telephony.TelephonyManager=phone, c
+lass android.view.textclassifier.TextClassificatio
+nManager=textclassification, class android.app.Act
+ivityManager=activity, class android.media.session
+.MediaSessionManager=media_session, class android.
+app.UiModeManager=uimode, class android.bluetooth.
+BluetoothManager=bluetooth, class android.hardware
+.ConsumerIrManager=consumer_ir, class android.cont
+ent.pm.ShortcutManager=shortcut, class android.vie
+w.accessibility.AccessibilityManager=accessibility
+, class android.companion.CompanionDeviceManager=c
+ompaniondevice, class android.content.ClipboardMan
+ager=clipboard, class android.app.trust.TrustManag
+er=trust, class android.net.nsd.NsdManager=service
+discovery, class android.content.RestrictionsManag
+er=restrictions, class android.view.inputmethod.In
+putMethodManager=input_method, class android.app.u
+sage.NetworkStatsManager=netstats, class android.o
+s.health.SystemHealthManager=systemhealth, class a
+ndroid.hardware.camera2.CameraManager=camera, clas
+s android.hardware.location.ContextHubManager=cont
+exthub, class android.view.autofill.AutofillManage
+r=autofill, class android.telephony.euicc.EuiccMan
+ager=euicc, class android.app.AlarmManager=alarm, 
+class android.nfc.NfcManager=nfc, class android.te
+lecom.TelecomManager=telecom, class android.conten
+t.pm.CrossProfileApps=crossprofileapps, class andr
+oid.app.job.JobScheduler=jobscheduler, class andro
+id.app.NotificationManager=notification, class and
+roid.content.pm.LauncherApps=launcherapps, class a
+ndroid.net.NetworkScoreManager=network_score, clas
+s android.service.persistentdata.PersistentDataBlo
+ckManager=persistent_data_block, class android.net
+.EthernetManager=ethernet, class android.view.acce
+ssibility.CaptioningManager=captioning, class andr
+oid.hardware.hdmi.HdmiControlManager=hdmi_control,
+ class android.os.Vibrator=vibrator, class android
+.print.PrintManager=print, class android.net.lowpa
+n.LowpanManager=lowpan, class android.media.tv.TvI
+nputManager=tv_input, class android.net.wifi.aware
+.WifiAwareManager=wifiaware, class android.app.tim
+ezone.RulesManager=timezone, class android.appwidg
+et.AppWidgetManager=appwidget, class android.app.D
+ownloadManager=download, class android.app.StatusB
+arManager=statusbar, class android.hardware.displa
+y.DisplayManager=display, class android.location.L
+ocationManager=location, class android.media.Audio
+Manager=audio, class android.os.UserManager=user, 
+class android.os.IncidentManager=incident, class t
+ranssion.log.TranLogManager=tran_tranlog, class an
+droid.media.soundtrigger.SoundTriggerManager=sound
+trigger, class android.os.BatteryManager=batteryma
+nager, class android.net.wifi.rtt.WifiRttManager=w
+ifirtt, class android.media.projection.MediaProjec
+tionManager=media_projection, class android.os.Har
+dwarePropertiesManager=hardware_properties, class 
+android.hardware.radio.RadioManager=broadcastradio
+, class android.accounts.AccountManager=account, c
+lass android.app.SearchManager=search, class andro
+id.text.ClipboardManager=clipboard, class android.
+app.StatsManager=stats, class android.app.usage.Us
+ageStatsManager=usagestats, class android.hardware
+.fingerprint.FingerprintManager=fingerprint, class
+ android.app.usage.StorageStatsManager=storagestat
+s, class android.net.wifi.p2p.WifiP2pManager=wifip
+2p, interface android.view.WindowManager=window, c
+lass android.media.midi.MidiManager=midi, class an
+droid.view.LayoutInflater=layout_inflater, class a
+09-25 12:24:21.096  4357  4357 D PowerSaveUtils: c
+onfig details is : bright->255wifiEnable-> falsewi
+fiApEnable->truebtEnable->falsedataEnable->truegps
+Enable->falsethreeGEnable->trueautoSyncEnable->tru
+eisScreenModeOn->falseisUltraModeOn->falseisBatter
+ySaverOn->false                                   
+09-25 12:24:25.528  2173  2307 D WIFI_UT : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1132, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10147] ] with score 50                   
+09-25 12:24:25.528  2173  2307 D WIFI    : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1132, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10147] ] with score 50                   
+09-25 12:24:25.539  2173  2307 D WIFI_UT : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1133, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10147] ] with score 50                   
+09-25 12:24:25.540  2173  2307 D WIFI    : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1133, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10147] ] with score 50                   
+09-25 12:24:31.385  2648  2723 I Athena  : WIFI已 
+断开,移动数据已连接                               
+09-25 12:24:31.400  2648  2723 I Athena  : WIFI已 
+断开,移动数据已连接                               
+09-25 12:24:31.451  2648  2723 I Athena  : WIFI已 
+断开,移动数据已连接                               
+09-25 12:24:31.465  2648  2723 I Athena  : WIFI已 
+断开,移动数据已连接                               
+09-25 12:24:33.195  2648  2699 I PowerMonitorHookC
+lient: unkown network interface:ap0               
+09-25 12:24:34.549  4357  4357 D PowerSaveUtils: c
+onfig details is : bright->255wifiEnable-> falsewi
+fiApEnable->truebtEnable->falsedataEnable->truegps
+Enable->falsethreeGEnable->trueautoSyncEnable->tru
+eisScreenModeOn->falseisUltraModeOn->falseisBatter
+ySaverOn->false                                   
+09-25 12:24:34.942  2173  2307 D WIFI_UT : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1134, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10147] ] with score 50                   
+09-25 12:24:34.942  2173  2307 D WIFI    : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1134, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10147] ] with score 50                   
+09-25 12:24:34.955  2173  2307 D WIFI_UT : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1135, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10147] ] with score 50                   
+09-25 12:24:34.955  2173  2307 D WIFI    : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1135, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10147] ] with score 50                   
+09-25 12:24:40.674  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=false,activityO
+ut=false,enabledDesc=Jazz,noSim=false]            
+09-25 12:24:40.674  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=false,activityOut=false
+,enabledDesc=Jazz,noSim=false]                    
+09-25 12:24:41.681  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:24:41.682  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:24:43.199  2648  2699 I PowerMonitorHookC
+lient: unkown network interface:ap0               
+09-25 12:24:45.849 15487 15487 I MtkSystemServiceR
+egistry: setMtkSystemServiceName start names{class
+ android.net.wifi.RttManager=rttmanager, class and
+roid.service.persistentdata.PersistentDataBlockMan
+ager=persistent_data_block, class android.app.Keyg
+uardManager=keyguard, class android.app.WallpaperM
+anager=wallpaper, class android.os.DropBoxManager=
+dropbox, class android.os.PowerManager=power, clas
+s android.telephony.SubscriptionManager=telephony_
+subscription_service, class android.hardware.usb.U
+sbManager=usb, class android.os.SystemUpdateManage
+r=system_update, class android.os.storage.StorageM
+anager=storage, class android.telephony.CarrierCon
+figManager=carrier_config, class android.os.Hardwa
+rePropertiesManager=hardware_properties, class and
+roid.telephony.euicc.EuiccCardManager=euicc_card, 
+class android.net.ConnectivityManager=connectivity
+, class android.telephony.TelephonyManager=phone, 
+class android.view.textclassifier.TextClassificati
+onManager=textclassification, class android.app.Ac
+tivityManager=activity, class android.media.sessio
+n.MediaSessionManager=media_session, class android
+.app.UiModeManager=uimode, class android.bluetooth
+.BluetoothManager=bluetooth, class android.hardwar
+e.ConsumerIrManager=consumer_ir, class android.vie
+w.accessibility.AccessibilityManager=accessibility
+, class android.companion.CompanionDeviceManager=c
+ompaniondevice, class android.content.ClipboardMan
+ager=clipboard, class android.app.trust.TrustManag
+er=trust, class android.view.autofill.AutofillMana
+ger=autofill, class android.net.nsd.NsdManager=ser
+vicediscovery, class android.content.RestrictionsM
+anager=restrictions, class android.view.inputmetho
+d.InputMethodManager=input_method, class android.a
+pp.usage.NetworkStatsManager=netstats, class andro
+id.hardware.camera2.CameraManager=camera, class an
+droid.service.oemlock.OemLockManager=oem_lock, cla
+ss android.app.slice.SliceManager=slice, class and
+roid.telephony.euicc.EuiccManager=euicc, class and
+roid.app.AlarmManager=alarm, class android.nfc.Nfc
+Manager=nfc, class android.telecom.TelecomManager=
+telecom, class android.app.job.JobScheduler=jobsch
+eduler, class android.app.NotificationManager=noti
+fication, class android.hardware.radio.RadioManage
+r=broadcastradio, class android.content.pm.Launche
+rApps=launcherapps, class android.net.NetworkScore
+Manager=network_score, class android.net.EthernetM
+anager=ethernet, class android.view.accessibility.
+CaptioningManager=captioning, class android.hardwa
+re.hdmi.HdmiControlManager=hdmi_control, class and
+roid.os.Vibrator=vibrator, class android.print.Pri
+ntManager=print, class android.net.lowpan.LowpanMa
+nager=lowpan, class android.media.tv.TvInputManage
+r=tv_input, class android.net.wifi.aware.WifiAware
+Manager=wifiaware, class transsion.log.TranLogMana
+ger=tran_tranlog, class android.app.DownloadManage
+r=download, class android.app.StatusBarManager=sta
+tusbar, class android.app.VrManager=vrmanager, cla
+ss android.hardware.display.DisplayManager=display
+, class android.location.LocationManager=location,
+ class android.os.health.SystemHealthManager=syste
+mhealth, class android.media.AudioManager=audio, c
+lass android.os.UserManager=user, class android.os
+.BatteryManager=batterymanager, class android.hard
+ware.location.ContextHubManager=contexthub, class 
+android.net.wifi.rtt.WifiRttManager=wifirtt, class
+ android.accounts.AccountManager=account, class an
+droid.app.SearchManager=search, class android.net.
+NetworkWatchlistManager=network_watchlist, class a
+ndroid.text.ClipboardManager=clipboard, class andr
+oid.media.midi.MidiManager=midi, class android.app
+.StatsManager=stats, class android.app.usage.Usage
+StatsManager=usagestats, class android.os.Incident
+Manager=incident, class android.hardware.fingerpri
+nt.FingerprintManager=fingerprint, class android.c
+ontent.pm.CrossProfileApps=crossprofileapps, class
+ android.app.usage.StorageStatsManager=storagestat
+s, class android.net.wifi.p2p.WifiP2pManager=wifip
+2p, class android.app.timezone.RulesManager=timezo
+ne, interface android.view.WindowManager=window, c
+lass android.view.LayoutInflater=layout_inflater, 
+class android.location.CountryDetector=country_det
+09-25 12:24:52.339  2173  4541 I ActivityManager: 
+ip addr show ap0                                  
+09-25 12:24:52.339  2173  4541 I ActivityManager: 
+echo "=== TETHER NAT ==="                         
+09-25 12:24:52.339  2173  4541 I ActivityManager: 
+iptables -t nat -L tetherctrl_nat_POSTROUTING -n -
+09-25 12:24:52.339  2173  4541 I ActivityManager: 
+49: ap0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 150
+09-25 12:24:52.339  2173  4541 I ActivityManager: 
+e global ap0                                      
+09-25 12:24:52.339  2173  4541 I ActivityManager: 
+83:ec:3c     *        ap0                         
+09-25 12:24:52.339  2173  4541 I ActivityManager: 
+=== TETHER NAT ===                                
+09-25 12:24:52.339  2173  4541 I ActivityManager: 
+Chain tetherctrl_nat_POSTROUTING (1 references)   
+09-25 12:24:52.339  2173  4541 I ActivityManager: 
+~ $ ps -A | grep -E "hostapd|dnsmasq|sh|su"       
+09-25 12:24:52.339  2173  4541 I ActivityManager: 
+ps -A | grep -E "hostapd|dnsmasq"                 
+09-25 12:24:52.339  2173  4541 I ActivityManager: 
+ip addr show ap0                                  
+09-25 12:24:52.339  2173  4541 I ActivityManager: 
+wifi         11797     1 2129276   7868 poll_sched
+09-25 12:24:52.339  2173  4541 I ActivityManager: 
+ule_timeout 0 S hostapd                           
+09-25 12:24:52.339  2173  4541 I ActivityManager: 
+dns_tether   11800  1937   11976   3368 poll_sched
+09-25 12:24:52.339  2173  4541 I ActivityManager: 
+ule_timeout 0 S dnsmasq                           
+09-25 12:24:52.339  2173  4541 I ActivityManager: 
+dns_tether   15426 11800   11976    572 sk_wait_da
+09-25 12:24:52.339  2173  4541 I ActivityManager: 
+ta        0 S dnsmasq                             
+09-25 12:24:52.339  2173  4541 I ActivityManager: 
+dns_tether   15427 11800   11976    572 sk_wait_da
+09-25 12:24:52.339  2173  4541 I ActivityManager: 
+ta        0 S dnsmasq                             
+09-25 12:24:52.339  2173  4541 I ActivityManager: 
+dns_tether   15429 11800   11976    572 sk_wait_da
+09-25 12:24:52.339  2173  4541 I ActivityManager: 
+ta        0 S dnsmasq                             
+09-25 12:24:52.339  2173  4541 I ActivityManager: 
+dns_tether   15430 11800   11976   1580 sk_wait_da
+09-25 12:24:52.339  2173  4541 I ActivityManager: 
+ta        0 S dnsmasq                             
+09-25 12:24:52.339  2173  4541 I ActivityManager: 
+49: ap0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 150
+09-25 12:24:52.339  2173  4541 I ActivityManager: 
+e global ap0                                      
+09-25 12:24:53.200  2648  2699 I PowerMonitorHookC
+lient: unkown network interface:ap0               
+09-25 12:24:54.419  2173  2307 D WIFI_UT : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1137, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10147] ] with score 50                   
+09-25 12:24:54.419  2173  2307 D WIFI    : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1137, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10147] ] with score 50                   
+09-25 12:24:54.426  2173  2307 D WIFI_UT : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1138, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10147] ] with score 50                   
+09-25 12:24:54.426  2173  2307 D WIFI    : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1138, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10147] ] with score 50                   
+09-25 12:24:54.544  2648  2723 I Athena  : WIFI已 
+断开,移动数据已连接                               
+09-25 12:24:54.559  2648  2723 I Athena  : WIFI已 
+断开,移动数据已连接                               
+09-25 12:24:54.603  2648  2723 I Athena  : WIFI已 
+断开,移动数据已连接                               
+09-25 12:24:54.615  2648  2723 I Athena  : WIFI已 
+断开,移动数据已连接                               
+09-25 12:24:57.737  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1283,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:24:57.737  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1283,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:25:05.901  4357  4357 D PowerSaveUtils: c
+onfig details is : bright->255wifiEnable-> falsewi
+fiApEnable->truebtEnable->falsedataEnable->truegps
+Enable->falsethreeGEnable->trueautoSyncEnable->tru
+eisScreenModeOn->falseisUltraModeOn->falseisBatter
+ySaverOn->false                                   
+09-25 12:25:07.945  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:25:07.945  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:25:10.464  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1283,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:25:10.465  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1283,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:25:12.990  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:25:12.991  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:25:18.033  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1283,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:25:18.034  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1283,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:25:23.083  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:25:23.084  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:25:25.592  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1283,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:25:25.593  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1283,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:25:28.115  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:25:28.115  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:25:28.951  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=false,activityO
+ut=true,enabledDesc=Jazz,noSim=false]             
+09-25 12:25:28.955  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=false,activityOut=true,
+enabledDesc=Jazz,noSim=false]                     
+09-25 12:25:29.956  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:25:29.956  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:25:30.277  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1281,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:25:30.278  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1281,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:25:30.966  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1281,da
+taTypeIconId=2131232008,activityIn=false,activityO
+ut=true,enabledDesc=Jazz,noSim=false]             
+09-25 12:25:30.967  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1281,dataTypeIc
+onId=2131232008,activityIn=false,activityOut=true,
+enabledDesc=Jazz,noSim=false]                     
+09-25 12:25:32.986  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1281,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:25:32.987  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1281,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:25:34.755  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:25:34.756  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:25:37.312  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1281,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:25:37.312  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1281,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:25:39.880  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:25:39.880  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:25:43.226  2648  2699 I PowerMonitorHookC
+lient: unkown network interface:ap0               
+09-25 12:25:53.235  2648  2699 I PowerMonitorHookC
+lient: unkown network interface:ap0               
+09-25 12:25:55.865  2173  2307 E WifiStateMachine:
+ getWifiLinkLayerStats called without an interface
+09-25 12:25:55.866  2173  2307 D WifiConnectivityM
+anager: handleScreenStateChanged: screenOn=false  
+09-25 12:25:55.868  2173  2307 D WifiConnectivityM
+anager: startConnectivityScan: screenOn=false wifi
+State=transitioning scanImmediately=false wifiEnab
+led=false wifiConnectivityManagerEnabled=true     
+09-25 12:25:56.028 14250 15883 I Bugle   : Carrier
+ configs loaded: Bundle[{mtk_show_clir_setting_boo
+l=true, mtk_default_enhanced_4g_mode_bool=true, ca
+rrier_volte_provisioned_bool=false, disable_charge
+_indication_bool=false, httpSocketTimeout=60000, m
+tk_resume_hold_call_after_active_call_end_by_remot
+e=false, carrier_wfc_supports_wifi_only_bool=false
+, carrier_default_actions_on_default_network_avail
+able_string_array=[Ljava.lang.String;@683ec86, mtk
+_ct_volte_status_bool=false, mtk_carrier_ss_need_c
+heck_data_roaming=false, operator_selection_expand
+_bool=true, disable_cdma_activation_code_bool=fals
+e, simplified_network_settings_bool=false, call_ba
+rring_visibility_bool=true, enable_apps_string_arr
+ay=null, carrier_default_wfc_ims_roaming_enabled_b
+ool=false, mtk_show_call_barring_password_bool=fal
+se, cdma_nonroaming_networks_string_array=null, al
+iasMinChars=2, mtk_key_multiline_allow_cross_line_
+conference_bool=false, wfc_data_spn_format_idx_int
+=0, hide_sim_lock_settings_bool=false, drop_video_
+call_when_answering_audio_call_bool=false, mtk_sho
+w_open_mobile_data_dialog_bool=false, ci_action_on
+_sys_update_bool=false, convert_cdma_caller_id_mmi
+_codes_while_roaming_on_3gpp_bool=false, support_e
+nhanced_call_blocking_bool=false, vvm_port_number_
+int=0, carrier_default_wfc_ims_enabled_bool=false,
+ dial_string_replace_string_array=null, gsm_nonroa
+ming_networks_string_array=null, hide_ims_apn_bool
+=false, show_toast_when_conference_full=true, vvm_
+destination_number_string=, dtmf_type_enabled_bool
+=false, allow_video_calling_fallback_bool=true, mt
+k_carrier_ims_ecbm_supported=false, mtk_domestic_r
+oaming_enabled_only_by_mobile_data_setting=false, 
+config_ims_package_override_string=com.google.andr
+oid.ims, mtk_support_enhanced_call_blocking_bool=f
+alse, support_auto_decline_upgrade_request_bool=tr
+ue, mtk_video_call_background_transmission=false, 
+smsToMmsTextThreshold=-1, disable_severe_when_extr
+eme_disabled_bool=true, force_home_network_bool=fa
+lse, enableSMSDeliveryReports=true, auto_retry_ena
+bled_bool=false, play_call_recording_tone_bool=fal
+se, carrier_force_disable_etws_cmas_test_bool=fals
+e, allow_emergency_video_calls_bool=false, csp_ena
+bled_bool=false, mtk_dialer_call_pull_bool=false, 
+default_sim_call_manager_string=, mtk_carrier_swap
+_vt_conference_to_foreground_before_merge=false, c
+all_forwarding_blocks_while_roaming_string_array=n
+ull, emergency_notification_delay_int=-1, support_
+video_conference_call_bool=false, ims_dtmf_tone_de
+lay_int=0, show_signal_strength_in_sim_status_bool
+=true, data_rapid_notification_bool=true, carrier_
+instant_lettering_escaped_chars_string=, carrier_d
+efault_wfc_ims_roaming_mode_int=2, mtk_carrier_swi
+tch_wfc_mode_required_bool=false, editable_wfc_mod
+e_bool=true, mtk_cdma_sms_7bit_encoding_type_int=9
+, support_direct_fdn_dialing_bool=false, carrier_w
+ifi_string_array=null, treat_downgraded_video_call
+s_as_video_calls_bool=false, wifi_calls_can_be_hd_
+audio=true, support_downgrade_vt_to_audio_bool=tru
+e, notify_handover_video_from_lte_to_wifi_bool=fal
+se, use_otasp_for_provisioning_bool=false, always_
+play_remote_hold_tone_bool=false, maxMessageTextSi
+ze=-1, duration_blocking_disabled_after_emergency_
+int=7200, carrier_metered_roaming_apn_types_string
+s=[Ljava.lang.String;@de0b947, no_merge_req_after_
+max_connection=true, show_video_call_charges_alert
+_dialog_bool=false, carrier_network_service_wlan_p
+ackage_override_string=, show_apn_setting_cdma_boo
+l=false, carrier_instant_lettering_length_limit_in
+t=64, carrier_instant_lettering_invalid_chars_stri
+ng=, carrier_setup_app_string=, editable_wfc_roami
+ng_mode_bool=false, supportMmsContentDisposition=t
+rue, support_manage_ims_conference_call_bool=true,
+ allow_non_emergency_calls_in_ecm_bool=true, mtk_c
+arrier_ss_not_support_call_identity=false, mtk_key
+_roaming_bar_guard_bool=false, carrier_data_servic
+e_wlan_package_override_string=, use_rcs_presence_
+bool=false, config_telephony_use_own_number_for_vo
+icemail_bool=false, cdma_dtmf_tone_delay_int=100, 
+editable_voicemail_number_bool=false, carrier_data
+_call_apn_retry_after_disconnect_long=10000, filte
+red_cnap_names_string_array=null, enabledTransID=f
+als                                               
+09-25 12:26:06.110  2173  2307 D WIFI_UT : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1139, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10147] ] with score 50                   
+09-25 12:26:06.110  2173  2307 D WIFI    : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1139, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10147] ] with score 50                   
+09-25 12:26:06.112  2648  2699 I PowerMonitorHookC
+lient: unkown network interface:ap0               
+09-25 12:26:06.121  2173  2307 D WIFI_UT : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1140, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10147] ] with score 50                   
+09-25 12:26:06.121  2173  2307 D WIFI    : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1140, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10147] ] with score 50                   
+09-25 12:26:06.168  2173  2307 E WifiStateMachine:
+ getWifiLinkLayerStats called without an interface
+09-25 12:26:06.168  2173  2307 D WifiConnectivityM
+anager: handleScreenStateChanged: screenOn=true   
+09-25 12:26:06.168  2173  2307 D WifiConnectivityM
+anager: startConnectivityScan: screenOn=true wifiS
+tate=transitioning scanImmediately=false wifiEnabl
+ed=false wifiConnectivityManagerEnabled=true      
+09-25 12:26:06.206  4357  4357 D PowerSaveUtils: c
+onfig details is : bright->255wifiEnable-> falsewi
+fiApEnable->truebtEnable->falsedataEnable->truegps
+Enable->falsethreeGEnable->trueautoSyncEnable->tru
+eisScreenModeOn->falseisUltraModeOn->falseisBatter
+ySaverOn->false                                   
+09-25 12:26:06.356 14250 15965 I Bugle   : Carrier
+ configs loaded: Bundle[{mtk_show_clir_setting_boo
+l=true, mtk_default_enhanced_4g_mode_bool=true, ca
+rrier_volte_provisioned_bool=false, disable_charge
+_indication_bool=false, httpSocketTimeout=60000, m
+tk_resume_hold_call_after_active_call_end_by_remot
+e=false, carrier_wfc_supports_wifi_only_bool=false
+, carrier_default_actions_on_default_network_avail
+able_string_array=[Ljava.lang.String;@6648237, mtk
+_ct_volte_status_bool=false, mtk_carrier_ss_need_c
+heck_data_roaming=false, operator_selection_expand
+_bool=true, disable_cdma_activation_code_bool=fals
+e, simplified_network_settings_bool=false, call_ba
+rring_visibility_bool=true, enable_apps_string_arr
+ay=null, carrier_default_wfc_ims_roaming_enabled_b
+ool=false, mtk_show_call_barring_password_bool=fal
+se, cdma_nonroaming_networks_string_array=null, al
+iasMinChars=2, mtk_key_multiline_allow_cross_line_
+conference_bool=false, wfc_data_spn_format_idx_int
+=0, hide_sim_lock_settings_bool=false, drop_video_
+call_when_answering_audio_call_bool=false, mtk_sho
+w_open_mobile_data_dialog_bool=false, ci_action_on
+_sys_update_bool=false, convert_cdma_caller_id_mmi
+_codes_while_roaming_on_3gpp_bool=false, support_e
+nhanced_call_blocking_bool=false, vvm_port_number_
+int=0, carrier_default_wfc_ims_enabled_bool=false,
+ dial_string_replace_string_array=null, gsm_nonroa
+ming_networks_string_array=null, hide_ims_apn_bool
+=false, show_toast_when_conference_full=true, vvm_
+destination_number_string=, dtmf_type_enabled_bool
+=false, allow_video_calling_fallback_bool=true, mt
+k_carrier_ims_ecbm_supported=false, mtk_domestic_r
+oaming_enabled_only_by_mobile_data_setting=false, 
+config_ims_package_override_string=com.google.andr
+oid.ims, mtk_support_enhanced_call_blocking_bool=f
+alse, support_auto_decline_upgrade_request_bool=tr
+ue, mtk_video_call_background_transmission=false, 
+smsToMmsTextThreshold=-1, disable_severe_when_extr
+eme_disabled_bool=true, force_home_network_bool=fa
+lse, enableSMSDeliveryReports=true, auto_retry_ena
+bled_bool=false, play_call_recording_tone_bool=fal
+se, carrier_force_disable_etws_cmas_test_bool=fals
+e, allow_emergency_video_calls_bool=false, csp_ena
+bled_bool=false, mtk_dialer_call_pull_bool=false, 
+default_sim_call_manager_string=, mtk_carrier_swap
+_vt_conference_to_foreground_before_merge=false, c
+all_forwarding_blocks_while_roaming_string_array=n
+ull, emergency_notification_delay_int=-1, support_
+video_conference_call_bool=false, ims_dtmf_tone_de
+lay_int=0, show_signal_strength_in_sim_status_bool
+=true, data_rapid_notification_bool=true, carrier_
+instant_lettering_escaped_chars_string=, carrier_d
+efault_wfc_ims_roaming_mode_int=2, mtk_carrier_swi
+tch_wfc_mode_required_bool=false, editable_wfc_mod
+e_bool=true, mtk_cdma_sms_7bit_encoding_type_int=9
+, support_direct_fdn_dialing_bool=false, carrier_w
+ifi_string_array=null, treat_downgraded_video_call
+s_as_video_calls_bool=false, wifi_calls_can_be_hd_
+audio=true, support_downgrade_vt_to_audio_bool=tru
+e, notify_handover_video_from_lte_to_wifi_bool=fal
+se, use_otasp_for_provisioning_bool=false, always_
+play_remote_hold_tone_bool=false, maxMessageTextSi
+ze=-1, duration_blocking_disabled_after_emergency_
+int=7200, carrier_metered_roaming_apn_types_string
+s=[Ljava.lang.String;@60263a4, no_merge_req_after_
+max_connection=true, show_video_call_charges_alert
+_dialog_bool=false, carrier_network_service_wlan_p
+ackage_override_string=, show_apn_setting_cdma_boo
+l=false, carrier_instant_lettering_length_limit_in
+t=64, carrier_instant_lettering_invalid_chars_stri
+ng=, carrier_setup_app_string=, editable_wfc_roami
+ng_mode_bool=false, supportMmsContentDisposition=t
+rue, support_manage_ims_conference_call_bool=true,
+ allow_non_emergency_calls_in_ecm_bool=true, mtk_c
+arrier_ss_not_support_call_identity=false, mtk_key
+_roaming_bar_guard_bool=false, carrier_data_servic
+e_wlan_package_override_string=, use_rcs_presence_
+bool=false, config_telephony_use_own_number_for_vo
+icemail_bool=false, cdma_dtmf_tone_delay_int=100, 
+editable_voicemail_number_bool=false, carrier_data
+_call_apn_retry_after_disconnect_long=10000, filte
+red_cnap_names_string_array=null, enabledTransID=f
+als                                               
+09-25 12:26:06.545 14250 15980 I Bugle   : Carrier
+ configs loaded: Bundle[{mtk_show_clir_setting_boo
+l=true, mtk_default_enhanced_4g_mode_bool=true, ca
+rrier_volte_provisioned_bool=false, disable_charge
+_indication_bool=false, httpSocketTimeout=60000, m
+tk_resume_hold_call_after_active_call_end_by_remot
+e=false, carrier_wfc_supports_wifi_only_bool=false
+, carrier_default_actions_on_default_network_avail
+able_string_array=[Ljava.lang.String;@497fdd4, mtk
+_ct_volte_status_bool=false, mtk_carrier_ss_need_c
+heck_data_roaming=false, operator_selection_expand
+_bool=true, disable_cdma_activation_code_bool=fals
+e, simplified_network_settings_bool=false, call_ba
+rring_visibility_bool=true, enable_apps_string_arr
+ay=null, carrier_default_wfc_ims_roaming_enabled_b
+ool=false, mtk_show_call_barring_password_bool=fal
+se, cdma_nonroaming_networks_string_array=null, al
+iasMinChars=2, mtk_key_multiline_allow_cross_line_
+conference_bool=false, wfc_data_spn_format_idx_int
+=0, hide_sim_lock_settings_bool=false, drop_video_
+call_when_answering_audio_call_bool=false, mtk_sho
+w_open_mobile_data_dialog_bool=false, ci_action_on
+_sys_update_bool=false, convert_cdma_caller_id_mmi
+_codes_while_roaming_on_3gpp_bool=false, support_e
+nhanced_call_blocking_bool=false, vvm_port_number_
+int=0, carrier_default_wfc_ims_enabled_bool=false,
+ dial_string_replace_string_array=null, gsm_nonroa
+ming_networks_string_array=null, hide_ims_apn_bool
+=false, show_toast_when_conference_full=true, vvm_
+destination_number_string=, dtmf_type_enabled_bool
+=false, allow_video_calling_fallback_bool=true, mt
+k_carrier_ims_ecbm_supported=false, mtk_domestic_r
+oaming_enabled_only_by_mobile_data_setting=false, 
+config_ims_package_override_string=com.google.andr
+oid.ims, mtk_support_enhanced_call_blocking_bool=f
+alse, support_auto_decline_upgrade_request_bool=tr
+ue, mtk_video_call_background_transmission=false, 
+smsToMmsTextThreshold=-1, disable_severe_when_extr
+eme_disabled_bool=true, force_home_network_bool=fa
+lse, enableSMSDeliveryReports=true, auto_retry_ena
+bled_bool=false, play_call_recording_tone_bool=fal
+se, carrier_force_disable_etws_cmas_test_bool=fals
+e, allow_emergency_video_calls_bool=false, csp_ena
+bled_bool=false, mtk_dialer_call_pull_bool=false, 
+default_sim_call_manager_string=, mtk_carrier_swap
+_vt_conference_to_foreground_before_merge=false, c
+all_forwarding_blocks_while_roaming_string_array=n
+ull, emergency_notification_delay_int=-1, support_
+video_conference_call_bool=false, ims_dtmf_tone_de
+lay_int=0, show_signal_strength_in_sim_status_bool
+=true, data_rapid_notification_bool=true, carrier_
+instant_lettering_escaped_chars_string=, carrier_d
+efault_wfc_ims_roaming_mode_int=2, mtk_carrier_swi
+tch_wfc_mode_required_bool=false, editable_wfc_mod
+e_bool=true, mtk_cdma_sms_7bit_encoding_type_int=9
+, support_direct_fdn_dialing_bool=false, carrier_w
+ifi_string_array=null, treat_downgraded_video_call
+s_as_video_calls_bool=false, wifi_calls_can_be_hd_
+audio=true, support_downgrade_vt_to_audio_bool=tru
+e, notify_handover_video_from_lte_to_wifi_bool=fal
+se, use_otasp_for_provisioning_bool=false, always_
+play_remote_hold_tone_bool=false, maxMessageTextSi
+ze=-1, duration_blocking_disabled_after_emergency_
+int=7200, carrier_metered_roaming_apn_types_string
+s=[Ljava.lang.String;@a05db7d, no_merge_req_after_
+max_connection=true, show_video_call_charges_alert
+_dialog_bool=false, carrier_network_service_wlan_p
+ackage_override_string=, show_apn_setting_cdma_boo
+l=false, carrier_instant_lettering_length_limit_in
+t=64, carrier_instant_lettering_invalid_chars_stri
+ng=, carrier_setup_app_string=, editable_wfc_roami
+ng_mode_bool=false, supportMmsContentDisposition=t
+rue, support_manage_ims_conference_call_bool=true,
+ allow_non_emergency_calls_in_ecm_bool=true, mtk_c
+arrier_ss_not_support_call_identity=false, mtk_key
+_roaming_bar_guard_bool=false, carrier_data_servic
+e_wlan_package_override_string=, use_rcs_presence_
+bool=false, config_telephony_use_own_number_for_vo
+icemail_bool=false, cdma_dtmf_tone_delay_int=100, 
+editable_voicemail_number_bool=false, carrier_data
+_call_apn_retry_after_disconnect_long=10000, filte
+red_cnap_names_string_array=null, enabledTransID=f
+als                                               
+09-25 12:26:06.724  2173  2306 D WifiController: S
+taDisabledState CMD_USER_PRESENT{ when=-1ms what=1
+55660 target=com.android.internal.util.StateMachin
+e$SmHandler }                                     
+09-25 12:26:06.724  2173  2306 D WifiController: D
+efaultState CMD_USER_PRESENT{ when=-1ms what=15566
+0 target=com.android.internal.util.StateMachine$Sm
+Handler }                                         
+09-25 12:26:07.344 14250 16036 I Bugle   : Carrier
+ configs loaded: Bundle[{mtk_show_clir_setting_boo
+l=true, mtk_default_enhanced_4g_mode_bool=true, ca
+rrier_volte_provisioned_bool=false, disable_charge
+_indication_bool=false, httpSocketTimeout=60000, m
+tk_resume_hold_call_after_active_call_end_by_remot
+e=false, carrier_wfc_supports_wifi_only_bool=false
+, carrier_default_actions_on_default_network_avail
+able_string_array=[Ljava.lang.String;@1a99ded, mtk
+_ct_volte_status_bool=false, mtk_carrier_ss_need_c
+heck_data_roaming=false, operator_selection_expand
+_bool=true, disable_cdma_activation_code_bool=fals
+e, simplified_network_settings_bool=false, call_ba
+rring_visibility_bool=true, enable_apps_string_arr
+ay=null, carrier_default_wfc_ims_roaming_enabled_b
+ool=false, mtk_show_call_barring_password_bool=fal
+se, cdma_nonroaming_networks_string_array=null, al
+iasMinChars=2, mtk_key_multiline_allow_cross_line_
+conference_bool=false, wfc_data_spn_format_idx_int
+=0, hide_sim_lock_settings_bool=false, drop_video_
+call_when_answering_audio_call_bool=false, mtk_sho
+w_open_mobile_data_dialog_bool=false, ci_action_on
+_sys_update_bool=false, convert_cdma_caller_id_mmi
+_codes_while_roaming_on_3gpp_bool=false, support_e
+nhanced_call_blocking_bool=false, vvm_port_number_
+int=0, carrier_default_wfc_ims_enabled_bool=false,
+ dial_string_replace_string_array=null, gsm_nonroa
+ming_networks_string_array=null, hide_ims_apn_bool
+=false, show_toast_when_conference_full=true, vvm_
+destination_number_string=, dtmf_type_enabled_bool
+=false, allow_video_calling_fallback_bool=true, mt
+k_carrier_ims_ecbm_supported=false, mtk_domestic_r
+oaming_enabled_only_by_mobile_data_setting=false, 
+config_ims_package_override_string=com.google.andr
+oid.ims, mtk_support_enhanced_call_blocking_bool=f
+alse, support_auto_decline_upgrade_request_bool=tr
+ue, mtk_video_call_background_transmission=false, 
+smsToMmsTextThreshold=-1, disable_severe_when_extr
+eme_disabled_bool=true, force_home_network_bool=fa
+lse, enableSMSDeliveryReports=true, auto_retry_ena
+bled_bool=false, play_call_recording_tone_bool=fal
+se, carrier_force_disable_etws_cmas_test_bool=fals
+e, allow_emergency_video_calls_bool=false, csp_ena
+bled_bool=false, mtk_dialer_call_pull_bool=false, 
+default_sim_call_manager_string=, mtk_carrier_swap
+_vt_conference_to_foreground_before_merge=false, c
+all_forwarding_blocks_while_roaming_string_array=n
+ull, emergency_notification_delay_int=-1, support_
+video_conference_call_bool=false, ims_dtmf_tone_de
+lay_int=0, show_signal_strength_in_sim_status_bool
+=true, data_rapid_notification_bool=true, carrier_
+instant_lettering_escaped_chars_string=, carrier_d
+efault_wfc_ims_roaming_mode_int=2, mtk_carrier_swi
+tch_wfc_mode_required_bool=false, editable_wfc_mod
+e_bool=true, mtk_cdma_sms_7bit_encoding_type_int=9
+, support_direct_fdn_dialing_bool=false, carrier_w
+ifi_string_array=null, treat_downgraded_video_call
+s_as_video_calls_bool=false, wifi_calls_can_be_hd_
+audio=true, support_downgrade_vt_to_audio_bool=tru
+e, notify_handover_video_from_lte_to_wifi_bool=fal
+se, use_otasp_for_provisioning_bool=false, always_
+play_remote_hold_tone_bool=false, maxMessageTextSi
+ze=-1, duration_blocking_disabled_after_emergency_
+int=7200, carrier_metered_roaming_apn_types_string
+s=[Ljava.lang.String;@5a4a422, no_merge_req_after_
+max_connection=true, show_video_call_charges_alert
+_dialog_bool=false, carrier_network_service_wlan_p
+ackage_override_string=, show_apn_setting_cdma_boo
+l=false, carrier_instant_lettering_length_limit_in
+t=64, carrier_instant_lettering_invalid_chars_stri
+ng=, carrier_setup_app_string=, editable_wfc_roami
+ng_mode_bool=false, supportMmsContentDisposition=t
+rue, support_manage_ims_conference_call_bool=true,
+ allow_non_emergency_calls_in_ecm_bool=true, mtk_c
+arrier_ss_not_support_call_identity=false, mtk_key
+_roaming_bar_guard_bool=false, carrier_data_servic
+e_wlan_package_override_string=, use_rcs_presence_
+bool=false, config_telephony_use_own_number_for_vo
+icemail_bool=false, cdma_dtmf_tone_delay_int=100, 
+editable_voicemail_number_bool=false, carrier_data
+_call_apn_retry_after_disconnect_long=10000, filte
+red_cnap_names_string_array=null, enabledTransID=f
+als                                               
+09-25 12:26:07.431  2173  2307 E WifiStateMachine:
+ getWifiLinkLayerStats called without an interface
+09-25 12:26:07.431  2173  2307 D WifiConnectivityM
+anager: handleScreenStateChanged: screenOn=false  
+09-25 12:26:07.431  2173  2307 D WifiConnectivityM
+anager: startConnectivityScan: screenOn=false wifi
+State=transitioning scanImmediately=false wifiEnab
+led=false wifiConnectivityManagerEnabled=true     
+09-25 12:26:07.659  2173  2307 D WIFI_UT : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1141, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10147] ] with score 50                   
+09-25 12:26:07.660  2173  2307 D WIFI    : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1141, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10147] ] with score 50                   
+09-25 12:26:07.691  2173  2307 D WIFI_UT : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1142, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10147] ] with score 50                   
+09-25 12:26:07.692  2173  2307 D WIFI    : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1142, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10147] ] with score 50                   
+09-25 12:26:07.818 14250 15883 I Bugle   : Carrier
+ configs loaded: Bundle[{mtk_show_clir_setting_boo
+l=true, mtk_default_enhanced_4g_mode_bool=true, ca
+rrier_volte_provisioned_bool=false, disable_charge
+_indication_bool=false, httpSocketTimeout=60000, m
+tk_resume_hold_call_after_active_call_end_by_remot
+e=false, carrier_wfc_supports_wifi_only_bool=false
+, carrier_default_actions_on_default_network_avail
+able_string_array=[Ljava.lang.String;@5badc5d, mtk
+_ct_volte_status_bool=false, mtk_carrier_ss_need_c
+heck_data_roaming=false, operator_selection_expand
+_bool=true, disable_cdma_activation_code_bool=fals
+e, simplified_network_settings_bool=false, call_ba
+rring_visibility_bool=true, enable_apps_string_arr
+ay=null, carrier_default_wfc_ims_roaming_enabled_b
+ool=false, mtk_show_call_barring_password_bool=fal
+se, cdma_nonroaming_networks_string_array=null, al
+iasMinChars=2, mtk_key_multiline_allow_cross_line_
+conference_bool=false, wfc_data_spn_format_idx_int
+=0, hide_sim_lock_settings_bool=false, drop_video_
+call_when_answering_audio_call_bool=false, mtk_sho
+w_open_mobile_data_dialog_bool=false, ci_action_on
+_sys_update_bool=false, convert_cdma_caller_id_mmi
+_codes_while_roaming_on_3gpp_bool=false, support_e
+nhanced_call_blocking_bool=false, vvm_port_number_
+int=0, carrier_default_wfc_ims_enabled_bool=false,
+ dial_string_replace_string_array=null, gsm_nonroa
+ming_networks_string_array=null, hide_ims_apn_bool
+=false, show_toast_when_conference_full=true, vvm_
+destination_number_string=, dtmf_type_enabled_bool
+=false, allow_video_calling_fallback_bool=true, mt
+k_carrier_ims_ecbm_supported=false, mtk_domestic_r
+oaming_enabled_only_by_mobile_data_setting=false, 
+config_ims_package_override_string=com.google.andr
+oid.ims, mtk_support_enhanced_call_blocking_bool=f
+alse, support_auto_decline_upgrade_request_bool=tr
+ue, mtk_video_call_background_transmission=false, 
+smsToMmsTextThreshold=-1, disable_severe_when_extr
+eme_disabled_bool=true, force_home_network_bool=fa
+lse, enableSMSDeliveryReports=true, auto_retry_ena
+bled_bool=false, play_call_recording_tone_bool=fal
+se, carrier_force_disable_etws_cmas_test_bool=fals
+e, allow_emergency_video_calls_bool=false, csp_ena
+bled_bool=false, mtk_dialer_call_pull_bool=false, 
+default_sim_call_manager_string=, mtk_carrier_swap
+_vt_conference_to_foreground_before_merge=false, c
+all_forwarding_blocks_while_roaming_string_array=n
+ull, emergency_notification_delay_int=-1, support_
+video_conference_call_bool=false, ims_dtmf_tone_de
+lay_int=0, show_signal_strength_in_sim_status_bool
+=true, data_rapid_notification_bool=true, carrier_
+instant_lettering_escaped_chars_string=, carrier_d
+efault_wfc_ims_roaming_mode_int=2, mtk_carrier_swi
+tch_wfc_mode_required_bool=false, editable_wfc_mod
+e_bool=true, mtk_cdma_sms_7bit_encoding_type_int=9
+, support_direct_fdn_dialing_bool=false, carrier_w
+ifi_string_array=null, treat_downgraded_video_call
+s_as_video_calls_bool=false, wifi_calls_can_be_hd_
+audio=true, support_downgrade_vt_to_audio_bool=tru
+e, notify_handover_video_from_lte_to_wifi_bool=fal
+se, use_otasp_for_provisioning_bool=false, always_
+play_remote_hold_tone_bool=false, maxMessageTextSi
+ze=-1, duration_blocking_disabled_after_emergency_
+int=7200, carrier_metered_roaming_apn_types_string
+s=[Ljava.lang.String;@ca259d2, no_merge_req_after_
+max_connection=true, show_video_call_charges_alert
+_dialog_bool=false, carrier_network_service_wlan_p
+ackage_override_string=, show_apn_setting_cdma_boo
+l=false, carrier_instant_lettering_length_limit_in
+t=64, carrier_instant_lettering_invalid_chars_stri
+ng=, carrier_setup_app_string=, editable_wfc_roami
+ng_mode_bool=false, supportMmsContentDisposition=t
+rue, support_manage_ims_conference_call_bool=true,
+ allow_non_emergency_calls_in_ecm_bool=true, mtk_c
+arrier_ss_not_support_call_identity=false, mtk_key
+_roaming_bar_guard_bool=false, carrier_data_servic
+e_wlan_package_override_string=, use_rcs_presence_
+bool=false, config_telephony_use_own_number_for_vo
+icemail_bool=false, cdma_dtmf_tone_delay_int=100, 
+editable_voicemail_number_bool=false, carrier_data
+_call_apn_retry_after_disconnect_long=10000, filte
+red_cnap_names_string_array=null, enabledTransID=f
+als                                               
+09-25 12:26:08.051  2173  2307 E WifiStateMachine:
+ getWifiLinkLayerStats called without an interface
+09-25 12:26:08.051  2173  2307 D WifiConnectivityM
+anager: handleScreenStateChanged: screenOn=true   
+09-25 12:26:08.052  2173  2307 D WifiConnectivityM
+anager: startConnectivityScan: screenOn=true wifiS
+tate=transitioning scanImmediately=false wifiEnabl
+ed=false wifiConnectivityManagerEnabled=true      
+09-25 12:26:08.260  2173  2306 D WifiController: S
+taDisabledState CMD_USER_PRESENT{ when=0 what=1556
+60 target=com.android.internal.util.StateMachine$S
+mHandler }                                        
+09-25 12:26:08.260  2173  2306 D WifiController: D
+efaultState CMD_USER_PRESENT{ when=0 what=155660 t
+arget=com.android.internal.util.StateMachine$SmHan
+dler }                                            
+09-25 12:26:08.358  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1283,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:26:08.358  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1283,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:26:10.948  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:26:10.948  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:26:16.121  2648  2699 I PowerMonitorHookC
+lient: unkown network interface:ap0               
+09-25 12:26:20.627  4357  4357 D PowerSaveUtils: c
+onfig details is : bright->255wifiEnable-> falsewi
+fiApEnable->truebtEnable->falsedataEnable->truegps
+Enable->falsethreeGEnable->trueautoSyncEnable->tru
+eisScreenModeOn->falseisUltraModeOn->falseisBatter
+ySaverOn->false                                   
+09-25 12:26:26.135  2648  2699 I PowerMonitorHookC
+lient: unkown network interface:ap0               
+09-25 12:26:33.291  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=false,activityO
+ut=true,enabledDesc=Jazz,noSim=false]             
+09-25 12:26:33.292  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=false,activityOut=true,
+enabledDesc=Jazz,noSim=false]                     
+09-25 12:26:34.363  2173  2307 D WIFI_UT : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1143, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10050] ] with score 50                   
+09-25 12:26:34.363  2173  2307 D WIFI    : got req
+uest NetworkRequest [ TRACK_DEFAULT id=1143, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10050] ] with score 50                   
+09-25 12:26:36.322  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:26:36.323  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:26:40.351  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=false,activityO
+ut=false,enabledDesc=Jazz,noSim=false]            
+09-25 12:26:40.352  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=false,activityOut=false
+,enabledDesc=Jazz,noSim=false]                    
+09-25 12:26:41.368  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:26:41.371  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:26:44.391  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=false,activityO
+ut=false,enabledDesc=Jazz,noSim=false]            
+09-25 12:26:44.391  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=false,activityOut=false
+,enabledDesc=Jazz,noSim=false]                    
+09-25 12:26:45.402  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1283,da
+taTypeIconId=2131232008,activityIn=false,activityO
+ut=false,enabledDesc=Jazz,noSim=false]            
+09-25 12:26:45.411  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1283,dataTypeIc
+onId=2131232008,activityIn=false,activityOut=false
+,enabledDesc=Jazz,noSim=false]                    
+09-25 12:26:45.432  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1283,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:26:45.432  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1283,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:26:46.137  2648  2699 I PowerMonitorHookC
+lient: unkown network interface:ap0               
+09-25 12:26:47.961  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:26:47.961  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:26:50.460  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=false,activityO
+ut=false,enabledDesc=Jazz,noSim=false]            
+09-25 12:26:50.460  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=false,activityOut=false
+,enabledDesc=Jazz,noSim=false]                    
+09-25 12:26:51.472  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:26:51.473  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:26:56.139  2648  2699 I PowerMonitorHookC
+lient: unkown network interface:ap0               
+09-25 12:27:05.907  2648  2723 I Athena  : WIFI已 
+断开,移动数据已连接                               
+09-25 12:27:05.921  2648  2723 I Athena  : WIFI已 
+断开,移动数据已连接                               
+09-25 12:27:06.005  2648  2723 I Athena  : WIFI已 
+断开,移动数据已连接                               
+09-25 12:27:06.018  2648  2723 I Athena  : WIFI已 
+断开,移动数据已连接                               
+09-25 12:27:06.141  2648  2699 I PowerMonitorHookC
+lient: unkown network interface:ap0               
+09-25 12:27:06.568  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=false,activityO
+ut=true,enabledDesc=Jazz,noSim=false]             
+09-25 12:27:06.568  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=false,activityOut=true,
+enabledDesc=Jazz,noSim=false]                     
+09-25 12:27:07.572  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:27:07.572  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+09-25 12:27:10.594  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=false,activityO
+ut=true,enabledDesc=Jazz,noSim=false]             
+09-25 12:27:10.596  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=false,activityOut=true,
+enabledDesc=Jazz,noSim=false]                     
+09-25 12:27:11.606  2348  2348 D Tile.MobileDataTi
+le: setMobileDataIndicators mInfo=CallbackInfo[ena
+bled=true,wifiEnabled=false,wifiConnected=false,ai
+rplaneModeEnabled=false,mobileSignalIconId=1282,da
+taTypeIconId=2131232008,activityIn=true,activityOu
+t=true,enabledDesc=Jazz,noSim=false]              
+09-25 12:27:11.606  2348  2665 D Tile.MobileDataTi
+le: handleUpdateState arg=CallbackInfo[enabled=tru
+e,wifiEnabled=false,wifiConnected=false,airplaneMo
+deEnabled=false,mobileSignalIconId=1282,dataTypeIc
+onId=2131232008,activityIn=true,activityOut=true,e
+nabledDesc=Jazz,noSim=false]                      
+^C                                                
+~ $ 09-25 12:27:16.155  2648  2699 I PowerMonitorH
+ookClient: unkown network interface:ap0

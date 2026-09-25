@@ -1,0 +1,2000 @@
+rec[40]: time=09-25 11:33:13.966 processed=Device
+ActiveState org=DeviceActiveState dest=<null> what
+=155660(0x2600c)
+ rec[41]: time=09-25 11:38:44.139 processed=Defaul
+tState org=DeviceActiveState dest=StaDisabledState
+ what=155657(0x26009)
+ rec[42]: time=09-25 11:38:51.143 processed=Defaul
+tState org=StaDisabledState dest=DeviceActiveState
+ what=155657(0x26009)
+ rec[43]: time=09-25 11:40:09.073 processed=StaEna
+bledState org=DeviceActiveState dest=StaDisabledSt
+ate what=155656(0x26008)
+ rec[44]: time=09-25 11:40:12.324 processed=Defaul
+tState org=StaDisabledState dest=StaDisabledState 
+what=155665(0x26011)
+ rec[45]: time=09-25 11:40:12.324 processed=StaDis
+abledState org=StaDisabledState dest=<null> what=1
+55666(0x26012)
+ rec[46]: time=09-25 11:41:28.142 processed=Defaul
+tState org=StaDisabledState dest=<null> what=15566
+0(0x2600c)
+ rec[47]: time=09-25 11:41:40.050 processed=Defaul
+tState org=StaDisabledState dest=<null> what=15566
+0(0x2600c)
+ rec[48]: time=09-25 11:46:55.999 processed=StaDis
+abledState org=StaDisabledState dest=<null> what=1
+55656(0x26008)
+ rec[49]: time=09-25 11:48:39.070 processed=StaDis
+abledState org=StaDisabledState dest=DeviceActiveS
+tate what=155656(0x26008)
+ rec[50]: time=09-25 11:55:14.253 processed=StaEna
+bledState org=DeviceActiveState dest=<null> what=1
+55656(0x26008)
+ rec[51]: time=09-25 11:55:57.870 processed=Defaul
+tState org=DeviceActiveState dest=<null> what=1556
+58(0x2600a)
+ rec[52]: time=09-25 11:55:58.288 processed=StaEna
+bledState org=DeviceActiveState dest=StaDisabledSt
+ate what=155668(0x26014)
+ rec[53]: time=09-25 11:58:43.374 processed=Defaul
+tState org=StaDisabledState dest=<null> what=15566
+0(0x2600c)
+ rec[54]: time=09-25 12:10:23.913 processed=Defaul
+tState org=StaDisabledState dest=<null> what=15565
+8(0x2600a)
+ rec[55]: time=09-25 12:10:24.836 processed=Defaul
+tState org=StaDisabledState dest=DeviceActiveState
+ what=155663(0x2600f)
+ rec[56]: time=09-25 12:10:38.321 processed=Defaul
+tState org=DeviceActiveState dest=<null> what=1556
+58(0x2600a)
+ rec[57]: time=09-25 12:10:38.751 processed=StaEna
+bledState org=DeviceActiveState dest=StaDisabledSt
+ate what=155668(0x26014)
+ rec[58]: time=09-25 12:17:03.639 processed=Defaul
+tState org=StaDisabledState dest=<null> what=15566
+0(0x2600c)
+ rec[59]: time=09-25 12:26:06.724 processed=Defaul
+tState org=StaDisabledState dest=<null> what=15566
+0(0x2600c)
+ rec[60]: time=09-25 12:26:08.260 processed=Defaul
+tState org=StaDisabledState dest=<null> what=15566
+0(0x2600c)
+curState=StaDisabledState
+mPersistWifiState 1
+mAirplaneModeOn false
+mEnableTrafficStatsPoll false
+mTrafficStatsPollToken 85
+mTxPkts 0
+mRxPkts 0
+--
+Dump of WifiStateMachinePrime
+Current wifi mode: WifiDisabledState
+NumActiveModeManagers: 1
+--Dump of SoftApManager--
+current StateMachine mode: StartedState
+mApInterfaceName: ap0
+mIfaceIsUp: true
+mMode: 1
+mCountryCode: PK
+mApConfig.SSID: Infinix HOT 8
+mApConfig.apBand: 1
+--
+WifiStateMachine:
+ total records=388
+ rec[0]: time=09-25 11:13:25.210 processed=Default
+State org=DisconnectedState dest=<null> what=13113
+3(0x2003d) !CMD_GET_SUPPORTED_FEATURES uid=1000 rt
+=20631224/46762842 0 0
+ rec[1]: time=09-25 11:21:17.865 processed=Default
+State org=DisconnectedState dest=DefaultState what
+=131144(0x20048) !CMD_SET_OPERATIONAL_MODE rt=2110
+3879/47235496 0 0
+ rec[2]: time=09-25 11:21:17.875 processed=Default
+State org=DefaultState dest=<null> what=131133(0x2
+003d) !CMD_GET_SUPPORTED_FEATURES uid=1000 rt=2110
+3889/47235506 0 0
+ rec[3]: time=09-25 11:21:17.875 processed=Default
+State org=DefaultState dest=<null> what=131205(0x2
+0085) !(-5)CMD_DISABLE_P2P_RSP uid=1000 rt=2110388
+9/47235506 0 0
+ rec[4]: time=09-25 11:21:17.875 processed=Default
+State org=DefaultState dest=<null> what=131205(0x2
+0085) !(-5)CMD_DISABLE_P2P_RSP uid=1000 rt=2110388
+9/47235506 0 0
+ rec[5]: time=09-25 11:21:17.881 processed=Default
+State org=DefaultState dest=<null> what=131133(0x2
+003d) !CMD_GET_SUPPORTED_FEATURES uid=1000 rt=2110
+3895/47235512 0 0
+ rec[6]: time=09-25 11:22:24.583 processed=Default
+State org=DefaultState dest=<null> what=131149(0x2
+004d) !CMD_SET_HIGH_PERF_MODE rt=21170597/47302214
+ 0 0
+ rec[7]: time=09-25 11:22:24.862 processed=Default
+State org=DefaultState dest=DisconnectedState what
+=131144(0x20048) !CMD_SET_OPERATIONAL_MODE rt=2117
+0877/47302494 0 0
+ rec[8]: time=09-25 11:22:24.916 processed=Default
+State org=DisconnectedState dest=<null> what=13113
+3(0x2003d) !CMD_GET_SUPPORTED_FEATURES uid=1000 rt
+=21170930/47302548 0 0
+ rec[9]: time=09-25 11:22:24.916 processed=Default
+State org=DisconnectedState dest=<null> what=13120
+5(0x20085) !(-5)CMD_DISABLE_P2P_RSP uid=1000 rt=21
+170930/47302548 0 0
+ rec[10]: time=09-25 11:22:24.926 processed=Defaul
+tState org=DisconnectedState dest=<null> what=1311
+33(0x2003d) !CMD_GET_SUPPORTED_FEATURES uid=1000 r
+t=21170941/47302558 0 0
+ rec[11]: time=09-25 11:22:24.956 processed=Discon
+nectedState org=DisconnectedState dest=<null> what
+=143371(0x2300b) !P2P_CONNECTION_CHANGED uid=1000 
+rt=21170970/47302587 0 0 st=UNKNOWN/IDLE
+ rec[12]: time=09-25 11:29:34.496 processed=Defaul
+tState org=DisconnectedState dest=<null> what=1311
+33(0x2003d) !CMD_GET_SUPPORTED_FEATURES uid=1000 r
+t=21600510/47732127 0 0
+ rec[13]: time=09-25 11:31:03.628 processed=Discon
+nectedState org=DisconnectedState dest=<null> what
+=131167(0x2005f) CMD_SCREEN_STATE_CHANGED rt=21689
+642/47821259 0 0
+ rec[14]: time=09-25 11:31:03.628 processed=Defaul
+tState org=DisconnectedState dest=<null> what=1311
+54(0x20052) CMD_ENABLE_RSSI_POLL rt=21689642/47821
+259 0 0
+ rec[15]: time=09-25 11:31:03.631 processed=Connec
+tModeState org=DisconnectedState dest=<null> what=
+131158(0x20056) CMD_SET_SUSPEND_OPT_ENABLED rt=216
+89646/47821263 1 0
+ rec[16]: time=09-25 11:31:43.134 processed=Discon
+nectedState org=DisconnectedState dest=<null> what
+=131167(0x2005f) !CMD_SCREEN_STATE_CHANGED rt=2171
+2489/47860765 1 0
+ rec[17]: time=09-25 11:31:43.134 processed=Defaul
+tState org=DisconnectedState dest=<null> what=1311
+54(0x20052) !CMD_ENABLE_RSSI_POLL rt=21712489/4786
+0765 1 0
+ rec[18]: time=09-25 11:31:43.137 processed=Connec
+tModeState org=DisconnectedState dest=<null> what=
+131158(0x20056) !CMD_SET_SUSPEND_OPT_ENABLED rt=21
+712492/47860768 0 0
+ rec[19]: time=09-25 11:31:43.757 processed=Defaul
+tState org=DisconnectedState dest=<null> what=1311
+33(0x2003d) !CMD_GET_SUPPORTED_FEATURES uid=10014 
+rt=21713112/47861389 0 0
+ rec[20]: time=09-25 11:32:31.446 processed=Discon
+nectedState org=DisconnectedState dest=<null> what
+=131167(0x2005f) CMD_SCREEN_STATE_CHANGED rt=21760
+802/47909078 0 0
+ rec[21]: time=09-25 11:32:31.446 processed=Defaul
+tState org=DisconnectedState dest=<null> what=1311
+54(0x20052) CMD_ENABLE_RSSI_POLL rt=21760802/47909
+078 0 0
+ rec[22]: time=09-25 11:32:31.450 processed=Connec
+tModeState org=DisconnectedState dest=<null> what=
+131158(0x20056) CMD_SET_SUSPEND_OPT_ENABLED rt=217
+60805/47909082 1 0
+ rec[23]: time=09-25 11:33:13.462 processed=Discon
+nectedState org=DisconnectedState dest=<null> what
+=131167(0x2005f) !CMD_SCREEN_STATE_CHANGED rt=2177
+8585/47951094 1 0
+ rec[24]: time=09-25 11:33:13.462 processed=Defaul
+tState org=DisconnectedState dest=<null> what=1311
+54(0x20052) !CMD_ENABLE_RSSI_POLL rt=21778586/4795
+1094 1 0
+ rec[25]: time=09-25 11:33:13.468 processed=Connec
+tModeState org=DisconnectedState dest=<null> what=
+131158(0x20056) !CMD_SET_SUSPEND_OPT_ENABLED rt=21
+778591/47951099 0 0
+ rec[26]: time=09-25 11:33:14.015 processed=Defaul
+tState org=DisconnectedState dest=<null> what=1311
+33(0x2003d) !CMD_GET_SUPPORTED_FEATURES uid=10014 
+rt=21779138/47951647 0 0
+ rec[27]: time=09-25 11:35:10.050 processed=Defaul
+tState org=DisconnectedState dest=<null> what=1311
+33(0x2003d) !CMD_GET_SUPPORTED_FEATURES uid=10014 
+rt=21894448/48066957 0 0
+ rec[28]: time=09-25 11:38:45.160 processed=Defaul
+tState org=DisconnectedState dest=DefaultState wha
+t=131144(0x20048) !CMD_SET_OPERATIONAL_MODE rt=221
+09558/48282067 0 0
+ rec[29]: time=09-25 11:38:45.172 processed=Defaul
+tState org=DefaultState dest=<null> what=131205(0x
+20085) !(-5)CMD_DISABLE_P2P_RSP uid=1000 rt=221095
+70/48282078 0 0
+ rec[30]: time=09-25 11:38:45.172 processed=Defaul
+tState org=DefaultState dest=<null> what=131205(0x
+20085) !(-5)CMD_DISABLE_P2P_RSP uid=1000 rt=221095
+70/48282078 0 0
+ rec[31]: time=09-25 11:38:45.172 processed=Defaul
+tState org=DefaultState dest=<null> what=131133(0x
+2003d) !CMD_GET_SUPPORTED_FEATURES uid=1000 rt=221
+09570/48282079 0 0
+ rec[32]: time=09-25 11:38:45.178 processed=Defaul
+tState org=DefaultState dest=<null> what=131133(0x
+2003d) !CMD_GET_SUPPORTED_FEATURES uid=1000 rt=221
+09576/48282084 0 0
+ rec[33]: time=09-25 11:38:51.144 processed=Defaul
+tState org=DefaultState dest=<null> what=131149(0x
+2004d) !CMD_SET_HIGH_PERF_MODE rt=22115542/4828805
+0 0 0
+ rec[34]: time=09-25 11:38:51.413 processed=Defaul
+tState org=DefaultState dest=DisconnectedState wha
+t=131144(0x20048) !CMD_SET_OPERATIONAL_MODE rt=221
+15811/48288319 0 0
+ rec[35]: time=09-25 11:38:51.472 processed=Defaul
+tState org=DisconnectedState dest=<null> what=1311
+33(0x2003d) !CMD_GET_SUPPORTED_FEATURES uid=1000 r
+t=22115870/48288378 0 0
+ rec[36]: time=09-25 11:38:51.472 processed=Defaul
+tState org=DisconnectedState dest=<null> what=1312
+05(0x20085) !(-5)CMD_DISABLE_P2P_RSP uid=1000 rt=2
+2115870/48288378 0 0
+ rec[37]: time=09-25 11:38:51.482 processed=Defaul
+tState org=DisconnectedState dest=<null> what=1311
+33(0x2003d) !CMD_GET_SUPPORTED_FEATURES uid=1000 r
+t=22115880/48288388 0 0
+ rec[38]: time=09-25 11:38:51.496 processed=Discon
+nectedState org=DisconnectedState dest=<null> what
+=143371(0x2300b) !P2P_CONNECTION_CHANGED uid=1000 
+rt=22115894/48288402 0 0 st=UNKNOWN/IDLE
+ rec[39]: time=09-25 11:38:56.124 processed=Connec
+tModeState org=DisconnectedState dest=<null> what=
+131173(0x20065) !CMD_RESET_SIM_NETWORKS rt=2212052
+2/48293030 0 1
+ rec[40]: time=09-25 11:38:57.583 processed=Connec
+tModeState org=DisconnectedState dest=<null> what=
+131173(0x20065) !CMD_RESET_SIM_NETWORKS rt=2212198
+1/48294489 1 0
+ rec[41]: time=09-25 11:40:09.588 processed=Defaul
+tState org=DisconnectedState dest=DefaultState wha
+t=131144(0x20048) !CMD_SET_OPERATIONAL_MODE rt=221
+93986/48366494 0 0
+ rec[42]: time=09-25 11:40:09.602 processed=Defaul
+tState org=DefaultState dest=<null> what=131133(0x
+2003d) !CMD_GET_SUPPORTED_FEATURES uid=1000 rt=221
+94000/48366508 0 0
+ rec[43]: time=09-25 11:40:09.602 processed=Defaul
+tState org=DefaultState dest=<null> what=131205(0x
+20085) !(-5)CMD_DISABLE_P2P_RSP uid=1000 rt=221940
+00/48366508 0 0
+ rec[44]: time=09-25 11:40:09.603 processed=Defaul
+tState org=DefaultState dest=<null> what=131205(0x
+20085) !(-5)CMD_DISABLE_P2P_RSP uid=1000 rt=221940
+01/48366509 0 0
+ rec[45]: time=09-25 11:40:09.608 processed=Defaul
+tState org=DefaultState dest=<null> what=131133(0x
+2003d) !CMD_GET_SUPPORTED_FEATURES uid=1000 rt=221
+94006/48366514 0 0
+ rec[46]: time=09-25 11:41:22.967 processed=Defaul
+tState org=DefaultState dest=<null> what=131167(0x
+2005f) CMD_SCREEN_STATE_CHANGED rt=22267365/484398
+73 0 0
+ rec[47]: time=09-25 11:41:22.967 processed=Defaul
+tState org=DefaultState dest=<null> what=131154(0x
+20052) CMD_ENABLE_RSSI_POLL rt=22267365/48439873 0
+ 0
+ rec[48]: time=09-25 11:41:22.967 processed=Defaul
+tState org=DefaultState dest=<null> what=131158(0x
+20056) CMD_SET_SUSPEND_OPT_ENABLED rt=22267365/484
+39873 1 0
+ rec[49]: time=09-25 11:41:27.717 processed=Defaul
+tState org=DefaultState dest=<null> what=131167(0x
+2005f) !CMD_SCREEN_STATE_CHANGED rt=22272115/48444
+623 1 0
+ rec[50]: time=09-25 11:41:27.717 processed=Defaul
+tState org=DefaultState dest=<null> what=131154(0x
+20052) !CMD_ENABLE_RSSI_POLL rt=22272115/48444623 
+1 0
+ rec[51]: time=09-25 11:41:27.717 processed=Defaul
+tState org=DefaultState dest=<null> what=131158(0x
+20056) !CMD_SET_SUSPEND_OPT_ENABLED rt=22272115/48
+444623 0 0
+ rec[52]: time=09-25 11:48:39.071 processed=Defaul
+tState org=DefaultState dest=<null> what=131149(0x
+2004d) !CMD_SET_HIGH_PERF_MODE rt=22703469/4887597
+7 0 0
+ rec[53]: time=09-25 11:48:39.402 processed=Defaul
+tState org=DefaultState dest=DisconnectedState wha
+t=131144(0x20048) !CMD_SET_OPERATIONAL_MODE rt=227
+03800/48876308 0 0
+ rec[54]: time=09-25 11:48:39.525 processed=Defaul
+tState org=DisconnectedState dest=<null> what=1311
+33(0x2003d) !CMD_GET_SUPPORTED_FEATURES uid=1000 r
+t=22703923/48876431 0 0
+ rec[55]: time=09-25 11:48:39.525 processed=Defaul
+tState org=DisconnectedState dest=<null> what=1312
+05(0x20085) !(-5)CMD_DISABLE_P2P_RSP uid=1000 rt=2
+2703923/48876431 0 0
+ rec[56]: time=09-25 11:48:39.525 processed=Discon
+nectedState org=DisconnectedState dest=<null> what
+=143371(0x2300b) !P2P_CONNECTION_CHANGED uid=1000 
+rt=22703923/48876432 0 0 st=UNKNOWN/IDLE
+ rec[57]: time=09-25 11:48:39.543 processed=Defaul
+tState org=DisconnectedState dest=<null> what=1311
+33(0x2003d) !CMD_GET_SUPPORTED_FEATURES uid=1000 r
+t=22703941/48876449 0 0
+ rec[58]: time=09-25 11:55:58.270 processed=Defaul
+tState org=DisconnectedState dest=DefaultState wha
+t=131144(0x20048) !CMD_SET_OPERATIONAL_MODE rt=231
+42668/49315176 0 0
+ rec[59]: time=09-25 11:55:58.287 processed=Defaul
+tState org=DefaultState dest=<null> what=131205(0x
+20085) !(-5)CMD_DISABLE_P2P_RSP uid=1000 rt=231426
+85/49315194 0 0
+ rec[60]: time=09-25 11:55:58.289 processed=Defaul
+tState org=DefaultState dest=<null> what=131205(0x
+20085) !(-5)CMD_DISABLE_P2P_RSP uid=1000 rt=231426
+87/49315195 0 0
+ rec[61]: time=09-25 11:55:58.306 processed=Defaul
+tState org=DefaultState dest=<null> what=131133(0x
+2003d) !CMD_GET_SUPPORTED_FEATURES uid=1000 rt=231
+42704/49315213 0 0
+ rec[62]: time=09-25 11:55:58.309 processed=Defaul
+tState org=DefaultState dest=<null> what=131205(0x
+20085) !(-5)CMD_DISABLE_P2P_RSP uid=1000 rt=231427
+07/49315215 0 0
+ rec[63]: time=09-25 11:57:45.808 processed=Defaul
+tState org=DefaultState dest=<null> what=131167(0x
+2005f) CMD_SCREEN_STATE_CHANGED rt=23250206/494227
+14 0 0
+ rec[64]: time=09-25 11:57:45.808 processed=Defaul
+tState org=DefaultState dest=<null> what=131154(0x
+20052) CMD_ENABLE_RSSI_POLL rt=23250206/49422714 0
+ 0
+ rec[65]: time=09-25 11:57:45.808 processed=Defaul
+tState org=DefaultState dest=<null> what=131158(0x
+20056) CMD_SET_SUSPEND_OPT_ENABLED rt=23250206/494
+22714 1 0
+ rec[66]: time=09-25 11:58:42.857 processed=Defaul
+tState org=DefaultState dest=<null> what=131167(0x
+2005f) !CMD_SCREEN_STATE_CHANGED rt=23272510/49479
+763 1 0
+ rec[67]: time=09-25 11:58:42.857 processed=Defaul
+tState org=DefaultState dest=<null> what=131154(0x
+20052) !CMD_ENABLE_RSSI_POLL rt=23272510/49479763 
+1 0
+ rec[68]: time=09-25 11:58:42.861 processed=Defaul
+tState org=DefaultState dest=<null> what=131158(0x
+20056) !CMD_SET_SUSPEND_OPT_ENABLED rt=23272514/49
+479767 0 0
+ rec[69]: time=09-25 12:00:50.896 processed=Defaul
+tState org=DefaultState dest=<null> what=131133(0x
+2003d) !CMD_GET_SUPPORTED_FEATURES uid=1000 rt=234
+00550/49607802 0 0
+ rec[70]: time=09-25 12:10:24.839 processed=Defaul
+tState org=DefaultState dest=<null> what=131133(0x
+2003d) !CMD_GET_SUPPORTED_FEATURES uid=1000 rt=239
+74492/50181745 0 0
+ rec[71]: time=09-25 12:10:24.840 processed=Defaul
+tState org=DefaultState dest=<null> what=131149(0x
+2004d) !CMD_SET_HIGH_PERF_MODE rt=23974493/5018174
+6 0 0
+ rec[72]: time=09-25 12:10:25.124 processed=Defaul
+tState org=DefaultState dest=DisconnectedState wha
+t=131144(0x20048) !CMD_SET_OPERATIONAL_MODE rt=239
+74777/50182030 0 0
+ rec[73]: time=09-25 12:10:25.234 processed=Defaul
+tState org=DisconnectedState dest=<null> what=1311
+33(0x2003d) !CMD_GET_SUPPORTED_FEATURES uid=1000 r
+t=23974888/50182141 0 0
+ rec[74]: time=09-25 12:10:25.235 processed=Defaul
+tState org=DisconnectedState dest=<null> what=1312
+05(0x20085) !(-5)CMD_DISABLE_P2P_RSP uid=1000 rt=2
+3974888/50182141 0 0
+ rec[75]: time=09-25 12:10:25.235 processed=Discon
+nectedState org=DisconnectedState dest=<null> what
+=143371(0x2300b) !P2P_CONNECTION_CHANGED uid=1000 
+rt=23974888/50182141 0 0 st=UNKNOWN/IDLE
+ rec[76]: time=09-25 12:10:25.243 processed=Defaul
+tState org=DisconnectedState dest=<null> what=1311
+33(0x2003d) !CMD_GET_SUPPORTED_FEATURES uid=1000 r
+t=23974897/50182150 0 0
+ rec[77]: time=09-25 12:10:38.732 processed=Defaul
+tState org=DisconnectedState dest=DefaultState wha
+t=131144(0x20048) !CMD_SET_OPERATIONAL_MODE rt=239
+88385/50195638 0 0
+ rec[78]: time=09-25 12:10:38.751 processed=Defaul
+tState org=DefaultState dest=<null> what=131205(0x
+20085) !(-5)CMD_DISABLE_P2P_RSP uid=1000 rt=239884
+04/50195657 0 0
+ rec[79]: time=09-25 12:10:38.752 processed=Defaul
+tState org=DefaultState dest=<null> what=131205(0x
+20085) !(-5)CMD_DISABLE_P2P_RSP uid=1000 rt=239884
+05/50195658 0 0
+ rec[80]: time=09-25 12:10:38.752 processed=Defaul
+tState org=DefaultState dest=<null> what=131205(0x
+20085) !(-5)CMD_DISABLE_P2P_RSP uid=1000 rt=239884
+05/50195658 0 0
+ rec[81]: time=09-25 12:10:38.778 processed=Defaul
+tState org=DefaultState dest=<null> what=131133(0x
+2003d) !CMD_GET_SUPPORTED_FEATURES uid=1000 rt=239
+88432/50195685 0 0
+ rec[82]: time=09-25 12:16:29.687 processed=Defaul
+tState org=DefaultState dest=<null> what=131167(0x
+2005f) CMD_SCREEN_STATE_CHANGED rt=24339340/505465
+93 0 0
+ rec[83]: time=09-25 12:16:29.687 processed=Defaul
+tState org=DefaultState dest=<null> what=131154(0x
+20052) CMD_ENABLE_RSSI_POLL rt=24339340/50546593 0
+ 0
+ rec[84]: time=09-25 12:16:29.687 processed=Defaul
+tState org=DefaultState dest=<null> what=131158(0x
+20056) CMD_SET_SUSPEND_OPT_ENABLED rt=24339340/505
+46593 1 0
+ rec[85]: time=09-25 12:17:03.046 processed=Defaul
+tState org=DefaultState dest=<null> what=131167(0x
+2005f) !CMD_SCREEN_STATE_CHANGED rt=24372699/50579
+952 1 0
+ rec[86]: time=09-25 12:17:03.046 processed=Defaul
+tState org=DefaultState dest=<null> what=131154(0x
+20052) !CMD_ENABLE_RSSI_POLL rt=24372699/50579952 
+1 0
+ rec[87]: time=09-25 12:17:03.046 processed=Defaul
+tState org=DefaultState dest=<null> what=131158(0x
+20056) !CMD_SET_SUSPEND_OPT_ENABLED rt=24372699/50
+579952 0 0
+ rec[88]: time=09-25 12:25:55.868 processed=Defaul
+tState org=DefaultState dest=<null> what=131167(0x
+2005f) CMD_SCREEN_STATE_CHANGED rt=24905521/511127
+74 0 0
+ rec[89]: time=09-25 12:25:55.868 processed=Defaul
+tState org=DefaultState dest=<null> what=131154(0x
+20052) CMD_ENABLE_RSSI_POLL rt=24905521/51112774 0
+ 0
+ rec[90]: time=09-25 12:25:55.868 processed=Defaul
+tState org=DefaultState dest=<null> what=131158(0x
+20056) CMD_SET_SUSPEND_OPT_ENABLED rt=24905521/511
+12774 1 0
+ rec[91]: time=09-25 12:26:06.168 processed=Defaul
+tState org=DefaultState dest=<null> what=131167(0x
+2005f) !CMD_SCREEN_STATE_CHANGED rt=24915562/51123
+074 1 0
+ rec[92]: time=09-25 12:26:06.168 processed=Defaul
+tState org=DefaultState dest=<null> what=131154(0x
+20052) !CMD_ENABLE_RSSI_POLL rt=24915562/51123074 
+1 0
+ rec[93]: time=09-25 12:26:06.168 processed=Defaul
+tState org=DefaultState dest=<null> what=131158(0x
+20056) !CMD_SET_SUSPEND_OPT_ENABLED rt=24915562/51
+123074 0 0
+ rec[94]: time=09-25 12:26:07.431 processed=Defaul
+tState org=DefaultState dest=<null> what=131167(0x
+2005f) CMD_SCREEN_STATE_CHANGED rt=24916825/511243
+38 0 0
+ rec[95]: time=09-25 12:26:07.431 processed=Defaul
+tState org=DefaultState dest=<null> what=131154(0x
+20052) CMD_ENABLE_RSSI_POLL rt=24916825/51124338 0
+ 0
+ rec[96]: time=09-25 12:26:07.431 processed=Defaul
+tState org=DefaultState dest=<null> what=131158(0x
+20056) CMD_SET_SUSPEND_OPT_ENABLED rt=24916825/511
+24338 1 0
+ rec[97]: time=09-25 12:26:08.052 processed=Defaul
+tState org=DefaultState dest=<null> what=131167(0x
+2005f) !CMD_SCREEN_STATE_CHANGED rt=24917445/51124
+958 1 0
+ rec[98]: time=09-25 12:26:08.052 processed=Defaul
+tState org=DefaultState dest=<null> what=131154(0x
+20052) !CMD_ENABLE_RSSI_POLL rt=24917445/51124958 
+1 0
+ rec[99]: time=09-25 12:26:08.052 processed=Defaul
+tState org=DefaultState dest=<null> what=131158(0x
+20056) !CMD_SET_SUSPEND_OPT_ENABLED rt=24917445/51
+124958 0 0
+curState=DefaultState
+SupplicantStateTracker:
+ total records=20
+ rec[0]: time=09-24 22:34:52.330 processed=Default
+State org=UninitializedState dest=UninitializedSta
+te what=131183(0x2006f)
+ rec[1]: time=09-25 08:19:53.372 processed=Default
+State org=UninitializedState dest=UninitializedSta
+te what=131183(0x2006f)
+ rec[2]: time=09-25 08:20:13.649 processed=Default
+State org=UninitializedState dest=ScanState what=1
+47462(0x24006)
+ rec[3]: time=09-25 08:20:26.287 processed=Default
+State org=ScanState dest=HandshakeState what=14746
+2(0x24006)
+ rec[4]: time=09-25 08:20:26.559 processed=Default
+State org=HandshakeState dest=DisconnectedState wh
+at=147462(0x24006)
+ rec[5]: time=09-25 08:20:26.610 processed=Default
+State org=DisconnectedState dest=ScanState what=14
+7462(0x24006)
+ rec[6]: time=09-25 08:20:27.521 processed=Default
+State org=ScanState dest=HandshakeState what=14746
+2(0x24006)
+ rec[7]: time=09-25 08:20:27.614 processed=Default
+State org=HandshakeState dest=DisconnectedState wh
+at=147462(0x24006)
+ rec[8]: time=09-25 08:20:28.079 processed=Default
+State org=DisconnectedState dest=ScanState what=14
+7462(0x24006)
+ rec[9]: time=09-25 08:20:29.052 processed=Default
+State org=ScanState dest=HandshakeState what=14746
+2(0x24006)
+ rec[10]: time=09-25 08:20:29.158 processed=Defaul
+tState org=HandshakeState dest=DisconnectedState w
+hat=147462(0x24006)
+ rec[11]: time=09-25 08:20:30.114 processed=Defaul
+tState org=DisconnectedState dest=ScanState what=1
+47462(0x24006)
+ rec[12]: time=09-25 08:20:30.981 processed=Defaul
+tState org=ScanState dest=HandshakeState what=1474
+62(0x24006)
+ rec[13]: time=09-25 08:20:31.110 processed=Defaul
+tState org=HandshakeState dest=DisconnectedState w
+hat=147462(0x24006)
+ rec[14]: time=09-25 08:20:36.051 processed=Defaul
+tState org=DisconnectedState dest=ScanState what=1
+47462(0x24006)
+ rec[15]: time=09-25 11:13:25.201 processed=Defaul
+tState org=ScanState dest=UninitializedState what=
+131183(0x2006f)
+ rec[16]: time=09-25 11:22:24.916 processed=Defaul
+tState org=UninitializedState dest=UninitializedSt
+ate what=131183(0x2006f)
+ rec[17]: time=09-25 11:38:51.472 processed=Defaul
+tState org=UninitializedState dest=UninitializedSt
+ate what=131183(0x2006f)
+ rec[18]: time=09-25 11:48:39.525 processed=Defaul
+tState org=UninitializedState dest=UninitializedSt
+ate what=131183(0x2006f)
+ rec[19]: time=09-25 12:10:25.235 processed=Defaul
+tState org=UninitializedState dest=UninitializedSt
+ate what=131183(0x2006f)
+curState=UninitializedState
+mAuthFailureInSupplicantBroadcast false
+mAuthFailureReason 0
+mNetworksDisabledDuringConnect false
+
+mLinkProperties {LinkAddresses: []  Routes: [] Dns
+Addresses: [] UsePrivateDns: false PrivateDnsServe
+rName: null Domains: null MTU: 0}
+mWifiInfo SSID: <unknown ssid>, BSSID: <none>, MAC
+: 00:08:22:bc:3e:69, Supplicant state: DISCONNECTE
+D, RSSI: -127, Link speed: -1Mbps, Frequency: -1MH
+z, Net ID: -1, Metered hint: false, score: 0
+mDhcpResults null
+mNetworkInfo [type: WIFI[], state: DISCONNECTED/DI
+SCONNECTED, reason: (unspecified), extra: (none), 
+failover: false, available: false, roaming: false]
+mLastSignalLevel -1
+mLastBssid null
+mLastNetworkId -1
+mOperationalMode 4
+mUserWantsSuspendOpt true
+--
+09-25 11:40:09.211  2173  2198 I EthernetTracker: 
+interfaceLinkStateChanged, iface: p2p0, up: false
+09-25 11:40:09.216   457   457 W wifi@1.0-servic: 
+type=1400 audit(0.0:10713): avc: denied { search }
+ for name="tombstones" dev="dm-1" ino=66 scontext=
+u:r:mtk_hal_wifi:s0 tcontext=u:object_r:aee_tombst
+one_data_file:s0 tclass=dir permissive=0
+--------- beginning of system
+09-25 11:40:09.216  6506  6506 W ResolutionTunerAp
+pList: Target file doesn't exist: /storage/emulate
+d/0/Android/data/sf_resolution_tuner_app_list.xml
+09-25 11:40:09.220   457   457 E android.hardware.
+wifi@1.0-service-mediatek: Failed to open director
+y: Permission denied
+09-25 11:40:09.220   457   457 E android.hardware.
+wifi@1.0-service-mediatek: Error occurred while de
+leting old tombstone files
+--
+09-25 11:40:09.500  5959  5970 I [BIP]   :  [BIP N
+L] the link status of interface(index:0) changes t
+o 0
+09-25 11:40:09.581   457   457 I android.hardware.
+wifi@1.0-service-mediatek: Wifi HAL stopped
+09-25 11:40:09.582  2173  2307 I WifiVendorHal: Ve
+ndor Hal stopped
+09-25 11:40:09.582  2173  2307 E SupplicantStaIfac
+eHal: Can't call setCurrentNetworkBssid, Supplican
+tStaNetwork is null
+09-25 11:40:09.582  2173  2307 E SupplicantStaIfac
+eHal: Can't call setPowerSave, ISupplicantStaIface
+ is null
+09-25 11:40:09.582  2173  2307 E SupplicantStaIfac
+eHal: Can't call setBtCoexistenceMode, ISupplicant
+StaIface is null
+--
+09-25 11:40:09.583  2173  2200 I WifiDisplayContro
+ller: Received NETWORK_STATE_CHANGED,con:false,SSI
+D:null,Freq:0,netId:-1, updated:false
+09-25 11:40:09.584  2173  2307 E HalDevMgr: Should
+ have at least 1 chip!
+09-25 11:40:09.584  2173  2307 E HalDevMgr: dispat
+chAvailableForRequestListeners: no chip info found
+09-25 11:40:09.586  2173  2307 I WifiNative: Succe
+ssfully initiated teardown for iface=wlan0
+09-25 11:40:09.589  2173  2309 E HalDevMgr: Error 
+on getName: 2 ()
+09-25 11:40:09.591  2173  2309 E HalDevMgr: Error 
+on getType: 2 ()
+--
+09-25 11:40:09.594  2173  2307 E WifiStateMachine:
+ Failed to remove networks on exiting connect mode
+09-25 11:40:09.597  2173  2309 E HalDevMgr: Should
+ have at least 1 chip!
+09-25 11:40:09.597  2173  2309 E HalDevMgr: dispat
+chAvailableForRequestListeners: no chip info found
+09-25 11:40:09.598  2173  2200 I WifiDisplayContro
+ller: updateWfdEnableState(), mWifiDisplayOnSettin
+g:false, mWifiP2pEnabled:false
+09-25 11:40:09.598  2173  2200 I WifiDisplayContro
+ller: updateWfdInfo(), enable:false,mWfdEnabling:f
+alse
+09-25 11:40:09.599  2173  2200 I WifiDisplayContro
+ller: updateScanState(), mSinkEnabled:falsemDiscov
+erPeersInProgress:false
+09-25 11:40:09.599  2173  2200 I WifiDisplayContro
+ller: disconnect, mRemoteDisplayInterface = null
+09-25 11:40:09.599  2173  2200 I WifiDisplayContro
+ller: updateScanState(), mSinkEnabled:falsemDiscov
+erPeersInProgress:false
+09-25 11:40:09.599  2949  3849 W Settings: Setting
+ airplane_mode_on has moved from android.provider.
+Settings.System to android.provider.Settings.Globa
+l, returning read-only value.
+09-25 11:40:09.600  2949 29501 W NearbyMediums: [W
+IFI_RADIO] State was changed outside of our contro
+l. Updating the snapshot to match current radio st
+ate.
+09-25 11:40:09.600  2173  2309 I WifiP2pNative: P2
+P interface teardown completed
+09-25 11:40:09.602  2173  2196 E BatteryExternalSt
+atsWorker: no controller energy info supplied for 
+wifi
+09-25 11:40:09.603  2173  2309 E WifiP2pService: U
+nhandled message { when=-9ms what=131204 target=co
+m.android.internal.util.StateMachine$SmHandler }
+09-25 11:40:09.608  2173  2196 E BatteryExternalSt
+atsWorker: no controller energy info supplied for 
+wifi
+09-25 11:40:09.622   472  1072 I BufferQueueProduc
+er: [StatusBar#0](this:0x796e096800,id:10,api:1,p:
+2348,c:472) queueBuffer: fps=0.67 dur=3007.08 max=
+2991.98 min=15.10
+09-25 11:40:10.098  2949 29501 I NearbySharing: Br
+oadcasting NearbySharing state change.
+09-25 11:40:10.111  6539  6539 I SystemServiceRegi
+stry: regMtkService start
+09-25 11:40:10.112  6539  6539 I SystemServiceRegi
+stry: setMtkSystemServiceName start
+09-25 11:40:10.113  6539  6539 I MtkSystemServiceR
+egistry: setMtkSystemServiceName start names{class
+ android.net.wifi.RttManager=rttmanager, class and
+roid.app.KeyguardManager=keyguard, class android.a
+pp.WallpaperManager=wallpaper, class android.os.Dr
+opBoxManager=dropbox, class android.os.PowerManage
+r=power, class android.telephony.SubscriptionManag
+er=telephony_subscription_service, class android.o
+s.IncidentManager=incident, class android.hardware
+.usb.UsbManager=usb, class android.os.SystemUpdate
+Manager=system_update, class android.service.persi
+stentdata.PersistentDataBlockManager=persistent_da
+ta_block, class android.os.storage.StorageManager=
+storage, class android.telephony.CarrierConfigMana
+ger=carrier_config, class android.telephony.euicc.
+EuiccCardManager=euicc_card, class android.net.Con
+nectivityManager=connectivity, class android.telep
+hony.TelephonyManager=phone, class android.view.te
+xtclassifier.TextClassificationManager=textclassif
+ication, class android.app.ActivityManager=activit
+y, class android.media.session.MediaSessionManager
+=media_session, class android.app.UiModeManager=ui
+mode, class android.bluetooth.BluetoothManager=blu
+etooth, class android.hardware.ConsumerIrManager=c
+onsumer_ir, class android.view.accessibility.Acces
+sibilityManager=accessibility, class android.compa
+nion.CompanionDeviceManager=companiondevice, class
+ android.content.ClipboardManager=clipboard, class
+ android.app.trust.TrustManager=trust, class andro
+id.app.timezone.RulesManager=timezone, class andro
+id.net.nsd.NsdManager=servicediscovery, class andr
+oid.appwidget.AppWidgetManager=appwidget, class an
+droid.content.RestrictionsManager=restrictions, cl
+ass android.view.inputmethod.InputMethodManager=in
+put_method, class android.app.usage.NetworkStatsMa
+nager=netstats, class android.hardware.camera2.Cam
+eraManager=camera, class android.content.pm.Shortc
+utManager=shortcut, class android.telephony.euicc.
+EuiccManager=euicc, class android.app.AlarmManager
+=alarm, class android.hardware.location.ContextHub
+Manager=contexthub, class android.app.slice.SliceM
+anager=slice, class android.nfc.NfcManager=nfc, cl
+ass android.telecom.TelecomManager=telecom, class 
+android.app.job.JobScheduler=jobscheduler, class a
+ndroid.app.NotificationManager=notification, class
+ android.app.VrManager=vrmanager, class android.co
+ntent.pm.LauncherApps=launcherapps, class android.
+os.HardwarePropertiesManager=hardware_properties, 
+class android.net.NetworkScoreManager=network_scor
+e, class android.net.EthernetManager=ethernet, cla
+ss android.view.accessibility.CaptioningManager=ca
+ptioning, class android.hardware.hdmi.HdmiControlM
+anager=hdmi_control, class android.hardware.radio.
+RadioManager=broadcastradio, class android.os.heal
+th.SystemHealthManager=systemhealth, class android
+.os.Vibrator=vibrator, class android.print.PrintMa
+nager=print, class android.net.lowpan.LowpanManage
+r=lowpan, class android.media.tv.TvInputManager=tv
+_input, class android.net.wifi.aware.WifiAwareMana
+ger=wifiaware, class android.app.DownloadManager=d
+ownload, class android.app.StatusBarManager=status
+bar, class android.hardware.display.DisplayManager
+=display, class android.location.LocationManager=l
+ocation, class android.media.AudioManager=audio, c
+lass android.os.UserManager=user, class android.os
+.BatteryManager=batterymanager, class android.net.
+wifi.rtt.WifiRttManager=wifirtt, class android.acc
+ounts.AccountManager=account, class android.app.Se
+archManager=search, class android.text.ClipboardMa
+nager=clipboard, class android.app.StatsManager=st
+ats, class android.app.usage.UsageStatsManager=usa
+gestats, class android.hardware.fingerprint.Finger
+printManager=fingerprint, class android.app.usage.
+StorageStatsManager=storagestats, class android.me
+dia.midi.MidiManager=midi, class android.net.wifi.
+p2p.WifiP2pManager=wifip2p, class android.media.so
+undtrigger.SoundTriggerManager=soundtrigger, inter
+face android.view.WindowManager=window, class andr
+oid.media.projection.MediaProjectionManager=media_
+projection, class android.view.LayoutInflater=layo
+ut_inflater, class android.view.autofill.AutofillM
+anager=autofill, class android.location.CountryDet
+09-25 11:40:10.113  6539  6539 I SystemServiceRegi
+stry: registerAllMtkService start
+09-25 11:40:10.113  6539  6539 I MtkSystemServiceR
+egistry: registerAllService start
+09-25 11:40:10.114  6539  6539 E MtkSystemServiceR
+egistry: Exception while getting FmRadioPackageMan
+ager class
+09-25 11:40:10.121  6539  6539 I LoadedApk: No res
+ource references to update in package com.transsio
+n.theme.icon
+09-25 11:40:10.285 29233 29246 I .openai.chatgp: W
+aiting for a blocking GC ProfileSaver
+--
+09-25 11:40:12.252  2173  8815 I WifiNative: wific
+ond died. Cleaning up internal state.
+09-25 11:40:12.256  2173  2307 E WifiStateMachineP
+rime: One of the native daemons died. Triggering r
+ecovery
+09-25 11:40:12.262   472   472 I BufferQueueConsum
+er: [StatusBar#0](this:0x796e096800,id:10,api:1,p:
+2348,c:472) setDefaultBufferSize: width=720 height
+=64
+09-25 11:40:12.286   472  1072 I BufferQueueProduc
+er: [StatusBar#0](this:0x796e096800,id:10,api:1,p:
+2348,c:472) disconnect(P): api 1
+09-25 11:40:12.288   472  1072 I BufferQueueProduc
+er: [StatusBar#0](this:0x796e096800,id:10,api:1,p:
+2348,c:472) connect(P): api=1 producer=(2348:com.a
+ndroid.systemui) producerControlledByApp=true
+
+--------------------------------------------------
+------------------
+--
+09-25 12:08:43.448   472  1476 W SurfaceFlinger: A
+ttempting to set client state on removed layer: Sn
+apshotStartingWindow for taskId=301#0
+09-25 12:08:43.448   472  1476 W SurfaceFlinger: A
+ttempting to destroy on removed layer: SnapshotSta
+rtingWindow for taskId=301#0
+09-25 12:08:43.461   472   472 I BufferQueueConsum
+er: [SnapshotStartingWindow for taskId=301#0](this
+:0x7968848800,id:2307,api:2,p:-1,c:-1) disconnect(
+C)
+09-25 12:08:43.463   472   472 I BufferQueue: [Sna
+pshotStartingWindow for taskId=301#0](this:0x79688
+48800,id:2307,api:2,p:-1,c:-1) ~BufferQueueCore
+09-25 12:08:43.673  6393  6464 E phonemaster_log: 
+NotificationUtils: cancelNotification notification
+Id = 21034
+--------- beginning of system
+--
+09-25 12:08:47.104  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, wlan0, lo, ccmni1], 
+ignoring those stats
+09-25 12:08:47.104  2173  2303 I NetworkStatsRecor
+der: recordSnapshotLocked: ident[[{type=MOBILE, su
+bType=COMBINED, subscriberId=410010..., metered=tr
+ue, defaultNetwork=true}]]
+09-25 12:08:47.104  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, wlan0, lo, ccmni1], 
+ignoring those stats
+09-25 12:08:47.104  2173  2303 I NetworkStatsRecor
+der: recordSnapshotLocked: ident[[{type=MOBILE, su
+bType=COMBINED, subscriberId=410010..., metered=tr
+ue, defaultNetwork=true}]]
+09-25 12:08:47.105  2173  2303 I chatty  : uid=100
+0(system) NetworkStats identical 5 lines
+09-25 12:08:47.105  2173  2303 I NetworkStatsRecor
+der: recordSnapshotLocked: ident[[{type=MOBILE, su
+bType=COMBINED, subscriberId=410010..., metered=tr
+ue, defaultNetwork=true}]]
+09-25 12:08:47.105  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, wlan0, lo, ccmni1], 
+ignoring those stats
+09-25 12:08:47.106  2173  2303 I NetworkStatsRecor
+der: recordSnapshotLocked: ident[[{type=MOBILE, su
+bType=COMBINED, subscriberId=410010..., metered=tr
+ue, defaultNetwork=true}]]
+09-25 12:08:47.106  2173  2303 I NetworkStatsRecor
+der: recordSnapshotLocked: ident[[{type=MOBILE, su
+bType=COMBINED, subscriberId=410010..., metered=tr
+ue, defaultNetwork=true}]]
+09-25 12:08:47.106  2173  2303 W NetworkStatsRecor
+der: unknown interfaces [ap0, wlan0, lo, ccmni1], 
+ignoring those stats
+09-25 12:08:47.106  2173  2364 I NetworkStatsRecor
+der: recordSnapshotLocked: ident[[{type=MOBILE, su
+bType=COMBINED, subscriberId=410010..., metered=tr
+ue, defaultNetwork=true}]]
+09-25 12:08:47.106  2173  2364 W NetworkStatsRecor
+der: unknown interfaces [ap0, wlan0, lo, ccmni1], 
+ignoring those stats
+09-25 12:08:47.311   465   486 I libPowerHal: 20: 
+cpu_ctrl set freq: -1 -1 -1 -1
+09-25 12:08:47.439  2173  2267 I PowerWrap: PowerH
+al_TouchBoost
+09-25 12:08:47.442   465   486 I libPowerHal: 20: 
+cpu_ctrl set freq: -1 -1 1500000 -1
+09-25 12:08:47.958   472   472 I SurfaceFlinger: [
+Built-in Screen (type:0)] fps:4.171883,dur:1677.90
+,max:1080.71,min:14.56
+09-25 12:08:47.973   472   504 I BufferQueue: [unn
+amed-472-2310](this:0x7968892000,id:2310,api:0,p:-
+1,c:-1) BufferQueue core=(472:/system/bin/surfacef
+linger)
+--
+#                            | / _---=> hardirq/so
+ftirq
+#                            || / _--=> preempt-de
+pth
+#                            ||| /     delay
+#           TASK-PID   CPU#  ||||    TIMESTAMP  FU
+NCTION
+#              | |       |   ||||       |         
+|
+           <...>-21385 [007] .... 10548.201529: rd
+ev_connect: phy0, netdev:wlan0(31), bssid: 00:00:0
+0:00:00:00, ssid: PTCL-BB, auth type: 0, privacy: 
+true, wpa versions: 2, flags: 0, previous bssid: 0
+0:00:00:00:00:00
+--
+IpClient.wlan0 StateMachine dump:
+  2026-09-24T22:34:52.068 - CMD_SET_MULTICAST_FILT
+ER wlan0/-1 0 0 true [rcvd_in=com.mediatek.net.ip.
+MtkIpStoppedState, proc_in=StoppedState]
+  2026-09-24T22:35:05.807 - OBSERVED interfaceRemo
+ved(wlan0)
+  2026-09-24T22:35:05.887 - CMD_STOP wlan0/-1 0 0 
+null [rcvd_in=com.mediatek.net.ip.MtkIpStoppedStat
+e, proc_in=StoppedState]
+  2026-09-24T22:35:05.912 - CMD_STOP wlan0/-1 0 0 
+null [rcvd_in=com.mediatek.net.ip.MtkIpStoppedStat
+e, proc_in=StoppedState]
+  2026-09-24T22:35:05.913 - CMD_TERMINATE_AFTER_ST
+OP wlan0/-1 0 0 null [rcvd_in=com.mediatek.net.ip.
+MtkIpStoppedState, proc_in=StoppedState]
+  2026-09-24T22:35:05.913 - INVOKE onQuit()
+  2026-09-25T08:19:53.304 - CMD_SET_MULTICAST_FILT
+ER wlan0/-1 0 0 true [rcvd_in=com.mediatek.net.ip.
+MtkIpStoppedState, proc_in=StoppedState]
+  2026-09-25T08:21:15.717 - OBSERVED interfaceRemo
+ved(wlan0)
+  2026-09-25T08:21:15.774 - CMD_STOP wlan0/-1 0 0 
+null [rcvd_in=com.mediatek.net.ip.MtkIpStoppedStat
+e, proc_in=StoppedState]
+  2026-09-25T08:21:15.804 - CMD_STOP wlan0/-1 0 0 
+null [rcvd_in=com.mediatek.net.ip.MtkIpStoppedStat
+e, proc_in=StoppedState]
+  2026-09-25T08:21:15.806 - CMD_TERMINATE_AFTER_ST
+OP wlan0/-1 0 0 null [rcvd_in=com.mediatek.net.ip.
+MtkIpStoppedState, proc_in=StoppedState]
+  2026-09-25T08:21:15.807 - INVOKE onQuit()
+  2026-09-25T11:13:25.095 - CMD_SET_MULTICAST_FILT
+ER wlan0/-1 0 0 true [rcvd_in=com.mediatek.net.ip.
+MtkIpStoppedState, proc_in=StoppedState]
+  2026-09-25T11:21:17.804 - OBSERVED interfaceRemo
+ved(wlan0)
+  2026-09-25T11:21:17.862 - CMD_STOP wlan0/-1 0 0 
+null [rcvd_in=com.mediatek.net.ip.MtkIpStoppedStat
+e, proc_in=StoppedState]
+  2026-09-25T11:21:17.873 - CMD_STOP wlan0/-1 0 0 
+null [rcvd_in=com.mediatek.net.ip.MtkIpStoppedStat
+e, proc_in=StoppedState]
+  2026-09-25T11:21:17.873 - CMD_TERMINATE_AFTER_ST
+OP wlan0/-1 0 0 null [rcvd_in=com.mediatek.net.ip.
+MtkIpStoppedState, proc_in=StoppedState]
+  2026-09-25T11:21:17.874 - INVOKE onQuit()
+  2026-09-25T11:22:24.877 - CMD_SET_MULTICAST_FILT
+ER wlan0/-1 0 0 true [rcvd_in=com.mediatek.net.ip.
+MtkIpStoppedState, proc_in=StoppedState]
+  2026-09-25T11:38:45.086 - OBSERVED interfaceRemo
+ved(wlan0)
+  2026-09-25T11:38:45.154 - CMD_STOP wlan0/-1 0 0 
+null [rcvd_in=com.mediatek.net.ip.MtkIpStoppedStat
+e, proc_in=StoppedState]
+  2026-09-25T11:38:45.169 - CMD_STOP wlan0/-1 0 0 
+null [rcvd_in=com.mediatek.net.ip.MtkIpStoppedStat
+e, proc_in=StoppedState]
+  2026-09-25T11:38:45.169 - CMD_TERMINATE_AFTER_ST
+OP wlan0/-1 0 0 null [rcvd_in=com.mediatek.net.ip.
+MtkIpStoppedState, proc_in=StoppedState]
+  2026-09-25T11:38:45.169 - INVOKE onQuit()
+  2026-09-25T11:38:51.436 - CMD_SET_MULTICAST_FILT
+ER wlan0/-1 0 0 true [rcvd_in=com.mediatek.net.ip.
+MtkIpStoppedState, proc_in=StoppedState]
+  2026-09-25T11:40:09.508 - OBSERVED interfaceRemo
+ved(wlan0)
+  2026-09-25T11:40:09.583 - CMD_STOP wlan0/-1 0 0 
+null [rcvd_in=com.mediatek.net.ip.MtkIpStoppedStat
+e, proc_in=StoppedState]
+  2026-09-25T11:40:09.595 - CMD_STOP wlan0/-1 0 0 
+null [rcvd_in=com.mediatek.net.ip.MtkIpStoppedStat
+e, proc_in=StoppedState]
+  2026-09-25T11:40:09.595 - CMD_TERMINATE_AFTER_ST
+OP wlan0/-1 0 0 null [rcvd_in=com.mediatek.net.ip.
+MtkIpStoppedState, proc_in=StoppedState]
+  2026-09-25T11:40:09.596 - INVOKE onQuit()
+  2026-09-25T11:48:39.430 - CMD_SET_MULTICAST_FILT
+ER wlan0/-1 0 0 true [rcvd_in=com.mediatek.net.ip.
+MtkIpStoppedState, proc_in=StoppedState]
+  2026-09-25T11:55:58.005 - CMD_STOP wlan0/-1 0 0 
+null [rcvd_in=com.mediatek.net.ip.MtkIpStoppedStat
+e, proc_in=StoppedState]
+  2026-09-25T11:55:58.276 - CMD_STOP wlan0/-1 0 0 
+null [rcvd_in=com.mediatek.net.ip.MtkIpStoppedStat
+e, proc_in=StoppedState]
+  2026-09-25T11:55:58.277 - CMD_TERMINATE_AFTER_ST
+OP wlan0/-1 0 0 null [rcvd_in=com.mediatek.net.ip.
+MtkIpStoppedState, proc_in=StoppedState]
+  2026-09-25T11:55:58.277 - INVOKE onQuit()
+  2026-09-25T12:10:25.151 - CMD_SET_MULTICAST_FILT
+ER wlan0/-1 0 0 true [rcvd_in=com.mediatek.net.ip.
+MtkIpStoppedState, proc_in=StoppedState]
+  2026-09-25T12:10:38.458 - CMD_STOP wlan0/-1 0 0 
+null [rcvd_in=com.mediatek.net.ip.MtkIpStoppedStat
+e, proc_in=StoppedState]
+  2026-09-25T12:10:38.744 - CMD_STOP wlan0/-1 0 0 
+null [rcvd_in=com.mediatek.net.ip.MtkIpStoppedStat
+e, proc_in=StoppedState]
+  2026-09-25T12:10:38.746 - CMD_TERMINATE_AFTER_ST
+OP wlan0/-1 0 0 null [rcvd_in=com.mediatek.net.ip.
+MtkIpStoppedState, proc_in=StoppedState]
+  2026-09-25T12:10:38.747 - INVOKE onQuit()
+
+IpClient.wlan0 connectivity packet log:
+
+Debug with python and scapy via:
+--
+2026-09-24T22:34:51.943 - handleScreenStateChanged
+: screenOn=true
+2026-09-24T22:34:51.949 - startConnectivityScan: s
+creenOn=true wifiState=unknown scanImmediately=fal
+se wifiEnabled=false wifiConnectivityManagerEnable
+d=true
+2026-09-24T22:34:52.246 - Set WiFi enabled
+2026-09-24T22:34:52.246 - Starting up WifiConnecti
+vityManager
+2026-09-24T22:34:52.288 - startConnectivityScan: s
+creenOn=true wifiState=unknown scanImmediately=tru
+e wifiEnabled=true wifiConnectivityManagerEnabled=
+true
+2026-09-24T22:34:52.288 - handleConnectionStateCha
+nged: state=disconnected
+2026-09-24T22:34:52.289 - scheduleWatchdogTimer
+2026-09-24T22:34:52.289 - startConnectivityScan: s
+creenOn=true wifiState=disconnected scanImmediatel
+y=true wifiEnabled=true wifiConnectivityManagerEna
+bled=true
+2026-09-24T22:34:52.291 - schedulePeriodicScanTime
+r, intervalMs: 20000
+2026-09-24T22:34:53.206 - AllSingleScanListener on
+Results: start network selection
+2026-09-24T22:34:53.206 - Empty connectivity scan 
+result
+2026-09-24T22:34:58.627 - AllSingleScanListener on
+Results: start network selection
+2026-09-24T22:34:58.627 - Empty connectivity scan 
+result
+2026-09-24T22:35:05.901 - handleConnectionStateCha
+nged: state=transitioning
+2026-09-24T22:35:05.901 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=false wifiEnabled=true wifiConnectivityManagerE
+nabled=true
+2026-09-24T22:35:05.910 - Set WiFi disabled
+2026-09-24T22:35:05.910 - Stopping WifiConnectivit
+yManager
+2026-09-24T22:35:05.910 - Failed to set firmware r
+oaming configuration.
+2026-09-24T22:53:37.487 - handleScreenStateChanged
+: screenOn=true
+2026-09-24T22:53:37.487 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=false wifiEnabled=false wifiConnectivityManager
+Enabled=true
+2026-09-24T22:53:38.195 - handleScreenStateChanged
+: screenOn=false
+2026-09-24T22:53:38.195 - startConnectivityScan: s
+creenOn=false wifiState=transitioning scanImmediat
+ely=false wifiEnabled=false wifiConnectivityManage
+rEnabled=true
+2026-09-24T22:54:20.702 - handleScreenStateChanged
+: screenOn=true
+2026-09-24T22:54:20.702 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=false wifiEnabled=false wifiConnectivityManager
+Enabled=true
+2026-09-24T23:11:46.334 - handleScreenStateChanged
+: screenOn=false
+2026-09-24T23:11:46.335 - startConnectivityScan: s
+creenOn=false wifiState=transitioning scanImmediat
+ely=false wifiEnabled=false wifiConnectivityManage
+rEnabled=true
+2026-09-24T23:11:48.308 - handleScreenStateChanged
+: screenOn=true
+2026-09-24T23:11:48.309 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=false wifiEnabled=false wifiConnectivityManager
+Enabled=true
+2026-09-24T23:21:16.412 - handleScreenStateChanged
+: screenOn=false
+2026-09-24T23:21:16.412 - startConnectivityScan: s
+creenOn=false wifiState=transitioning scanImmediat
+ely=false wifiEnabled=false wifiConnectivityManage
+rEnabled=true
+2026-09-25T00:39:47.097 - handleScreenStateChanged
+: screenOn=true
+2026-09-25T00:39:47.097 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=false wifiEnabled=false wifiConnectivityManager
+Enabled=true
+2026-09-25T00:39:48.374 - handleScreenStateChanged
+: screenOn=false
+2026-09-25T00:39:48.374 - startConnectivityScan: s
+creenOn=false wifiState=transitioning scanImmediat
+ely=false wifiEnabled=false wifiConnectivityManage
+rEnabled=true
+2026-09-25T00:39:48.939 - handleScreenStateChanged
+: screenOn=true
+2026-09-25T00:39:48.939 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=false wifiEnabled=false wifiConnectivityManager
+Enabled=true
+2026-09-25T00:42:01.804 - handleScreenStateChanged
+: screenOn=false
+2026-09-25T00:42:01.804 - startConnectivityScan: s
+creenOn=false wifiState=transitioning scanImmediat
+ely=false wifiEnabled=false wifiConnectivityManage
+rEnabled=true
+2026-09-25T00:43:13.179 - handleScreenStateChanged
+: screenOn=true
+2026-09-25T00:43:13.180 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=false wifiEnabled=false wifiConnectivityManager
+Enabled=true
+2026-09-25T00:43:14.467 - handleScreenStateChanged
+: screenOn=false
+2026-09-25T00:43:14.467 - startConnectivityScan: s
+creenOn=false wifiState=transitioning scanImmediat
+ely=false wifiEnabled=false wifiConnectivityManage
+rEnabled=true
+2026-09-25T05:03:48.467 - handleScreenStateChanged
+: screenOn=true
+2026-09-25T05:03:48.468 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=false wifiEnabled=false wifiConnectivityManager
+Enabled=true
+2026-09-25T05:03:49.750 - handleScreenStateChanged
+: screenOn=false
+2026-09-25T05:03:49.750 - startConnectivityScan: s
+creenOn=false wifiState=transitioning scanImmediat
+ely=false wifiEnabled=false wifiConnectivityManage
+rEnabled=true
+2026-09-25T05:05:00.342 - handleScreenStateChanged
+: screenOn=true
+2026-09-25T05:05:00.343 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=false wifiEnabled=false wifiConnectivityManager
+Enabled=true
+2026-09-25T05:05:10.543 - handleScreenStateChanged
+: screenOn=false
+2026-09-25T05:05:10.543 - startConnectivityScan: s
+creenOn=false wifiState=transitioning scanImmediat
+ely=false wifiEnabled=false wifiConnectivityManage
+rEnabled=true
+2026-09-25T07:32:04.303 - handleScreenStateChanged
+: screenOn=true
+2026-09-25T07:32:04.304 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=false wifiEnabled=false wifiConnectivityManager
+Enabled=true
+2026-09-25T07:32:18.548 - handleScreenStateChanged
+: screenOn=false
+2026-09-25T07:32:18.548 - startConnectivityScan: s
+creenOn=false wifiState=transitioning scanImmediat
+ely=false wifiEnabled=false wifiConnectivityManage
+rEnabled=true
+2026-09-25T08:05:38.215 - handleScreenStateChanged
+: screenOn=true
+2026-09-25T08:05:38.215 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=false wifiEnabled=false wifiConnectivityManager
+Enabled=true
+2026-09-25T08:05:48.474 - handleScreenStateChanged
+: screenOn=false
+2026-09-25T08:05:48.475 - startConnectivityScan: s
+creenOn=false wifiState=transitioning scanImmediat
+ely=false wifiEnabled=false wifiConnectivityManage
+rEnabled=true
+2026-09-25T08:06:36.109 - handleScreenStateChanged
+: screenOn=true
+2026-09-25T08:06:36.110 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=false wifiEnabled=false wifiConnectivityManager
+Enabled=true
+2026-09-25T08:08:58.692 - handleScreenStateChanged
+: screenOn=false
+2026-09-25T08:08:58.693 - startConnectivityScan: s
+creenOn=false wifiState=transitioning scanImmediat
+ely=false wifiEnabled=false wifiConnectivityManage
+rEnabled=true
+2026-09-25T08:09:41.667 - handleScreenStateChanged
+: screenOn=true
+2026-09-25T08:09:41.667 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=false wifiEnabled=false wifiConnectivityManager
+Enabled=true
+2026-09-25T08:09:44.117 - handleScreenStateChanged
+: screenOn=false
+2026-09-25T08:09:44.117 - startConnectivityScan: s
+creenOn=false wifiState=transitioning scanImmediat
+ely=false wifiEnabled=false wifiConnectivityManage
+rEnabled=true
+2026-09-25T08:09:44.912 - handleScreenStateChanged
+: screenOn=true
+2026-09-25T08:09:44.914 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=false wifiEnabled=false wifiConnectivityManager
+Enabled=true
+2026-09-25T08:09:55.426 - handleScreenStateChanged
+: screenOn=false
+2026-09-25T08:09:55.426 - startConnectivityScan: s
+creenOn=false wifiState=transitioning scanImmediat
+ely=false wifiEnabled=false wifiConnectivityManage
+rEnabled=true
+2026-09-25T08:11:39.643 - handleScreenStateChanged
+: screenOn=true
+2026-09-25T08:11:39.643 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=false wifiEnabled=false wifiConnectivityManager
+Enabled=true
+2026-09-25T08:13:25.966 - handleScreenStateChanged
+: screenOn=false
+2026-09-25T08:13:25.966 - startConnectivityScan: s
+creenOn=false wifiState=transitioning scanImmediat
+ely=false wifiEnabled=false wifiConnectivityManage
+rEnabled=true
+2026-09-25T08:13:32.627 - handleScreenStateChanged
+: screenOn=true
+2026-09-25T08:13:32.627 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=false wifiEnabled=false wifiConnectivityManager
+Enabled=true
+2026-09-25T08:19:53.346 - Set WiFi enabled
+2026-09-25T08:19:53.346 - Starting up WifiConnecti
+vityManager
+2026-09-25T08:19:53.355 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=true wifiEnabled=true wifiConnectivityManagerEn
+abled=true
+2026-09-25T08:19:53.356 - handleConnectionStateCha
+nged: state=disconnected
+2026-09-25T08:19:53.356 - scheduleWatchdogTimer
+2026-09-25T08:19:53.357 - startConnectivityScan: s
+creenOn=true wifiState=disconnected scanImmediatel
+y=true wifiEnabled=true wifiConnectivityManagerEna
+bled=true
+2026-09-25T08:19:53.357 - schedulePeriodicScanTime
+r, intervalMs: 20000
+2026-09-25T08:19:54.264 - AllSingleScanListener on
+Results: start network selection
+2026-09-25T08:19:54.264 - Empty connectivity scan 
+result
+2026-09-25T08:19:55.621 - AllSingleScanListener on
+Results: start network selection
+2026-09-25T08:19:55.621 - No saved networks.
+--
+2026-09-25T08:20:29.150 - startConnectivityScan: s
+creenOn=true wifiState=disconnected scanImmediatel
+y=true wifiEnabled=true wifiConnectivityManagerEna
+bled=true
+2026-09-25T08:20:29.154 - schedulePeriodicScanTime
+r, intervalMs: 20000
+2026-09-25T08:20:30.077 - AllSingleScanListener on
+Results: start network selection
+2026-09-25T08:20:30.077 - Empty connectivity scan 
+result
+2026-09-25T08:20:31.104 - trackBssid: disable 1c:4
+4:19:4a:f8:de reason code 16
+2026-09-25T08:20:49.156 - periodicScanTimerHandler
+--
+2026-09-25T08:21:15.798 - handleConnectionStateCha
+nged: state=transitioning
+2026-09-25T08:21:15.798 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=false wifiEnabled=true wifiConnectivityManagerE
+nabled=true
+2026-09-25T08:21:15.803 - Set WiFi disabled
+2026-09-25T08:21:15.803 - Stopping WifiConnectivit
+yManager
+2026-09-25T08:21:15.803 - Failed to set firmware r
+oaming configuration.
+2026-09-25T08:31:05.938 - handleScreenStateChanged
+: screenOn=false
+2026-09-25T08:31:05.938 - startConnectivityScan: s
+creenOn=false wifiState=transitioning scanImmediat
+ely=false wifiEnabled=false wifiConnectivityManage
+rEnabled=true
+2026-09-25T08:31:08.914 - handleScreenStateChanged
+: screenOn=true
+2026-09-25T08:31:08.914 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=false wifiEnabled=false wifiConnectivityManager
+Enabled=true
+2026-09-25T08:51:59.340 - handleScreenStateChanged
+: screenOn=false
+2026-09-25T08:51:59.340 - startConnectivityScan: s
+creenOn=false wifiState=transitioning scanImmediat
+ely=false wifiEnabled=false wifiConnectivityManage
+rEnabled=true
+2026-09-25T08:52:08.198 - handleScreenStateChanged
+: screenOn=true
+2026-09-25T08:52:08.198 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=false wifiEnabled=false wifiConnectivityManager
+Enabled=true
+2026-09-25T08:54:17.627 - handleScreenStateChanged
+: screenOn=false
+2026-09-25T08:54:17.627 - startConnectivityScan: s
+creenOn=false wifiState=transitioning scanImmediat
+ely=false wifiEnabled=false wifiConnectivityManage
+rEnabled=true
+2026-09-25T08:54:19.073 - handleScreenStateChanged
+: screenOn=true
+2026-09-25T08:54:19.073 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=false wifiEnabled=false wifiConnectivityManager
+Enabled=true
+2026-09-25T09:23:08.487 - handleScreenStateChanged
+: screenOn=false
+2026-09-25T09:23:08.487 - startConnectivityScan: s
+creenOn=false wifiState=transitioning scanImmediat
+ely=false wifiEnabled=false wifiConnectivityManage
+rEnabled=true
+2026-09-25T09:29:47.104 - handleScreenStateChanged
+: screenOn=true
+2026-09-25T09:29:47.104 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=false wifiEnabled=false wifiConnectivityManager
+Enabled=true
+2026-09-25T09:30:26.878 - handleScreenStateChanged
+: screenOn=false
+2026-09-25T09:30:26.878 - startConnectivityScan: s
+creenOn=false wifiState=transitioning scanImmediat
+ely=false wifiEnabled=false wifiConnectivityManage
+rEnabled=true
+2026-09-25T09:31:20.966 - handleScreenStateChanged
+: screenOn=true
+2026-09-25T09:31:20.966 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=false wifiEnabled=false wifiConnectivityManager
+Enabled=true
+2026-09-25T09:31:23.254 - handleScreenStateChanged
+: screenOn=false
+2026-09-25T09:31:23.255 - startConnectivityScan: s
+creenOn=false wifiState=transitioning scanImmediat
+ely=false wifiEnabled=false wifiConnectivityManage
+rEnabled=true
+2026-09-25T09:31:24.276 - handleScreenStateChanged
+: screenOn=true
+2026-09-25T09:31:24.277 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=false wifiEnabled=false wifiConnectivityManager
+Enabled=true
+2026-09-25T09:34:43.347 - handleScreenStateChanged
+: screenOn=false
+2026-09-25T09:34:43.347 - startConnectivityScan: s
+creenOn=false wifiState=transitioning scanImmediat
+ely=false wifiEnabled=false wifiConnectivityManage
+rEnabled=true
+2026-09-25T09:34:45.269 - handleScreenStateChanged
+: screenOn=true
+2026-09-25T09:34:45.269 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=false wifiEnabled=false wifiConnectivityManager
+Enabled=true
+2026-09-25T10:26:27.685 - handleScreenStateChanged
+: screenOn=false
+2026-09-25T10:26:27.685 - startConnectivityScan: s
+creenOn=false wifiState=transitioning scanImmediat
+ely=false wifiEnabled=false wifiConnectivityManage
+rEnabled=true
+2026-09-25T10:26:29.724 - handleScreenStateChanged
+: screenOn=true
+2026-09-25T10:26:29.724 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=false wifiEnabled=false wifiConnectivityManager
+Enabled=true
+2026-09-25T10:45:56.032 - handleScreenStateChanged
+: screenOn=false
+2026-09-25T10:45:56.032 - startConnectivityScan: s
+creenOn=false wifiState=transitioning scanImmediat
+ely=false wifiEnabled=false wifiConnectivityManage
+rEnabled=true
+2026-09-25T10:46:22.956 - handleScreenStateChanged
+: screenOn=true
+2026-09-25T10:46:22.956 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=false wifiEnabled=false wifiConnectivityManager
+Enabled=true
+2026-09-25T10:58:59.107 - handleScreenStateChanged
+: screenOn=false
+2026-09-25T10:58:59.107 - startConnectivityScan: s
+creenOn=false wifiState=transitioning scanImmediat
+ely=false wifiEnabled=false wifiConnectivityManage
+rEnabled=true
+2026-09-25T10:59:01.012 - handleScreenStateChanged
+: screenOn=true
+2026-09-25T10:59:01.013 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=false wifiEnabled=false wifiConnectivityManager
+Enabled=true
+2026-09-25T11:13:25.185 - Set WiFi enabled
+2026-09-25T11:13:25.185 - Starting up WifiConnecti
+vityManager
+2026-09-25T11:13:25.194 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=true wifiEnabled=true wifiConnectivityManagerEn
+abled=true
+2026-09-25T11:13:25.194 - handleConnectionStateCha
+nged: state=disconnected
+2026-09-25T11:13:25.194 - scheduleWatchdogTimer
+2026-09-25T11:13:25.195 - startConnectivityScan: s
+creenOn=true wifiState=disconnected scanImmediatel
+y=true wifiEnabled=true wifiConnectivityManagerEna
+bled=true
+2026-09-25T11:13:25.195 - schedulePeriodicScanTime
+r, intervalMs: 20000
+2026-09-25T11:13:26.076 - AllSingleScanListener on
+Results: start network selection
+2026-09-25T11:13:26.076 - Empty connectivity scan 
+result
+2026-09-25T11:13:45.198 - periodicScanTimerHandler
+2026-09-25T11:13:45.199 - schedulePeriodicScanTime
+r, intervalMs: 40000
+--
+2026-09-25T11:21:17.865 - handleConnectionStateCha
+nged: state=transitioning
+2026-09-25T11:21:17.865 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=false wifiEnabled=true wifiConnectivityManagerE
+nabled=true
+2026-09-25T11:21:17.872 - Set WiFi disabled
+2026-09-25T11:21:17.872 - Stopping WifiConnectivit
+yManager
+2026-09-25T11:21:17.872 - Failed to set firmware r
+oaming configuration.
+2026-09-25T11:22:24.897 - Set WiFi enabled
+2026-09-25T11:22:24.897 - Starting up WifiConnecti
+vityManager
+2026-09-25T11:22:24.903 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=true wifiEnabled=true wifiConnectivityManagerEn
+abled=true
+2026-09-25T11:22:24.903 - handleConnectionStateCha
+nged: state=disconnected
+2026-09-25T11:22:24.903 - scheduleWatchdogTimer
+2026-09-25T11:22:24.910 - startConnectivityScan: s
+creenOn=true wifiState=disconnected scanImmediatel
+y=true wifiEnabled=true wifiConnectivityManagerEna
+bled=true
+2026-09-25T11:22:24.910 - schedulePeriodicScanTime
+r, intervalMs: 20000
+2026-09-25T11:22:25.795 - AllSingleScanListener on
+Results: start network selection
+2026-09-25T11:22:25.795 - Empty connectivity scan 
+result
+2026-09-25T11:22:52.107 - periodicScanTimerHandler
+2026-09-25T11:22:52.108 - schedulePeriodicScanTime
+r, intervalMs: 40000
+--
+2026-09-25T11:31:03.617 - handleScreenStateChanged
+: screenOn=false
+2026-09-25T11:31:03.617 - startConnectivityScan: s
+creenOn=false wifiState=disconnected scanImmediate
+ly=false wifiEnabled=true wifiConnectivityManagerE
+nabled=true
+2026-09-25T11:31:43.133 - handleScreenStateChanged
+: screenOn=true
+2026-09-25T11:31:43.133 - startConnectivityScan: s
+creenOn=true wifiState=disconnected scanImmediatel
+y=false wifiEnabled=true wifiConnectivityManagerEn
+abled=true
+2026-09-25T11:31:43.133 - schedulePeriodicScanTime
+r, intervalMs: 20000
+2026-09-25T11:31:47.158 - AllSingleScanListener on
+Results: start network selection
+2026-09-25T11:31:47.158 - Empty connectivity scan 
+result
+2026-09-25T11:32:03.135 - periodicScanTimerHandler
+2026-09-25T11:32:03.135 - schedulePeriodicScanTime
+r, intervalMs: 40000
+--
+2026-09-25T11:32:31.429 - handleScreenStateChanged
+: screenOn=false
+2026-09-25T11:32:31.429 - startConnectivityScan: s
+creenOn=false wifiState=disconnected scanImmediate
+ly=false wifiEnabled=true wifiConnectivityManagerE
+nabled=true
+2026-09-25T11:33:13.460 - handleScreenStateChanged
+: screenOn=true
+2026-09-25T11:33:13.460 - startConnectivityScan: s
+creenOn=true wifiState=disconnected scanImmediatel
+y=false wifiEnabled=true wifiConnectivityManagerEn
+abled=true
+2026-09-25T11:33:13.460 - schedulePeriodicScanTime
+r, intervalMs: 20000
+2026-09-25T11:33:19.068 - AllSingleScanListener on
+Results: start network selection
+2026-09-25T11:33:19.068 - Empty connectivity scan 
+result
+2026-09-25T11:33:33.465 - periodicScanTimerHandler
+2026-09-25T11:33:33.466 - schedulePeriodicScanTime
+r, intervalMs: 40000
+--
+2026-09-25T11:38:45.160 - handleConnectionStateCha
+nged: state=transitioning
+2026-09-25T11:38:45.162 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=false wifiEnabled=true wifiConnectivityManagerE
+nabled=true
+2026-09-25T11:38:45.167 - Set WiFi disabled
+2026-09-25T11:38:45.168 - Stopping WifiConnectivit
+yManager
+2026-09-25T11:38:45.168 - Failed to set firmware r
+oaming configuration.
+2026-09-25T11:38:51.449 - Set WiFi enabled
+2026-09-25T11:38:51.449 - Starting up WifiConnecti
+vityManager
+2026-09-25T11:38:51.457 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=true wifiEnabled=true wifiConnectivityManagerEn
+abled=true
+2026-09-25T11:38:51.458 - handleConnectionStateCha
+nged: state=disconnected
+2026-09-25T11:38:51.458 - scheduleWatchdogTimer
+2026-09-25T11:38:51.461 - startConnectivityScan: s
+creenOn=true wifiState=disconnected scanImmediatel
+y=true wifiEnabled=true wifiConnectivityManagerEna
+bled=true
+2026-09-25T11:38:51.462 - schedulePeriodicScanTime
+r, intervalMs: 20000
+2026-09-25T11:38:54.263 - AllSingleScanListener on
+Results: start network selection
+2026-09-25T11:38:54.263 - Empty connectivity scan 
+result
+2026-09-25T11:39:11.464 - periodicScanTimerHandler
+2026-09-25T11:39:11.464 - schedulePeriodicScanTime
+r, intervalMs: 40000
+--
+2026-09-25T11:40:09.588 - handleConnectionStateCha
+nged: state=transitioning
+2026-09-25T11:40:09.590 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=false wifiEnabled=true wifiConnectivityManagerE
+nabled=true
+2026-09-25T11:40:09.594 - Set WiFi disabled
+2026-09-25T11:40:09.594 - Stopping WifiConnectivit
+yManager
+2026-09-25T11:40:09.594 - Failed to set firmware r
+oaming configuration.
+2026-09-25T11:41:22.966 - handleScreenStateChanged
+: screenOn=false
+2026-09-25T11:41:22.967 - startConnectivityScan: s
+creenOn=false wifiState=transitioning scanImmediat
+ely=false wifiEnabled=false wifiConnectivityManage
+rEnabled=true
+2026-09-25T11:41:27.716 - handleScreenStateChanged
+: screenOn=true
+2026-09-25T11:41:27.717 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=false wifiEnabled=false wifiConnectivityManager
+Enabled=true
+2026-09-25T11:48:39.493 - Set WiFi enabled
+2026-09-25T11:48:39.493 - Starting up WifiConnecti
+vityManager
+2026-09-25T11:48:39.505 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=true wifiEnabled=true wifiConnectivityManagerEn
+abled=true
+2026-09-25T11:48:39.505 - handleConnectionStateCha
+nged: state=disconnected
+2026-09-25T11:48:39.506 - scheduleWatchdogTimer
+2026-09-25T11:48:39.509 - startConnectivityScan: s
+creenOn=true wifiState=disconnected scanImmediatel
+y=true wifiEnabled=true wifiConnectivityManagerEna
+bled=true
+2026-09-25T11:48:39.510 - schedulePeriodicScanTime
+r, intervalMs: 20000
+2026-09-25T11:48:40.404 - AllSingleScanListener on
+Results: start network selection
+2026-09-25T11:48:40.404 - Empty connectivity scan 
+result
+2026-09-25T11:48:59.511 - periodicScanTimerHandler
+2026-09-25T11:48:59.512 - schedulePeriodicScanTime
+r, intervalMs: 40000
+--
+2026-09-25T11:55:58.270 - handleConnectionStateCha
+nged: state=transitioning
+2026-09-25T11:55:58.271 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=false wifiEnabled=true wifiConnectivityManagerE
+nabled=true
+2026-09-25T11:55:58.274 - Set WiFi disabled
+2026-09-25T11:55:58.274 - Stopping WifiConnectivit
+yManager
+2026-09-25T11:55:58.274 - Failed to set firmware r
+oaming configuration.
+2026-09-25T11:57:45.807 - handleScreenStateChanged
+: screenOn=false
+2026-09-25T11:57:45.808 - startConnectivityScan: s
+creenOn=false wifiState=transitioning scanImmediat
+ely=false wifiEnabled=false wifiConnectivityManage
+rEnabled=true
+2026-09-25T11:58:42.856 - handleScreenStateChanged
+: screenOn=true
+2026-09-25T11:58:42.857 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=false wifiEnabled=false wifiConnectivityManager
+Enabled=true
+2026-09-25T12:10:25.217 - Set WiFi enabled
+2026-09-25T12:10:25.218 - Starting up WifiConnecti
+vityManager
+2026-09-25T12:10:25.227 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=true wifiEnabled=true wifiConnectivityManagerEn
+abled=true
+2026-09-25T12:10:25.228 - handleConnectionStateCha
+nged: state=disconnected
+2026-09-25T12:10:25.228 - scheduleWatchdogTimer
+2026-09-25T12:10:25.228 - startConnectivityScan: s
+creenOn=true wifiState=disconnected scanImmediatel
+y=true wifiEnabled=true wifiConnectivityManagerEna
+bled=true
+2026-09-25T12:10:25.229 - schedulePeriodicScanTime
+r, intervalMs: 20000
+2026-09-25T12:10:26.126 - AllSingleScanListener on
+Results: start network selection
+2026-09-25T12:10:26.127 - Empty connectivity scan 
+result
+2026-09-25T12:10:38.732 - handleConnectionStateCha
+nged: state=transitioning
+2026-09-25T12:10:38.732 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=false wifiEnabled=true wifiConnectivityManagerE
+nabled=true
+2026-09-25T12:10:38.739 - Set WiFi disabled
+2026-09-25T12:10:38.740 - Stopping WifiConnectivit
+yManager
+2026-09-25T12:10:38.740 - Failed to set firmware r
+oaming configuration.
+2026-09-25T12:16:29.686 - handleScreenStateChanged
+: screenOn=false
+2026-09-25T12:16:29.686 - startConnectivityScan: s
+creenOn=false wifiState=transitioning scanImmediat
+ely=false wifiEnabled=false wifiConnectivityManage
+rEnabled=true
+2026-09-25T12:17:03.046 - handleScreenStateChanged
+: screenOn=true
+2026-09-25T12:17:03.046 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=false wifiEnabled=false wifiConnectivityManager
+Enabled=true
+2026-09-25T12:25:55.866 - handleScreenStateChanged
+: screenOn=false
+2026-09-25T12:25:55.867 - startConnectivityScan: s
+creenOn=false wifiState=transitioning scanImmediat
+ely=false wifiEnabled=false wifiConnectivityManage
+rEnabled=true
+2026-09-25T12:26:06.168 - handleScreenStateChanged
+: screenOn=true
+2026-09-25T12:26:06.168 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=false wifiEnabled=false wifiConnectivityManager
+Enabled=true
+2026-09-25T12:26:07.431 - handleScreenStateChanged
+: screenOn=false
+2026-09-25T12:26:07.431 - startConnectivityScan: s
+creenOn=false wifiState=transitioning scanImmediat
+ely=false wifiEnabled=false wifiConnectivityManage
+rEnabled=true
+2026-09-25T12:26:08.051 - handleScreenStateChanged
+: screenOn=true
+2026-09-25T12:26:08.051 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=false wifiEnabled=false wifiConnectivityManager
+Enabled=true
+WifiConnectivityManager - Log End ----
+WifiOpenNetworkNotifier:
+mSettingEnabled true
+currentTime: 1790321423792
+mNotificationRepeatTime: 0
+mState: 0
+mBlacklistedSsids: {}
+WifiCarrierNetworkNotifier:
+mSettingEnabled true
+currentTime: 1790321423792
+mNotificationRepeatTime: 0
+mState: 0
+mBlacklistedSsids: {}
+Dump of WakeupController
+USE_PLATFORM_WIFI_WAKE: true
+mWifiWakeupEnabled: false
+isOnboarded: true
+--
+startTime=09-25 08:20:13.604, SSID="PTCL-BB", BSSI
+D=any, durationMillis=12948, roamType=ROAM_UNRELAT
+ED, connectionResult=0, level2FailureCode=ASSOCIAT
+ION_REJECTION, connectivityLevelFailureCode=NONE, 
+signalStrength=0, wifiState=WIFI_DISCONNECTED, scr
+eenOn=true. mRouterFingerprint: mConnectionEvent.r
+oamType=0, mChannelInfo=0, mDtim=0, mAuthenticatio
+n=2, mHidden=false, mRouterTechnology=0, mSupports
+Ipv6=false
+mWifiLogProto.numSavedNetworks=1
+mWifiLogProto.numOpenNetworks=0
+mWifiLogProto.numPersonalNetworks=1
+mWifiLogProto.numEnterpriseNetworks=0
+mWifiLogProto.numHiddenNetworks=0
+--
+mSystemStateEntries: <state><screenOn> : <scansIni
+tiated>
+  WIFI_UNKNOWN       ON: 0
+  WIFI_DISABLED      ON: 8
+  WIFI_DISCONNECTED  ON: 36
+  WIFI_ASSOCIATED    ON: 0
+  WIFI_UNKNOWN      OFF: 0
+--
+mWifiLogProto.SoftApManagerReturnCodeCounts:
+  SUCCESS: 2
+  FAILED_GENERAL_ERROR: 0
+  FAILED_NO_CHANNEL: 0
+
+mWifiLogProto.numHalCrashes=0
+--
+mWifiLogProto.numSetupClientInterfaceFailureDueToH
+al=0
+mWifiLogProto.numSetupClientInterfaceFailureDueToW
+ificond=0
+mWifiLogProto.numSetupClientInterfaceFailureDueToS
+upplicant=0
+mWifiLogProto.numSetupSoftApInterfaceFailureDueToH
+al=0
+mWifiLogProto.numSetupSoftApInterfaceFailureDueToW
+ificond=0
+mWifiLogProto.numSetupSoftApInterfaceFailureDueToH
+ostapd=0
+StaEventList:
+09-25 08:20:13.595 CONNECT_NETWORK, ConfigInfo: al
+lowed_key_management=2 allowed_protocols=0 allowed
+_auth_algorithms=0 allowed_pairwise_ciphers=0 allo
+wed_group_ciphers=0 hidden_ssid=false is_passpoint
+=false is_ephemeral=false has_ever_connected=false
+ scan_rssi=-127 scan_freq=-1
+09-25 08:20:13.640 CMD_START_CONNECT, ConfigInfo: 
+allowed_key_management=2 allowed_protocols=3 allow
+ed_auth_algorithms=1 allowed_pairwise_ciphers=6 al
+lowed_group_ciphers=15 hidden_ssid=false is_passpo
+int=false is_ephemeral=false has_ever_connected=fa
+lse scan_rssi=-127 scan_freq=-1
+09-25 08:20:26.506 ASSOCIATION_REJECTION_EVENT tim
+edOut=false status=16:AUTH_TIMEOUT, supplicantStat
+eChangeEvents: { SCANNING ASSOCIATING}
+09-25 08:20:27.576 ASSOCIATION_REJECTION_EVENT tim
+edOut=false status=16:AUTH_TIMEOUT, supplicantStat
+eChangeEvents: { DISCONNECTED SCANNING ASSOCIATING
+}
+09-25 08:20:29.111 ASSOCIATION_REJECTION_EVENT tim
+edOut=false status=16:AUTH_TIMEOUT, supplicantStat
+eChangeEvents: { DISCONNECTED SCANNING ASSOCIATING
+}
+09-25 08:20:31.039 ASSOCIATION_REJECTION_EVENT tim
+edOut=false status=16:AUTH_TIMEOUT, supplicantStat
+eChangeEvents: { DISCONNECTED SCANNING ASSOCIATING
+}
+mWifiLogProto.numPasspointProviders=0
+mWifiLogProto.numPasspointProviderInstallation=0
+mWifiLogProto.numPasspointProviderInstallSuccess=0
+mWifiLogProto.numPasspointProviderUninstallation=0
+mWifiLogProto.numPasspointProviderUninstallSuccess
+=0
+--
+mWifiLogProto.numSoftApUserBandPreferenceUnsatisfi
+ed=0
+mTotalSsidsInScanHistogram:{0=34}
+mTotalBssidsInScanHistogram:{0=34}
+mAvailableOpenSsidsInScanHistogram:{0=34}
+mAvailableOpenBssidsInScanHistogram:{0=34}
+mAvailableSavedSsidsInScanHistogram:{0=34}
+--
+mSoftApTetheredEvents:
+event_type=0,time_stamp_millis=49315170,num_connec
+ted_clients=0,channel_frequency=0,channel_bandwidt
+h=0
+event_type=2,time_stamp_millis=49505220,num_connec
+ted_clients=1,channel_frequency=0,channel_bandwidt
+h=0
+event_type=1,time_stamp_millis=50181739,num_connec
+ted_clients=0,channel_frequency=0,channel_bandwidt
+h=0
+event_type=0,time_stamp_millis=50195616,num_connec
+ted_clients=0,channel_frequency=0,channel_bandwidt
+h=0
+event_type=2,time_stamp_millis=50199008,num_connec
+ted_clients=1,channel_frequency=0,channel_bandwidt
+h=0
+--
+mSoftApLocalOnlyEvents:
+mWpsMetrics.numWpsAttempts=0
+mWpsMetrics.numWpsSuccess=0
+mWpsMetrics.numWpsStartFailure=0
+mWpsMetrics.numWpsOverlapFailure=0
+mWpsMetrics.numWpsTimeoutFailure=0
+~ $ su -c '
+find /data /vendor /system -type f 2>/dev/null | g
+rep -E "hostapd|wifi|softap|tether" | head -100
+'
+/data/misc/wifi/softap.conf
+/data/misc/wifi/WifiConfigStore.xml
+/data/misc/wifi/dhcp_lease.conf
+/data/misc/profiles/cur/0/com.mediatek.atmwifimeta
+/primary.prof
+/data/misc/profiles/cur/0/ua.com.wifisolutions.wif
+ivr/primary.prof
+/data/misc/profiles/cur/0/com.transsion.wifiplayto
+gether/primary.prof
+/data/misc/profiles/ref/com.mediatek.atmwifimeta/p
+rimary.prof
+/data/misc/profiles/ref/ua.com.wifisolutions.wifiv
+r/primary.prof
+/data/misc/profiles/ref/com.transsion.wifiplaytoge
+ther/primary.prof
+/data/local/tmp/ahmed_hotspot/hostapd.conf
+/data/vendor/wifi/wpa/wpa_supplicant.conf
+/data/vendor/wifi/wpa/p2p_supplicant.conf
+/data/vendor/wifi/hostapd/accept_mac_update.conf
+/data/vendor/wifi/hostapd/hostapd_ap0.conf
+/data/data/ua.com.wifisolutions.wifivr/cache/WebVi
+ew/Crashpad/settings.dat
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/index
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/index-dir/th
+e-real-index
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/3eebad42a5e2
+b9ec_0
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/d3429b7f46ba
+e180_0
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/792bc5f335c0
+f4d0_0
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/2a02cbd8ba9b
+a5ae_0
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/055851afa1e7
+0051_0
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/b38acb0a087c
+d7e5_0
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/82b8ff169813
+5310_0
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/7c343bcfb17a
+99c9_0
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/fb3bd8223daf
+6847_0
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/c6202bb63d5d
+ecff_0                                            
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/db135f746e94
+a50c_0                                            
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/7659751a5e12
+1d9a_0
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/fb8a184d67e8
+e7bd_0                                            
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/797a8a2c7c2a
+1d04_0                                            
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/72b312a4b662
+c668_0                                            
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/149593842409
+a2c8_0                                            
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/2cba872b1f2e
+d01f_0
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/9212784cfb15
+0cbe_0                                            
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/def97b74d97c
+88b4_0
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/57409392412b
+4e8a_0                                            
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/c3f9ce2cd8f1
+cbfa_0
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/d99f8199f43a
+3ab1_0                                            
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/cc3621c11b4d
+937d_0
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/654b22f0d734
+550c_0                                            
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/c2ece6d94881
+3fc5_0
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/e27b9ab94acb
+70eb_0                                            
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/22be91ffe017
+1d7d_0
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/e1fb0f4839b9
+993e_0
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/39f461e31a24
+f83d_0                                            
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/d2febd1ba54b
+01da_0                                            
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/023e309608ff
+df81_0                                            
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/4fa8455634bc
+5030_0                                            
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/17b7e42f3d47
+72c5_0                                            
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/a03d8e342eb8
+f236_0                                            
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/647170002ab7
+91e7_0                                            
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/7b5d9a099be8
+303d_0                                            
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/53d0cac44bb2
+de0f_0                                            
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/53aed609f199
+54b0_0                                            
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/Code Cache/js/106739a9db57
+6d74_0                                            
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/index
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/index-dir/the-real-index  
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/3151ed0f2502141f_0        
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/7556c1835650e1d4_0
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/dfe6b2497a7513ba_0        
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/ffaae39aab1195d5_0        
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/f88d190300ac599a_0
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/3e793e8ca2531e78_0        
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/31d5ddc943012b16_0        
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/e90e99f04ab02e30_0
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/af95507745aa1801_0        
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/a9c8d551d08e20a3_0        
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/30464f3e87388bfd_0
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/fa2dcd1bcdf97d5a_0        
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/ba84466202036f73_0        
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/229909dd3123c08e_0
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/42a61e5e26c17e39_0        
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/9c7650ac83ac4c77_0        
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/9b6e96bb68d4535b_0
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/b15f3733b14e904c_0        
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/2087aa7a9128c93d_0        
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/d236f09ef9e9076f_0
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/61d80fcd03a3b737_0        
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/2edbb7e252032496_0        
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/1051ee4e43a9f6e9_0
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/96baeac20d24001b_0        
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/5f211821a70f5040_0        
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/50c654c08309e558_0
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/5daef14303173554_0        
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/a344a505cd2fead8_0        
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/bccd5b4ea179ed3d_0
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/40eddf87cfef58bd_0        
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/f3234f662358335c_0        
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/72c4492ea728ff44_0
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/86e17bbc54816ed7_0        
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/b7ddefa3dc9024ac_0        
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/e57ef45b4f9e918f_0
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/911ef7cf9c8c0457_0        
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/352f9207dc414099_0        
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/e4bc5b5dbca3f31b_0
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/f7a63c77a315b8e8_0        
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/a9f0fede402a5b32_0        
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/377dc846401d829a_0
+/data/data/ua.com.wifisolutions.wifivr/cache/org.c
+hromium.android_webview/9a4d3fa6fff97fe6_0        
+~ $

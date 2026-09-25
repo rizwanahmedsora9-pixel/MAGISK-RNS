@@ -1,0 +1,129 @@
+09-25 11:55:53.501  3390  3972 W GmsClient: 	at android.os.BinderProxy.transactNative(Native Method)
+09-25 11:55:57.865  2348  2665 I ConnectivityManager: startTethering caller:com.android.systemui
+09-25 11:55:57.868  2173  3313 I WifiService: startSoftAp uid=1000
+09-25 11:55:57.891  7536  7536 I wpa_supplicant: nl80211: deinit ifname=wlan0 disabled_11b_rates=0
+09-25 11:55:57.894  2173  2198 I EthernetTracker: interfaceLinkStateChanged, iface: wlan0, up: false
+09-25 11:55:57.968  2173  2265 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+09-25 11:55:58.006  2173  2307 I WifiNative: Successfully torn down Iface:{Name=wlan0,Id=12,Type=STA}
+09-25 11:55:58.012   457   457 E WifiHAL : Event processing terminated
+09-25 11:55:58.072   457   457 I android.hardware.wifi@1.0-service-mediatek: Adding interface handle for wlan0
+09-25 11:55:58.075  2173  2198 I EthernetTracker: interfaceLinkStateChanged, iface: wlan0, up: false
+09-25 11:55:58.078  2173  2311 I MtkTethering: Intent:Intent { act=android.net.conn.TETHER_STATE_CHANGED flg=0x24000010 (has extras) }
+09-25 11:55:58.079  2173  2311 I MtkTethering: showTetheredNotification:false:0
+09-25 11:55:58.079  2173  2311 I MtkTethering: Ignore
+09-25 11:55:58.092  2173  2307 I WifiNative: Successfully setup Iface:{Name=ap0,Id=13,Type=AP}
+09-25 11:55:58.107  2173  2303 W NetworkStatsRecorder: unknown interfaces [wlan0, lo, ccmni1], ignoring those stats
+09-25 11:55:58.107  2173  2303 W NetworkStatsRecorder: unknown interfaces [wlan0, lo, ccmni1], ignoring those stats
+09-25 11:55:58.109  2173  2303 W NetworkStatsRecorder: unknown interfaces [wlan0, lo, ccmni1], ignoring those stats
+09-25 11:55:58.111  2173  2303 W NetworkStatsRecorder: unknown interfaces [wlan0, lo, ccmni1], ignoring those stats
+09-25 11:55:58.111  2173  2364 W NetworkStatsRecorder: unknown interfaces [wlan0, lo, ccmni1], ignoring those stats
+09-25 11:55:58.192  8779  8779 I hostapd : Processing hidl events on FD 3
+09-25 11:55:58.199  2173  2187 I android_os_HwBinder: HwBinder: Starting thread pool for default::android.hardware.wifi.hostapd@1.0::IHostapd
+09-25 11:55:58.201  2173  2187 I HostapdHal: Completed initialization of IHostapd.
+09-25 11:55:58.230  2173  2307 E MtkSoftApManager: java.io.FileNotFoundException: /data/misc/wifi/allowed_list.conf (No such file or directory)
+09-25 11:55:58.230  2173  2307 E MtkSoftApManager: java.lang.Throwable: initAllowedListIfNecessary
+09-25 11:55:58.230  2173  2307 E MtkSoftApManager: 	at com.mediatek.server.wifi.MtkSoftApManager.initAllowedListIfNecessary(MtkSoftApManager.java:397)
+09-25 11:55:58.230  2173  2307 E MtkSoftApManager: 	at com.mediatek.server.wifi.MtkSoftApManager.getAllowedDevices(MtkSoftApManager.java:368)
+09-25 11:55:58.230  2173  2307 E MtkSoftApManager: 	at com.mediatek.server.wifi.MtkHostapdHal.addAccessPoint(MtkHostapdHal.java:115)
+09-25 11:55:58.230  2173  2307 E MtkSoftApManager: 	at com.android.server.wifi.WifiNative.startSoftAp(WifiNative.java:1269)
+09-25 11:55:58.230  2173  2307 E MtkSoftApManager: 	at com.mediatek.server.wifi.MtkSoftApManager.startSoftAp(MtkSoftApManager.java:565)
+09-25 11:55:58.230  2173  2307 E MtkSoftApManager: 	at com.mediatek.server.wifi.MtkSoftApManager.access$1000(MtkSoftApManager.java:88)
+09-25 11:55:58.230  2173  2307 E MtkSoftApManager: 	at com.mediatek.server.wifi.MtkSoftApManager$SoftApStateMachine$IdleState.processMessage(MtkSoftApManager.java:692)
+09-25 11:55:58.230  2173  2307 E MtkSoftApManager: 	at com.android.internal.util.StateMachine$SmHandler.processMsg(StateMachine.java:992)
+09-25 11:55:58.230  2173  2307 E MtkSoftApManager: 	at com.android.internal.util.StateMachine$SmHandler.handleMessage(StateMachine.java:809)
+09-25 11:55:58.230  2173  2307 E MtkSoftApManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-25 11:55:58.230  2173  2307 E MtkSoftApManager: 	at android.os.Looper.loop(Looper.java:193)
+09-25 11:55:58.230  2173  2307 E MtkSoftApManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+09-25 11:55:58.233  2173  2307 I android_os_HwBinder: HwBinder: Starting thread pool for default::vendor.mediatek.hardware.wifi.hostapd@2.0::IHostapd
+09-25 11:55:58.236  8779  8779 I hostapd : /data/vendor/wifi/hostapd/accept_mac_update.conf:
+09-25 11:55:58.240  8779  8779 I hostapd : /data/vendor/wifi/hostapd/hostapd_ap0.conf:
+09-25 11:55:58.240  8779  8779 I hostapd : interface=ap0
+09-25 11:55:58.240  8779  8779 I hostapd : driver=nl80211
+09-25 11:55:58.240  8779  8779 I hostapd : ctrl_interface=/data/vendor/wifi/hostapd/ctrl
+09-25 11:55:58.240  8779  8779 I hostapd : ssid2=496e66696e697820484f542038
+09-25 11:55:58.240  8779  8779 I hostapd : channel=161
+09-25 11:55:58.240  8779  8779 I hostapd : ieee80211n=1
+09-25 11:55:58.240  8779  8779 I hostapd : ieee80211ac=0
+09-25 11:55:58.240  8779  8779 I hostapd : hw_mode=a
+09-25 11:55:58.240  8779  8779 I hostapd : 
+09-25 11:55:58.240  8779  8779 I hostapd : ignore_broadcast_ssid=0
+09-25 11:55:58.240  8779  8779 I hostapd : wowlan_triggers=any
+09-25 11:55:58.240  8779  8779 I hostapd : 
+09-25 11:55:58.240  8779  8779 I hostapd : max_num_sta=10
+09-25 11:55:58.240  8779  8779 I hostapd : macaddr_acl=0
+09-25 11:55:58.240  8779  8779 I hostapd : accept_mac_file=/data/vendor/wifi/hostapd/accept_mac_update.conf
+09-25 11:55:58.240  8779  8779 I hostapd : device_name=AndroidAP
+09-25 11:55:58.240  8779  8779 I hostapd : manufacturer=MediaTek Inc.
+09-25 11:55:58.240  8779  8779 I hostapd : model_name=MTK Wireless Model
+09-25 11:55:58.240  8779  8779 I hostapd : model_number=66xx
+09-25 11:55:58.240  8779  8779 I hostapd : serial_number=1.0
+09-25 11:55:58.240  8779  8779 I hostapd : device_type=10-0050F204-5
+09-25 11:55:58.241  8779  8779 I hostapd : Add interface 'ap0'
+09-25 11:55:58.243  8779  8779 I hostapd : rfkill: Cannot open RFKILL control device
+09-25 11:55:58.248  2173  2198 I WifiNative: Interface state changed on Iface:{Name=ap0,Id=13,Type=AP}, isUp=true
+09-25 11:55:58.249  8779  8779 E hostapd : Using interface ap0 with hwaddr 02:08:22:e8:d9:55 and ssid "Infinix HOT 8"
+09-25 11:55:58.249  8779  8779 I hostapd : wpa_driver_nl80211_driver_cmd: ap0 recv cmd set_max_client 10
+09-25 11:55:58.251  8779  8779 I hostapd : ap0: interface state UNINITIALIZED->ENABLED
+09-25 11:55:58.251  8779  8779 I hostapd : ap0: AP-ENABLED 
+09-25 11:55:58.257  2173  2307 I android_os_HwBinder: HwBinder: Starting thread pool for default::vendor.mediatek.hardware.wifi.hostapd@2.0::IHostapd
+09-25 11:55:58.316  2173  2311 I MtkTethering: Intent:Intent { act=android.net.conn.TETHER_STATE_CHANGED flg=0x24000010 (has extras) }
+09-25 11:55:58.316  2173  2311 I MtkTethering: showTetheredNotification:true:0
+09-25 11:55:58.325  2173  2311 I MtkTethering: getHotspotClientInfo:0:0
+09-25 11:55:58.338   403   403 W hwservicemanager: getTransport: Cannot find entry android.hardware.tetheroffload.config@1.0::IOffloadConfig/default in either framework or device manifest.
+09-25 11:55:58.339  2173  2199 I Tethering: [OffloadController] tethering offload config not supported
+09-25 11:55:58.340  8782  8782 W dnsmasq : type=1400 audit(0.0:10971): avc: denied { getattr } for path="pipe:[27372]" dev="pipefs" ino=27372 scontext=u:r:dnsmasq:s0 tcontext=u:r:netd:s0 tclass=fifo_file permissive=0
+09-25 11:55:58.340  8782  8782 W dnsmasq : type=1400 audit(0.0:10972): avc: denied { getattr } for path="pipe:[27372]" dev="pipefs" ino=27372 scontext=u:r:dnsmasq:s0 tcontext=u:r:netd:s0 tclass=fifo_file permissive=0
+09-25 11:55:58.340  8782  8782 W dnsmasq : type=1400 audit(0.0:10973): avc: denied { getattr } for path="pipe:[27374]" dev="pipefs" ino=27374 scontext=u:r:dnsmasq:s0 tcontext=u:r:netd:s0 tclass=fifo_file permissive=0
+09-25 11:55:58.340  8782  8782 W dnsmasq : type=1400 audit(0.0:10974): avc: denied { getattr } for path="pipe:[27374]" dev="pipefs" ino=27374 scontext=u:r:dnsmasq:s0 tcontext=u:r:netd:s0 tclass=fifo_file permissive=0
+09-25 11:55:58.340  8782  8782 W dnsmasq : type=1400 audit(0.0:10975): avc: denied { getattr } for path="pipe:[27376]" dev="pipefs" ino=27376 scontext=u:r:dnsmasq:s0 tcontext=u:r:netd:s0 tclass=fifo_file permissive=0
+09-25 11:55:58.340  8782  8782 W dnsmasq : type=1400 audit(0.0:10976): avc: denied { getattr } for path="pipe:[27376]" dev="pipefs" ino=27376 scontext=u:r:dnsmasq:s0 tcontext=u:r:netd:s0 tclass=fifo_file permissive=0
+09-25 11:55:58.342  2173  2303 W NetworkStatsRecorder: unknown interfaces [ap0, wlan0, lo, ccmni1], ignoring those stats
+09-25 11:55:58.344  2173  2303 W NetworkStatsRecorder: unknown interfaces [ap0, wlan0, lo, ccmni1], ignoring those stats
+09-25 11:55:58.345  2173  2364 W NetworkStatsRecorder: unknown interfaces [ap0, wlan0, lo, ccmni1], ignoring those stats
+09-25 11:55:58.356  2173  2199 I Tethering: [UpstreamNetworkMonitor] requesting mobile upstream network: NetworkRequest [ NONE id=0, [ Transports: CELLULAR Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN Unwanted: ] ]
+09-25 11:55:58.356  8782  8782 I dnsmasq : started, version 2.51 cachesize 150
+09-25 11:55:58.356  8782  8782 I dnsmasq : compile time options: IPv6 GNU-getopt no-I18N DHCP no-scripts
+09-25 11:55:58.356  8782  8782 W dnsmasq : warning: no upstream servers configured
+09-25 11:55:58.356  8782  8782 I dnsmasq : DHCP, IP range 192.168.49.2 -- 192.168.49.254, lease time 1h
+09-25 11:55:58.356  8782  8782 I dnsmasq : DHCP, IP range 192.168.48.2 -- 192.168.48.254, lease time 1h
+09-25 11:55:58.356  8782  8782 I dnsmasq : DHCP, IP range 192.168.47.2 -- 192.168.47.254, lease time 1h
+09-25 11:55:58.356  8782  8782 I dnsmasq : DHCP, IP range 192.168.46.2 -- 192.168.46.254, lease time 1h
+09-25 11:55:58.356  8782  8782 I dnsmasq : DHCP, IP range 192.168.45.2 -- 192.168.45.254, lease time 1h
+09-25 11:55:58.356  8782  8782 I dnsmasq : DHCP, IP range 192.168.44.2 -- 192.168.44.254, lease time 1h
+09-25 11:55:58.356  8782  8782 I dnsmasq : DHCP, IP range 192.168.43.2 -- 192.168.43.254, lease time 1h
+09-25 11:55:58.356  8782  8782 I dnsmasq : DHCP, IP range 192.168.42.2 -- 192.168.42.254, lease time 1h
+09-25 11:55:58.357  8782  8782 I dnsmasq : read /etc/hosts - 2 addresses
+09-25 11:55:58.358  8782  8782 I dnsmasq : Closing wildcard listener family=2
+09-25 11:55:58.358  8782  8782 I dnsmasq : Closing wildcard listener family=10
+09-25 11:55:58.367  2173  2199 I Tethering: Looking for default routes on: {InterfaceName: ccmni0 LinkAddresses: [10.60.99.185/32,]  Routes: [0.0.0.0/0 -> 10.60.99.185 ccmni0,10.60.99.185/32 -> 0.0.0.0 ccmni0,] DnsAddresses: [119.160.112.48,119.160.80.146,] UsePrivateDns: false PrivateDnsServerName: null Domains: null MTU: 1500 TcpBufferSizes: 2097152,4194304,8388608,262144,524288,1048576}
+09-25 11:55:58.369  2173  2199 I Tethering: Found upstream interface(s): [ccmni0]
+09-25 11:55:58.372  8782  8782 I dnsmasq : using nameserver 119.160.80.146#53
+09-25 11:55:58.372  8782  8782 I dnsmasq : using nameserver 119.160.112.48#53
+09-25 11:55:58.384  2173  2199 I Tethering: Looking for default routes on: {InterfaceName: ccmni0 LinkAddresses: [10.60.99.185/32,]  Routes: [0.0.0.0/0 -> 10.60.99.185 ccmni0,10.60.99.185/32 -> 0.0.0.0 ccmni0,] DnsAddresses: [119.160.112.48,119.160.80.146,] UsePrivateDns: false PrivateDnsServerName: null Domains: null MTU: 1500 TcpBufferSizes: 2097152,4194304,8388608,262144,524288,1048576}
+09-25 11:55:58.385  2173  2199 I Tethering: Found upstream interface(s): [ccmni0]
+09-25 11:55:58.386  8782  8782 I dnsmasq : using nameserver 119.160.80.146#53
+09-25 11:55:58.386  8782  8782 I dnsmasq : using nameserver 119.160.112.48#53
+09-25 11:55:58.411  2173  2265 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+09-25 11:55:58.416  2173  2265 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+09-25 11:55:58.423  2173  2199 I Tethering: Looking for default routes on: {InterfaceName: ccmni0 LinkAddresses: [10.60.99.185/32,]  Routes: [0.0.0.0/0 -> 10.60.99.185 ccmni0,10.60.99.185/32 -> 0.0.0.0 ccmni0,] DnsAddresses: [119.160.112.48,119.160.80.146,] UsePrivateDns: false PrivateDnsServerName: null Domains: null MTU: 1500 TcpBufferSizes: 2097152,4194304,8388608,262144,524288,1048576}
+09-25 11:55:58.423  2173  2199 I Tethering: Found upstream interface(s): [ccmni0]
+09-25 11:55:58.424  8782  8782 I dnsmasq : using nameserver 119.160.80.146#53
+09-25 11:55:58.424  8782  8782 I dnsmasq : using nameserver 119.160.112.48#53
+09-25 11:55:58.474  2173  2199 I Tethering: Looking for default routes on: {InterfaceName: ccmni0 LinkAddresses: [10.60.99.185/32,]  Routes: [0.0.0.0/0 -> 10.60.99.185 ccmni0,10.60.99.185/32 -> 0.0.0.0 ccmni0,] DnsAddresses: [119.160.112.48,119.160.80.146,] UsePrivateDns: false PrivateDnsServerName: null Domains: null MTU: 1500 TcpBufferSizes: 2097152,4194304,8388608,262144,524288,1048576}
+09-25 11:55:58.474  2173  2199 I Tethering: Found upstream interface(s): [ccmni0]
+09-25 11:55:58.475  8782  8782 I dnsmasq : using nameserver 119.160.80.146#53
+09-25 11:55:58.475  8782  8782 I dnsmasq : using nameserver 119.160.112.48#53
+09-25 11:55:58.500  2173  2199 I Tethering: Looking for default routes on: {InterfaceName: ccmni0 LinkAddresses: [10.60.99.185/32,]  Routes: [0.0.0.0/0 -> 10.60.99.185 ccmni0,10.60.99.185/32 -> 0.0.0.0 ccmni0,] DnsAddresses: [119.160.112.48,119.160.80.146,] UsePrivateDns: false PrivateDnsServerName: null Domains: null MTU: 1500 TcpBufferSizes: 2097152,4194304,8388608,262144,524288,1048576}
+09-25 11:55:58.500  2173  2199 I Tethering: Found upstream interface(s): [ccmni0]
+09-25 11:55:58.501  8782  8782 I dnsmasq : using nameserver 119.160.80.146#53
+09-25 11:55:58.501  8782  8782 I dnsmasq : using nameserver 119.160.112.48#53
+09-25 11:55:58.554  3390  3972 W GmsClient: 	at android.os.BinderProxy.transactNative(Native Method)
+09-25 11:56:00.001  2173  2265 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+09-25 11:56:02.224  4439  8829 I Bugle   : Carrier configs loaded: Bundle[{mtk_show_clir_setting_bool=true, mtk_default_enhanced_4g_mode_bool=true, carrier_volte_provisioned_bool=false, disable_charge_indication_bool=false, httpSocketTimeout=60000, mtk_resume_hold_call_after_active_call_end_by_remote=false, carrier_wfc_supports_wifi_only_bool=false, carrier_default_actions_on_default_network_available_string_array=[Ljava.lang.String;@98dd957, mtk_ct_volte_status_bool=false, mtk_carrier_ss_need_check_data_roaming=false, operator_selection_expand_bool=true, disable_cdma_activation_code_bool=false, simplified_network_settings_bool=false, call_barring_visibility_bool=true, enable_apps_string_array=null, carrier_default_wfc_ims_roaming_enabled_bool=false, mtk_show_call_barring_password_bool=false, cdma_nonroaming_networks_string_array=null, aliasMinChars=2, mtk_key_multiline_allow_cross_line_conference_bool=false, wfc_data_spn_format_idx_int=0, hide_sim_lock_settings_bool=false, drop_video_call_when_answering_audio_call_bool=false, mtk_show_open_mobile_data_dialog_bool=false, ci_action_on_sys_update_bool=false, convert_cdma_caller_id_mmi_codes_while_roaming_on_3gpp_bool=false, support_enhanced_call_blocking_bool=false, vvm_port_number_int=0, carrier_default_wfc_ims_enabled_bool=false, dial_string_replace_string_array=null, gsm_nonroaming_networks_string_array=null, hide_ims_apn_bool=false, show_toast_when_conference_full=true, vvm_destination_number_string=, dtmf_type_enabled_bool=false, allow_video_calling_fallback_bool=true, mtk_carrier_ims_ecbm_supported=false, mtk_domestic_roaming_enabled_only_by_mobile_data_setting=false, config_ims_package_override_string=com.google.android.ims, mtk_support_enhanced_call_blocking_bool=false, support_auto_decline_upgrade_request_bool=true, mtk_video_call_background_transmission=false, smsToMmsTextThreshold=-1, disable_severe_when_extreme_disabled_bool=true, force_home_network_bool=false, enableSMSDeliveryReports=true, auto_retry_enabled_bool=false, play_call_recording_tone_bool=false, carrier_force_disable_etws_cmas_test_bool=false, allow_emergency_video_calls_bool=false, csp_enabled_bool=false, mtk_dialer_call_pull_bool=false, default_sim_call_manager_string=, mtk_carrier_swap_vt_conference_to_foreground_before_merge=false, call_forwarding_blocks_while_roaming_string_array=null, emergency_notification_delay_int=-1, support_video_conference_call_bool=false, ims_dtmf_tone_delay_int=0, show_signal_strength_in_sim_status_bool=true, data_rapid_notification_bool=true, carrier_instant_lettering_escaped_chars_string=, carrier_default_wfc_ims_roaming_mode_int=2, mtk_carrier_switch_wfc_mode_required_bool=false, editable_wfc_mode_bool=true, mtk_cdma_sms_7bit_encoding_type_int=9, support_direct_fdn_dialing_bool=false, carrier_wifi_string_array=null, treat_downgraded_video_calls_as_video_calls_bool=false, wifi_calls_can_be_hd_audio=true, support_downgrade_vt_to_audio_bool=true, notify_handover_video_from_lte_to_wifi_bool=false, use_otasp_for_provisioning_bool=false, always_play_remote_hold_tone_bool=false, maxMessageTextSize=-1, duration_blocking_disabled_after_emergency_int=7200, carrier_metered_roaming_apn_types_strings=[Ljava.lang.String;@9e83c44, no_merge_req_after_max_connection=true, show_video_call_charges_alert_dialog_bool=false, carrier_network_service_wlan_package_override_string=, show_apn_setting_cdma_bool=false, carrier_instant_lettering_length_limit_int=64, carrier_instant_lettering_invalid_chars_string=, carrier_setup_app_string=, editable_wfc_roaming_mode_bool=false, supportMmsContentDisposition=true, support_manage_ims_conference_call_bool=true, allow_non_emergency_calls_in_ecm_bool=true, mtk_carrier_ss_not_support_call_identity=false, mtk_key_roaming_bar_guard_bool=false, carrier_data_service_wlan_package_override_string=, use_rcs_presence_bool=false, config_telephony_use_own_number_for_voicemail_bool=false, cdma_dtmf_tone_delay_int=100, editable_voicemail_number_bool=false, carrier_data_call_apn_retry_after_disconnect_long=10000, filtered_cnap_names_string_array=null, enabledTransID=fals
+09-25 11:56:03.645  3390  3972 W GmsClient: 	at android.os.BinderProxy.transactNative(Native Method)
+09-25 11:56:07.972  2173  2265 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+09-25 11:56:07.978  2648  2699 I PowerMonitorHookClient: unkown network interface:wlan0
+09-25 11:56:08.762  3390  3972 W GmsClient: 	at android.os.BinderProxy.transactNative(Native Method)
+09-25 11:56:13.817  3390  3972 W GmsClient: 	at android.os.BinderProxy.transactNative(Native Method)
+09-25 11:56:13.913  4439  4439 W BugleDataModel: 	at java.lang.reflect.Method.invoke(Native Method)
+09-25 11:56:14.376  4439  8875 I Bugle   : Carrier configs loaded: Bundle[{mtk_show_clir_setting_bool=true, mtk_default_enhanced_4g_mode_bool=true, carrier_volte_provisioned_bool=false, disable_charge_indication_bool=false, httpSocketTimeout=60000, mtk_resume_hold_call_after_active_call_end_by_remote=false, carrier_wfc_supports_wifi_only_bool=false, carrier_default_actions_on_default_network_available_string_array=[Ljava.lang.String;@612475e, mtk_ct_volte_status_bool=false, mtk_carrier_ss_need_check_data_roaming=false, operator_selection_expand_bool=true, disable_cdma_activation_code_bool=false, simplified_network_settings_bool=false, call_barring_visibility_bool=true, enable_apps_string_array=null, carrier_default_wfc_ims_roaming_enabled_bool=false, mtk_show_call_barring_password_bool=false, cdma_nonroaming_networks_string_array=null, aliasMinChars=2, mtk_key_multiline_allow_cross_line_conference_bool=false, wfc_data_spn_format_idx_int=0, hide_sim_lock_settings_bool=false, drop_video_call_when_answering_audio_call_bool=false, mtk_show_open_mobile_data_dialog_bool=false, ci_action_on_sys_update_bool=false, convert_cdma_caller_id_mmi_codes_while_roaming_on_3gpp_bool=false, support_enhanced_call_blocking_bool=false, vvm_port_number_int=0, carrier_default_wfc_ims_enabled_bool=false, dial_string_replace_string_array=null, gsm_nonroaming_networks_string_array=null, hide_ims_apn_bool=false, show_toast_when_conference_full=true, vvm_destination_number_string=, dtmf_type_enabled_bool=false, allow_video_calling_fallback_bool=true, mtk_carrier_ims_ecbm_supported=false, mtk_domestic_roaming_enabled_only_by_mobile_data_setting=false, config_ims_package_override_string=com.google.android.ims, mtk_support_enhanced_call_blocking_bool=false, support_auto_decline_upgrade_request_bool=true, mtk_video_call_background_transmission=false, smsToMmsTextThreshold=-1, disable_severe_when_extreme_disabled_bool=true, force_home_network_bool=false, enableSMSDeliveryReports=true, auto_retry_enabled_bool=false, play_call_recording_tone_bool=false, carrier_force_disable_etws_cmas_test_bool=false, allow_emergency_video_calls_bool=false, csp_enabled_bool=false, mtk_dialer_call_pull_bool=false, default_sim_call_manager_string=, mtk_carrier_swap_vt_conference_to_foreground_before_merge=false, call_forwarding_blocks_while_roaming_string_array=null, emergency_notification_delay_int=-1, support_video_conference_call_bool=false, ims_dtmf_tone_delay_int=0, show_signal_strength_in_sim_status_bool=true, data_rapid_notification_bool=true, carrier_instant_lettering_escaped_chars_string=, carrier_default_wfc_ims_roaming_mode_int=2, mtk_carrier_switch_wfc_mode_required_bool=false, editable_wfc_mode_bool=true, mtk_cdma_sms_7bit_encoding_type_int=9, support_direct_fdn_dialing_bool=false, carrier_wifi_string_array=null, treat_downgraded_video_calls_as_video_calls_bool=false, wifi_calls_can_be_hd_audio=true, support_downgrade_vt_to_audio_bool=true, notify_handover_video_from_lte_to_wifi_bool=false, use_otasp_for_provisioning_bool=false, always_play_remote_hold_tone_bool=false, maxMessageTextSize=-1, duration_blocking_disabled_after_emergency_int=7200, carrier_metered_roaming_apn_types_strings=[Ljava.lang.String;@83b373f, no_merge_req_after_max_connection=true, show_video_call_charges_alert_dialog_bool=false, carrier_network_service_wlan_package_override_string=, show_apn_setting_cdma_bool=false, carrier_instant_lettering_length_limit_int=64, carrier_instant_lettering_invalid_chars_string=, carrier_setup_app_string=, editable_wfc_roaming_mode_bool=false, supportMmsContentDisposition=true, support_manage_ims_conference_call_bool=true, allow_non_emergency_calls_in_ecm_bool=true, mtk_carrier_ss_not_support_call_identity=false, mtk_key_roaming_bar_guard_bool=false, carrier_data_service_wlan_package_override_string=, use_rcs_presence_bool=false, config_telephony_use_own_number_for_voicemail_bool=false, cdma_dtmf_tone_delay_int=100, editable_voicemail_number_bool=false, carrier_data_call_apn_retry_after_disconnect_long=10000, filtered_cnap_names_string_array=null, enabledTransID=fals

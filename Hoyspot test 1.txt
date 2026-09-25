@@ -1,0 +1,1041 @@
+~ $ pkg update -y && pkg install -y tsu busybox co
+reutils grep iw iproute2 procps && su -c '
+OUT=/sdcard/hotspot_report.txt
+
+echo "=== ROOT ANDROID HOTSPOT CAPABILITY REPORT =
+==" > $OUT
+echo "Generated: $(date)" >> $OUT
+echo "" >> $OUT
+
+echo "===== DEVICE =====" >> $OUT
+getprop ro.product.manufacturer >> $OUT 2>&1
+getprop ro.product.model >> $OUT 2>&1
+getprop ro.build.version.release >> $OUT 2>&1
+getprop ro.build.version.sdk >> $OUT 2>&1
+getprop ro.hardware >> $OUT 2>&1
+getprop ro.board.platform >> $OUT 2>&1
+
+echo "" >> $OUT
+echo "===== WIFI INTERFACE =====" >> $OUT
+ip link >> $OUT 2>&1
+
+echo "" >> $OUT
+echo "===== WIFI DRIVER MODULES =====" >> $OUT
+lsmod >> $OUT 2>&1
+
+echo "" >> $OUT
+echo "===== WIFI LOGS =====" >> $OUT
+dmesg 2>/dev/null | grep -iE "wifi|wlan|firmware|d
+river|mtk|mediatek|qualcomm|broadcom|realtek" >> $
+OUT 2>&1
+
+echo "" >> $OUT
+echo "===== AP MODE SUPPORT =====" >> $OUT
+iw list >> $OUT 2>&1
+
+echo "" >> $OUT
+echo "===== HOSTAPD SEARCH =====" >> $OUT
+find /system /vendor /product /apex -name hostapd 
+2>/dev/null >> $OUT
+
+echo "" >> $OUT
+echo "===== DNSMASQ SEARCH =====" >> $OUT
+find /system /vendor /product /apex -name dnsmasq 
+2>/dev/null >> $OUT
+
+echo "" >> $OUT
+echo "===== TETHERING FILES =====" >> $OUT
+ls -la /data/misc/wifi/ >> $OUT 2>&1
+ls -la /data/misc/apexdata/com.android.tethering/ 
+>> $OUT 2>&1
+
+echo "" >> $OUT
+echo "===== FIREWALL =====" >> $OUT
+iptables --version >> $OUT 2>&1
+iptables -L -n >> $OUT 2>&1
+
+echo "" >> $OUT
+echo "===== NETWORK ROUTES =====" >> $OUT
+ip route >> $OUT 2>&1
+
+echo "" >> $OUT
+echo "===== COMPLETE =====" >> $OUT
+
+echo REPORT_CREATED:$OUT
+'
+No mirror or mirror group selected. You might want
+ to select one by running 'termux-change-repo'
+Testing the available mirrors:
+[*] (10) https://packages-cf.termux.dev/apt/termux
+-main: ok
+[*] (1) https://linux.domainesia.com/applications/
+termux/termux-main: ok
+[*] (1) https://termux.niranjan.co/termux-main: ok
+[*] (1) https://mirror.bardia.tech/termux/termux-m
+ain: bad
+[*] (1) https://mirrors.saswata.cc/termux/termux-m
+ain: bad
+[*] (1) https://mirrors.ravidwivedi.in/termux/term
+ux-main: ok
+[*] (1) https://mirror.textcord.xyz/termux/termux-
+main: bad
+[*] (1) https://mirrors.krnk.org/apt/termux/termux
+-main: ok
+[*] (1) https://mirror.rinarin.dev/termux/termux-m
+ain: ok
+[*] (1) https://mirror.jeonnam.school/termux/termu
+x-main: ok
+[*] (1) https://mirrors.nguyenhoang.cloud/termux/t
+ermux-main: ok
+[*] (1) https://mirrors.cbrx.io/apt/termux/termux-
+main: ok
+[*] (1) https://tmx.xvx.my.id/apt/termux-main: ok
+[*] (1) https://mirror.albony.in/termux/termux-mai
+n: ok
+[*] (1) https://mirror.twds.com.tw/termux/termux-m
+ain: ok
+[*] (1) https://mirror.nevacloud.com/applications/
+termux/termux-main: ok
+[*] (1) https://mirror.meowsmp.net/termux/termux-m
+ain: bad
+[*] (1) https://mirror.freedif.org/termux/termux-m
+ain: ok
+[*] (1) https://mirrors.in.sahilister.net/termux/t
+ermux-main/: ok
+[*] (1) https://mirror.iscas.ac.cn/termux/apt/term
+ux-main: ok
+[*] (1) https://mirrors.sau.edu.cn/termux/apt/term
+ux-main: ok
+[*] (1) https://mirrors.sdu.edu.cn/termux/termux-m
+ain: ok
+[*] (1) https://mirrors.aliyun.com/termux/termux-m
+ain: ok
+[*] (1) https://mirrors.cernet.edu.cn/termux/apt/t
+ermux-main: ok
+[*] (1) https://mirrors.cqupt.edu.cn/termux/termux
+-main: ok
+[*] (1) https://mirrors.sustech.edu.cn/termux/apt/
+termux-main: ok
+[*] (1) https://mirrors.bfsu.edu.cn/termux/apt/ter
+mux-main: ok
+[*] (1) https://mirrors.pku.edu.cn/termux/termux-m
+ain/: ok
+[*] (1) https://mirrors.hust.edu.cn/termux/apt/ter
+mux-main: ok
+[*] (1) https://mirrors.tuna.tsinghua.edu.cn/termu
+x/apt/termux-main: ok
+[*] (1) https://mirror.sjtu.edu.cn/termux/termux-m
+ain/: ok
+[*] (1) https://mirror.nyist.edu.cn/termux/apt/ter
+mux-main: ok
+[*] (1) https://mirrors.ustc.edu.cn/termux/termux-
+main: ok
+[*] (1) https://mirrors.zju.edu.cn/termux/apt/term
+ux-main: bad
+[*] (1) https://mirrors.nju.edu.cn/termux/apt/term
+ux-main: ok
+[*] (4) https://grimler.se/termux/termux-main: ok
+[*] (1) https://mirror.polido.pt/termux/termux-mai
+n: bad
+[*] (1) https://termux.3san.dev/termux/termux-main
+: ok
+[*] (1) https://mirrors.medzik.dev/termux/termux-m
+ain: bad
+[*] (1) https://mirror.accum.se/mirror/termux.dev/
+termux-main: ok
+[*] (1) https://mirror.mwt.me/termux/main: ok
+[*] (1) https://ro.mirror.flokinet.net/termux/term
+ux-main: ok
+[*] (1) https://md.mirrors.hacktegic.com/termux/te
+rmux-main: bad
+[*] (1) https://is.mirror.flokinet.net/termux/term
+ux-main: ok
+[*] (1) https://mirror.termux.dev/termux-main: bad
+[*] (1) https://termux.mentality.rip/termux-main: 
+bad
+[*] (1) https://nl.mirror.flokinet.net/termux/term
+ux-main: ok
+[*] (1) https://termux.cdn.lumito.net/termux-main:
+ bad
+[*] (1) https://mirror.leitecastro.com/termux/term
+ux-main: bad
+[*] (1) https://mirror.bouwhuis.network/termux/ter
+mux-main: ok
+[*] (1) https://termux.librehat.com/apt/termux-mai
+n: ok
+[*] (1) https://mirror.autkin.net/termux/termux-ma
+in: ok
+[*] (1) https://mirror.sunred.org/termux/termux-ma
+in: ok
+[*] (1) https://packages.termux.dev/apt/termux-mai
+n: ok
+[*] (1) https://ftp.agdsn.de/termux/termux-main: o
+k
+[*] (1) https://ftp.fau.de/termux/termux-main: ok
+[*] (1) https://mirrors.cfe.re/termux/termux-main:
+ bad
+[*] (1) https://mirrors.de.sahilister.net/termux/t
+ermux-main: ok
+[*] (1) https://gnlug.org/pub/termux/termux-main: 
+ok
+[*] (1) https://mirror.mwt.me/termux/main: ok
+[*] (1) https://mirror.quantum5.ca/termux/termux-m
+ain: bad
+[*] (1) https://mirrors.utermux.dev/termux/termux-
+main: bad
+[*] (1) https://plug-mirror.rcac.purdue.edu/termux
+/termux-main: bad
+[*] (1) https://mirror.vern.cc/termux/termux-main:
+ bad
+[*] (1) https://dl.kcubeterm.com/termux-main: bad
+[*] (1) https://termux.danyael.xyz/termux/termux-m
+ain: bad
+[*] (1) https://mirror.csclub.uwaterloo.ca/termux/
+termux-main: bad
+[*] (1) https://mirror.fcix.net/termux/termux-main
+: bad
+[*] (1) https://mirrors.middlendian.com/termux/ter
+mux-main: ok
+[*] (1) https://repository.su/termux/termux-main/:
+ bad
+[*] (1) http://mirror.mephi.ru/termux/termux-main:
+ bad
+Picking mirror: (45) /data/data/com.termux/files/u
+sr/etc/termux/mirrors/europe/mirror.mwt.me
+Get:1 https://mirror.mwt.me/termux/main stable InR
+elease [14.0 kB]
+Get:2 https://mirror.mwt.me/termux/root root InRel
+ease [14.2 kB]
+Get:3 https://mirror.mwt.me/termux/main stable/mai
+n aarch64 Packages [585 kB]
+Get:4 https://mirror.mwt.me/termux/root root/stabl
+e aarch64 Packages [21.4 kB]
+Fetched 634 kB in 5s (120 kB/s)
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+71 packages can be upgraded. Run 'apt list --upgra
+dable' to see them.
+No mirror or mirror group selected. You might want
+ to select one by running 'termux-change-repo'
+Checking availability of current mirror:
+[*] https://mirror.mwt.me/termux/main: ok
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+tsu is already the newest version (8.6.0-1).
+The following additional packages will be installe
+d:
+  libnl openssl
+The following NEW packages will be installed:
+  busybox iproute2 iw libnl
+The following packages will be upgraded:
+  coreutils grep openssl procps
+4 upgraded, 4 newly installed, 0 to remove and 67 
+not upgraded.
+Need to get 5312 kB of archives.
+After this operation, 7197 kB of additional disk s
+pace will be used.
+Get:1 https://mirror.mwt.me/termux/main stable/mai
+n aarch64 openssl aarch64 1:3.6.3 [2478 kB]
+Get:2 https://mirror.mwt.me/termux/main stable/mai
+n aarch64 coreutils aarch64 9.11-1 [814 kB]
+Get:3 https://mirror.mwt.me/termux/main stable/mai
+n aarch64 grep aarch64 3.12-3 [128 kB]
+Get:4 https://mirror.mwt.me/termux/main stable/mai
+n aarch64 procps aarch64 4.0.7 [188 kB]
+Get:5 https://mirror.mwt.me/termux/main stable/mai
+n aarch64 busybox aarch64 1.38.0-1 [472 kB]
+Get:6 https://mirror.mwt.me/termux/main stable/mai
+n aarch64 iproute2 aarch64 7.2.0 [849 kB]
+Get:7 https://mirror.mwt.me/termux/main stable/mai
+n aarch64 libnl aarch64 3.12.0 [290 kB]
+Get:8 https://mirror.mwt.me/termux/root root/stabl
+e aarch64 iw aarch64 6.17 [92.5 kB]
+Fetched 5312 kB in 19s (285 kB/s)
+(Reading database ... 15672 files and directories 
+currently installed.)
+Preparing to unpack .../openssl_1%3a3.6.3_aarch64.
+deb ...
+Unpacking openssl (1:3.6.3) over (1:3.4.1) ...
+Setting up openssl (1:3.6.3) ...
+
+Configuration file '/data/data/com.termux/files/us
+r/etc/tls/openssl.cnf'
+ ==> File on system created by you or by a script.
+ ==> File also in package provided by package main
+tainer.
+   What would you like to do about it ?  Your opti
+ons are:
+    Y or I  : install the package maintainer's ver
+sion
+    N or O  : keep your currently-installed versio
+n
+      D     : show the differences between the ver
+sions
+      Z     : start a shell to examine the situati
+on
+ The default action is to keep your current versio
+n.
+*** openssl.cnf (Y/I/N/O/D/Z) [default=N] ? n
+(Reading database ... 15673 files and directories 
+currently installed.)
+Preparing to unpack .../coreutils_9.11-1_aarch64.d
+eb ...
+Unpacking coreutils (9.11-1) over (9.6-1) ...
+Setting up coreutils (9.11-1) ...
+update-alternatives: using /data/data/com.termux/f
+iles/usr/libexec/coreutils/cat to provide /data/da
+ta/com.termux/files/usr/bin/pager (pager) in auto 
+mode
+(Reading database ... 15674 files and directories 
+currently installed.)
+Preparing to unpack .../grep_3.12-3_aarch64.deb ..
+.
+Unpacking grep (3.12-3) over (3.11) ...
+Setting up grep (3.12-3) ...
+(Reading database ... 15674 files and directories 
+currently installed.)
+Preparing to unpack .../procps_4.0.7_aarch64.deb .
+..
+Unpacking procps (4.0.7) over (3.3.17-5) ...
+Setting up procps (4.0.7) ...
+Selecting previously unselected package busybox.
+(Reading database ... 15673 files and directories 
+currently installed.)
+Preparing to unpack .../busybox_1.38.0-1_aarch64.d
+eb ...
+Unpacking busybox (1.38.0-1) ...
+Selecting previously unselected package iproute2.
+Preparing to unpack .../iproute2_7.2.0_aarch64.deb
+ ...
+Unpacking iproute2 (7.2.0) ...
+Selecting previously unselected package libnl.
+Preparing to unpack .../libnl_3.12.0_aarch64.deb .
+..
+Unpacking libnl (3.12.0) ...
+Selecting previously unselected package iw.
+Preparing to unpack .../archives/iw_6.17_aarch64.d
+eb ...
+Unpacking iw (6.17) ...
+Setting up iproute2 (7.2.0) ...
+Setting up busybox (1.38.0-1) ...
+update-alternatives: using /data/data/com.termux/f
+iles/usr/libexec/busybox/vi to provide /data/data/
+com.termux/files/usr/bin/vi (vi) in auto mode
+update-alternatives: using /data/data/com.termux/f
+iles/usr/libexec/busybox/less to provide /data/dat
+a/com.termux/files/usr/bin/pager (pager) in auto m
+ode
+update-alternatives: using /data/data/com.termux/f
+iles/usr/libexec/busybox/nc to provide /data/data/
+com.termux/files/usr/bin/nc (nc) in auto mode
+Setting up libnl (3.12.0) ...
+Setting up iw (6.17) ...
+REPORT_CREATED:/sdcard/hotspot_report.txt
+~ $ su -c 'svc wifi enable; sleep 5; echo "===== W
+IFI NOW ====="; ip link | grep -E "wlan|wifi"; ech
+o "===== AP CAPABILITY ====="; iw list | grep -A20
+ "Supported interface modes"'
+===== WIFI NOW =====
+31: wlan0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu
+ 1460 qdisc mq state DOWN mode DORMANT group defau
+lt qlen 3000
+===== AP CAPABILITY =====
+/system/bin/sh: iw: not found
+~ $ su -c '/data/data/com.termux/files/usr/bin/iw 
+list | grep -A20 "Supported interface modes"'
+        Supported interface modes:
+                 * IBSS
+                 * managed
+                 * AP
+                 * P2P-client
+                 * P2P-GO
+        Band 1:
+                Capabilities: 0x7e
+                        HT20/HT40
+                        SM Power Save disabled
+                        RX Greenfield
+                        RX HT20 SGI
+                        RX HT40 SGI
+                        No RX STBC
+                        Max AMSDU length: 3839 byt
+es
+                        No DSSS/CCK HT40
+                Maximum RX AMPDU length 65535 byte
+s (exponent: 0x003)
+                Minimum RX AMPDU time spacing: No 
+restriction (0x00)
+                HT TX/RX MCS rate indexes supporte
+d: 0-7
+                Bitrates (non-HT):
+                        * 1.0 Mbps
+~ $ su -c '
+echo "=== HOSTAPD ==="
+find /system /vendor /product /apex -name hostapd 
+2>/dev/null
+
+echo "=== DNSMASQ ==="
+find /system /vendor /product /apex -name dnsmasq 
+2>/dev/null
+
+echo "=== WIFI CONFIG ==="
+find /vendor /system -path "*wifi*" -type f 2>/dev
+/null | head -50
+
+echo "=== IPTABLES ==="
+iptables --version
+'
+=== HOSTAPD ===
+/vendor/bin/hw/hostapd
+=== DNSMASQ ===
+/system/bin/dnsmasq
+=== WIFI CONFIG ===
+=== IPTABLES ===
+iptables v1.6.1
+~ $ su -c '
+echo "=== TETHER SERVICES ==="
+dumpsys wifi | grep -i tether -A10
+
+echo "=== HOSTAPD HELP ==="
+/vendor/bin/hw/hostapd -h 2>&1 | head -30
+
+echo "=== DNSMASQ HELP ==="
+/system/bin/dnsmasq --help 2>&1 | head -20
+
+echo "=== WIFI INTERFACE DETAILS ==="
+iw dev
+'
+=== TETHER SERVICES ===
+mSoftApTetheredEvents:
+mSoftApLocalOnlyEvents:
+mWpsMetrics.numWpsAttempts=0
+mWpsMetrics.numWpsSuccess=0
+mWpsMetrics.numWpsStartFailure=0
+mWpsMetrics.numWpsOverlapFailure=0
+mWpsMetrics.numWpsTimeoutFailure=0
+mWpsMetrics.numWpsOtherConnectionFailure=0
+mWpsMetrics.numWpsSupplicantFailure=0
+mWpsMetrics.numWpsCancellation=0
+Wifi power metrics:
+=== HOSTAPD HELP ===
+hostapd v2.7-devel-9
+User space daemon for IEEE 802.11 AP management,
+IEEE 802.1X/WPA/WPA2/EAP/RADIUS Authenticator
+Copyright (c) 2002-2017, Jouni Malinen <j@w1.fi> a
+nd contributors
+
+usage: hostapd [-hdBKtv] [-P <PID file>] [-e <entr
+opy file>] \
+         [-g <global ctrl_iface>] [-G <group>]\
+         [-i <comma-separated list of interface na
+mes>]\
+         <configuration file(s)>
+
+options:
+   -h   show this usage
+   -d   show more debug messages (-dd for even mor
+e)
+   -B   run daemon in the background
+   -e   entropy file
+   -g   global control interface path
+   -G   group for control interfaces
+   -P   PID file
+   -K   include key data in debug messages
+   -i   list of interface names to use
+   -S   start all the interfaces synchronously
+   -t   include timestamps in some debug messages
+   -v   show hostapd version
+=== DNSMASQ HELP ===
+Usage: dnsmasq [options]
+
+Valid options are:
+-a, --listen-address=ipaddr         Specify local 
+address(es) to listen on.
+-A, --address=/domain/ipaddr        Return ipaddr 
+for all hosts in specified domains.
+-b, --bogus-priv                    Fake reverse l
+ookups for RFC1918 private address ranges.
+-B, --bogus-nxdomain=ipaddr         Treat ipaddr a
+s NXDOMAIN (defeats Verisign wildcard).
+-c, --cache-size=cachesize          Specify the si
+ze of the cache in entries (defaults to 150).
+-C, --conf-file=path                Specify config
+uration file (defaults to /etc/dnsmasq.conf).
+-d, --no-daemon                     Do NOT fork in
+to the background: run in debug mode.
+-D, --domain-needed                 Do NOT forward
+ queries with no domain part.
+-e, --selfmx                        Return self-po
+inting MX records for local hosts.
+-E, --expand-hosts                  Expand simple 
+names in /etc/hosts with domain-suffix.
+-f, --filterwin2k                   Don't forward 
+~ $ su -c '
+DIR=/data/local/tmp/ahmed_hotspot                 
+
+mkdir -p $DIR/logs                                
+
+cat > $DIR/hostapd.conf <<EOF                     
+interface=wlan0
+driver=nl80211                                    
+ssid=AhmedNet
+hw_mode=g                                         
+channel=6
+~ $ su -c '                                       
+DIR=/data/local/tmp/ahmed_hotspot
+
+cat > $DIR/start_ap.sh <<EOF
+#!/system/bin/sh
+
+DIR=/data/local/tmp/ahmed_hotspot
+
+echo "[AhmedHotspot] Starting"
+
+# Stop Android WiFi client mode
+svc wifi disable
+sleep 3
+
+# Prepare interface
+ip link set wlan0 down
+ip addr flush dev wlan0
+ip link set wlan0 up
+
+# Give hotspot gateway IP
+ip addr add 192.168.50.1/24 dev wlan0
+                                                  
+# Start DHCP
+/system/bin/dnsmasq \                             
+--conf-file=\$DIR/dnsmasq.conf \
+--pid-file=\$DIR/dnsmasq.pid \
+--log-facility=\$DIR/logs/dnsmasq.log
+
+# Start AP
+/vendor/bin/hw/hostapd \
+\$DIR/hostapd.conf \
+-B \
+-P \$DIR/hostapd.pid
+
+echo "[AhmedHotspot] Started"
+EOF
+
+
+cat > $DIR/stop_ap.sh <<EOF
+#!/system/bin/sh
+
+DIR=/data/local/tmp/ahmed_hotspot
+
+echo "[AhmedHotspot] Stopping"
+
+kill \$(cat \$DIR/hostapd.pid 2>/dev/null) 2>/dev/
+null
+kill \$(cat \$DIR/dnsmasq.pid 2>/dev/null) 2>/dev/
+null
+
+ip addr flush dev wlan0
+
+svc wifi enable
+
+echo "[AhmedHotspot] Restored"
+EOF
+
+chmod 755 $DIR/*.sh
+
+echo SCRIPTS_READY
+ls -l $DIR
+'
+SCRIPTS_READY
+total 4
+-rwxr-xr-x 1 root root  139 2026-09-25 11:18 dnsma
+sq.conf
+-rwxr-xr-x 1 root root  115 2026-09-25 11:18 hosta
+pd.conf
+drwxr-xr-x 2 root root 3488 2026-09-25 11:18 logs
+-rwxr-xr-x 1 root root  532 2026-09-25 11:20 start
+_ap.sh
+-rwxr-xr-x 1 root root  265 2026-09-25 11:20 stop_
+ap.sh
+~ $ su -c '
+DIR=/data/local/tmp/ahmed_hotspot
+
+echo "=== STOP ANDROID WIFI ==="
+svc wifi disable
+sleep 3
+
+echo "=== INTERFACE STATUS ==="
+ip link show wlan0
+
+echo "=== START HOSTAPD TEST ==="
+/vendor/bin/hw/hostapd -dd $DIR/hostapd.conf
+'
+=== STOP ANDROID WIFI ===
+=== INTERFACE STATUS ===
+Device "wlan0" does not exist.
+=== START HOSTAPD TEST ===
+~ $ su -c 'svc wifi enable; sleep 5; ip link show'
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqu
+eue state UNKNOWN mode DEFAULT group default qlen 
+1
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:0
+0:00:00
+2: ccmni0: <NOARP> mtu 1428 qdisc mq state DOWN mo
+de DEFAULT group default qlen 1000
+    link/ppp 32:5e:22:37:43:a3 brd ff:ff:ff:ff:ff:
+ff
+3: ccmni1: <NOARP,UP,LOWER_UP> mtu 1500 qdisc mq s
+tate UNKNOWN mode DEFAULT group default qlen 1000
+    link/ppp be:de:28:7e:37:4b brd ff:ff:ff:ff:ff:
+ff
+4: ccmni2: <NOARP> mtu 1500 qdisc noop state DOWN 
+mode DEFAULT group default qlen 1000
+    link/ppp 5e:d6:63:43:6a:0b brd ff:ff:ff:ff:ff:
+ff
+5: ccmni3: <NOARP> mtu 1500 qdisc noop state DOWN 
+mode DEFAULT group default qlen 1000
+    link/ppp 7e:e1:e7:5a:d3:7e brd ff:ff:ff:ff:ff:
+ff
+6: ccmni4: <NOARP> mtu 1500 qdisc noop state DOWN 
+mode DEFAULT group default qlen 1000
+    link/ppp 4a:08:43:63:2c:81 brd ff:ff:ff:ff:ff:
+ff
+7: ccmni5: <NOARP> mtu 1500 qdisc noop state DOWN 
+mode DEFAULT group default qlen 1000
+    link/ppp ae:0b:e5:d6:21:5b brd ff:ff:ff:ff:ff:
+ff
+8: ccmni6: <NOARP> mtu 1500 qdisc noop state DOWN 
+mode DEFAULT group default qlen 1000
+    link/ppp 1a:4e:90:8b:b1:a6 brd ff:ff:ff:ff:ff:
+ff
+9: ccmni7: <NOARP> mtu 1500 qdisc noop state DOWN 
+mode DEFAULT group default qlen 1000
+    link/ppp 46:dd:c4:14:92:90 brd ff:ff:ff:ff:ff:
+ff
+10: ccmni8: <NOARP> mtu 1500 qdisc noop state DOWN
+ mode DEFAULT group default qlen 1000
+    link/ppp 62:c4:e1:8a:b3:67 brd ff:ff:ff:ff:ff:
+ff
+11: ccmni9: <NOARP> mtu 1500 qdisc noop state DOWN
+ mode DEFAULT group default qlen 1000
+    link/ppp ce:98:88:85:0f:38 brd ff:ff:ff:ff:ff:
+ff
+12: ccmni10: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp 2e:ef:4c:61:53:a1 brd ff:ff:ff:ff:ff:
+ff
+13: ccmni11: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp d6:10:a6:47:6e:30 brd ff:ff:ff:ff:ff:
+ff
+14: ccmni12: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp f6:da:c7:75:86:fe brd ff:ff:ff:ff:ff:
+ff
+15: ccmni13: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp b6:e0:95:47:5f:74 brd ff:ff:ff:ff:ff:
+ff
+16: ccmni14: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp ce:3d:10:7d:cc:5e brd ff:ff:ff:ff:ff:
+ff
+17: ccmni15: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp b2:d6:b0:b5:86:fc brd ff:ff:ff:ff:ff:
+ff
+18: ccmni16: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp 0a:68:1f:11:3a:06 brd ff:ff:ff:ff:ff:
+ff
+19: ccmni17: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp 22:29:b2:a7:d5:a7 brd ff:ff:ff:ff:ff:
+ff
+20: ccmni18: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp 02:8c:a0:78:0d:62 brd ff:ff:ff:ff:ff:
+ff
+21: ccmni19: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp b2:95:ef:66:45:f9 brd ff:ff:ff:ff:ff:
+ff
+22: ccmni20: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp 16:f9:b3:6d:0e:c8 brd ff:ff:ff:ff:ff:
+ff
+23: ccmni-lan: <BROADCAST,MULTICAST> mtu 1500 qdis
+c noop state DOWN mode DEFAULT group default qlen 
+1000
+    link/ether 92:d5:b7:fb:6d:c0 brd ff:ff:ff:ff:f
+f:ff
+24: ifb0: <BROADCAST,NOARP> mtu 1500 qdisc noop st
+ate DOWN mode DEFAULT group default qlen 32
+    link/ether 8e:dd:0c:a4:f0:d0 brd ff:ff:ff:ff:f
+f:ff
+25: ifb1: <BROADCAST,NOARP> mtu 1500 qdisc noop st
+ate DOWN mode DEFAULT group default qlen 32
+    link/ether d6:b9:59:d4:45:e8 brd ff:ff:ff:ff:f
+f:ff
+26: tunl0@NONE: <NOARP> mtu 1480 qdisc noop state 
+DOWN mode DEFAULT group default qlen 1
+    link/ipip 0.0.0.0 brd 0.0.0.0
+27: ip_vti0@NONE: <NOARP> mtu 1480 qdisc noop stat
+e DOWN mode DEFAULT group default qlen 1
+    link/ipip 0.0.0.0 brd 0.0.0.0
+28: ip6_vti0@NONE: <NOARP> mtu 1500 qdisc noop sta
+te DOWN mode DEFAULT group default qlen 1
+    link/tunnel6 :: brd ::
+29: sit0@NONE: <NOARP> mtu 1480 qdisc noop state D
+OWN mode DEFAULT group default qlen 1
+    link/sit 0.0.0.0 brd 0.0.0.0
+30: ip6tnl0@NONE: <NOARP> mtu 1452 qdisc noop stat
+e DOWN mode DEFAULT group default qlen 1
+    link/tunnel6 :: brd ::
+31: wlan0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu
+ 1460 qdisc mq state DOWN mode DORMANT group defau
+lt qlen 3000
+    link/ether 00:08:22:0c:76:3e brd ff:ff:ff:ff:f
+f:ff
+44: p2p0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 
+1500 qdisc mq state DOWN mode DORMANT group defaul
+t qlen 1000
+    link/ether 02:08:22:0c:76:3e brd ff:ff:ff:ff:f
+f:ff
+~ $ su -c 'dumpsys wifi | grep -i "interface" -A5'
+mClientInterfaceName: wlan0
+mIfaceIsUp: true
+
+WifiStateMachine:
+ total records=300
+ rec[0]: time=09-25 08:21:16.344 processed=Default
+State org=DefaultState dest=<null> what=131133(0x2
+003d) !CMD_GET_SUPPORTED_FEATURES uid=1000 rt=1059
+8551/36433313 0 0
+--
+09-25 08:20:29.047   770   781 I [BIP]   :  [BIP N
+L] event newlink match dev 0, interface index 31
+09-25 08:20:29.047   770   781 I [BIP]   :  [BIP N
+L] the link status of interface(index:0) changes t
+o 1
+09-25 08:20:29.048 21385 21385 I wpa_supplicant: w
+lan0: Trying to associate with SSID 'PTCL-BB'
+--------- beginning of system
+09-25 08:20:29.049  1941  1941 I wificond: Receive
+d external scan result notification from kernel.
+09-25 08:20:29.050  2173  2200 I WifiDisplayContro
+ller: Received NETWORK_STATE_CHANGED,con:false,SSI
+D:null,Freq:0,netId:-1, updated:false
+09-25 08:20:29.051  2173  2198 I EthernetTracker: 
+interfaceLinkStateChanged, iface: wlan0, up: false
+09-25 08:20:29.073  1944  2167 I ULog    : R AppRe
+quest:37 M[CameraDevice:187001] +  :mtkcam-dev3 #3
+6827
+09-25 08:20:29.078  1944 21933 I ULog    : R AppRe
+quest:32 M[CameraDevice:187001] -  :mtkcam-AppStre
+amMgr #36828
+09-25 08:20:29.107  1944  2167 I ULog    : R AppRe
+quest:38 M[CameraDevice:187001] +  :mtkcam-dev3 #3
+6829
+09-25 08:20:29.110 21385 21385 I wpa_supplicant: w
+lan0: CTRL-EVENT-ASSOC-REJECT bssid=1c:44:19:4a:f8
+:de status_code=16
+09-25 08:20:29.111  1944 21933 I ULog    : R AppRe
+quest:33 M[CameraDevice:187001] -  :mtkcam-AppStre
+amMgr #36830
+--
+09-25 08:20:30.072   770   781 I [BIP]   :  [BIP N
+L] event newlink match dev 0, interface index 31
+09-25 08:20:30.072   770   781 I [BIP]   :  [BIP N
+L] the link status of interface(index:0) changes t
+o 1
+09-25 08:20:30.073  2173  2198 I EthernetTracker: 
+interfaceLinkStateChanged, iface: wlan0, up: false
+09-25 08:20:30.087  1944  2167 I ULog    : R AppRe
+quest:67 M[CameraDevice:187001] +  :mtkcam-dev3 #3
+6887
+09-25 08:20:30.090  1944 21933 I ULog    : R AppRe
+quest:62 M[CameraDevice:187001] -  :mtkcam-AppStre
+amMgr #36888
+--------- beginning of system
+09-25 08:20:30.112  2173  2200 I WifiDisplayContro
+ller: Received NETWORK_STATE_CHANGED,con:false,SSI
+D:null,Freq:0,netId:-1, updated:false
+09-25 08:20:30.121  1944  2170 I ULog    : R AppRe
+quest:68 M[CameraDevice:187001] +  :mtkcam-dev3 #3
+6889
+--
+09-25 08:20:30.851  2648  2699 I PowerMonitorHookC
+lient: unkown network interface:lo
+09-25 08:20:30.852  2648  2699 I PowerMonitorHookC
+lient: unkown network interface:lo
+09-25 08:20:30.861 20868 21930 E native  : E0000 0
+0:00:1790306430.861517   21930 data_synchronizer.c
+c:184] Feature buffer beyond maximum size: 3 vs 3
+09-25 08:20:30.868  1944  2170 I ULog    : R AppRe
+quest:90 M[CameraDevice:187001] +  :mtkcam-dev3 #3
+6933
+09-25 08:20:30.874  1944 21933 I ULog    : R AppRe
+quest:85 M[CameraDevice:187001] -  :mtkcam-AppStre
+amMgr #36934
+09-25 08:20:30.901  1944  2170 I ULog    : R AppRe
+quest:91 M[CameraDevice:187001] +  :mtkcam-dev3 #3
+6935
+09-25 08:20:30.908  1944 21933 I ULog    : R AppRe
+quest:86 M[CameraDevice:187001] -  :mtkcam-AppStre
+amMgr #36936
+--
+09-25 08:20:30.968   770   781 I [BIP]   :  [BIP N
+L] event newlink match dev 0, interface index 31
+09-25 08:20:30.968   770   781 I [BIP]   :  [BIP N
+L] the link status of interface(index:0) changes t
+o 1
+09-25 08:20:30.971 21385 21385 I wpa_supplicant: w
+lan0: Trying to associate with SSID 'PTCL-BB'
+09-25 08:20:30.974  2173  2198 I EthernetTracker: 
+interfaceLinkStateChanged, iface: wlan0, up: false
+09-25 08:20:30.975  1944 21933 I ULog    : R AppRe
+quest:88 M[CameraDevice:187001] -  :mtkcam-AppStre
+amMgr #36939
+09-25 08:20:30.975  1944  2170 I ULog    : R AppRe
+quest:93 M[CameraDevice:187001] +  :mtkcam-dev3 #3
+6940
+09-25 08:20:30.978  2173  2200 I WifiDisplayContro
+ller: Received NETWORK_STATE_CHANGED,con:false,SSI
+D:null,Freq:0,netId:-1, updated:false
+09-25 08:20:30.999  2949  2949 W ChimeraProxyRslvr
+: No registered Chimera impl for com.google.androi
+d.gms.config.ConfigService
+09-25 08:20:31.000  2949  2949 E ChimeraSrvcProxy:
+ Proxy without impl failing onBind()
+--
+  2026-09-24T22:35:05.807 - OBSERVED interfaceRemo
+ved(wlan0)
+  2026-09-24T22:35:05.887 - CMD_STOP wlan0/-1 0 0 
+null [rcvd_in=com.mediatek.net.ip.MtkIpStoppedStat
+e, proc_in=StoppedState]
+  2026-09-24T22:35:05.912 - CMD_STOP wlan0/-1 0 0 
+null [rcvd_in=com.mediatek.net.ip.MtkIpStoppedStat
+e, proc_in=StoppedState]
+  2026-09-24T22:35:05.913 - CMD_TERMINATE_AFTER_ST
+OP wlan0/-1 0 0 null [rcvd_in=com.mediatek.net.ip.
+MtkIpStoppedState, proc_in=StoppedState]
+  2026-09-24T22:35:05.913 - INVOKE onQuit()
+  2026-09-25T08:19:53.304 - CMD_SET_MULTICAST_FILT
+ER wlan0/-1 0 0 true [rcvd_in=com.mediatek.net.ip.
+MtkIpStoppedState, proc_in=StoppedState]
+  2026-09-25T08:21:15.717 - OBSERVED interfaceRemo
+ved(wlan0)
+  2026-09-25T08:21:15.774 - CMD_STOP wlan0/-1 0 0 
+null [rcvd_in=com.mediatek.net.ip.MtkIpStoppedStat
+e, proc_in=StoppedState]
+  2026-09-25T08:21:15.804 - CMD_STOP wlan0/-1 0 0 
+null [rcvd_in=com.mediatek.net.ip.MtkIpStoppedStat
+e, proc_in=StoppedState]
+  2026-09-25T08:21:15.806 - CMD_TERMINATE_AFTER_ST
+OP wlan0/-1 0 0 null [rcvd_in=com.mediatek.net.ip.
+MtkIpStoppedState, proc_in=StoppedState]
+  2026-09-25T08:21:15.807 - INVOKE onQuit()
+  2026-09-25T11:13:25.095 - CMD_SET_MULTICAST_FILT
+ER wlan0/-1 0 0 true [rcvd_in=com.mediatek.net.ip.
+MtkIpStoppedState, proc_in=StoppedState]
+  2026-09-25T11:21:17.804 - OBSERVED interfaceRemo
+ved(wlan0)
+  2026-09-25T11:21:17.862 - CMD_STOP wlan0/-1 0 0 
+null [rcvd_in=com.mediatek.net.ip.MtkIpStoppedStat
+e, proc_in=StoppedState]
+  2026-09-25T11:21:17.873 - CMD_STOP wlan0/-1 0 0 
+null [rcvd_in=com.mediatek.net.ip.MtkIpStoppedStat
+e, proc_in=StoppedState]
+  2026-09-25T11:21:17.873 - CMD_TERMINATE_AFTER_ST
+OP wlan0/-1 0 0 null [rcvd_in=com.mediatek.net.ip.
+MtkIpStoppedState, proc_in=StoppedState]
+  2026-09-25T11:21:17.874 - INVOKE onQuit()
+  2026-09-25T11:22:24.877 - CMD_SET_MULTICAST_FILT
+ER wlan0/-1 0 0 true [rcvd_in=com.mediatek.net.ip.
+MtkIpStoppedState, proc_in=StoppedState]
+--
+mWifiLogProto.numSetupClientInterfaceFailureDueToH
+al=0
+mWifiLogProto.numSetupClientInterfaceFailureDueToW
+ificond=0
+mWifiLogProto.numSetupClientInterfaceFailureDueToS
+upplicant=0
+mWifiLogProto.numSetupSoftApInterfaceFailureDueToH
+al=0
+mWifiLogProto.numSetupSoftApInterfaceFailureDueToW
+ificond=0
+mWifiLogProto.numSetupSoftApInterfaceFailureDueToH
+ostapd=0
+StaEventList:
+09-25 08:20:13.595 CONNECT_NETWORK, ConfigInfo: al
+lowed_key_management=2 allowed_protocols=0 allowed
+_auth_algorithms=0 allowed_pairwise_ciphers=0 allo
+wed_group_ciphers=0 hidden_ssid=false is_passpoint
+=false is_ephemeral=false has_ever_connected=false
+ scan_rssi=-127 scan_freq=-1
+09-25 08:20:13.640 CMD_START_CONNECT, ConfigInfo: 
+allowed_key_management=2 allowed_protocols=3 allow
+ed_auth_algorithms=1 allowed_pairwise_ciphers=6 al
+lowed_group_ciphers=15 hidden_ssid=false is_passpo
+int=false is_ephemeral=false has_ever_connected=fa
+lse scan_rssi=-127 scan_freq=-1
+09-25 08:20:26.506 ASSOCIATION_REJECTION_EVENT tim
+edOut=false status=16:AUTH_TIMEOUT, supplicantStat
+eChangeEvents: { SCANNING ASSOCIATING}
+09-25 08:20:27.576 ASSOCIATION_REJECTION_EVENT tim
+edOut=false status=16:AUTH_TIMEOUT, supplicantStat
+eChangeEvents: { DISCONNECTED SCANNING ASSOCIATING
+}
+~ $ su -c '
+cat > /data/local/tmp/ahmed_hotspot/hostapd.conf <
+<EOF
+interface=wlan0
+driver=nl80211
+ssid=AhmedNet
+hw_mode=g
+channel=6
+ieee80211n=1
+wmm_enabled=1
+auth_algs=1
+ignore_broadcast_ssid=0
+EOF
+
+echo "=== HOSTAPD START TEST ==="
+/vendor/bin/hw/hostapd -dd /data/local/tmp/ahmed_h
+otspot/hostapd.conf
+'
+=== HOSTAPD START TEST ===
+^Z
+[1]+  Stopped                    su -c '
+cat > /data/local/tmp/ahmed_hotspot/hostapd.conf <
+<EOF
+interface=wlan0
+driver=nl80211
+ssid=AhmedNet
+hw_mode=g
+channel=6
+ieee80211n=1
+wmm_enabled=1
+auth_algs=1
+ignore_broadcast_ssid=0
+EOF
+
+echo "=== HOSTAPD START TEST ==="
+/vendor/bin/hw/hostapd -dd /data/local/tmp/ahmed_h
+otspot/hostapd.conf
+'
+~ $ su -c '
+echo "=== HOSTAPD PROCESS ==="
+ps -A | grep hostapd
+
+echo "=== WIFI STATE ==="
+ip link show wlan0
+
+echo "=== SSID CHECK ==="
+dumpsys wifi | grep -i "softap\|ssid\|ap" -A3
+'
+=== HOSTAPD PROCESS ===
+wifi          2988  2985 2129276   6868 poll_sched
+ule_timeout 0 S hostapd
+=== WIFI STATE ===
+31: wlan0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1
+460 qdisc mq state UP mode DORMANT group default q
+len 3000
+    link/ether 00:08:22:0c:76:3e brd ff:ff:ff:ff:f
+f:ff
+=== SSID CHECK ===
+~ $ su -c '
+echo "=== HOSTAPD STATUS ==="
+cat /data/local/tmp/ahmed_hotspot/hostapd.pid 2>/d
+ev/null
+
+echo "=== NETWORKS ==="
+dumpsys wifi | grep -i "AhmedNet\|SoftAp\|ap" -A5
+
+echo "=== DHCP START ==="
+/system/bin/dnsmasq --conf-file=/data/local/tmp/ah
+med_hotspot/dnsmasq.conf --pid-file=/data/local/tm
+p/ahmed_hotspot/dnsmasq.pid --log-facility=/data/l
+ocal/tmp/ahmed_hotspot/logs/dnsmasq.log
+
+echo DONE
+'
+=== HOSTAPD STATUS ===
+=== NETWORKS ===
+=== DHCP START ===
+
+dnsmasq: unknown interface wlan0
+DONE
+~ $ su -c '
+echo "=== LINK INFO ==="
+ip addr show wlan0
+
+echo "=== ROUTE ==="
+ip route
+
+echo "=== HOSTAPD SOCKET ==="
+ls -la /data/local/tmp/ahmed_hotspot/
+
+echo "=== WIFI MODE ==="
+/data/data/com.termux/files/usr/bin/iw dev wlan0 i
+nfo
+'
+=== LINK INFO ===
+31: wlan0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1
+460 qdisc mq state UP group default qlen 3000
+    link/ether 00:08:22:0c:76:3e brd ff:ff:ff:ff:f
+f:ff
+=== ROUTE ===
+10.0.0.0/8 dev ccmni1 proto kernel scope link src 
+10.55.248.101
+=== HOSTAPD SOCKET ===
+total 10
+drwxr-xr-x 3 root  root  3488 2026-09-25 11:20 .
+drwxrwx--x 4 shell shell 3488 2026-09-25 11:17 ..
+-rwxr-xr-x 1 root  root   139 2026-09-25 11:18 dns
+masq.conf
+-rwxr-xr-x 1 root  root   128 2026-09-25 11:25 hos
+tapd.conf
+drwxr-xr-x 2 root  root  3488 2026-09-25 11:18 log
+s
+-rwxr-xr-x 1 root  root   532 2026-09-25 11:20 sta
+rt_ap.sh
+-rwxr-xr-x 1 root  root   265 2026-09-25 11:20 sto
+p_ap.sh
+=== WIFI MODE ===
+Interface wlan0
+        ifindex 31
+        wdev 0x15
+        addr 00:08:22:0c:76:3e
+        ssid AhmedNet
+        type AP
+        wiphy 0
+~ $ su -c '
+ip addr add 192.168.50.1/24 dev wlan0
+
+echo "=== IP AFTER ADD ==="
+ip addr show wlan0
+
+echo "=== START DHCP ==="
+/system/bin/dnsmasq \
+--interface=wlan0 \
+--bind-interfaces \
+--dhcp-range=192.168.50.10,192.168.50.100,12h \
+--dhcp-option=3,192.168.50.1 \
+--dhcp-option=6,192.168.50.1 \
+--pid-file=/data/local/tmp/ahmed_hotspot/dnsmasq.p
+id \
+--log-facility=/data/local/tmp/ahmed_hotspot/logs/
+dnsmasq.log
+
+echo "DONE"
+'
+=== IP AFTER ADD ===
+31: wlan0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1
+460 qdisc mq state UP group default qlen 3000
+    link/ether 00:08:22:0c:76:3e brd ff:ff:ff:ff:f
+f:ff
+    inet 192.168.50.1/24 scope global wlan0
+       valid_lft forever preferred_lft forever
+=== START DHCP ===
+DONE
+~ $

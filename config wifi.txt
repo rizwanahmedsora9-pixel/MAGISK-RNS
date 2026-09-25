@@ -1,0 +1,178 @@
+~ $ su -c '
+echo "=== MTK HOSTAPD CONFIG ==="
+cat /data/vendor/wifi/hostapd/hostapd_ap0.conf
+
+echo
+
+echo "=== HOSTAPD DIRECTORY ==="
+ls -la /data/vendor/wifi/hostapd/
+
+echo
+
+echo "=== WIFI DATA DIRECTORY ==="
+ls -la /data/misc/wifi/
+'
+=== MTK HOSTAPD CONFIG ===
+interface=ap0
+driver=nl80211
+ctrl_interface=/data/vendor/wifi/hostapd/ctrl
+ssid2=496e66696e697820484f542038
+channel=157
+ieee80211n=1
+ieee80211ac=0
+hw_mode=a
+
+ignore_broadcast_ssid=0
+wowlan_triggers=any
+
+max_num_sta=10
+macaddr_acl=0
+accept_mac_file=/data/vendor/wifi/hostapd/accept_m
+ac_update.conf
+device_name=AndroidAP
+manufacturer=MediaTek Inc.
+model_name=MTK Wireless Model
+model_number=66xx
+serial_number=1.0
+device_type=10-0050F204-5
+
+=== HOSTAPD DIRECTORY ===
+total 12
+drwxrwx--- 4 wifi wifi 3488 2026-09-25 12:10 .
+drwxrwx--- 4 wifi wifi 3488 2010-01-01 05:01 ..
+-rw-rw---- 1 wifi wifi    0 2026-09-25 12:10 accep
+t_mac_update.conf
+drwxrwx--- 2 wifi wifi 3488 2026-09-25 12:10 ctrl
+-rw-rw---- 1 wifi wifi  438 2026-09-25 12:10 hosta
+pd_ap0.conf
+drwxrwx--- 2 wifi wifi 3488 2026-09-24 14:30 socke
+ts
+
+=== WIFI DATA DIRECTORY ===
+total 14
+drwxrwx---  4 wifi   wifi   3488 2026-09-25 11:13 
+.
+drwxrwx--t 43 system misc   3488 2010-01-01 05:01 
+..
+-rw-------  1 system system 2512 2026-09-25 11:13 
+WifiConfigStore.xml
+-rw-------  1 system system  107 2026-09-23 22:18 
+dhcp_lease.conf
+drwxrwx---  2 wifi   wifi   3488 2010-01-01 05:01 
+sockets
+-rw-------  1 system system   31 2026-09-24 09:07 
+softap.conf
+drwxrwx---  2 wifi   wifi   3488 2010-01-01 05:01 
+wpa_supplicant
+~ $ su -c '
+echo "=== WIFI CONFIG STORE ==="
+cat /data/misc/wifi/WifiConfigStore.xml | grep -i 
+-A5 -B5 "softap\|hotspot\|pass\|ssid"
+
+echo
+
+echo "=== FULL SOFTAP SETTINGS ==="
+cat /data/misc/wifi/WifiConfigStore.xml
+'
+=== WIFI CONFIG STORE ===
+
+=== FULL SOFTAP SETTINGS ===
+<?xml version='1.0' encoding='utf-8' standalone='y
+es' ?>
+<WifiConfigStoreData>
+<int name="Version" value="1" />
+<NetworkList>
+<Network>
+<WifiConfiguration>
+<string name="ConfigKey">&quot;PTCL-BB&quot;WPA_PS
+K</string>
+<string name="SSID">&quot;PTCL-BB&quot;</string>
+<null name="BSSID" />
+<string name="PreSharedKey">&quot;B9173461&quot;</
+string>
+<null name="WEPKeys" />
+<int name="WEPTxKeyIndex" value="0" />
+<boolean name="HiddenSSID" value="false" />
+<boolean name="RequirePMF" value="false" />
+<byte-array name="AllowedKeyMgmt" num="1">02</byte
+-array>
+<byte-array name="AllowedProtocols" num="1">03</by
+te-array>
+<byte-array name="AllowedAuthAlgos" num="1">01</by
+te-array>
+<byte-array name="AllowedGroupCiphers" num="1">0f<
+/byte-array>
+<byte-array name="AllowedPairwiseCiphers" num="1">
+06</byte-array>
+<boolean name="Shared" value="true" />
+<int name="WapiCertSelMode" value="0" />
+<null name="WapiCertSel" />
+<int name="WapiPskType" value="0" />
+<null name="WapiPsk" />
+<int name="Status" value="2" />
+<null name="FQDN" />
+<null name="ProviderFriendlyName" />
+<null name="LinkedNetworksList" />
+<null name="DefaultGwMacAddress" />
+<boolean name="ValidatedInternetAccess" value="fal
+se" />
+<boolean name="NoInternetAccessExpected" value="fa
+lse" />
+<int name="UserApproved" value="0" />
+<boolean name="MeteredHint" value="false" />
+<int name="MeteredOverride" value="0" />
+<boolean name="UseExternalScores" value="false" />
+<int name="NumAssociation" value="0" />
+<int name="CreatorUid" value="1000" />
+<string name="CreatorName">android.uid.system:1000
+</string>
+<string name="CreationTime">time=09-25 08:20:13.52
+7</string>
+<int name="LastUpdateUid" value="1000" />
+<string name="LastUpdateName">android.uid.system:1
+000</string>
+<int name="LastConnectUid" value="1000" />
+<boolean name="IsLegacyPasspointConfig" value="fal
+se" />
+<long-array name="RoamingConsortiumOIs" num="0" />
+<string name="RandomizedMacAddress">02:00:00:00:00
+:00</string>
+</WifiConfiguration>
+<NetworkStatus>
+<string name="SelectionStatus">NETWORK_SELECTION_E
+NABLED</string>
+<string name="DisableReason">NETWORK_SELECTION_ENA
+BLE</string>
+<null name="ConnectChoice" />
+<long name="ConnectChoiceTimeStamp" value="-1" />
+<boolean name="HasEverConnected" value="false" />
+</NetworkStatus>
+<IpConfiguration>
+<string name="IpAssignment">DHCP</string>
+<string name="ProxySettings">NONE</string>
+</IpConfiguration>
+</Network>
+</NetworkList>
+<PasspointConfigData>
+<long name="ProviderIndex" value="0" />
+</PasspointConfigData>
+</WifiConfigStoreData>
+~ $ su -c '
+echo "=== HOSTAPD SOCKETS ==="
+ls -la /data/vendor/wifi/hostapd/ctrl/
+
+echo
+
+echo "=== HOSTAPD PROCESS ==="
+ps -A | grep hostapd
+'
+=== HOSTAPD SOCKETS ===
+total 6
+drwxrwx--- 2 wifi wifi 3488 2026-09-25 12:10 .
+drwxrwx--- 4 wifi wifi 3488 2026-09-25 12:10 ..
+srwxrwx--- 1 wifi wifi    0 2026-09-25 12:10 ap0
+
+=== HOSTAPD PROCESS ===
+wifi         11797     1 2129276   7868 poll_sched
+ule_timeout 0 S hostapd
+~ $

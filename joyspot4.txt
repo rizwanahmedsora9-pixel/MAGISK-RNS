@@ -1,0 +1,691 @@
+~ $ su -c '
+killall hostapd 2>/dev/null
+killall dnsmasq 2>/dev/null
+svc wifi enable
+'
+~ $ su -c '
+logcat -c
+'
+~ $ su -c '
+echo "=== SOFTAP LOG ==="
+logcat -d | grep -iE "softap|hostapd|tether|dnsmas
+q|dhcp|iptables|nat|wlan" > /sdcard/hotspot_log.tx
+t
+
+echo "=== FILE SEARCH ==="
+find /data /vendor /system -iname "*hostap*" -o -i
+name "*softap*" -o -iname "*tether*" > /sdcard/hot
+spot_files.txt
+
+echo DONE
+'
+=== SOFTAP LOG ===
+=== FILE SEARCH ===
+DONE
+~ $ su -c '
+echo "=== WIFI BINARIES ==="
+ls -l /vendor/bin/hw | grep -E "hostapd|wifi|wpa"
+
+echo "=== SOFTAP CONFIG ==="
+find /vendor /system /product -iname "*softap*" 2>
+/dev/null
+
+echo "=== TETHER SERVICES ==="
+service list | grep -i tether
+
+echo "=== WIFI SERVICE ==="
+service list | grep -i wifi
+'
+=== WIFI BINARIES ===
+-rwxr-xr-x 1 root        shell        410864 2008-
+12-31 21:00 android.hardware.wifi@1.0-service-medi
+atek
+-rwxr-xr-x 1 root        shell        883248 2008-
+12-31 21:00 hostapd
+-rwxr-xr-x 1 root        shell       2521984 2008-
+12-31 21:00 wpa_supplicant
+=== SOFTAP CONFIG ===
+=== TETHER SERVICES ===
+=== WIFI SERVICE ===
+1       wifip2p: [android.net.wifi.p2p.IWifiP2pMan
+ager]
+2       wifiscanner: [android.net.wifi.IWifiScanne
+r]
+3       wifi: [android.net.wifi.IWifiManager]
+156     wificond: [android.net.wifi.IWificond]
+~ $ su -c '
+echo "=== TETHER FILES ==="
+find /system /vendor /system_ext -type f \( -iname
+ "*tether*" -o -iname "*netd*" -o -iname "*dnsmasq
+*" \) 2>/dev/null
+
+echo "=== NETD SERVICE ==="
+service list | grep -i net
+
+echo "=== CMD CONNECTIVITY ==="
+cmd connectivity help
+
+echo "=== CMD WIFI ==="
+cmd wifi help
+'
+=== TETHER FILES ===
+/system/bin/dnsmasq
+/system/bin/netd
+/system/bin/netdiag
+/system/lib64/vndk-28/android.hardware.tetherofflo
+ad.control@1.0.so
+/system/lib64/vndk-28/android.system.net.netd@1.1.
+so
+/system/lib64/vndk-28/android.system.net.netd@1.0.
+so
+/system/lib64/vndk-28/android.hardware.tetherofflo
+ad.config@1.0.so
+/system/lib64/android.system.net.netd@1.1.so
+/system/lib64/android.system.net.netd@1.0.so
+/system/lib64/libnetdutils.so
+/system/lib64/android.hardware.tetheroffload.confi
+g@1.0.so
+/system/lib64/libnetdaidl.so
+/system/lib64/libnetd_client.so
+/system/etc/init/netd.rc
+/system/etc/init/netdiag.rc
+/system/lib/vndk-28/android.hardware.tetheroffload
+.control@1.0.so
+/system/lib/vndk-28/android.system.net.netd@1.1.so
+/system/lib/vndk-28/android.system.net.netd@1.0.so
+/system/lib/vndk-28/android.hardware.tetheroffload
+.config@1.0.so
+/system/lib/libnetdutils.so
+/system/lib/android.hardware.tetheroffload.config@
+1.0.so
+/system/lib/libnetd_client.so
+/vendor/lib64/vendor.mediatek.hardware.netdagent@1
+.0.so
+/vendor/bin/netdagent
+/vendor/bin/netdc
+/vendor/etc/init/netdagent.rc
+=== NETD SERVICE ===
+1       wifip2p: [android.net.wifi.p2p.IWifiP2pMan
+ager]
+2       wifiscanner: [android.net.wifi.IWifiScanne
+r]
+3       wifi: [android.net.wifi.IWifiManager]
+24      mtkconnmetrics: [com.mediatek.net.connecti
+vity.IMtkIpConnectivityMetrics]
+25      netd_listener: [android.net.metrics.INetdE
+ventListener]
+26      connmetrics: [android.net.IIpConnectivityM
+etrics]
+50      network_time_update_service: []
+51      adaptivesmartnetwork: [android.os.IAdaptiv
+eSmartNetworkService]
+73      servicediscovery: [android.net.nsd.INsdMan
+ager]
+74      connectivity: [android.net.IConnectivityMa
+nager]
+75      ethernet: [android.net.IEthernetManager]
+76      netpolicy: [android.net.INetworkPolicyMana
+ger]
+77      netstats: [android.net.INetworkStatsServic
+e]
+79      network_score: [android.net.INetworkScoreS
+ervice]
+82      ipsec: [android.net.IIpSecService]
+83      network_management: [android.os.INetworkMa
+nagementService]
+96      network_watchlist: [com.android.internal.n
+et.INetworkWatchlistManager]
+147     netd: [android.net.INetd]
+156     wificond: [android.net.wifi.IWificond]
+=== CMD CONNECTIVITY ===
+cmd: Failure calling service connectivity: Failed 
+transaction (2147483646)
+=== CMD WIFI ===
+cmd: Failure calling service wifi: Failed transact
+ion (2147483646)
+~ $ su -c '
+echo "=== WIFI SERVICE STATE ==="
+dumpsys wifi | grep -i "SoftAp\|softap\|tether" -A
+10
+
+echo "=== CONNECTIVITY STATE ==="
+dumpsys connectivity | head -100
+
+echo "=== NETWORK MANAGEMENT ==="
+service call network_management 1
+'
+=== WIFI SERVICE STATE ===
+=== CONNECTIVITY STATE ===
+NetworkFactories for: WIFI_UT Ethernet WIFI PhoneS
+witcherNetworkRequstListener TelephonyNetworkFacto
+ry[0] TelephonyNetworkFactory[1]
+
+Active default network: 116
+
+Current Networks:
+  NetworkAgentInfo{ ni{[type: MOBILE[LTE], state: 
+CONNECTED/CONNECTED, reason: connected, extra: jaz
+zconnect.mobilinkworld.com, failover: false, avail
+able: true, roaming: false]}  network{116}  nethan
+dle{501621903373}  lp{{InterfaceName: ccmni0 LinkA
+ddresses: [10.60.99.185/32,]  Routes: [0.0.0.0/0 -
+> 10.60.99.185 ccmni0,10.60.99.185/32 -> 0.0.0.0 c
+cmni0,] DnsAddresses: [119.160.112.48,119.160.80.1
+46,] UsePrivateDns: false PrivateDnsServerName: nu
+ll Domains: null MTU: 1500 TcpBufferSizes: 2097152
+,4194304,8388608,262144,524288,1048576}}  nc{[ Tra
+nsports: CELLULAR Capabilities: INTERNET&NOT_RESTR
+ICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGR
+OUND&NOT_CONGESTED&NOT_SUSPENDED Unwanted:  LinkUp
+Bandwidth>=51200Kbps LinkDnBandwidth>=102400Kbps S
+pecifier: <1>]}  Score{50}  everValidated{true}  l
+astValidated{true}  created{true} lingering{false}
+ explicitlySelected{false} acceptUnvalidated{false
+} everCaptivePortalDetected{false} lastCaptivePort
+alDetected{false} clat{null} }
+    Requests: REQUEST:1 LISTEN:54 BACKGROUND_REQUE
+ST:1 total:56
+      NetworkRequest [ REQUEST id=1, [ Capabilitie
+s: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN Unwante
+d: ] ]
+      NetworkRequest [ BACKGROUND_REQUEST id=2, [ 
+Transports: CELLULAR Capabilities: INTERNET&NOT_RE
+STRICTED&TRUSTED&NOT_VPN Unwanted: ] ]
+      NetworkRequest [ LISTEN id=3, [] ]
+      NetworkRequest [ LISTEN id=4, [ Transports: 
+CELLULAR Capabilities: INTERNET&NOT_RESTRICTED&TRU
+STED&NOT_VPN Unwanted:  Uid: 1000] ]
+      NetworkRequest [ LISTEN id=5, [ Capabilities
+: NOT_RESTRICTED&TRUSTED&NOT_VPN Unwanted:  Uid: 1
+000] ]
+      NetworkRequest [ TRACK_DEFAULT id=6, [ Capab
+ilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted:
+  Uid: 10072] ]
+      NetworkRequest [ LISTEN id=7, [ Capabilities
+: INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Unwant
+ed:  Uid: 1000] ]
+      NetworkRequest [ TRACK_DEFAULT id=8, [ Capab
+ilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted:
+  Uid: 1000] ]
+      NetworkRequest [ TRACK_DEFAULT id=10, [ Capa
+bilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted
+:  Uid: 10033] ]
+      NetworkRequest [ LISTEN id=11, [] ]
+      NetworkRequest [ TRACK_DEFAULT id=16, [ Capa
+bilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted
+:  Uid: 1001] ]
+      NetworkRequest [ LISTEN id=18, [ Capabilitie
+s: INTERNET&TRUSTED Unwanted:  Uid: 10014] ]
+      NetworkRequest [ TRACK_DEFAULT id=19, [ Capa
+bilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted
+:  Uid: 10014] ]
+      NetworkRequest [ TRACK_DEFAULT id=21, [ Capa
+bilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted
+:  Uid: 10041] ]
+      NetworkRequest [ TRACK_DEFAULT id=26, [ Capa
+bilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted
+:  Uid: 10014] ]
+      NetworkRequest [ LISTEN id=27, [ Capabilitie
+s: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted:  Uid:
+ 10014] ]
+      NetworkRequest [ TRACK_DEFAULT id=39, [ Capa
+bilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted
+:  Uid: 10014] ]
+      NetworkRequest [ LISTEN id=41, [ Transports:
+ CELLULAR|WIFI Capabilities: NOT_RESTRICTED&TRUSTE
+D&NOT_VPN Unwanted:  Uid: 10014] ]
+      NetworkRequest [ TRACK_DEFAULT id=44, [ Capa
+bilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted
+:  Uid: 10014] ]
+      NetworkRequest [ TRACK_DEFAULT id=46, [ Capa
+bilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted
+:  Uid: 10014] ]
+      NetworkRequest [ TRACK_DEFAULT id=118, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10014] ]
+      NetworkRequest [ TRACK_DEFAULT id=119, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10014] ]
+      NetworkRequest [ LISTEN id=120, [ Capabiliti
+es: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted:  Uid
+: 10014] ]
+      NetworkRequest [ TRACK_DEFAULT id=121, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10014] ]
+      NetworkRequest [ LISTEN id=122, [ Capabiliti
+es: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted:  Uid
+: 10014] ]
+      NetworkRequest [ TRACK_DEFAULT id=174, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10050] ]
+      NetworkRequest [ TRACK_DEFAULT id=539, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10014] ]
+      NetworkRequest [ LISTEN id=540, [ Capabiliti
+es: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted:  Uid
+: 10014] ]
+      NetworkRequest [ TRACK_DEFAULT id=577, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10014] ]
+      NetworkRequest [ LISTEN id=578, [ Capabiliti
+es: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted:  Uid
+: 10014] ]
+      NetworkRequest [ TRACK_DEFAULT id=609, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10087] ]
+      NetworkRequest [ LISTEN id=610, [ Capabiliti
+es: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted:  Uid
+: 10087] ]
+      NetworkRequest [ TRACK_DEFAULT id=882, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10105] ]
+      NetworkRequest [ LISTEN id=883, [ Capabiliti
+es: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted:  Uid
+: 10105] ]
+      NetworkRequest [ TRACK_DEFAULT id=884, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10105] ]
+      NetworkRequest [ TRACK_DEFAULT id=885, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10105] ]
+      NetworkRequest [ TRACK_DEFAULT id=908, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10147] ]
+      NetworkRequest [ TRACK_DEFAULT id=909, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10027] ]
+      NetworkRequest [ LISTEN id=910, [ Capabiliti
+es: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted:  Uid
+: 10027] ]
+      NetworkRequest [ TRACK_DEFAULT id=911, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10147] ]
+      NetworkRequest [ LISTEN id=912, [ Capabiliti
+es: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted:  Uid
+: 10147] ]
+      NetworkRequest [ TRACK_DEFAULT id=914, [ Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwante
+d:  Uid: 10147] ]
+      NetworkRequest [ LISTEN id=915, [ Capabiliti
+es: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted:  Uid
+: 10147] ]
+      NetworkRequest [ LISTEN id=931, [ Capabiliti
+es: INTERNET&TRUSTED&VALIDATED Unwanted:  Uid: 101
+05] ]
+      NetworkRequest [ TRACK_DEFAULT id=1035, [ Ca
+pabilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwant
+ed:  Uid: 10158] ]
+      NetworkRequest [ TRACK_DEFAULT id=1036, [ Ca
+pabilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwant
+ed:  Uid: 10158] ]
+      NetworkRequest [ TRACK_DEFAULT id=1037, [ Ca
+pabilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwant
+ed:  Uid: 10158] ]
+      NetworkRequest [ LISTEN id=1038, [ Capabilit
+ies: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND Un
+wanted:  Uid: 10158] ]
+      NetworkRequest [ TRACK_DEFAULT id=1039, [ Ca
+pabilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwant
+ed:  Uid: 10158] ]
+      NetworkRequest [ LISTEN id=1040, [ Capabilit
+ies: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND Un
+wanted:  Uid: 10158] ]
+      NetworkRequest [ TRACK_DEFAULT id=1041, [ Ca
+pabilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwant
+ed:  Uid: 10120] ]
+      NetworkRequest [ LISTEN id=1042, [ Capabilit
+ies: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted:  Ui
+d: 10120] ]
+      NetworkRequest [ TRACK_DEFAULT id=1043, [ Ca
+pabilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwant
+ed:  Uid: 10120] ]
+      NetworkRequest [ LISTEN id=1044, [ Capabilit
+ies: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted:  Ui
+d: 10120] ]
+      NetworkRequest [ LISTEN id=1050, [] ]
+      NetworkRequest [ TRACK_DEFAULT id=1051, [ Ca
+pabilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwant
+ed:  Uid: 1000] ]
+    Lingered:
+
+Network Requests:
+  uid/pid:10147/29233 NetworkRequest [ TRACK_DEFAU
+LT id=914, [ Capabilities: INTERNET&NOT_RESTRICTED
+&TRUSTED Unwanted:  Uid: 10147] ]
+  uid/pid:10105/28217 NetworkRequest [ LISTEN id=9
+31, [ Capabilities: INTERNET&TRUSTED&VALIDATED Unw
+anted:  Uid: 10105] ]
+  uid/pid:10014/21749 NetworkRequest [ LISTEN id=5
+40, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTE
+D Unwanted:  Uid: 10014] ]
+  uid/pid:1000/2173 NetworkRequest [ TRACK_DEFAULT
+ id=1051, [ Capabilities: INTERNET&NOT_RESTRICTED&
+TRUSTED Unwanted:  Uid: 1000] ]
+  uid/pid:10014/21749 NetworkRequest [ LISTEN id=5
+78, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTE
+D Unwanted:  Uid: 10014] ]
+  uid/pid:10014/2949 NetworkRequest [ TRACK_DEFAUL
+T id=119, [ Capabilities: INTERNET&NOT_RESTRICTED&
+TRUSTED Unwanted:  Uid: 10014] ]
+  uid/pid:10087/4696 NetworkRequest [ TRACK_DEFAUL
+T id=609, [ Capabilities: INTERNET&NOT_RESTRICTED&
+TRUSTED Unwanted:  Uid: 10087] ]
+  uid/pid:10105/28217 NetworkRequest [ LISTEN id=8
+89, [ Capabilities: NOT_METERED&INTERNET&TRUSTED&V
+ALIDATED Unwanted:  Uid: 10105] ]
+  uid/pid:10105/28217 NetworkRequest [ LISTEN id=8
+87, [ Transports: WIFI Capabilities: NOT_RESTRICTE
+D&TRUSTED&NOT_VPN Unwanted:  Uid: 10105] ]
+  uid/pid:1000/2173 NetworkRequest [ REQUEST id=1,
+ [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&N
+OT_VPN Unwanted: ] ]
+  uid/pid:10158/7936 NetworkRequest [ TRACK_DEFAUL
+T id=1036, [ Capabilities: INTERNET&NOT_RESTRICTED
+&TRUSTED Unwanted:  Uid: 10158] ]
+  uid/pid:10158/7936 NetworkRequest [ LISTEN id=10
+40, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTE
+D&FOREGROUND Unwanted:  Uid: 10158] ]
+  uid/pid:10014/2949 NetworkRequest [ TRACK_DEFAUL
+T id=39, [ Capabilities: INTERNET&NOT_RESTRICTED&T
+RUSTED Unwanted:  Uid: 10014] ]
+  uid/pid:1001/2893 NetworkRequest [ LISTEN id=15,
+ [ Transports: WIFI Capabilities: NOT_RESTRICTED&T
+RUSTED&NOT_VPN&VALIDATED Unwanted:  Uid: 1001] ]
+  uid/pid:10014/2949 NetworkRequest [ LISTEN id=27
+, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED 
+Unwanted:  Uid: 10014] ]
+  uid/pid:1001/2893 NetworkRequest [ LISTEN id=13,
+ [ Transports: CELLULAR Capabilities: EIMS&TRUSTED
+&NOT_VPN Unwanted:  Specifier: <1> Uid: 1001] ]
+  uid/pid:10105/28217 NetworkRequest [ TRACK_DEFAU
+LT id=885, [ Capabilities: INTERNET&NOT_RESTRICTED
+&TRUSTED Unwanted:  Uid: 10105] ]
+  uid/pid:10014/2949 NetworkRequest [ LISTEN id=12
+0, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED
+ Unwanted:  Uid: 10014] ]
+  uid/pid:10014/21749 NetworkRequest [ TRACK_DEFAU
+LT id=539, [ Capabilities: INTERNET&NOT_RESTRICTED
+&TRUSTED Unwanted:  Uid: 10014] ]
+  uid/pid:1001/2893 NetworkRequest [ TRACK_DEFAULT
+ id=16, [ Capabilities: INTERNET&NOT_RESTRICTED&TR
+USTED Unwanted:  Uid: 1001] ]
+  uid/pid:10105/28217 NetworkRequest [ LISTEN id=8
+83, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTE
+D Unwanted:  Uid: 10105] ]
+  uid/pid:10105/28217 NetworkRequest [ LISTEN id=8
+88, [ Capabilities: NOT_METERED&INTERNET&TRUSTED&V
+ALIDATED Unwanted:  Uid: 10105] ]
+  uid/pid:1000/2173 NetworkRequest [ LISTEN id=5, 
+[ Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN Unw
+anted:  Uid: 1000] ]
+  uid/pid:10014/2949 NetworkRequest [ TRACK_DEFAUL
+T id=118, [ Capabilities: INTERNET&NOT_RESTRICTED&
+TRUSTED Unwanted:  Uid: 10014] ]
+  uid/pid:1000/2173 NetworkRequest [ LISTEN id=4, 
+[ Transports: CELLULAR Capabilities: INTERNET&NOT_
+RESTRICTED&TRUSTED&NOT_VPN Unwanted:  Uid: 1000] ]
+  uid/pid:1001/2893 NetworkRequest [ LISTEN id=12,
+ [ Transports: CELLULAR Capabilities: IMS&TRUSTED&
+NOT_VPN Unwanted:  Specifier: <1> Uid: 1001] ]
+  uid/pid:10120/8158 NetworkRequest [ TRACK_DEFAUL
+T id=1043, [ Capabilities: INTERNET&NOT_RESTRICTED
+&TRUSTED Unwanted:  Uid: 10120] ]
+  uid/pid:10014/2949 NetworkRequest [ TRACK_DEFAUL
+T id=44, [ Capabilities: INTERNET&NOT_RESTRICTED&T
+RUSTED Unwanted:  Uid: 10014] ]
+  uid/pid:10120/8158 NetworkRequest [ LISTEN id=10
+44, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTE
+D Unwanted:  Uid: 10120] ]
+  uid/pid:10014/2949 NetworkRequest [ LISTEN id=40
+, [ Transports: WIFI Capabilities: NOT_RESTRICTED&
+TRUSTED&NOT_VPN Unwanted:  Uid: 10014] ]
+  uid/pid:10087/4696 NetworkRequest [ LISTEN id=61
+0, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED
+ Unwanted:  Uid: 10087] ]
+  uid/pid:10147/29233 NetworkRequest [ TRACK_DEFAU
+LT id=908, [ Capabilities: INTERNET&NOT_RESTRICTED
+&TRUSTED Unwanted:  Uid: 10147] ]
+  uid/pid:10014/2949 NetworkRequest [ LISTEN id=18
+, [ Capabilities: INTERNET&TRUSTED Unwanted:  Uid:
+ 10014] ]
+  uid/pid:10158/7936 NetworkRequest [ TRACK_DEFAUL
+T id=1037, [ Capabilities: INTERNET&NOT_RESTRICTED
+&TRUSTED Unwanted:  Uid: 10158] ]
+Failed to write while dumping service connectivity
+: Broken pipe
+=== NETWORK MANAGEMENT ===
+Result: Parcel(
+  0x00000000: fffffffc 00000073 00740041 00650074 
+'....s...A.t.t.e.'
+  0x00000010: 0070006d 00200074 006f0074 00690020 
+'m.p.t. .t.o. .i.'
+  0x00000020: 0076006e 006b006f 00200065 006e0069 
+'n.v.o.k.e. .i.n.'
+  0x00000030: 00650074 00660072 00630061 00200065 
+'t.e.r.f.a.c.e. .'
+  0x00000040: 0065006d 00680074 0064006f 00270020 
+'m.e.t.h.o.d. .'.'
+  0x00000050: 006e0061 00720064 0069006f 002e0064 
+'a.n.d.r.o.i.d...'
+  0x00000060: 0073006f 0049002e 00690042 0064006e 
+'o.s...I.B.i.n.d.'
+  0x00000070: 00720065 00610020 0064006e 006f0072 
+'e.r. .a.n.d.r.o.'
+  0x00000080: 00640069 006f002e 002e0073 00490049 
+'i.d...o.s...I.I.'
+  0x00000090: 0074006e 00720065 00610066 00650063 
+'n.t.e.r.f.a.c.e.'
+  0x000000a0: 0061002e 00420073 006e0069 00650064 
+'..a.s.B.i.n.d.e.'
+  0x000000b0: 00280072 00270029 006f0020 0020006e 
+'r.(.).'. .o.n. .'
+  0x000000c0: 00200061 0075006e 006c006c 006f0020 
+'a. .n.u.l.l. .o.'
+  0x000000d0: 006a0062 00630065 00200074 00650072 
+'b.j.e.c.t. .r.e.'
+  0x000000e0: 00650066 00650072 0063006e 00000065 
+'f.e.r.e.n.c.e...'
+  0x000000f0: 00000310 00000183 00610009 00200074 
+'..........a.t. .'
+  0x00000100: 006e0061 00720064 0069006f 002e0064 
+'a.n.d.r.o.i.d...'
+  0x00000110: 0073006f 0052002e 006d0065 0074006f 
+'o.s...R.e.m.o.t.'
+  0x00000120: 00430065 006c0061 0062006c 00630061 
+'e.C.a.l.l.b.a.c.'
+  0x00000130: 004c006b 00730069 002e0074 00650072 
+'k.L.i.s.t...r.e.'
+  0x00000140: 00690067 00740073 00720065 00520028 
+'g.i.s.t.e.r.(.R.'
+  0x00000150: 006d0065 0074006f 00430065 006c0061 
+'e.m.o.t.e.C.a.l.'
+  0x00000160: 0062006c 00630061 004c006b 00730069 
+'l.b.a.c.k.L.i.s.'
+  0x00000170: 002e0074 0061006a 00610076 0031003a 
+'t...j.a.v.a.:.1.'
+  0x00000180: 00310032 000a0029 00610009 00200074 
+'2.1.).....a.t. .'
+  0x00000190: 006e0061 00720064 0069006f 002e0064 
+'a.n.d.r.o.i.d...'
+  0x000001a0: 0073006f 0052002e 006d0065 0074006f 
+'o.s...R.e.m.o.t.'
+  0x000001b0: 00430065 006c0061 0062006c 00630061 
+'e.C.a.l.l.b.a.c.'
+  0x000001c0: 004c006b 00730069 002e0074 00650072 
+'k.L.i.s.t...r.e.'
+  0x000001d0: 00690067 00740073 00720065 00520028 
+'g.i.s.t.e.r.(.R.'
+  0x000001e0: 006d0065 0074006f 00430065 006c0061 
+'e.m.o.t.e.C.a.l.'
+  0x000001f0: 0062006c 00630061 004c006b 00730069 
+'l.b.a.c.k.L.i.s.'
+  0x00000200: 002e0074 0061006a 00610076 0038003a 
+'t...j.a.v.a.:.8.'
+  0x00000210: 00290035 0009000a 00740061 00630020 
+'5.).....a.t. .c.'
+  0x00000220: 006d006f 0061002e 0064006e 006f0072 
+'o.m...a.n.d.r.o.'
+  0x00000230: 00640069 0073002e 00720065 00650076 
+'i.d...s.e.r.v.e.'
+  0x00000240: 002e0072 0065004e 00770074 0072006f 
+'r...N.e.t.w.o.r.'
+  0x00000250: 004d006b 006e0061 00670061 006d0065 
+'k.M.a.n.a.g.e.m.'
+  0x00000260: 006e0065 00530074 00720065 00690076 
+'e.n.t.S.e.r.v.i.'
+  0x00000270: 00650063 0072002e 00670065 00730069 
+'c.e...r.e.g.i.s.'
+  0x00000280: 00650074 004f0072 00730062 00720065 
+'t.e.r.O.b.s.e.r.'
+  0x00000290: 00650076 00280072 0065004e 00770074 
+'v.e.r.(.N.e.t.w.'
+  0x000002a0: 0072006f 004d006b 006e0061 00670061 
+'o.r.k.M.a.n.a.g.'
+  0x000002b0: 006d0065 006e0065 00530074 00720065 
+'e.m.e.n.t.S.e.r.'
+  0x000002c0: 00690076 00650063 006a002e 00760061 
+'v.i.c.e...j.a.v.'
+  0x000002d0: 003a0061 00320034 00290033 0009000a 
+'a.:.4.2.3.).....'
+  0x000002e0: 00740061 00610020 0064006e 006f0072 
+'a.t. .a.n.d.r.o.'
+  0x000002f0: 00640069 006f002e 002e0073 004e0049 
+'i.d...o.s...I.N.'
+  0x00000300: 00740065 006f0077 006b0072 0061004d 
+'e.t.w.o.r.k.M.a.'
+  0x00000310: 0061006e 00650067 0065006d 0074006e 
+'n.a.g.e.m.e.n.t.'
+  0x00000320: 00650053 00760072 00630069 00240065 
+'S.e.r.v.i.c.e.$.'
+  0x00000330: 00740053 00620075 006f002e 0054006e 
+'S.t.u.b...o.n.T.'
+  0x00000340: 00610072 0073006e 00630061 00280074 
+'r.a.n.s.a.c.t.(.'
+  0x00000350: 004e0049 00740065 006f0077 006b0072 
+'I.N.e.t.w.o.r.k.'
+  0x00000360: 0061004d 0061006e 00650067 0065006d 
+'M.a.n.a.g.e.m.e.'
+  0x00000370: 0074006e 00650053 00760072 00630069 
+'n.t.S.e.r.v.i.c.'
+  0x00000380: 002e0065 0061006a 00610076 0035003a 
+'e...j.a.v.a.:.5.'
+  0x00000390: 00290034 0009000a 00740061 00610020 
+'4.).....a.t. .a.'
+  0x000003a0: 0064006e 006f0072 00640069 006f002e 
+'n.d.r.o.i.d...o.'
+  0x000003b0: 002e0073 00690042 0064006e 00720065 
+'s...B.i.n.d.e.r.'
+  0x000003c0: 0065002e 00650078 00540063 00610072 
+'..e.x.e.c.T.r.a.'
+  0x000003d0: 0073006e 00630061 00280074 00690042 
+'n.s.a.c.t.(.B.i.'
+  0x000003e0: 0064006e 00720065 006a002e 00760061 
+'n.d.e.r...j.a.v.'
+  0x000003f0: 003a0061 00330037 00290031 0000000a 
+'a.:.7.3.1.).....')
+~ $ su -c '
+echo "=== WIFI INTERFACE ==="
+ip addr show wlan0
+
+echo "=== ROUTES ==="
+ip route
+
+echo "=== DHCP ==="
+ps -A | grep dnsmasq
+
+echo "=== HOSTAPD ==="
+ps -A | grep hostapd
+
+echo "=== NAT ==="
+iptables -t nat -L -n -v
+
+echo "=== FORWARD ==="
+iptables -L FORWARD -n -v
+
+echo "=== ARP ==="
+cat /proc/net/arp
+'
+=== WIFI INTERFACE ===
+31: wlan0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu
+ 1460 qdisc mq state DOWN group default qlen 3000
+    link/ether 00:08:22:e8:d9:55 brd ff:ff:ff:ff:f
+f:ff
+=== ROUTES ===
+10.0.0.0/8 dev ccmni0 proto kernel scope link src 
+10.60.99.185
+192.168.43.0/24 dev ap0 proto kernel scope link sr
+c 192.168.43.171
+=== DHCP ===
+dns_tether    8782  1937   11976   3328 poll_sched
+ule_timeout 0 S dnsmasq
+=== HOSTAPD ===
+wifi          8779     1 2129276   7808 poll_sched
+ule_timeout 0 S hostapd
+=== NAT ===
+Chain PREROUTING (policy ACCEPT 582 packets, 55998
+ bytes)
+ pkts bytes target     prot opt in     out     sou
+rce               destination
+ 1079  115K oem_nat_pre  all  --  *      *       0
+.0.0.0/0            0.0.0.0/0
+
+Chain INPUT (policy ACCEPT 200 packets, 13804 byte
+s)
+ pkts bytes target     prot opt in     out     sou
+rce               destination
+
+Chain OUTPUT (policy ACCEPT 288 packets, 21405 byt
+es)
+ pkts bytes target     prot opt in     out     sou
+rce               destination
+
+Chain POSTROUTING (policy ACCEPT 5 packets, 1046 b
+ytes)
+ pkts bytes target     prot opt in     out     sou
+rce               destination
+  797 83545 oem_epdg_nat_POSTROUTING  all  --  *  
+    *       0.0.0.0/0            0.0.0.0/0        
+
+17569 2888K tetherctrl_nat_POSTROUTING  all  --  *
+      *       0.0.0.0/0            0.0.0.0/0      
+
+    0     0 MASQUERADE  all  --  *      ccmni1  0.
+0.0.0/0            0.0.0.0/0
+
+Chain oem_epdg_nat_POSTROUTING (1 references)
+ pkts bytes target     prot opt in     out     sou
+rce               destination
+
+Chain oem_nat_pre (1 references)
+ pkts bytes target     prot opt in     out     sou
+rce               destination
+
+Chain tetherctrl_nat_POSTROUTING (1 references)
+ pkts bytes target     prot opt in     out     sou
+rce               destination
+  634 60905 MASQUERADE  all  --  *      ccmni0  0.
+0.0.0/0            0.0.0.0/0
+=== FORWARD ===
+Chain FORWARD (policy ACCEPT 21301 packets, 16M by
+tes)
+ pkts bytes target     prot opt in     out     sou
+rce               destination
+21302   16M oem_fwd    all  --  *      *       0.0
+.0.0/0            0.0.0.0/0
+21302   16M fw_FORWARD  all  --  *      *       0.
+0.0.0/0            0.0.0.0/0
+21302   16M bw_FORWARD  all  --  *      *       0.
+0.0.0/0            0.0.0.0/0
+21302   16M tetherctrl_FORWARD  all  --  *      * 
+      0.0.0.0/0            0.0.0.0/0
+    0     0 ACCEPT     all  --  wlan0  ccmni1  0.0
+.0.0/0            0.0.0.0/0
+    0     0 ACCEPT     all  --  ccmni1 wlan0   0.0
+.0.0/0            0.0.0.0/0            state RELAT
+ED,ESTABLISHED
+=== ARP ===
+IP address       HW type     Flags       HW addres
+s            Mask     Device
+192.168.43.228   0x1         0x2         a4:4e:31:
+83:ec:3c     *        ap0
+~ $

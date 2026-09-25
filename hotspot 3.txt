@@ -1,0 +1,818 @@
+Welcome to Termux!
+
+Docs:       https://termux.dev/docs
+Donate:     https://termux.dev/donate
+Community:  https://termux.dev/community
+
+Working with packages:
+
+ - Search:  pkg search <query>
+ - Install: pkg install <package>
+ - Upgrade: pkg upgrade
+
+Subscribing to additional repositories:
+
+ - Root:    pkg install root-repo
+ - X11:     pkg install x11-repo
+
+For fixing any repository issues,
+try 'termux-change-repo' command.
+
+Report issues at https://termux.dev/issues
+~ $ su -c '
+echo "=== DHCP PROCESS ==="
+ps -A | grep dnsmasq
+
+echo "=== DHCP LEASES ==="
+cat /data/misc/dhcp/dnsmasq.leases 2>/dev/null || 
+cat /data/local/tmp/ahmed_hotspot/dnsmasq.leases 2
+>/dev/null
+
+echo "=== WLAN STATUS ==="
+/data/data/com.termux/files/usr/bin/iw dev wlan0 s
+tation dump
+'
+=== DHCP PROCESS ===
+nobody        3456     1   11976   1576 poll_sched
+ule_timeout 0 S dnsmasq
+=== DHCP LEASES ===
+=== WLAN STATUS ===
+~ $ su -c '
+echo "=== DHCP PROCESS ==="
+ps -A | grep dnsmasq
+
+echo "=== DHCP LEASES ==="
+cat /data/misc/dhcp/dnsmasq.leases 2>/dev/null || 
+cat /data/local/tmp/ahmed_hotspot/dnsmasq.leases 2
+>/dev/null
+
+echo "=== WLAN STATUS ==="
+/data/data/com.termux/files/usr/bin/iw dev wlan0 s
+tation dump
+'
+=== DHCP PROCESS ===
+nobody        3456     1   11976   1576 poll_sched
+ule_timeout 0 S dnsmasq
+=== DHCP LEASES ===
+=== WLAN STATUS ===
+~ $ su -c '
+echo "=== DHCP PROCESS ==="
+ps -A | grep dnsmasq
+
+echo "=== DHCP LEASES ==="
+cat /data/misc/dhcp/dnsmasq.leases 2>/dev/null || 
+cat /data/local/tmp/ahmed_hotspot/dnsmasq.leases 2
+>/dev/null
+
+echo "=== WLAN STATUS ==="
+/data/data/com.termux/files/usr/bin/iw dev wlan0 s
+tation dump
+'
+=== DHCP PROCESS ===
+nobody        3456     1   11976   1576 poll_sched
+ule_timeout 0 S dnsmasq
+=== DHCP LEASES ===
+=== WLAN STATUS ===
+~ $ su -c '
+echo "=== HOSTAPD LOG ==="
+logcat -d | grep -i hostapd | tail -50
+
+echo "=== WIFI AP STATE ==="
+/data/data/com.termux/files/usr/bin/iw dev wlan0 i
+nfo
+'
+=== HOSTAPD LOG ===
+09-25 11:29:25.489  2173  8456 I ActivityManager: 
+echo "===== HOSTAPD SEARCH =====" >> $OUT
+09-25 11:29:25.489  2173  8456 I ActivityManager: 
+find /system /vendor /product /apex -name hostapd
+09-25 11:33:11.164  2988  2988 I hostapd : wlan0: 
+STA a4:4e:31:83:ec:3c IEEE 802.11: associated
+09-25 11:33:11.165  2988  2988 I hostapd : wlan0: 
+STA a4:4e:31:83:ec:3c IEEE 802.11: associated
+09-25 11:33:11.166  2988  2988 I hostapd : wlan0: 
+AP-STA-CONNECTED a4:4e:31:83:ec:3c
+09-25 11:33:11.166  2988  2988 I hostapd : Notifyi
+ng AP STA authorized to hidl control a4:4e:31:83:e
+c:3c
+=== WIFI AP STATE ===
+Interface wlan0
+        ifindex 31
+        wdev 0x15
+        addr 00:08:22:0c:76:3e
+        ssid AhmedNet
+        type AP
+        wiphy 0
+~ $ su -c '
+echo "=== DHCP SOCKET ==="
+netstat -lnp | grep 67
+
+echo "=== DNSMASQ LOG ==="
+cat /data/local/tmp/ahmed_hotspot/logs/dnsmasq.log
+ 2>/dev/null
+
+echo "=== CLIENT LINK ==="
+/data/data/com.termux/files/usr/bin/iw dev wlan0 s
+tation dump
+'
+=== DHCP SOCKET ===
+tcp6       0      0 ::ffff:10.67.245.:40890 ::ffff
+:104.18.39.21:443 ESTABLISHED 29233/com.openai.cha
+tgpt
+tcp6       0      0 ::ffff:10.67.245.:42362 ::ffff
+:104.18.32.42:443 ESTABLISHED 29233/com.openai.cha
+tgpt
+tcp6       0   6465 ::ffff:10.67.245.:42358 ::ffff
+:104.18.32.42:443 ESTABLISHED 29233/com.openai.cha
+tgpt
+tcp6       0      0 ::ffff:10.67.245.:52678 ::ffff
+:47.254.152.18:80 ESTABLISHED 3390/com.transsion.X
+OSLauncher
+tcp6       0      0 ::ffff:10.67.245.:42356 ::ffff
+:104.18.32.42:443 ESTABLISHED 29233/com.openai.cha
+tgpt
+tcp6       0      0 ::ffff:10.67.245.:37118 ::ffff
+:64.233.184.:5228 ESTABLISHED 2949/com.google.andr
+oid.gms
+udp        0      0 0.0.0.0:67              0.0.0.
+0:*                           3456/dnsmasq
+unix  3      [ ]         STREAM     CONNECTED     
+ 1672379 4862/su
+unix  3      [ ]         SEQPACKET  CONNECTED     
+   45367 472/surfaceflinger
+unix  3      [ ]         SEQPACKET  CONNECTED     
+ 1672380 4842/com.topjohnwu.
+unix  3      [ ]         SEQPACKET  CONNECTED     
+ 1672383 472/surfaceflinger
+unix  3      [ ]         SEQPACKET  CONNECTED     
+ 1672381 472/surfaceflinger
+unix  2      [ ]         DGRAM                    
+ 1673300 5065/com.google.pro
+unix  3      [ ]         SEQPACKET  CONNECTED     
+ 1624967 2339/com.google.and
+unix  3      [ ]         SEQPACKET  CONNECTED     
+ 1672382 4842/com.topjohnwu.
+unix  3      [ ]         STREAM     CONNECTED     
+ 1675073 1948/thermal
+unix  3      [ ]         STREAM     CONNECTED     
+ 1673669 853/mtkfusionrild  /dev/socket/rild-oem
+unix  2      [ ]         DGRAM                    
+ 1671273 4842/com.topjohnwu.
+unix  3      [ ]         STREAM     CONNECTED     
+  167512 2949/com.google.and
+unix  3      [ ]         SEQPACKET  CONNECTED     
+    9967 1/init
+unix  3      [ ]         STREAM     CONNECTED     
+  167511 2949/com.google.and
+unix  3      [ ]         SEQPACKET  CONNECTED     
+ 1589667 29233/com.openai.ch
+unix  2      [ ]         DGRAM                    
+   38673 1927/incidentd
+unix  3      [ ]         STREAM     CONNECTED     
+ 1673453 434/magiskd        /sbin/.magisk/device/s
+ocket
+unix  2      [ ]         DGRAM                    
+   33670 2764/com.google.and
+unix  3      [ ]         SEQPACKET  CONNECTED     
+ 1667851 2949/com.google.and
+unix  3      [ ]         SEQPACKET  CONNECTED     
+  167515 2949/com.google.and
+unix  3      [ ]         SEQPACKET  CONNECTED     
+  167516 2949/com.google.and
+unix  3      [ ]         SEQPACKET  CONNECTED     
+ 1667852 2173/system_server
+unix  3      [ ]         SEQPACKET  CONNECTED     
+ 1589677 2339/com.google.and
+unix  2      [ ]         DGRAM                    
+   26796 1603/tranlog
+unix  3      [ ]         SEQPACKET  CONNECTED     
+ 1589676 2173/system_server
+=== DNSMASQ LOG ===
+=== CLIENT LINK ===
+~ $ su -c '
+echo "=== HOSTAPD LIVE CLIENT ==="
+/data/data/com.termux/files/usr/bin/iw dev wlan0 s
+tation dump
+
+echo "=== DHCP PACKETS ==="
+tcpdump -i wlan0 -n -c 10 port 67 or port 68 2>/de
+v/null || echo tcpdump_not_available
+'
+=== HOSTAPD LIVE CLIENT ===
+=== DHCP PACKETS ===
+^Z
+[1]+  Stopped                    su -c '
+echo "=== HOSTAPD LIVE CLIENT ==="
+/data/data/com.termux/files/usr/bin/iw dev wlan0 s
+tation dump
+
+echo "=== DHCP PACKETS ==="
+tcpdump -i wlan0 -n -c 10 port 67 or port 68 2>/de
+v/null || echo tcpdump_not_available
+'
+~ $ su -c '
+echo "=== HOSTAPD ==="
+ps -A | grep hostapd
+
+echo "=== WIFI SERVICE ==="
+dumpsys wifi | grep -E "mWifiEnabled|SoftAp|state|
+ClientInterface" -A3
+
+echo "=== WPA SUPPLICANT ==="
+ps -A | grep wpa
+'
+=== HOSTAPD ===
+wifi          2988  2985 2129276   6868 poll_sched
+ule_timeout 0 S hostapd
+=== WIFI SERVICE ===
+mClientInterfaceName: wlan0
+mIfaceIsUp: true
+
+WifiStateMachine:
+--
+mWifiInfo SSID: <unknown ssid>, BSSID: <none>, MAC
+: 00:08:22:0c:76:3e, Supplicant state: DISCONNECTE
+D, RSSI: -127, Link speed: -1Mbps, Frequency: -1MH
+z, Net ID: -1, Metered hint: false, score: 0
+mDhcpResults null
+mNetworkInfo [type: WIFI[], state: DISCONNECTED/DI
+SCONNECTED, reason: (unspecified), extra: (none), 
+failover: false, available: true, roaming: false]
+mLastSignalLevel -1
+mLastBssid null
+mLastNetworkId -1
+--
+2026-09-24T22:34:52.288 - handleConnectionStateCha
+nged: state=disconnected
+2026-09-24T22:34:52.289 - scheduleWatchdogTimer
+2026-09-24T22:34:52.289 - startConnectivityScan: s
+creenOn=true wifiState=disconnected scanImmediatel
+y=true wifiEnabled=true wifiConnectivityManagerEna
+bled=true
+2026-09-24T22:34:52.291 - schedulePeriodicScanTime
+r, intervalMs: 20000
+--
+2026-09-24T22:35:05.901 - handleConnectionStateCha
+nged: state=transitioning
+2026-09-24T22:35:05.901 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=false wifiEnabled=true wifiConnectivityManagerE
+nabled=true
+2026-09-24T22:35:05.910 - Set WiFi disabled
+2026-09-24T22:35:05.910 - Stopping WifiConnectivit
+yManager
+--
+2026-09-25T08:19:53.356 - handleConnectionStateCha
+nged: state=disconnected
+2026-09-25T08:19:53.356 - scheduleWatchdogTimer
+2026-09-25T08:19:53.357 - startConnectivityScan: s
+creenOn=true wifiState=disconnected scanImmediatel
+y=true wifiEnabled=true wifiConnectivityManagerEna
+bled=true
+2026-09-25T08:19:53.357 - schedulePeriodicScanTime
+r, intervalMs: 20000
+--
+2026-09-25T08:21:15.798 - handleConnectionStateCha
+nged: state=transitioning
+2026-09-25T08:21:15.798 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=false wifiEnabled=true wifiConnectivityManagerE
+nabled=true
+2026-09-25T08:21:15.803 - Set WiFi disabled
+2026-09-25T08:21:15.803 - Stopping WifiConnectivit
+yManager
+--
+2026-09-25T11:13:25.194 - handleConnectionStateCha
+nged: state=disconnected
+2026-09-25T11:13:25.194 - scheduleWatchdogTimer
+2026-09-25T11:13:25.195 - startConnectivityScan: s
+creenOn=true wifiState=disconnected scanImmediatel
+y=true wifiEnabled=true wifiConnectivityManagerEna
+bled=true
+2026-09-25T11:13:25.195 - schedulePeriodicScanTime
+r, intervalMs: 20000
+--
+2026-09-25T11:21:17.865 - handleConnectionStateCha
+nged: state=transitioning
+2026-09-25T11:21:17.865 - startConnectivityScan: s
+creenOn=true wifiState=transitioning scanImmediate
+ly=false wifiEnabled=true wifiConnectivityManagerE
+nabled=true
+2026-09-25T11:21:17.872 - Set WiFi disabled
+2026-09-25T11:21:17.872 - Stopping WifiConnectivit
+yManager
+--
+2026-09-25T11:22:24.903 - handleConnectionStateCha
+nged: state=disconnected
+2026-09-25T11:22:24.903 - scheduleWatchdogTimer
+2026-09-25T11:22:24.910 - startConnectivityScan: s
+creenOn=true wifiState=disconnected scanImmediatel
+y=true wifiEnabled=true wifiConnectivityManagerEna
+bled=true
+2026-09-25T11:22:24.910 - schedulePeriodicScanTime
+r, intervalMs: 20000
+--
+mSystemStateEntries: <state><screenOn> : <scansIni
+tiated>
+  WIFI_UNKNOWN       ON: 0
+  WIFI_DISABLED      ON: 8
+  WIFI_DISCONNECTED  ON: 27
+--
+mWifiLogProto.SoftApManagerReturnCodeCounts:
+  SUCCESS: 0
+  FAILED_GENERAL_ERROR: 0
+  FAILED_NO_CHANNEL: 0
+--
+mWifiLogProto.numSetupClientInterfaceFailureDueToH
+al=0
+mWifiLogProto.numSetupClientInterfaceFailureDueToW
+ificond=0
+mWifiLogProto.numSetupClientInterfaceFailureDueToS
+upplicant=0
+mWifiLogProto.numSetupSoftApInterfaceFailureDueToH
+al=0
+mWifiLogProto.numSetupSoftApInterfaceFailureDueToW
+ificond=0
+mWifiLogProto.numSetupSoftApInterfaceFailureDueToH
+ostapd=0
+StaEventList:
+09-25 08:20:13.595 CONNECT_NETWORK, ConfigInfo: al
+lowed_key_management=2 allowed_protocols=0 allowed
+_auth_algorithms=0 allowed_pairwise_ciphers=0 allo
+wed_group_ciphers=0 hidden_ssid=false is_passpoint
+=false is_ephemeral=false has_ever_connected=false
+ scan_rssi=-127 scan_freq=-1
+09-25 08:20:13.640 CMD_START_CONNECT, ConfigInfo: 
+allowed_key_management=2 allowed_protocols=3 allow
+ed_auth_algorithms=1 allowed_pairwise_ciphers=6 al
+lowed_group_ciphers=15 hidden_ssid=false is_passpo
+int=false is_ephemeral=false has_ever_connected=fa
+lse scan_rssi=-127 scan_freq=-1
+--
+mWifiLogProto.numSoftApUserBandPreferenceUnsatisfi
+ed=0
+mTotalSsidsInScanHistogram:{0=25}
+mTotalBssidsInScanHistogram:{0=25}
+mAvailableOpenSsidsInScanHistogram:{0=25}
+--
+mSoftApTetheredEvents:
+mSoftApLocalOnlyEvents:
+mWpsMetrics.numWpsAttempts=0
+mWpsMetrics.numWpsSuccess=0
+mWpsMetrics.numWpsStartFailure=0
+=== WPA SUPPLICANT ===
+wifi          2539     1 2132040  10580 poll_sched
+ule_timeout 0 S wpa_supplicant
+~ $ tcpdump_not_available
+~ $ su -c '
+echo "=== STOP WIFI FRAMEWORK ==="
+
+svc wifi disable
+sleep 3
+
+killall wpa_supplicant 2>/dev/null
+killall wificond 2>/dev/null
+
+sleep 3
+
+echo "=== CHECK ==="
+ps -A | grep -E "hostapd|wpa|wificond"
+
+echo "=== INTERFACE ==="
+ip link show wlan0
+'
+=== STOP WIFI FRAMEWORK ===
+=== CHECK ===
+wifi          2988  2985 2129276   6868 poll_sched
+ule_timeout 0 S hostapd
+wifi          6704     1   20708   5864 SyS_epoll_
+wait      0 S wificond
+=== INTERFACE ===
+Device "wlan0" does not exist.
+~ $ su -c 'cat /proc/net/arp; echo "---"; cat /pro
+c/net/dev'
+IP address       HW type     Flags       HW addres
+s            Mask     Device
+---
+Inter-|   Receive                                 
+               |  Transmit
+ face |bytes    packets errs drop fifo frame compr
+essed multicast|bytes    packets errs drop fifo co
+lls carrier compressed
+ccmni18:       0       0    0    0    0     0     
+     0         0        0       0    0    0    0  
+   0       0          0
+ccmni11:       0       0    0    0    0     0     
+     0         0        0       0    0    0    0  
+   0       0          0
+ccmni5:       0       0    0    0    0     0      
+    0         0        0       0    0    0    0   
+  0       0          0
+ccmni15:       0       0    0    0    0     0     
+     0         0        0       0    0    0    0  
+   0       0          0
+ccmni3:       0       0    0    0    0     0      
+    0         0        0       0    0    0    0   
+  0       0          0
+ccmni20:       0       0    0    0    0     0     
+     0         0        0       0    0    0    0  
+   0       0          0
+  ifb0:       0       0    0    0    0     0      
+    0         0        0       0    0    0    0   
+  0       0          0
+ccmni19:       0       0    0    0    0     0     
+     0         0        0       0    0    0    0  
+   0       0          0
+ccmni1: 104683081  110895    0    0    0     0    
+      0         0 27716110   85557    0    0    0 
+    0       0          0
+ccmni12:       0       0    0    0    0     0     
+     0         0        0       0    0    0    0  
+   0       0          0
+ccmni8:       0       0    0    0    0     0      
+    0         0        0       0    0    0    0   
+  0       0          0
+ccmni-lan:       0       0    0    0    0     0   
+       0         0        0       0    0    0    0
+     0       0          0
+ccmni16:       0       0    0    0    0     0     
+     0         0        0       0    0    0    0  
+   0       0          0
+ tunl0:       0       0    0    0    0     0      
+    0         0        0       0    0    0    0   
+  0       0          0
+  ifb1:       0       0    0    0    0     0      
+    0         0        0       0    0    0    0   
+  0       0          0
+ccmni6:       0       0    0    0    0     0      
+    0         0        0       0    0    0    0   
+  0       0          0
+    lo:  292668    3932    0    0    0     0      
+    0         0   292668    3932    0    0    0   
+  0       0          0
+ccmni13:       0       0    0    0    0     0     
+     0         0        0       0    0    0    0  
+   0       0          0
+ip_vti0:       0       0    0    0    0     0     
+     0         0        0       0    0    0    0  
+   0       0          0
+ip6tnl0:       0       0    0    0    0     0     
+     0         0        0       0    0    0    0  
+   0       0          0
+ccmni4:       0       0    0    0    0     0      
+    0         0        0       0    0    0    0   
+  0       0          0
+ccmni17:       0       0    0    0    0     0     
+~ $ su -c '                                       
+echo "=== ENABLE IP FORWARD ==="
+echo 1 > /proc/sys/net/ipv4/ip_forward            
+cat /proc/sys/net/ipv4/ip_forward                 
+
+echo "=== CHECK WLAN ==="                         
+ip addr show wlan0                                
+
+echo "=== CHECK MOBILE INTERFACE ==="             
+ip addr show ccmni0                               
+ip addr show ccmni1
+                                                  
+echo "=== ADD NAT ==="                            
+iptables -t nat -A POSTROUTING -o ccmni1 -j MASQUE
+RADE                                              
+iptables -A FORWARD -i wlan0 -o ccmni1 -j ACCEPT  
+iptables -A FORWARD -i ccmni1 -o wlan0 -m state --
+state RELATED,ESTABLISHED -j ACCEPT               
+                                                  
+echo "=== DHCP CONFIG ==="
+cat /data/local/tmp/ahmed_hotspot/dnsmasq.conf    
+                                                  
+echo "=== RESTART DHCP ==="
+killall dnsmasq 2>/dev/null                       
+/system/bin/dnsmasq \                             
+--interface=wlan0 \
+--bind-interfaces \
+--dhcp-authoritative \
+--dhcp-range=192.168.50.10,192.168.50.100,12h \
+--dhcp-option=3,192.168.50.1 \
+--dhcp-option=6,8.8.8.8 \
+--log-dhcp \
+--log-facility=/data/local/tmp/ahmed_hotspot/logs/
+dnsmasq.log
+
+echo "=== DONE ==="
+'
+=== ENABLE IP FORWARD ===
+1
+=== CHECK WLAN ===
+Device "wlan0" does not exist.
+=== CHECK MOBILE INTERFACE ===
+2: ccmni0: <NOARP,UP,LOWER_UP> mtu 1500 qdisc mq s
+tate UP group default qlen 1000
+    link/ppp 32:5e:22:37:43:a3 brd ff:ff:ff:ff:ff:
+ff
+    inet 10.60.99.185/8 scope global ccmni0
+       valid_lft forever preferred_lft forever
+3: ccmni1: <NOARP> mtu 1500 qdisc mq state DOWN gr
+oup default qlen 1000
+    link/ppp be:de:28:7e:37:4b brd ff:ff:ff:ff:ff:
+ff
+=== ADD NAT ===
+=== DHCP CONFIG ===
+interface=wlan0
+bind-interfaces
+dhcp-range=192.168.50.10,192.168.50.100,12h
+dhcp-option=3,192.168.50.1
+dhcp-option=6,192.168.50.1
+log-dhcp
+=== RESTART DHCP ===
+
+dnsmasq: unknown interface wlan0
+=== DONE ===
+~ $ su -c '
+echo "=== CHECK HOSTAPD ==="
+ps -A | grep hostapd
+
+echo "=== CHECK WIFI SERVICES ==="
+ps -A | grep -E "wpa_supplicant|wificond|hostapd"
+
+echo "=== CREATE AP AGAIN ==="
+svc wifi disable
+sleep 3
+
+/vendor/bin/hw/hostapd -B -dd /data/local/tmp/ahme
+d_hotspot/hostapd.conf
+
+sleep 3
+
+echo "=== RESULT ==="
+ip link show
+/data/data/com.termux/files/usr/bin/iw dev
+'
+=== CHECK HOSTAPD ===
+wifi          2988  2985 2129276   6868 poll_sched
+ule_timeout 0 S hostapd
+=== CHECK WIFI SERVICES ===
+wifi          2988  2985 2129276   6868 poll_sched
+ule_timeout 0 S hostapd
+wifi          6704     1   20708   5864 SyS_epoll_
+wait      0 S wificond
+=== CREATE AP AGAIN ===
+=== RESULT ===
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqu
+eue state UNKNOWN mode DEFAULT group default qlen 
+1
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:0
+0:00:00
+2: ccmni0: <NOARP,UP,LOWER_UP> mtu 1500 qdisc mq s
+tate UP mode DEFAULT group default qlen 1000
+    link/ppp 32:5e:22:37:43:a3 brd ff:ff:ff:ff:ff:
+ff
+3: ccmni1: <NOARP> mtu 1500 qdisc mq state DOWN mo
+de DEFAULT group default qlen 1000
+    link/ppp be:de:28:7e:37:4b brd ff:ff:ff:ff:ff:
+ff
+4: ccmni2: <NOARP> mtu 1500 qdisc noop state DOWN 
+mode DEFAULT group default qlen 1000
+    link/ppp 5e:d6:63:43:6a:0b brd ff:ff:ff:ff:ff:
+ff
+5: ccmni3: <NOARP> mtu 1500 qdisc noop state DOWN 
+mode DEFAULT group default qlen 1000
+    link/ppp 7e:e1:e7:5a:d3:7e brd ff:ff:ff:ff:ff:
+ff
+6: ccmni4: <NOARP> mtu 1500 qdisc noop state DOWN 
+mode DEFAULT group default qlen 1000
+    link/ppp 4a:08:43:63:2c:81 brd ff:ff:ff:ff:ff:
+ff
+7: ccmni5: <NOARP> mtu 1500 qdisc noop state DOWN 
+mode DEFAULT group default qlen 1000
+    link/ppp ae:0b:e5:d6:21:5b brd ff:ff:ff:ff:ff:
+ff
+8: ccmni6: <NOARP> mtu 1500 qdisc noop state DOWN 
+mode DEFAULT group default qlen 1000
+    link/ppp 1a:4e:90:8b:b1:a6 brd ff:ff:ff:ff:ff:
+ff
+9: ccmni7: <NOARP> mtu 1500 qdisc noop state DOWN 
+mode DEFAULT group default qlen 1000
+    link/ppp 46:dd:c4:14:92:90 brd ff:ff:ff:ff:ff:
+ff
+10: ccmni8: <NOARP> mtu 1500 qdisc noop state DOWN
+ mode DEFAULT group default qlen 1000
+    link/ppp 62:c4:e1:8a:b3:67 brd ff:ff:ff:ff:ff:
+ff
+11: ccmni9: <NOARP> mtu 1500 qdisc noop state DOWN
+ mode DEFAULT group default qlen 1000
+    link/ppp ce:98:88:85:0f:38 brd ff:ff:ff:ff:ff:
+ff
+12: ccmni10: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp 2e:ef:4c:61:53:a1 brd ff:ff:ff:ff:ff:
+ff
+13: ccmni11: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp d6:10:a6:47:6e:30 brd ff:ff:ff:ff:ff:
+ff
+14: ccmni12: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp f6:da:c7:75:86:fe brd ff:ff:ff:ff:ff:
+ff
+15: ccmni13: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp b6:e0:95:47:5f:74 brd ff:ff:ff:ff:ff:
+ff
+16: ccmni14: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp ce:3d:10:7d:cc:5e brd ff:ff:ff:ff:ff:
+ff
+17: ccmni15: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp b2:d6:b0:b5:86:fc brd ff:ff:ff:ff:ff:
+ff
+18: ccmni16: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp 0a:68:1f:11:3a:06 brd ff:ff:ff:ff:ff:
+ff
+19: ccmni17: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp 22:29:b2:a7:d5:a7 brd ff:ff:ff:ff:ff:
+ff
+20: ccmni18: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp 02:8c:a0:78:0d:62 brd ff:ff:ff:ff:ff:
+ff
+21: ccmni19: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp b2:95:ef:66:45:f9 brd ff:ff:ff:ff:ff:
+ff
+22: ccmni20: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp 16:f9:b3:6d:0e:c8 brd ff:ff:ff:ff:ff:
+ff
+23: ccmni-lan: <BROADCAST,MULTICAST> mtu 1500 qdis
+c noop state DOWN mode DEFAULT group default qlen 
+1000
+    link/ether 92:d5:b7:fb:6d:c0 brd ff:ff:ff:ff:f
+f:ff
+24: ifb0: <BROADCAST,NOARP> mtu 1500 qdisc noop st
+ate DOWN mode DEFAULT group default qlen 32
+    link/ether 8e:dd:0c:a4:f0:d0 brd ff:ff:ff:ff:f
+f:ff
+25: ifb1: <BROADCAST,NOARP> mtu 1500 qdisc noop st
+ate DOWN mode DEFAULT group default qlen 32
+    link/ether d6:b9:59:d4:45:e8 brd ff:ff:ff:ff:f
+f:ff
+26: tunl0@NONE: <NOARP> mtu 1480 qdisc noop state 
+DOWN mode DEFAULT group default qlen 1
+    link/ipip 0.0.0.0 brd 0.0.0.0
+27: ip_vti0@NONE: <NOARP> mtu 1480 qdisc noop stat
+e DOWN mode DEFAULT group default qlen 1
+    link/ipip 0.0.0.0 brd 0.0.0.0
+28: ip6_vti0@NONE: <NOARP> mtu 1500 qdisc noop sta
+te DOWN mode DEFAULT group default qlen 1
+    link/tunnel6 :: brd ::
+29: sit0@NONE: <NOARP> mtu 1480 qdisc noop state D
+OWN mode DEFAULT group default qlen 1
+    link/sit 0.0.0.0 brd 0.0.0.0
+30: ip6tnl0@NONE: <NOARP> mtu 1452 qdisc noop stat
+e DOWN mode DEFAULT group default qlen 1
+    link/tunnel6 :: brd ::
+~ $ su -c '
+echo "=== ENABLE WIFI ==="
+svc wifi enable
+sleep 5
+
+echo "=== WIFI INTERFACES ==="
+ip link show
+
+echo "=== SOFT AP METHODS ==="
+cmd wifi help | grep -i soft
+'
+=== ENABLE WIFI ===
+=== WIFI INTERFACES ===
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqu
+eue state UNKNOWN mode DEFAULT group default qlen 
+1
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:0
+0:00:00
+2: ccmni0: <NOARP,UP,LOWER_UP> mtu 1500 qdisc mq s
+tate UP mode DEFAULT group default qlen 1000
+    link/ppp 32:5e:22:37:43:a3 brd ff:ff:ff:ff:ff:
+ff
+3: ccmni1: <NOARP> mtu 1500 qdisc mq state DOWN mo
+de DEFAULT group default qlen 1000
+    link/ppp be:de:28:7e:37:4b brd ff:ff:ff:ff:ff:
+ff
+4: ccmni2: <NOARP> mtu 1500 qdisc noop state DOWN 
+mode DEFAULT group default qlen 1000
+    link/ppp 5e:d6:63:43:6a:0b brd ff:ff:ff:ff:ff:
+ff
+5: ccmni3: <NOARP> mtu 1500 qdisc noop state DOWN 
+mode DEFAULT group default qlen 1000
+    link/ppp 7e:e1:e7:5a:d3:7e brd ff:ff:ff:ff:ff:
+ff
+6: ccmni4: <NOARP> mtu 1500 qdisc noop state DOWN 
+mode DEFAULT group default qlen 1000
+    link/ppp 4a:08:43:63:2c:81 brd ff:ff:ff:ff:ff:
+ff
+7: ccmni5: <NOARP> mtu 1500 qdisc noop state DOWN 
+mode DEFAULT group default qlen 1000
+    link/ppp ae:0b:e5:d6:21:5b brd ff:ff:ff:ff:ff:
+ff
+8: ccmni6: <NOARP> mtu 1500 qdisc noop state DOWN 
+mode DEFAULT group default qlen 1000
+    link/ppp 1a:4e:90:8b:b1:a6 brd ff:ff:ff:ff:ff:
+ff
+9: ccmni7: <NOARP> mtu 1500 qdisc noop state DOWN 
+mode DEFAULT group default qlen 1000
+    link/ppp 46:dd:c4:14:92:90 brd ff:ff:ff:ff:ff:
+ff
+10: ccmni8: <NOARP> mtu 1500 qdisc noop state DOWN
+ mode DEFAULT group default qlen 1000
+    link/ppp 62:c4:e1:8a:b3:67 brd ff:ff:ff:ff:ff:
+ff
+11: ccmni9: <NOARP> mtu 1500 qdisc noop state DOWN
+ mode DEFAULT group default qlen 1000
+    link/ppp ce:98:88:85:0f:38 brd ff:ff:ff:ff:ff:
+ff
+12: ccmni10: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp 2e:ef:4c:61:53:a1 brd ff:ff:ff:ff:ff:
+ff
+13: ccmni11: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp d6:10:a6:47:6e:30 brd ff:ff:ff:ff:ff:
+ff
+14: ccmni12: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp f6:da:c7:75:86:fe brd ff:ff:ff:ff:ff:
+ff
+15: ccmni13: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp b6:e0:95:47:5f:74 brd ff:ff:ff:ff:ff:
+ff
+16: ccmni14: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp ce:3d:10:7d:cc:5e brd ff:ff:ff:ff:ff:
+ff
+17: ccmni15: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp b2:d6:b0:b5:86:fc brd ff:ff:ff:ff:ff:
+ff
+18: ccmni16: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp 0a:68:1f:11:3a:06 brd ff:ff:ff:ff:ff:
+ff
+19: ccmni17: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp 22:29:b2:a7:d5:a7 brd ff:ff:ff:ff:ff:
+ff
+20: ccmni18: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp 02:8c:a0:78:0d:62 brd ff:ff:ff:ff:ff:
+ff
+21: ccmni19: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp b2:95:ef:66:45:f9 brd ff:ff:ff:ff:ff:
+ff
+22: ccmni20: <NOARP> mtu 1500 qdisc noop state DOW
+N mode DEFAULT group default qlen 1000
+    link/ppp 16:f9:b3:6d:0e:c8 brd ff:ff:ff:ff:ff:
+ff
+23: ccmni-lan: <BROADCAST,MULTICAST> mtu 1500 qdis
+c noop state DOWN mode DEFAULT group default qlen 
+1000
+    link/ether 92:d5:b7:fb:6d:c0 brd ff:ff:ff:ff:f
+f:ff
+24: ifb0: <BROADCAST,NOARP> mtu 1500 qdisc noop st
+ate DOWN mode DEFAULT group default qlen 32
+    link/ether 8e:dd:0c:a4:f0:d0 brd ff:ff:ff:ff:f
+f:ff
+25: ifb1: <BROADCAST,NOARP> mtu 1500 qdisc noop st
+ate DOWN mode DEFAULT group default qlen 32
+    link/ether d6:b9:59:d4:45:e8 brd ff:ff:ff:ff:f
+f:ff
+26: tunl0@NONE: <NOARP> mtu 1480 qdisc noop state 
+DOWN mode DEFAULT group default qlen 1
+    link/ipip 0.0.0.0 brd 0.0.0.0
+27: ip_vti0@NONE: <NOARP> mtu 1480 qdisc noop stat
+e DOWN mode DEFAULT group default qlen 1
+    link/ipip 0.0.0.0 brd 0.0.0.0
+28: ip6_vti0@NONE: <NOARP> mtu 1500 qdisc noop sta
+te DOWN mode DEFAULT group default qlen 1
+    link/tunnel6 :: brd ::
+29: sit0@NONE: <NOARP> mtu 1480 qdisc noop state D
+OWN mode DEFAULT group default qlen 1
+    link/sit 0.0.0.0 brd 0.0.0.0
+30: ip6tnl0@NONE: <NOARP> mtu 1452 qdisc noop stat
+e DOWN mode DEFAULT group default qlen 1
+    link/tunnel6 :: brd ::
+31: wlan0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu
+ 1460 qdisc mq state DOWN mode DORMANT group defau
+lt qlen 3000
+    link/ether 00:08:22:e8:d9:55 brd ff:ff:ff:ff:f
+f:ff
+46: p2p0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 
+1500 qdisc mq state DOWN mode DORMANT group defaul
+t qlen 1000
+    link/ether 02:08:22:e8:d9:55 brd ff:ff:ff:ff:f
+f:ff
+=== SOFT AP METHODS ===
+~ $

@@ -1,0 +1,1137 @@
+~ $ su -c '
+echo "===== RNS NEXT FULL CONTROL TEST ====="
+
+echo                                              
+echo "=== WIFI CMD HELP ==="
+cmd wifi help 2>&1 | grep -Ei "soft|tether|wifi"  
+
+echo                                              
+echo "=== SERVICES ==="
+service list | grep -Ei "wifi|tether|network"
+
+echo
+echo "=== DHCP LEASES ==="
+cat /data/misc/dhcp/dnsmasq.leases 2>/dev/null || 
+echo "No leases file"
+
+echo
+echo "=== DNSMASQ PROCESS ==="
+ps -A | grep dnsmasq
+
+echo
+echo "=== HOSTAPD SOCKETS ==="
+ls -la /data/vendor/wifi/hostapd/sockets 2>/dev/nu
+ll
+
+echo
+echo "=== TETHER STATE ==="
+dumpsys connectivity | grep -Ei "tether|wifi|inter
+face|upstream" -A3
+
+echo
+echo "=== NETD TETHER ==="
+dumpsys netd 2>/dev/null | grep -Ei "tether|forwar
+d|interface|rule" -A3
+
+echo
+echo "=== WIFI STATE SUMMARY ==="
+dumpsys wifi | grep -Ei "SoftAp|SSID|mApInterfaceN
+ame|mIfaceIsUp|StartedState" -A3
+
+echo
+echo "=== PROPERTIES ==="
+getprop | grep -Ei "wifi|tether|hotspot|dhcp"
+
+echo
+echo "===== END ====="
+'
+===== RNS NEXT FULL CONTROL TEST =====
+
+=== WIFI CMD HELP ===
+cmd: Failure calling service wifi: Failed transact
+ion (2147483646)
+
+=== SERVICES ===
+1       wifip2p: [android.net.wifi.p2p.IWifiP2pMan
+ager]
+2       wifiscanner: [android.net.wifi.IWifiScanne
+r]
+3       wifi: [android.net.wifi.IWifiManager]
+50      network_time_update_service: []
+51      adaptivesmartnetwork: [android.os.IAdaptiv
+eSmartNetworkService]
+77      netpolicy: [android.net.INetworkPolicyMana
+ger]
+78      netstats: [android.net.INetworkStatsServic
+e]
+79      network_score: [android.net.INetworkScoreS
+ervice]
+83      network_management: [android.os.INetworkMa
+nagementService]
+96      network_watchlist: [com.android.internal.n
+et.INetworkWatchlistManager]
+154     wificond: [android.net.wifi.IWificond]
+
+=== DHCP LEASES ===
+1790326663 a4:4e:31:83:ec:3c 192.168.43.228 DESKTO
+P-EIQ7K6O 01:a4:4e:31:83:ec:3c
+
+=== DNSMASQ PROCESS ===
+dns_tether    9179  1967   11976   2548 poll_sched
+ule_timeout 0 S dnsmasq
+
+=== HOSTAPD SOCKETS ===
+total 6
+drwxrwx--- 2 wifi wifi 3488 2026-09-24 14:30 .
+drwxrwx--- 4 wifi wifi 3488 2026-09-25 13:35 ..
+
+=== TETHER STATE ===
+NetworkFactories for: Ethernet PhoneSwitcherNetwor
+kRequstListener TelephonyNetworkFactory[1] WIFI_UT
+ TelephonyNetworkFactory[0] WIFI
+
+Active default network: 101
+
+--
+  NetworkAgentInfo{ ni{[type: MOBILE[LTE], state: 
+CONNECTED/CONNECTED, reason: (unspecified), extra:
+ jazzconnect.mobilinkworld.com, failover: false, a
+vailable: true, roaming: false]}  network{101}  ne
+thandle{437197393933}  lp{{InterfaceName: ccmni1 L
+inkAddresses: [10.66.143.224/32,]  Routes: [0.0.0.
+0/0 -> 10.66.143.224 ccmni1,10.66.143.224/32 -> 0.
+0.0.0 ccmni1,] DnsAddresses: [119.160.112.48,119.1
+60.80.146,] UsePrivateDns: false PrivateDnsServerN
+ame: null Domains: null MTU: 1500 TcpBufferSizes: 
+2097152,4194304,8388608,262144,524288,1048576}}  n
+c{[ Transports: CELLULAR Capabilities: INTERNET&NO
+T_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING
+&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED Unwanted: 
+ LinkUpBandwidth>=51200Kbps LinkDnBandwidth>=10240
+0Kbps Specifier: <1>]}  Score{50}  everValidated{t
+rue}  lastValidated{true}  created{true} lingering
+{false} explicitlySelected{false} acceptUnvalidate
+d{false} everCaptivePortalDetected{false} lastCapt
+ivePortalDetected{false} clat{null} }
+    Requests: REQUEST:1 LISTEN:39 BACKGROUND_REQUE
+ST:1 total:41
+      NetworkRequest [ REQUEST id=1, [ Capabilitie
+s: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN Unwante
+d: ] ]
+      NetworkRequest [ BACKGROUND_REQUEST id=2, [ 
+Transports: CELLULAR Capabilities: INTERNET&NOT_RE
+STRICTED&TRUSTED&NOT_VPN Unwanted: ] ]
+--
+      NetworkRequest [ LISTEN id=43, [ Transports:
+ CELLULAR|WIFI Capabilities: NOT_RESTRICTED&TRUSTE
+D&NOT_VPN Unwanted:  Uid: 10014] ]
+      NetworkRequest [ TRACK_DEFAULT id=58, [ Capa
+bilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted
+:  Uid: 10147] ]
+      NetworkRequest [ TRACK_DEFAULT id=59, [ Capa
+bilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted
+:  Uid: 10027] ]
+      NetworkRequest [ LISTEN id=60, [ Capabilitie
+s: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted:  Uid:
+ 10027] ]
+--
+  uid/pid:10014/2949 NetworkRequest [ LISTEN id=46
+, [ Transports: WIFI Capabilities: NOT_RESTRICTED&
+TRUSTED&NOT_VPN Unwanted:  Uid: 10014] ]
+  uid/pid:1000/2193 NetworkRequest [ LISTEN id=4, 
+[ Transports: CELLULAR Capabilities: INTERNET&NOT_
+RESTRICTED&TRUSTED&NOT_VPN Unwanted:  Uid: 1000] ]
+  uid/pid:1001/2887 NetworkRequest [ LISTEN id=12,
+ [ Transports: CELLULAR Capabilities: IMS&TRUSTED&
+NOT_VPN Unwanted:  Specifier: <1> Uid: 1001] ]
+  uid/pid:10147/6976 NetworkRequest [ LISTEN id=63
+, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED 
+Unwanted:  Uid: 10147] ]
+--
+  uid/pid:1001/2887 NetworkRequest [ LISTEN id=15,
+ [ Transports: WIFI Capabilities: NOT_RESTRICTED&T
+RUSTED&NOT_VPN&VALIDATED Unwanted:  Uid: 1001] ]
+  uid/pid:1000/2193 NetworkRequest [ LISTEN id=17,
+ [ Transports: WIFI Capabilities: NOT_RESTRICTED&T
+RUSTED&NOT_VPN Unwanted:  Uid: 1000] ]
+  uid/pid:10105/9851 NetworkRequest [ LISTEN id=11
+0, [ Capabilities: NOT_METERED&INTERNET&TRUSTED&VA
+LIDATED Unwanted:  Uid: 10105] ]
+  uid/pid:10105/9851 NetworkRequest [ LISTEN id=10
+6, [ Capabilities: NOT_METERED&INTERNET&TRUSTED&VA
+LIDATED Unwanted:  Uid: 10105] ]
+  uid/pid:10033/2336 NetworkRequest [ LISTEN id=7,
+ [ Transports: WIFI Capabilities: NOT_VPN Unwanted
+: ] ]
+  uid/pid:10033/2336 NetworkRequest [ TRACK_DEFAUL
+T id=8, [ Capabilities: INTERNET&NOT_RESTRICTED&TR
+USTED Unwanted:  Uid: 10033] ]
+  uid/pid:1001/2887 NetworkRequest [ TRACK_DEFAULT
+ id=16, [ Capabilities: INTERNET&NOT_RESTRICTED&TR
+USTED Unwanted:  Uid: 1001] ]
+  uid/pid:1000/2193 NetworkRequest [ BACKGROUND_RE
+QUEST id=2, [ Transports: CELLULAR Capabilities: I
+NTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN Unwanted: ]
+ ]
+--
+  uid/pid:10014/2949 NetworkRequest [ LISTEN id=43
+, [ Transports: CELLULAR|WIFI Capabilities: NOT_RE
+STRICTED&TRUSTED&NOT_VPN Unwanted:  Uid: 10014] ]
+  uid/pid:10014/8997 NetworkRequest [ TRACK_DEFAUL
+T id=98, [ Capabilities: INTERNET&NOT_RESTRICTED&T
+RUSTED Unwanted:  Uid: 10014] ]
+  uid/pid:10014/2949 NetworkRequest [ LISTEN id=25
+, [ Transports: WIFI Capabilities: NOT_RESTRICTED&
+TRUSTED&NOT_VPN Unwanted:  Uid: 10014] ]
+  uid/pid:10105/9851 NetworkRequest [ LISTEN id=10
+9, [ Capabilities: NOT_METERED&INTERNET&TRUSTED&VA
+LIDATED Unwanted:  Uid: 10105] ]
+  uid/pid:10105/9851 NetworkRequest [ LISTEN id=10
+5, [ Capabilities: INTERNET&TRUSTED&VALIDATED Unwa
+nted:  Uid: 10105] ]
+  uid/pid:10147/6976 NetworkRequest [ TRACK_DEFAUL
+T id=62, [ Capabilities: INTERNET&NOT_RESTRICTED&T
+RUSTED Unwanted:  Uid: 10147] ]
+--
+  uid/pid:10014/2949 NetworkRequest [ LISTEN id=44
+, [ Transports: WIFI Capabilities: NOT_RESTRICTED&
+TRUSTED&NOT_VPN Unwanted:  Uid: 10014] ]
+  uid/pid:10120/9792 NetworkRequest [ LISTEN id=10
+1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED
+ Unwanted:  Uid: 10120] ]
+  uid/pid:10014/2949 NetworkRequest [ TRACK_DEFAUL
+T id=22, [ Capabilities: INTERNET&NOT_RESTRICTED&T
+RUSTED Unwanted:  Uid: 10014] ]
+  uid/pid:10147/6976 NetworkRequest [ LISTEN id=65
+, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED 
+Unwanted:  Uid: 10147] ]
+--
+Tethering:
+  Configuration:
+    tetherableUsbRegexs: [rndis\d]
+    tetherableWifiRegexs: [ap\d]
+    tetherableBluetoothRegexs: [bt-pan, bt-dun]
+    isDunRequired: false
+    preferredUpstreamIfaceTypes: [ETHERNET, WIFI, 
+BLUETOOTH, MOBILE, MOBILE_HIPRI]
+    dhcpRanges: [192.168.42.2, 192.168.42.254, 192
+.168.43.2, 192.168.43.254, 192.168.44.2, 192.168.4
+4.254, 192.168.45.2, 192.168.45.254, 192.168.46.2,
+ 192.168.46.254, 192.168.47.2, 192.168.47.254, 192
+.168.48.2, 192.168.48.254, 192.168.49.2, 192.168.4
+9.254]
+    defaultIPv4DNS: [8.8.4.4, 8.8.8.8]
+    provisioningApp: []
+--
+  Tether state:
+    ap0 - TetheredState - lastError = 0
+    Upstream wanted: true
+    Current upstream interface(s): [ccmni1]
+  Hardware offload:
+    Offload HALs not started
+    Current upstream: null
+    Exempt prefixes: []
+    NAT timeout update callbacks received during t
+he last offload session: 0
+    NAT timeout update netlink errors during the l
+ast offload session: 0
+--
+    2026-09-25T13:21:42.207 - [config] TetheringCo
+nfiguration{tetherableUsbRegexs:[rndis\d] tetherab
+leWifiRegexs:[ap\d] tetherableBluetoothRegexs:[bt-
+pan,bt-dun] isDunRequired:false preferredUpstreamI
+faceTypes:[ETHERNET,WIFI,BLUETOOTH,MOBILE] provisi
+oningApp:[] provisioningAppNoUi:}
+    2026-09-25T13:21:42.938 - OBSERVED configurati
+on changed
+    2026-09-25T13:21:42.939 - [config] DUN check r
+eturned: DUN_UNSPECIFIED
+    2026-09-25T13:21:42.941 - [config] TetheringCo
+nfiguration{tetherableUsbRegexs:[rndis\d] tetherab
+leWifiRegexs:[ap\d] tetherableBluetoothRegexs:[bt-
+pan,bt-dun] isDunRequired:false preferredUpstreamI
+faceTypes:[ETHERNET,WIFI,BLUETOOTH,MOBILE] provisi
+oningApp:[] provisioningAppNoUi:}
+    2026-09-25T13:21:42.949 - OBSERVED configurati
+on changed
+    2026-09-25T13:21:42.950 - [config] DUN check r
+eturned: DUN_UNSPECIFIED
+    2026-09-25T13:21:42.950 - [config] TetheringCo
+nfiguration{tetherableUsbRegexs:[rndis\d] tetherab
+leWifiRegexs:[ap\d] tetherableBluetoothRegexs:[bt-
+pan,bt-dun] isDunRequired:false preferredUpstreamI
+faceTypes:[ETHERNET,WIFI,BLUETOOTH,MOBILE] provisi
+oningApp:[] provisioningAppNoUi:}
+    2026-09-25T13:21:44.604 - OBSERVED configurati
+on changed
+    2026-09-25T13:21:44.605 - [config] DUN check r
+eturned: DUN_UNSPECIFIED
+    2026-09-25T13:21:44.606 - [config] TetheringCo
+nfiguration{tetherableUsbRegexs:[rndis\d] tetherab
+leWifiRegexs:[ap\d] tetherableBluetoothRegexs:[bt-
+pan,bt-dun] isDunRequired:false preferredUpstreamI
+faceTypes:[ETHERNET,WIFI,BLUETOOTH,MOBILE] provisi
+oningApp:[] provisioningAppNoUi:}
+    2026-09-25T13:21:46.261 - USB bcast connected:
+false configured:false rndis:false
+    2026-09-25T13:21:46.746 - OBSERVED configurati
+on changed
+    2026-09-25T13:21:46.753 - [config] DUN check r
+eturned: DUN_NOT_REQUIRED
+    2026-09-25T13:21:46.753 - [config] TetheringCo
+nfiguration{tetherableUsbRegexs:[rndis\d] tetherab
+leWifiRegexs:[ap\d] tetherableBluetoothRegexs:[bt-
+pan,bt-dun] isDunRequired:false preferredUpstreamI
+faceTypes:[ETHERNET,WIFI,BLUETOOTH,MOBILE,MOBILE_H
+IPRI] provisioningApp:[] provisioningAppNoUi:}
+    2026-09-25T13:21:49.253 - OBSERVED carrier con
+fig change
+    2026-09-25T13:21:49.280 - [config] DUN check r
+eturned: DUN_NOT_REQUIRED
+    2026-09-25T13:21:49.281 - [config] TetheringCo
+nfiguration{tetherableUsbRegexs:[rndis\d] tetherab
+leWifiRegexs:[ap\d] tetherableBluetoothRegexs:[bt-
+pan,bt-dun] isDunRequired:false preferredUpstreamI
+faceTypes:[ETHERNET,WIFI,BLUETOOTH,MOBILE,MOBILE_H
+IPRI] provisioningApp:[] provisioningAppNoUi:}
+    2026-09-25T13:21:57.679 - OBSERVED carrier con
+fig change
+    2026-09-25T13:21:57.688 - [config] DUN check r
+eturned: DUN_NOT_REQUIRED
+    2026-09-25T13:21:57.688 - [config] TetheringCo
+nfiguration{tetherableUsbRegexs:[rndis\d] tetherab
+leWifiRegexs:[ap\d] tetherableBluetoothRegexs:[bt-
+pan,bt-dun] isDunRequired:false preferredUpstreamI
+faceTypes:[ETHERNET,WIFI,BLUETOOTH,MOBILE,MOBILE_H
+IPRI] provisioningApp:[] provisioningAppNoUi:}
+    2026-09-25T13:22:08.548 - ccmni0 is not a teth
+erable iface, ignoring
+    2026-09-25T13:22:08.617 - ccmni0 is not a teth
+erable iface, ignoring
+    2026-09-25T13:22:08.618 - ccmni0 is not a teth
+erable iface, ignoring
+    2026-09-25T13:22:08.683 - ccmni0 is not a teth
+erable iface, ignoring
+    2026-09-25T13:22:08.683 - ccmni0 is not a teth
+erable iface, ignoring
+    2026-09-25T13:22:08.775 - InitialState got CMD
+_UPSTREAM_CHANGED
+    2026-09-25T13:22:35.862 - InitialState got CMD
+_UPSTREAM_CHANGED
+    2026-09-25T13:22:37.059 - ccmni1 is not a teth
+erable iface, ignoring
+    2026-09-25T13:22:37.100 - ccmni1 is not a teth
+erable iface, ignoring
+    2026-09-25T13:22:37.100 - ccmni1 is not a teth
+erable iface, ignoring
+    2026-09-25T13:22:37.134 - ccmni1 is not a teth
+erable iface, ignoring
+    2026-09-25T13:22:37.135 - ccmni1 is not a teth
+erable iface, ignoring
+    2026-09-25T13:22:37.215 - InitialState got CMD
+_UPSTREAM_CHANGED
+    2026-09-25T13:22:41.892 - InitialState got CMD
+_UPSTREAM_CHANGED
+    2026-09-25T13:23:36.012 - InitialState got CMD
+_UPSTREAM_CHANGED
+    2026-09-25T13:26:15.020 - wlan0 is not a tethe
+rable iface, ignoring
+    2026-09-25T13:26:15.039 - adding TetheringInte
+rfaceStateMachine for: ap0
+    2026-09-25T13:26:15.042 - OBSERVED iface=ap0 s
+tate=1 error=0
+    2026-09-25T13:26:15.044 - OBSERVED LinkPropert
+ies update iface=ap0 state=AVAILABLE lp={Interface
+Name: ap0 LinkAddresses: []  Routes: [] DnsAddress
+es: [] UsePrivateDns: false PrivateDnsServerName: 
+null Domains: null MTU: 0}
+    2026-09-25T13:26:15.044 - InitialState got EVE
+NT_IFACE_SERVING_STATE_INACTIVE
+    2026-09-25T13:26:15.047 - InitialState got EVE
+NT_IFACE_UPDATE_LINKPROPERTIES
+    2026-09-25T13:26:15.048 - [ap0] InitialState g
+ot CMD_IPV6_TETHER_UPDATE
+    2026-09-25T13:26:15.207 - active iface (ap0) r
+eported as added, ignoring
+    2026-09-25T13:26:15.213 - active iface (ap0) r
+eported as added, ignoring
+    2026-09-25T13:26:15.213 - [ap0] InitialState g
+ot CMD_TETHER_REQUESTED
+    2026-09-25T13:26:15.244 - OBSERVED iface=ap0 s
+tate=2 error=0
+    2026-09-25T13:26:15.246 - OBSERVED LinkPropert
+ies update iface=ap0 state=TETHERED lp={InterfaceN
+ame: ap0 LinkAddresses: [192.168.43.3/24,]  Routes
+: [192.168.43.0/24 -> 0.0.0.0 ap0,] DnsAddresses: 
+[] UsePrivateDns: false PrivateDnsServerName: null
+ Domains: null MTU: 0}
+    2026-09-25T13:26:15.247 - InitialState got EVE
+NT_IFACE_SERVING_STATE_ACTIVE
+    2026-09-25T13:26:15.255 - SET master tether se
+ttings: ON
+    2026-09-25T13:26:15.260 - [OffloadController] 
+tethering offload config not supported
+    2026-09-25T13:26:15.260 - [OffloadHardwareInte
+rface] stopOffloadControl()
+    2026-09-25T13:26:15.273 - [UpstreamNetworkMoni
+tor] preferred upstream type: NONE
+    2026-09-25T13:26:15.273 - [UpstreamNetworkMoni
+tor] requesting mobile upstream network: NetworkRe
+quest [ NONE id=0, [ Transports: CELLULAR Capabili
+ties: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN Unwa
+nted: ] ]
+    2026-09-25T13:26:15.274 - [MtkIPv6TetheringCoo
+rdinator] No available upstream.
+    2026-09-25T13:26:15.274 - [MtkIPv6TetheringCoo
+rdinator] setUpstreamNetworkState: NetworkState{nu
+ll}
+    2026-09-25T13:26:15.274 - TetherModeAliveState
+ got EVENT_IFACE_UPDATE_LINKPROPERTIES
+    2026-09-25T13:26:15.275 - [ap0] TetheredState 
+got CMD_IPV6_TETHER_UPDATE
+    2026-09-25T13:26:15.276 - OBSERVED LinkPropert
+ies update iface=ap0 state=TETHERED lp={InterfaceN
+ame: ap0 LinkAddresses: [192.168.43.3/24,]  Routes
+: [192.168.43.0/24 -> 0.0.0.0 ap0,] DnsAddresses: 
+[] UsePrivateDns: false PrivateDnsServerName: null
+ Domains: null MTU: 0}
+    2026-09-25T13:26:15.277 - [ap0] TetheredState 
+got CMD_TETHER_CONNECTION_CHANGED
+    2026-09-25T13:26:15.277 - [ap0] TetheredState 
+got CMD_TETHER_CONNECTION_CHANGED
+    2026-09-25T13:26:15.278 - [ap0] TetheredState 
+got CMD_IPV6_TETHER_UPDATE
+    2026-09-25T13:26:15.278 - OBSERVED LinkPropert
+ies update iface=ap0 state=TETHERED lp={InterfaceN
+ame: ap0 LinkAddresses: [192.168.43.3/24,]  Routes
+: [192.168.43.0/24 -> 0.0.0.0 ap0,] DnsAddresses: 
+[] UsePrivateDns: false PrivateDnsServerName: null
+ Domains: null MTU: 0}
+    2026-09-25T13:26:15.278 - TetherModeAliveState
+ got EVENT_IFACE_UPDATE_LINKPROPERTIES
+    2026-09-25T13:26:15.279 - TetherModeAliveState
+ got EVENT_UPSTREAM_CALLBACK
+    2026-09-25T13:26:15.281 - [UpstreamNetworkMoni
+tor] preferred upstream type: MOBILE
+    2026-09-25T13:26:15.282 - Looking for default 
+routes on: {InterfaceName: ccmni1 LinkAddresses: [
+10.66.143.224/32,]  Routes: [0.0.0.0/0 -> 10.66.14
+3.224 ccmni1,10.66.143.224/32 -> 0.0.0.0 ccmni1,] 
+DnsAddresses: [119.160.112.48,119.160.80.146,] Use
+PrivateDns: false PrivateDnsServerName: null Domai
+ns: null MTU: 1500 TcpBufferSizes: 2097152,4194304
+,8388608,262144,524288,1048576}
+    2026-09-25T13:26:15.283 - Found upstream inter
+face(s): [ccmni1]
+    2026-09-25T13:26:15.285 - SET DNS forwarders: 
+network=101 dnsServers=[119.160.112.48, 119.160.80
+.146]
+    2026-09-25T13:26:15.286 - [MtkIPv6TetheringCoo
+rdinator] IPv6 tethering is not available for upst
+ream: NetworkState{101, [ Transports: CELLULAR Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN
+&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NO
+T_SUSPENDED Unwanted:  LinkUpBandwidth>=51200Kbps 
+LinkDnBandwidth>=102400Kbps Specifier: <1>], {Inte
+rfaceName: ccmni1 LinkAddresses: [10.66.143.224/32
+,]  Routes: [0.0.0.0/0 -> 10.66.143.224 ccmni1,10.
+66.143.224/32 -> 0.0.0.0 ccmni1,] DnsAddresses: [1
+19.160.112.48,119.160.80.146,] UsePrivateDns: fals
+e PrivateDnsServerName: null Domains: null MTU: 15
+00 TcpBufferSizes: 2097152,4194304,8388608,262144,
+524288,1048576}}
+    2026-09-25T13:26:15.286 - [MtkIPv6TetheringCoo
+rdinator] setUpstreamNetworkState: NetworkState{nu
+ll}
+    2026-09-25T13:26:15.286 - TetherModeAliveState
+ got EVENT_UPSTREAM_CALLBACK
+    2026-09-25T13:26:15.286 - TetherModeAliveState
+ got EVENT_UPSTREAM_CALLBACK
+    2026-09-25T13:26:15.297 - [UpstreamNetworkMoni
+tor] preferred upstream type: MOBILE
+    2026-09-25T13:26:15.297 - Looking for default 
+routes on: {InterfaceName: ccmni1 LinkAddresses: [
+10.66.143.224/32,]  Routes: [0.0.0.0/0 -> 10.66.14
+3.224 ccmni1,10.66.143.224/32 -> 0.0.0.0 ccmni1,] 
+DnsAddresses: [119.160.112.48,119.160.80.146,] Use
+PrivateDns: false PrivateDnsServerName: null Domai
+ns: null MTU: 1500 TcpBufferSizes: 2097152,4194304
+,8388608,262144,524288,1048576}
+    2026-09-25T13:26:15.298 - Found upstream inter
+face(s): [ccmni1]
+    2026-09-25T13:26:15.300 - SET DNS forwarders: 
+network=101 dnsServers=[119.160.112.48, 119.160.80
+.146]
+    2026-09-25T13:26:15.301 - [MtkIPv6TetheringCoo
+rdinator] IPv6 tethering is not available for upst
+ream: NetworkState{101, [ Transports: CELLULAR Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN
+&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NO
+T_SUSPENDED Unwanted:  LinkUpBandwidth>=51200Kbps 
+LinkDnBandwidth>=102400Kbps Specifier: <1>], {Inte
+rfaceName: ccmni1 LinkAddresses: [10.66.143.224/32
+,]  Routes: [0.0.0.0/0 -> 10.66.143.224 ccmni1,10.
+66.143.224/32 -> 0.0.0.0 ccmni1,] DnsAddresses: [1
+19.160.112.48,119.160.80.146,] UsePrivateDns: fals
+e PrivateDnsServerName: null Domains: null MTU: 15
+00 TcpBufferSizes: 2097152,4194304,8388608,262144,
+524288,1048576}}
+    2026-09-25T13:26:15.301 - [MtkIPv6TetheringCoo
+rdinator] setUpstreamNetworkState: NetworkState{nu
+ll}
+    2026-09-25T13:26:15.301 - TetherModeAliveState
+ got EVENT_UPSTREAM_CALLBACK
+    2026-09-25T13:26:15.302 - TetherModeAliveState
+ got EVENT_UPSTREAM_CALLBACK
+    2026-09-25T13:26:15.302 - TetherModeAliveState
+ got EVENT_IFACE_UPDATE_LINKPROPERTIES
+    2026-09-25T13:26:15.302 - TetherModeAliveState
+ got EVENT_UPSTREAM_CALLBACK
+    2026-09-25T13:26:15.303 - [ap0] TetheredState 
+got CMD_TETHER_CONNECTION_CHANGED
+    2026-09-25T13:26:15.303 - [ap0] TetheredState 
+got CMD_TETHER_CONNECTION_CHANGED
+    2026-09-25T13:26:15.325 - [ap0] TetheredState 
+got CMD_IPV6_TETHER_UPDATE
+    2026-09-25T13:26:15.325 - OBSERVED LinkPropert
+ies update iface=ap0 state=TETHERED lp={InterfaceN
+ame: ap0 LinkAddresses: [192.168.43.3/24,]  Routes
+: [192.168.43.0/24 -> 0.0.0.0 ap0,] DnsAddresses: 
+[] UsePrivateDns: false PrivateDnsServerName: null
+ Domains: null MTU: 0}
+    2026-09-25T13:26:15.346 - [ap0] TetheredState 
+got CMD_TETHER_CONNECTION_CHANGED
+    2026-09-25T13:26:15.346 - [ap0] TetheredState 
+got CMD_TETHER_CONNECTION_CHANGED
+    2026-09-25T13:26:15.346 - [ap0] TetheredState 
+got CMD_IPV6_TETHER_UPDATE
+    2026-09-25T13:26:15.347 - OBSERVED LinkPropert
+ies update iface=ap0 state=TETHERED lp={InterfaceN
+ame: ap0 LinkAddresses: [192.168.43.3/24,]  Routes
+: [192.168.43.0/24 -> 0.0.0.0 ap0,] DnsAddresses: 
+[] UsePrivateDns: false PrivateDnsServerName: null
+ Domains: null MTU: 0}
+    2026-09-25T13:26:15.347 - TetherModeAliveState
+ got CMD_UPSTREAM_CHANGED
+    2026-09-25T13:26:15.350 - [UpstreamNetworkMoni
+tor] preferred upstream type: MOBILE
+    2026-09-25T13:26:15.350 - Looking for default 
+routes on: {InterfaceName: ccmni1 LinkAddresses: [
+10.66.143.224/32,]  Routes: [0.0.0.0/0 -> 10.66.14
+3.224 ccmni1,10.66.143.224/32 -> 0.0.0.0 ccmni1,] 
+DnsAddresses: [119.160.112.48,119.160.80.146,] Use
+PrivateDns: false PrivateDnsServerName: null Domai
+ns: null MTU: 1500 TcpBufferSizes: 2097152,4194304
+,8388608,262144,524288,1048576}
+    2026-09-25T13:26:15.352 - Found upstream inter
+face(s): [ccmni1]
+    2026-09-25T13:26:15.354 - SET DNS forwarders: 
+network=101 dnsServers=[119.160.112.48, 119.160.80
+.146]
+    2026-09-25T13:26:15.358 - [MtkIPv6TetheringCoo
+rdinator] IPv6 tethering is not available for upst
+ream: NetworkState{101, [ Transports: CELLULAR Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN
+&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NO
+T_SUSPENDED Unwanted:  LinkUpBandwidth>=51200Kbps 
+LinkDnBandwidth>=102400Kbps Specifier: <1>], {Inte
+rfaceName: ccmni1 LinkAddresses: [10.66.143.224/32
+,]  Routes: [0.0.0.0/0 -> 10.66.143.224 ccmni1,10.
+66.143.224/32 -> 0.0.0.0 ccmni1,] DnsAddresses: [1
+19.160.112.48,119.160.80.146,] UsePrivateDns: fals
+e PrivateDnsServerName: null Domains: null MTU: 15
+00 TcpBufferSizes: 2097152,4194304,8388608,262144,
+524288,1048576}}
+    2026-09-25T13:26:15.358 - [MtkIPv6TetheringCoo
+rdinator] setUpstreamNetworkState: NetworkState{nu
+ll}
+    2026-09-25T13:26:15.359 - TetherModeAliveState
+ got EVENT_IFACE_UPDATE_LINKPROPERTIES
+    2026-09-25T13:26:15.360 - TetherModeAliveState
+ got CMD_UPSTREAM_CHANGED
+    2026-09-25T13:26:15.369 - [UpstreamNetworkMoni
+tor] preferred upstream type: MOBILE
+    2026-09-25T13:26:15.369 - Looking for default 
+routes on: {InterfaceName: ccmni1 LinkAddresses: [
+10.66.143.224/32,]  Routes: [0.0.0.0/0 -> 10.66.14
+3.224 ccmni1,10.66.143.224/32 -> 0.0.0.0 ccmni1,] 
+DnsAddresses: [119.160.112.48,119.160.80.146,] Use
+PrivateDns: false PrivateDnsServerName: null Domai
+ns: null MTU: 1500 TcpBufferSizes: 2097152,4194304
+,8388608,262144,524288,1048576}
+    2026-09-25T13:26:15.370 - Found upstream inter
+face(s): [ccmni1]
+    2026-09-25T13:26:15.372 - SET DNS forwarders: 
+network=101 dnsServers=[119.160.112.48, 119.160.80
+.146]
+    2026-09-25T13:26:15.373 - [MtkIPv6TetheringCoo
+rdinator] IPv6 tethering is not available for upst
+ream: NetworkState{101, [ Transports: CELLULAR Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN
+&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NO
+T_SUSPENDED Unwanted:  LinkUpBandwidth>=51200Kbps 
+LinkDnBandwidth>=102400Kbps Specifier: <1>], {Inte
+rfaceName: ccmni1 LinkAddresses: [10.66.143.224/32
+,]  Routes: [0.0.0.0/0 -> 10.66.143.224 ccmni1,10.
+66.143.224/32 -> 0.0.0.0 ccmni1,] DnsAddresses: [1
+19.160.112.48,119.160.80.146,] UsePrivateDns: fals
+e PrivateDnsServerName: null Domains: null MTU: 15
+00 TcpBufferSizes: 2097152,4194304,8388608,262144,
+524288,1048576}}
+    2026-09-25T13:26:15.373 - [MtkIPv6TetheringCoo
+rdinator] setUpstreamNetworkState: NetworkState{nu
+ll}
+    2026-09-25T13:26:15.373 - TetherModeAliveState
+ got EVENT_IFACE_UPDATE_LINKPROPERTIES
+    2026-09-25T13:26:15.373 - [ap0] TetheredState 
+got CMD_TETHER_CONNECTION_CHANGED
+    2026-09-25T13:26:15.373 - [ap0] TetheredState 
+got CMD_TETHER_CONNECTION_CHANGED
+    2026-09-25T13:26:15.373 - [ap0] TetheredState 
+got CMD_IPV6_TETHER_UPDATE
+    2026-09-25T13:26:15.373 - OBSERVED LinkPropert
+ies update iface=ap0 state=TETHERED lp={InterfaceN
+ame: ap0 LinkAddresses: [192.168.43.3/24,]  Routes
+: [192.168.43.0/24 -> 0.0.0.0 ap0,] DnsAddresses: 
+[] UsePrivateDns: false PrivateDnsServerName: null
+ Domains: null MTU: 0}
+    2026-09-25T13:26:15.374 - TetherModeAliveState
+ got CMD_UPSTREAM_CHANGED
+    2026-09-25T13:26:15.377 - [UpstreamNetworkMoni
+tor] preferred upstream type: MOBILE
+    2026-09-25T13:26:15.377 - Looking for default 
+routes on: {InterfaceName: ccmni1 LinkAddresses: [
+10.66.143.224/32,]  Routes: [0.0.0.0/0 -> 10.66.14
+3.224 ccmni1,10.66.143.224/32 -> 0.0.0.0 ccmni1,] 
+DnsAddresses: [119.160.112.48,119.160.80.146,] Use
+PrivateDns: false PrivateDnsServerName: null Domai
+ns: null MTU: 1500 TcpBufferSizes: 2097152,4194304
+,8388608,262144,524288,1048576}
+    2026-09-25T13:26:15.378 - Found upstream inter
+face(s): [ccmni1]
+    2026-09-25T13:26:15.379 - SET DNS forwarders: 
+network=101 dnsServers=[119.160.112.48, 119.160.80
+.146]
+    2026-09-25T13:26:15.380 - [MtkIPv6TetheringCoo
+rdinator] IPv6 tethering is not available for upst
+ream: NetworkState{101, [ Transports: CELLULAR Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN
+&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NO
+T_SUSPENDED Unwanted:  LinkUpBandwidth>=51200Kbps 
+LinkDnBandwidth>=102400Kbps Specifier: <1>], {Inte
+rfaceName: ccmni1 LinkAddresses: [10.66.143.224/32
+,]  Routes: [0.0.0.0/0 -> 10.66.143.224 ccmni1,10.
+66.143.224/32 -> 0.0.0.0 ccmni1,] DnsAddresses: [1
+19.160.112.48,119.160.80.146,] UsePrivateDns: fals
+e PrivateDnsServerName: null Domains: null MTU: 15
+00 TcpBufferSizes: 2097152,4194304,8388608,262144,
+524288,1048576}}
+    2026-09-25T13:26:15.380 - [MtkIPv6TetheringCoo
+rdinator] setUpstreamNetworkState: NetworkState{nu
+ll}
+    2026-09-25T13:26:15.393 - [ap0] TetheredState 
+got CMD_TETHER_CONNECTION_CHANGED
+    2026-09-25T13:26:15.393 - [ap0] TetheredState 
+got CMD_TETHER_CONNECTION_CHANGED
+    2026-09-25T13:26:15.393 - [ap0] TetheredState 
+got CMD_IPV6_TETHER_UPDATE
+    2026-09-25T13:26:15.394 - OBSERVED LinkPropert
+ies update iface=ap0 state=TETHERED lp={InterfaceN
+ame: ap0 LinkAddresses: [192.168.43.3/24,]  Routes
+: [192.168.43.0/24 -> 0.0.0.0 ap0,] DnsAddresses: 
+[] UsePrivateDns: false PrivateDnsServerName: null
+ Domains: null MTU: 0}
+    2026-09-25T13:26:15.394 - TetherModeAliveState
+ got EVENT_IFACE_UPDATE_LINKPROPERTIES
+    2026-09-25T13:26:15.394 - [ap0] TetheredState 
+got CMD_TETHER_CONNECTION_CHANGED
+    2026-09-25T13:26:15.394 - [ap0] TetheredState 
+got CMD_TETHER_CONNECTION_CHANGED
+    2026-09-25T13:26:15.394 - [ap0] TetheredState 
+got CMD_IPV6_TETHER_UPDATE
+    2026-09-25T13:26:15.395 - OBSERVED LinkPropert
+ies update iface=ap0 state=TETHERED lp={InterfaceN
+ame: ap0 LinkAddresses: [192.168.43.3/24,]  Routes
+: [192.168.43.0/24 -> 0.0.0.0 ap0,] DnsAddresses: 
+[] UsePrivateDns: false PrivateDnsServerName: null
+ Domains: null MTU: 0}
+    2026-09-25T13:26:15.395 - TetherModeAliveState
+ got EVENT_IFACE_UPDATE_LINKPROPERTIES
+    2026-09-25T13:26:15.395 - TetherModeAliveState
+ got EVENT_IFACE_UPDATE_LINKPROPERTIES
+    2026-09-25T13:26:35.374 - Canceling WiFi tethe
+ring request - AP_STATE=10
+    2026-09-25T13:26:35.374 - [ap0] TetheredState 
+got CMD_TETHER_UNREQUESTED
+    2026-09-25T13:26:35.433 - OBSERVED iface=ap0 s
+tate=1 error=0
+    2026-09-25T13:26:35.435 - OBSERVED LinkPropert
+ies update iface=ap0 state=AVAILABLE lp={Interface
+Name: ap0 LinkAddresses: []  Routes: [] DnsAddress
+es: [] UsePrivateDns: false PrivateDnsServerName: 
+null Domains: null MTU: 0}
+    2026-09-25T13:26:35.435 - TetherModeAliveState
+ got EVENT_IFACE_SERVING_STATE_INACTIVE
+    2026-09-25T13:26:35.448 - SET master tether se
+ttings: OFF
+    2026-09-25T13:26:35.448 - [OffloadHardwareInte
+rface] stopOffloadControl()
+    2026-09-25T13:26:35.449 - [MtkIPv6TetheringCoo
+rdinator] No available upstream.
+    2026-09-25T13:26:35.449 - [MtkIPv6TetheringCoo
+rdinator] setUpstreamNetworkState: NetworkState{nu
+ll}
+    2026-09-25T13:26:35.449 - InitialState got EVE
+NT_IFACE_UPDATE_LINKPROPERTIES
+    2026-09-25T13:26:35.449 - [ap0] InitialState g
+ot CMD_IPV6_TETHER_UPDATE
+    2026-09-25T13:26:35.612 - removing TetheringIn
+terfaceStateMachine for: ap0
+    2026-09-25T13:26:35.612 - [ap0] InitialState g
+ot CMD_INTERFACE_DOWN
+    2026-09-25T13:26:35.612 - OBSERVED iface=ap0 s
+tate=0 error=0
+    2026-09-25T13:26:35.613 - got notification fro
+m stale iface ap0
+    2026-09-25T13:26:35.613 - InitialState got EVE
+NT_IFACE_SERVING_STATE_INACTIVE
+--
+    2026-09-25T13:26:35.739 - Canceling WiFi tethe
+ring request - AP_STATE=11
+    2026-09-25T13:26:35.740 - Error disabling Wi-F
+i IP serving; specified interface: ap0
+    2026-09-25T13:29:03.096 - wlan0 is not a tethe
+rable iface, ignoring
+    2026-09-25T13:29:03.105 - adding TetheringInte
+rfaceStateMachine for: ap0
+    2026-09-25T13:29:03.107 - OBSERVED iface=ap0 s
+tate=1 error=0
+    2026-09-25T13:29:03.108 - OBSERVED LinkPropert
+ies update iface=ap0 state=AVAILABLE lp={Interface
+Name: ap0 LinkAddresses: []  Routes: [] DnsAddress
+es: [] UsePrivateDns: false PrivateDnsServerName: 
+null Domains: null MTU: 0}
+    2026-09-25T13:29:03.109 - InitialState got EVE
+NT_IFACE_SERVING_STATE_INACTIVE
+    2026-09-25T13:29:03.109 - InitialState got EVE
+NT_IFACE_UPDATE_LINKPROPERTIES
+    2026-09-25T13:29:03.114 - [ap0] InitialState g
+ot CMD_IPV6_TETHER_UPDATE
+    2026-09-25T13:29:03.250 - active iface (ap0) r
+eported as added, ignoring
+    2026-09-25T13:29:03.255 - active iface (ap0) r
+eported as added, ignoring
+    2026-09-25T13:29:03.255 - [ap0] InitialState g
+ot CMD_TETHER_REQUESTED
+    2026-09-25T13:29:03.290 - OBSERVED iface=ap0 s
+tate=2 error=0
+    2026-09-25T13:29:03.292 - OBSERVED LinkPropert
+ies update iface=ap0 state=TETHERED lp={InterfaceN
+ame: ap0 LinkAddresses: [192.168.43.145/24,]  Rout
+es: [192.168.43.0/24 -> 0.0.0.0 ap0,] DnsAddresses
+: [] UsePrivateDns: false PrivateDnsServerName: nu
+ll Domains: null MTU: 0}
+    2026-09-25T13:29:03.292 - InitialState got EVE
+NT_IFACE_SERVING_STATE_ACTIVE
+    2026-09-25T13:29:03.300 - SET master tether se
+ttings: ON
+    2026-09-25T13:29:03.304 - [OffloadController] 
+tethering offload config not supported
+    2026-09-25T13:29:03.304 - [OffloadHardwareInte
+rface] stopOffloadControl()
+    2026-09-25T13:29:03.307 - [UpstreamNetworkMoni
+tor] preferred upstream type: NONE
+    2026-09-25T13:29:03.307 - [UpstreamNetworkMoni
+tor] requesting mobile upstream network: NetworkRe
+quest [ NONE id=0, [ Transports: CELLULAR Capabili
+ties: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN Unwa
+nted: ] ]
+    2026-09-25T13:29:03.308 - [MtkIPv6TetheringCoo
+rdinator] No available upstream.
+    2026-09-25T13:29:03.308 - [MtkIPv6TetheringCoo
+rdinator] setUpstreamNetworkState: NetworkState{nu
+ll}
+    2026-09-25T13:29:03.308 - TetherModeAliveState
+ got EVENT_IFACE_UPDATE_LINKPROPERTIES
+    2026-09-25T13:29:03.308 - [ap0] TetheredState 
+got CMD_IPV6_TETHER_UPDATE
+    2026-09-25T13:29:03.309 - OBSERVED LinkPropert
+ies update iface=ap0 state=TETHERED lp={InterfaceN
+ame: ap0 LinkAddresses: [192.168.43.145/24,]  Rout
+es: [192.168.43.0/24 -> 0.0.0.0 ap0,] DnsAddresses
+: [] UsePrivateDns: false PrivateDnsServerName: nu
+ll Domains: null MTU: 0}
+    2026-09-25T13:29:03.309 - [ap0] TetheredState 
+got CMD_TETHER_CONNECTION_CHANGED
+    2026-09-25T13:29:03.309 - [ap0] TetheredState 
+got CMD_TETHER_CONNECTION_CHANGED
+    2026-09-25T13:29:03.309 - [ap0] TetheredState 
+got CMD_IPV6_TETHER_UPDATE
+    2026-09-25T13:29:03.309 - OBSERVED LinkPropert
+ies update iface=ap0 state=TETHERED lp={InterfaceN
+ame: ap0 LinkAddresses: [192.168.43.145/24,]  Rout
+es: [192.168.43.0/24 -> 0.0.0.0 ap0,] DnsAddresses
+: [] UsePrivateDns: false PrivateDnsServerName: nu
+ll Domains: null MTU: 0}
+    2026-09-25T13:29:03.309 - TetherModeAliveState
+ got EVENT_IFACE_UPDATE_LINKPROPERTIES
+    2026-09-25T13:29:03.310 - TetherModeAliveState
+ got EVENT_UPSTREAM_CALLBACK
+    2026-09-25T13:29:03.313 - [UpstreamNetworkMoni
+tor] preferred upstream type: MOBILE
+    2026-09-25T13:29:03.313 - Looking for default 
+routes on: {InterfaceName: ccmni1 LinkAddresses: [
+10.66.143.224/32,]  Routes: [0.0.0.0/0 -> 10.66.14
+3.224 ccmni1,10.66.143.224/32 -> 0.0.0.0 ccmni1,] 
+DnsAddresses: [119.160.112.48,119.160.80.146,] Use
+PrivateDns: false PrivateDnsServerName: null Domai
+ns: null MTU: 1500 TcpBufferSizes: 2097152,4194304
+,8388608,262144,524288,1048576}
+    2026-09-25T13:29:03.314 - Found upstream inter
+face(s): [ccmni1]
+    2026-09-25T13:29:03.316 - SET DNS forwarders: 
+network=101 dnsServers=[119.160.112.48, 119.160.80
+.146]
+    2026-09-25T13:29:03.316 - [MtkIPv6TetheringCoo
+rdinator] IPv6 tethering is not available for upst
+ream: NetworkState{101, [ Transports: CELLULAR Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN
+&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NO
+T_SUSPENDED Unwanted:  LinkUpBandwidth>=51200Kbps 
+LinkDnBandwidth>=102400Kbps Specifier: <1>], {Inte
+rfaceName: ccmni1 LinkAddresses: [10.66.143.224/32
+,]  Routes: [0.0.0.0/0 -> 10.66.143.224 ccmni1,10.
+66.143.224/32 -> 0.0.0.0 ccmni1,] DnsAddresses: [1
+19.160.112.48,119.160.80.146,] UsePrivateDns: fals
+e PrivateDnsServerName: null Domains: null MTU: 15
+00 TcpBufferSizes: 2097152,4194304,8388608,262144,
+524288,1048576}}
+    2026-09-25T13:29:03.317 - [MtkIPv6TetheringCoo
+rdinator] setUpstreamNetworkState: NetworkState{nu
+ll}
+    2026-09-25T13:29:03.317 - TetherModeAliveState
+ got EVENT_UPSTREAM_CALLBACK
+    2026-09-25T13:29:03.317 - TetherModeAliveState
+ got EVENT_UPSTREAM_CALLBACK
+    2026-09-25T13:29:03.324 - [UpstreamNetworkMoni
+tor] preferred upstream type: MOBILE
+    2026-09-25T13:29:03.324 - Looking for default 
+routes on: {InterfaceName: ccmni1 LinkAddresses: [
+10.66.143.224/32,]  Routes: [0.0.0.0/0 -> 10.66.14
+3.224 ccmni1,10.66.143.224/32 -> 0.0.0.0 ccmni1,] 
+DnsAddresses: [119.160.112.48,119.160.80.146,] Use
+PrivateDns: false PrivateDnsServerName: null Domai
+ns: null MTU: 1500 TcpBufferSizes: 2097152,4194304
+,8388608,262144,524288,1048576}
+    2026-09-25T13:29:03.325 - Found upstream inter
+face(s): [ccmni1]
+    2026-09-25T13:29:03.328 - SET DNS forwarders: 
+network=101 dnsServers=[119.160.112.48, 119.160.80
+.146]
+    2026-09-25T13:29:03.329 - [MtkIPv6TetheringCoo
+rdinator] IPv6 tethering is not available for upst
+ream: NetworkState{101, [ Transports: CELLULAR Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN
+&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NO
+T_SUSPENDED Unwanted:  LinkUpBandwidth>=51200Kbps 
+LinkDnBandwidth>=102400Kbps Specifier: <1>], {Inte
+rfaceName: ccmni1 LinkAddresses: [10.66.143.224/32
+,]  Routes: [0.0.0.0/0 -> 10.66.143.224 ccmni1,10.
+66.143.224/32 -> 0.0.0.0 ccmni1,] DnsAddresses: [1
+19.160.112.48,119.160.80.146,] UsePrivateDns: fals
+e PrivateDnsServerName: null Domains: null MTU: 15
+00 TcpBufferSizes: 2097152,4194304,8388608,262144,
+524288,1048576}}
+    2026-09-25T13:29:03.329 - [MtkIPv6TetheringCoo
+rdinator] setUpstreamNetworkState: NetworkState{nu
+ll}
+    2026-09-25T13:29:03.329 - TetherModeAliveState
+ got EVENT_IFACE_UPDATE_LINKPROPERTIES
+    2026-09-25T13:29:03.329 - [ap0] TetheredState 
+got CMD_TETHER_CONNECTION_CHANGED
+    2026-09-25T13:29:03.329 - [ap0] TetheredState 
+got CMD_TETHER_CONNECTION_CHANGED
+    2026-09-25T13:29:03.346 - [ap0] TetheredState 
+got CMD_IPV6_TETHER_UPDATE
+    2026-09-25T13:29:03.347 - OBSERVED LinkPropert
+ies update iface=ap0 state=TETHERED lp={InterfaceN
+ame: ap0 LinkAddresses: [192.168.43.145/24,]  Rout
+es: [192.168.43.0/24 -> 0.0.0.0 ap0,] DnsAddresses
+: [] UsePrivateDns: false PrivateDnsServerName: nu
+ll Domains: null MTU: 0}
+    2026-09-25T13:29:03.347 - [ap0] TetheredState 
+got CMD_TETHER_CONNECTION_CHANGED
+    2026-09-25T13:29:03.347 - [ap0] TetheredState 
+got CMD_TETHER_CONNECTION_CHANGED
+    2026-09-25T13:29:03.347 - [ap0] TetheredState 
+got CMD_IPV6_TETHER_UPDATE
+    2026-09-25T13:29:03.347 - OBSERVED LinkPropert
+ies update iface=ap0 state=TETHERED lp={InterfaceN
+ame: ap0 LinkAddresses: [192.168.43.145/24,]  Rout
+es: [192.168.43.0/24 -> 0.0.0.0 ap0,] DnsAddresses
+: [] UsePrivateDns: false PrivateDnsServerName: nu
+ll Domains: null MTU: 0}
+    2026-09-25T13:29:03.347 - TetherModeAliveState
+ got EVENT_UPSTREAM_CALLBACK
+    2026-09-25T13:29:03.387 - TetherModeAliveState
+ got EVENT_IFACE_UPDATE_LINKPROPERTIES
+    2026-09-25T13:29:03.387 - TetherModeAliveState
+ got CMD_UPSTREAM_CHANGED
+    2026-09-25T13:29:03.391 - [UpstreamNetworkMoni
+tor] preferred upstream type: MOBILE
+    2026-09-25T13:29:03.391 - Looking for default 
+routes on: {InterfaceName: ccmni1 LinkAddresses: [
+10.66.143.224/32,]  Routes: [0.0.0.0/0 -> 10.66.14
+3.224 ccmni1,10.66.143.224/32 -> 0.0.0.0 ccmni1,] 
+DnsAddresses: [119.160.112.48,119.160.80.146,] Use
+PrivateDns: false PrivateDnsServerName: null Domai
+ns: null MTU: 1500 TcpBufferSizes: 2097152,4194304
+,8388608,262144,524288,1048576}
+    2026-09-25T13:29:03.391 - Found upstream inter
+face(s): [ccmni1]
+    2026-09-25T13:29:03.393 - SET DNS forwarders: 
+network=101 dnsServers=[119.160.112.48, 119.160.80
+.146]
+    2026-09-25T13:29:03.394 - [MtkIPv6TetheringCoo
+rdinator] IPv6 tethering is not available for upst
+ream: NetworkState{101, [ Transports: CELLULAR Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN
+&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NO
+T_SUSPENDED Unwanted:  LinkUpBandwidth>=51200Kbps 
+LinkDnBandwidth>=102400Kbps Specifier: <1>], {Inte
+rfaceName: ccmni1 LinkAddresses: [10.66.143.224/32
+,]  Routes: [0.0.0.0/0 -> 10.66.143.224 ccmni1,10.
+66.143.224/32 -> 0.0.0.0 ccmni1,] DnsAddresses: [1
+19.160.112.48,119.160.80.146,] UsePrivateDns: fals
+e PrivateDnsServerName: null Domains: null MTU: 15
+00 TcpBufferSizes: 2097152,4194304,8388608,262144,
+524288,1048576}}
+    2026-09-25T13:29:03.394 - [MtkIPv6TetheringCoo
+rdinator] setUpstreamNetworkState: NetworkState{nu
+ll}
+    2026-09-25T13:29:03.394 - TetherModeAliveState
+ got CMD_UPSTREAM_CHANGED
+    2026-09-25T13:29:03.398 - [UpstreamNetworkMoni
+tor] preferred upstream type: MOBILE
+    2026-09-25T13:29:03.398 - Looking for default 
+routes on: {InterfaceName: ccmni1 LinkAddresses: [
+10.66.143.224/32,]  Routes: [0.0.0.0/0 -> 10.66.14
+3.224 ccmni1,10.66.143.224/32 -> 0.0.0.0 ccmni1,] 
+DnsAddresses: [119.160.112.48,119.160.80.146,] Use
+PrivateDns: false PrivateDnsServerName: null Domai
+ns: null MTU: 1500 TcpBufferSizes: 2097152,4194304
+,8388608,262144,524288,1048576}
+    2026-09-25T13:29:03.399 - Found upstream inter
+face(s): [ccmni1]
+    2026-09-25T13:29:03.401 - SET DNS forwarders: 
+network=101 dnsServers=[119.160.112.48, 119.160.80
+.146]
+    2026-09-25T13:29:03.402 - [MtkIPv6TetheringCoo
+rdinator] IPv6 tethering is not available for upst
+ream: NetworkState{101, [ Transports: CELLULAR Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN
+&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NO
+T_SUSPENDED Unwanted:  LinkUpBandwidth>=51200Kbps 
+LinkDnBandwidth>=102400Kbps Specifier: <1>], {Inte
+rfaceName: ccmni1 LinkAddresses: [10.66.143.224/32
+,]  Routes: [0.0.0.0/0 -> 10.66.143.224 ccmni1,10.
+66.143.224/32 -> 0.0.0.0 ccmni1,] DnsAddresses: [1
+19.160.112.48,119.160.80.146,] UsePrivateDns: fals
+e PrivateDnsServerName: null Domains: null MTU: 15
+00 TcpBufferSizes: 2097152,4194304,8388608,262144,
+524288,1048576}}
+    2026-09-25T13:29:03.402 - [MtkIPv6TetheringCoo
+rdinator] setUpstreamNetworkState: NetworkState{nu
+ll}
+    2026-09-25T13:29:03.402 - TetherModeAliveState
+ got EVENT_IFACE_UPDATE_LINKPROPERTIES
+    2026-09-25T13:29:03.403 - TetherModeAliveState
+ got CMD_UPSTREAM_CHANGED
+    2026-09-25T13:29:03.408 - [UpstreamNetworkMoni
+tor] preferred upstream type: MOBILE
+    2026-09-25T13:29:03.408 - Looking for default 
+routes on: {InterfaceName: ccmni1 LinkAddresses: [
+10.66.143.224/32,]  Routes: [0.0.0.0/0 -> 10.66.14
+3.224 ccmni1,10.66.143.224/32 -> 0.0.0.0 ccmni1,] 
+DnsAddresses: [119.160.112.48,119.160.80.146,] Use
+PrivateDns: false PrivateDnsServerName: null Domai
+ns: null MTU: 1500 TcpBufferSizes: 2097152,4194304
+,8388608,262144,524288,1048576}
+    2026-09-25T13:29:03.408 - Found upstream inter
+face(s): [ccmni1]
+    2026-09-25T13:29:03.410 - SET DNS forwarders: 
+network=101 dnsServers=[119.160.112.48, 119.160.80
+.146]
+    2026-09-25T13:29:03.411 - [MtkIPv6TetheringCoo
+rdinator] IPv6 tethering is not available for upst
+ream: NetworkState{101, [ Transports: CELLULAR Cap
+abilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN
+&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NO
+T_SUSPENDED Unwanted:  LinkUpBandwidth>=51200Kbps 
+LinkDnBandwidth>=102400Kbps Specifier: <1>], {Inte
+rfaceName: ccmni1 LinkAddresses: [10.66.143.224/32
+,]  Routes: [0.0.0.0/0 -> 10.66.143.224 ccmni1,10.
+66.143.224/32 -> 0.0.0.0 ccmni1,] DnsAddresses: [1
+19.160.112.48,119.160.80.146,] UsePrivateDns: fals
+e PrivateDnsServerName: null Domains: null MTU: 15
+00 TcpBufferSizes: 2097152,4194304,8388608,262144,
+524288,1048576}}
+    2026-09-25T13:29:03.411 - [MtkIPv6TetheringCoo
+rdinator] setUpstreamNetworkState: NetworkState{nu
+ll}
+    2026-09-25T13:29:03.411 - [ap0] TetheredState 
+got CMD_TETHER_CONNECTION_CHANGED
+    2026-09-25T13:29:03.411 - [ap0] TetheredState 
+got CMD_TETHER_CONNECTION_CHANGED
+    2026-09-25T13:29:03.411 - [ap0] TetheredState 
+got CMD_IPV6_TETHER_UPDATE
+    2026-09-25T13:29:03.411 - OBSERVED LinkPropert
+ies update iface=ap0 state=TETHERED lp={InterfaceN
+ame: ap0 LinkAddresses: [192.168.43.145/24,]  Rout
+es: [192.168.43.0/24 -> 0.0.0.0 ap0,] DnsAddresses
+: [] UsePrivateDns: false PrivateDnsServerName: nu
+ll Domains: null MTU: 0}
+    2026-09-25T13:29:03.411 - [ap0] TetheredState 
+got CMD_TETHER_CONNECTION_CHANGED
+    2026-09-25T13:29:03.411 - [ap0] TetheredState 
+got CMD_TETHER_CONNECTION_CHANGED
+    2026-09-25T13:29:03.412 - [ap0] TetheredState 
+got CMD_IPV6_TETHER_UPDATE
+    2026-09-25T13:29:03.412 - OBSERVED LinkPropert
+ies update iface=ap0 state=TETHERED lp={InterfaceN
+ame: ap0 LinkAddresses: [192.168.43.145/24,]  Rout
+es: [192.168.43.0/24 -> 0.0.0.0 ap0,] DnsAddresses
+: [] UsePrivateDns: false PrivateDnsServerName: nu
+ll Domains: null MTU: 0}
+    2026-09-25T13:29:03.434 - [ap0] TetheredState 
+got CMD_TETHER_CONNECTION_CHANGED
+    2026-09-25T13:29:03.434 - [ap0] TetheredState 
+got CMD_TETHER_CONNECTION_CHANGED
+    2026-09-25T13:29:03.434 - [ap0] TetheredState 
+got CMD_IPV6_TETHER_UPDATE
+    2026-09-25T13:29:03.434 - OBSERVED LinkPropert
+ies update iface=ap0 state=TETHERED lp={InterfaceN
+ame: ap0 LinkAddresses: [192.168.43.145/24,]  Rout
+es: [192.168.43.0/24 -> 0.0.0.0 ap0,] DnsAddresses
+: [] UsePrivateDns: false PrivateDnsServerName: nu
+ll Domains: null MTU: 0}
+    2026-09-25T13:29:03.434 - TetherModeAliveState
+ got EVENT_IFACE_UPDATE_LINKPROPERTIES
+    2026-09-25T13:29:03.435 - TetherModeAliveState
+ got EVENT_IFACE_UPDATE_LINKPROPERTIES
+    2026-09-25T13:29:03.450 - TetherModeAliveState
+ got EVENT_IFACE_UPDATE_LINKPROPERTIES
+
+Packet keepalives:
+
+
+=== NETD TETHER ===
+    Interface <-> last network map:
+      Ifindex: 3 NetId: 101
+
+    Interface addresses:
+      address: fe80::8:22ff:fe3c:2203/64 ifindices
+: [33]
+      address: 192.168.43.145/24 ifindices: [33]
+      address: 10.66.143.224/8 ifindices: [3]
+
+=== WIFI STATE SUMMARY ===
+--Dump of SoftApManager--
+current StateMachine mode: StartedState
+mApInterfaceName: ap0
+mIfaceIsUp: true
+mMode: 1
+mCountryCode: PK
+mApConfig.SSID: Infinix HOT 8
+mApConfig.apBand: 1
+mApConfig.hiddenSSID: false
+mNumAssociatedStations: 0
+mTimeoutEnabled: false
+mReportedFrequency: -1
+--
+mWifiInfo SSID: <unknown ssid>, BSSID: <none>, MAC
+: 02:00:00:00:00:00, Supplicant state: UNINITIALIZ
+ED, RSSI: -127, Link speed: -1Mbps, Frequency: -1M
+Hz, Net ID: -1, Metered hint: false, score: 0
+mDhcpResults null
+mNetworkInfo [type: WIFI[], state: UNKNOWN/IDLE, r
+eason: (unspecified), extra: (none), failover: fal
+se, available: false, roaming: false]
+mLastSignalLevel -1
+mLastBssid null
+mLastNetworkId -1
+mOperationalMode 4
+mUserWantsSuspendOpt true
+--
+ID: 0 SSID: "PTCL-BB" PROVIDER-NAME: null BSSID: n
+ull FQDN: null PRIO: 0 HIDDEN: false
+ NetworkSelectionStatus NETWORK_SELECTION_ENABLED
+ hasEverConnected: false
+ creation time=09-25 08:20:13.527
+--
+mWifiLogProto.SoftApManagerReturnCodeCounts:
+  SUCCESS: 2
+  FAILED_GENERAL_ERROR: 0
+  FAILED_NO_CHANNEL: 0
+--
+mWifiLogProto.numSetupSoftApInterfaceFailureDueToH
+al=0
+mWifiLogProto.numSetupSoftApInterfaceFailureDueToW
+ificond=0
+mWifiLogProto.numSetupSoftApInterfaceFailureDueToH
+ostapd=0
+StaEventList:
+mWifiLogProto.numPasspointProviders=0
+mWifiLogProto.numPasspointProviderInstallation=0
+--
+mWifiLogProto.numSoftApUserBandPreferenceUnsatisfi
+ed=0
+mTotalSsidsInScanHistogram:{}
+mTotalBssidsInScanHistogram:{}
+mAvailableOpenSsidsInScanHistogram:{}
+mAvailableOpenBssidsInScanHistogram:{}
+mAvailableSavedSsidsInScanHistogram:{}
+mAvailableSavedBssidsInScanHistogram:{}
+mAvailableOpenOrSavedSsidsInScanHistogram:{}
+mAvailableOpenOrSavedBssidsInScanHistogram:{}
+mAvailableSavedPasspointProviderProfilesInScanHist
+ogram:{}
+mAvailableSavedPasspointProviderBssidsInScanHistog
+ram:{}
+mWifiLogProto.partialAllSingleScanListenerResults=
+0
+mWifiLogProto.fullBandAllSingleScanListenerResults
+=0
+mWifiAwareMetrics:
+--
+mSoftApTetheredEvents:
+event_type=0,time_stamp_millis=337494,num_connecte
+d_clients=0,channel_frequency=0,channel_bandwidth=
+0
+event_type=1,time_stamp_millis=358020,num_connecte
+d_clients=0,channel_frequency=0,channel_bandwidth=
+0
+event_type=0,time_stamp_millis=505536,num_connecte
+d_clients=0,channel_frequency=0,channel_bandwidth=
+0
+mSoftApLocalOnlyEvents:
+mWpsMetrics.numWpsAttempts=0
+mWpsMetrics.numWpsSuccess=0
+mWpsMetrics.numWpsStartFailure=0
+
+=== PROPERTIES ===
+[init.svc.vendor.wifi_hal_legacy]: [running]
+[init.svc.wificond]: [running]
+[persist.vendor.mtk.viwifi.enable]: [0]
+[persist.vendor.viwifi_support]: [1]
+[ro.boottime.vendor.wifi_hal_legacy]: [8934289384]
+[ro.boottime.wificond]: [9462786076]
+[ro.vendor.mtk_dhcpv6c_wifi]: [1]
+[ro.wifi.channels]: []
+[sys.wifitracing.started]: [1]
+[wifi.direct.interface]: [p2p0]
+[wifi.interface]: [wlan0]
+[wifi.tethering.interface]: [ap0]
+
+===== END =====
+~ $
