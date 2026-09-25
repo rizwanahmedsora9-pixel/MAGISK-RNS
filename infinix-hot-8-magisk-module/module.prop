@@ -1,0 +1,6 @@
+id=RNS_Hotspot
+name=RNS Hotspot Controller
+version=1.0
+versionCode=1
+author=Ahmed
+description=Force RNS hotspot SSID, 2.4GHz open mode, channel 6 and increase clients on MediaTek Android devices
