@@ -143,3 +143,70 @@ description=Force RNS hotspot SSID, 2.4GHz open mode, channel 6
 
 - `config wifi.txt` contains the **plaintext Wi-Fi password** for PTCL-BB (`B9173461`) and the phone’s DHCP/MAC details — treat this repo accordingly; consider rotating that password.
 - The target hotspot design is an **open network** (no WPA) with up to 128 clients — anyone in range can join; intentional for the “RNS” use-case, but worth noting.
+
+---
+
+## 9. Approach decision — normal APK vs system app vs Magisk-with-UI
+
+Question evaluated: *should the RNS controller ship as a normal APK, be converted into a system app, or stay a Magisk module with a UI?*
+
+### 9.1 Option A — Normal (unprivileged) APK → ❌ rejected
+- `startTethering()` / `setWifiApConfiguration()` are **hidden APIs** guarded by `android.permission.TETHER_PRIVILEGED` (`signature|privileged`, introduced in Android 9). Normal apps can never hold it.
+- Android 9 enforces the **hidden-API blacklist by default** → reflection bypasses are fragile and break on updates.
+- Even with hacks: **no API exists to force channel 6**, and **`max_num_sta` (128) is not in any API** — it only exists inside the generated `hostapd_ap0.conf` written by `MtkSoftApManager` (proven by the logs in §4).
+- A normal APK could at best be a settings shortcut / status viewer.
+
+### 9.2 Option B — System app (`/system/priv-app`) → ❌ rejected
+- `/system` is **dm-verity protected** on this MT6765 device → direct writes risk bootloops and break OTA updates.
+- Requires a privileged-permission whitelist (`/system/etc/permissions/privapp-permissions-rns.xml`); a wrong entry causes log spam / failures on MTK ROMs.
+- Crucially, it still only unlocks framework APIs: SSID ✔, open ✔, band ✔ — but **no channel choice and no max-client control**, so conf-patching (root) would be needed anyway.
+- Maximum risk, zero extra power over the root approach.
+
+### 9.3 Option C — Magisk module with UI → ✅ chosen architecture
+The project already lives here (`RNS_Hotspot.zip` = the engine). Two viable UI forms:
+
+- **C2. Web UI inside the module** (fallback): `busybox httpd` on `127.0.0.1` with shell CGI for status/apply. No APK needed, but clunky UX, no notifications.
+- **C3. Companion APK + Magisk engine** (recommended final form):
+
+```
+┌──────────────────────────────┐          ┌─────────────────────────────────────┐
+│  RNS Hotspot APK (user app)  │   su     │  RNS_Hotspot Magisk module (engine) │
+│  • SSID/band/channel/clients │ ───────► │  • reads /data/adb/rns/config       │
+│  • open/WPA toggle           │          │  • inotifyd on hostapd dir          │
+│  • start/stop hotspot        │          │  • patches hostapd_ap0.conf         │
+│  • live status: clients,     │ ◄─────── │  • hostapd_cli -i ap0 RELOAD        │
+│    IPs, traffic, log viewer  │   su     │  • NAT/forward sanity checks        │
+└──────────────────────────────┘          │  • boot-persistent service.sh       │
+                                          └─────────────────────────────────────┘
+```
+
+- APK installs **normally** (no system changes) but performs every privileged action through `su` (library: TopJohnwu **libsu**); Magisk Superuser controls the grant.
+- The module keeps boot-time automation alive even if the APK is uninstalled.
+- OTA-safe, systemless, clean two-tap uninstall; **all four targets achievable** (SSID RNS, open, channel 6, 128 clients).
+
+### 9.4 Mandatory engine fix (applies to every option)
+Evidence: framework writes `hostapd_ap0.conf` and hostapd reads it within **~50 ms** (`hotspot_log.txt` 11:55:58.230 → 11:55:58.251). Current `service.sh` polls every 1 s → patch arrives too late. Two-layer fix:
+1. **Upstream hook (no race):** write SSID/band/security into `/data/misc/wifi/softap.conf` (31-byte legacy store seen in `hotspot_report.txt`), which MtkSoftApManager reads *before* generating the hostapd conf.
+2. **Downstream hook (catch-all):** `busybox inotifyd` on `/data/vendor/wifi/hostapd/` → instant `sed` patch (ssid2=524e53, channel=6, hw_mode=g, max_num_sta=128, strip WPA lines) → `/vendor/bin/hostapd_cli -i ap0 RELOAD` so changes hit the running AP.
+
+### 9.5 Comparison & final verdict
+
+| Criterion | A. Normal APK | B. System app | C2. Magisk + Web UI | C3. Magisk + APK ✅ |
+|---|---|---|---|---|
+| Set SSID "RNS" | ⚠️ unreliable hacks | ✔ | ✔ | ✔ |
+| Open network | ⚠️ | ✔ | ✔ | ✔ |
+| Force channel 6 | ❌ impossible | ❌ no API | ✔ (conf patch) | ✔ (conf patch) |
+| 128 max clients | ❌ impossible | ❌ no API | ✔ | ✔ |
+| Boot persistence | ❌ | ✔ | ✔ | ✔ |
+| UI / UX | app-like | app-like | browser, clunky | **app-like** |
+| Install risk | none | **high** (verity/OTA) | low | low |
+| Clean uninstall | ✔ | ✖ | ✔ | ✔ |
+| Effort | small but useless | large | medium | medium |
+
+> **Verdict:** keep it Magisk. Fix the engine race condition first (inotifyd + RELOAD + softap.conf), verify SSID=RNS/channel 6/open with a real client, then optionally add the companion APK (Kotlin + libsu) for the UI.
+
+### 9.6 Merged implementation plan
+1. Flash current `RNS_Hotspot.zip` as-is → confirm module loading and log output.
+2. Rewrite `service.sh` with the two-layer fix (§9.4).
+3. Verify: conf patched, `iw dev ap0 info` shows RNS/ch6, client gets DHCP + internet.
+4. Build companion APK (Config / Start-Stop / Live Clients / Logs screens) only after steps 1–3 pass.
