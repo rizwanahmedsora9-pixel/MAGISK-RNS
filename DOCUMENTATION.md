@@ -1,6 +1,8 @@
 # MAGISK-RNS — Full Repository Documentation
 
 > Prepared: 2026-09-25 · Branch: `arena/01a0d7cc-magisk-rns` · Base commit: `46f0037` ("Add files via upload")
+>
+> ⚠️ **SUPERSEDED:** a newer, master document now exists — **[`FINALANALYSIS.md`](FINALANALYSIS.md)**. It incorporates the newly added `RNS - Rooted Hotspot Billing App.md` transcript, a complete 20-file inventory, and corrections to two claims below (see FINALANALYSIS.md §12). Where the two disagree, trust FINALANALYSIS.md.
 
 ## 1. What this repository actually is
 
@@ -8,7 +10,7 @@ This is **not a software project**. It is a **working journal / evidence folder*
 
 > **Taking full root-level control of the Wi-Fi hotspot on a rooted Infinix HOT 8 (MediaTek) phone, using Magisk + Termux, and forcing it to broadcast a custom open network named “RNS” on 2.4 GHz channel 6 with a high client limit.**
 
-The 18 files are: Termux shell-session recordings, logcat dumps, `dumpsys` outputs, config backups, one Magisk module zip, and a stub README. Everything was captured on **2026-09-23 → 2026-09-25** (Pakistan time, carrier “Jazz”).
+The 20 files are: Termux shell-session recordings, logcat dumps, `dumpsys` outputs, config backups, one Magisk module zip, the full project transcript, and a stub README. Everything was captured on **2026-09-23 → 2026-09-25** (Pakistan time, carrier “Jazz”).
 
 ---
 
@@ -78,7 +80,7 @@ Observed weaknesses / quirks found along the way:
 - `wlan0` **does not exist** when the Wi-Fi framework is off → standalone hostapd on `wlan0` is fragile on this MTK driver (interface lifecycle owned by wificond/HAL).
 - Client associated to the manual AP but DHCP never leased (no NAT set up, dnsmasq pool on a different subnet than what clients expected, no iptables masquerade for the manual setup).
 - `MtkSoftApManager` stack-traces about missing `/data/misc/wifi/allowed_list.conf` (cosmetic; it creates/ignores it).
-- Config generation → hostapd start happens within **~50 ms** (see hotspot_log.txt timestamps 11:55:58.230 → 11:55:58.251). Anything that wants to modify the conf has a very small race window.
+- Config generation → hostapd start happens within **~21 ms** (see hotspot_log.txt timestamps 11:55:58.230 → 11:55:58.251). Anything that wants to modify the conf has a very small race window. A later watcher experiment in the transcript observed up to ~2 s of HAL/process-spawn latency between the conf file appearing and hostapd showing up in `ps` — see FINALANALYSIS.md §4.2.
 
 ---
 
@@ -114,28 +116,29 @@ description=Force RNS hotspot SSID, 2.4GHz open mode, channel 6
 5. The `RNS_Hotspot` Magisk module (zip) is **built and present in the repo**.
 
 **What is NOT done yet (the gap):**
-1. **The RNS_Hotspot module is NOT installed on the phone** — the Magisk evidence dump (`magisk v and boot control.txt`, 2026-09-24 22:14) shows `/data/adb/modules` contains only `ARCore_enabler`, and `service.d` is empty. No `rns_hotspot.log` appears in any capture.
+1. **The RNS_Hotspot module has never been verified on the phone.** The Magisk evidence dump (`magisk v and boot control.txt`, 2026-09-24 22:14) shows `/data/adb/modules` containing only `ARCore_enabler` and `service.d` empty — but that snapshot **predates** the module install. The project transcript (`RNS - Rooted Hotspot Billing App.md`) records a first failed install (“This zip is not a Magisk module!” — `module.prop` was nested inside a folder) followed by a **successful install** (`magisk_install_log_2026-09-25T13.18.46.log`: “Installing RNS_Hotspot.zip … Done”). Either way, **no `rns_hotspot.log` and no `iw dev ap0 info` showing `ssid RNS` appears in any capture** — the module’s effect is unproven.
 2. Consequently, no log anywhere shows SSID “RNS” being broadcast; every observed hotspot session still used the stock “Infinix HOT 8” config.
-3. **Race-condition risk in service.sh:** the framework writes `hostapd_ap0.conf` and starts hostapd ~50 ms later; the module polls every 1 s, so it usually patches the file **after hostapd has already read it** → the SSID/channel change won’t apply until the *next* hotspot restart, and Android may rewrite the conf over the patch.
-4. The module never forces a reload — after patching it should `hostapd_cli -i ap0 RELOAD` (or restart hostapd) so changes take effect immediately.
+3. **Race-condition risk in service.sh:** the framework writes `hostapd_ap0.conf` and hostapd reads it ~21 ms later; the module polls every 1 s, so it usually patches the file **after hostapd has already read it** → the SSID/channel change won’t apply until the *next* hotspot restart, and Android may rewrite the conf over the patch.
+4. The module never forces a reload — after patching it should run **`/vendor/bin/hostapd_cli -i ap0 RELOAD`** (that binary is confirmed present on the device by `hotspot_files.txt`; the transcript’s “hostapd_cli: not found” was only a PATH problem under `su -c`) or restart hostapd so changes take effect immediately.
 
-**Bottom line:** *Recon 100 % complete, stock hotspot proven working with clients and internet sharing, RNS module authored — but it has never been flashed/tested on the device. Project is at “ready to install and verify”, not “done”.*
+**Bottom line:** *Recon 100 % complete, stock hotspot proven working with clients and internet sharing, RNS module authored **and successfully flashed** — but its effect has never been verified on the device. Project is at “installed, unverified, and racy”, not “done”. See FINALANALYSIS.md §9–§10.*
 
 ---
 
 ## 7. Recommended next steps (in order)
 
-1. **Install**: `Magisk → Modules → Install from storage → RNS_Hotspot.zip → reboot`.
+1. **Verify the install**: `Magisk → Modules` should list `RNS_Hotspot`, then reboot.
 2. Toggle hotspot ON, then check:
    ```sh
    su -c 'cat /data/local/tmp/rns_hotspot.log'
    su -c 'cat /data/vendor/wifi/hostapd/hostapd_ap0.conf'   # should show ssid2=524e53, channel=6, hw_mode=g
-   su -c 'iw dev ap0 info'                                   # ssid RNS, type AP
+   su -c '/data/data/com.termux/files/usr/bin/iw dev ap0 info'   # ssid RNS, type AP
    ```
 3. **Harden the module against the race**: replace the 1 s poll with `inotifyd` (busybox) on the hostapd dir, and add after patching:
    ```sh
    /vendor/bin/hostapd_cli -i ap0 RELOAD 2>/dev/null || killall -HUP hostapd
    ```
+   (Note: `/vendor/bin/hostapd_cli` is confirmed present on this device; `killall -HUP hostapd` is known **not** to reload the vendor hostapd.)
 4. Verify a client connects to **RNS**, gets DHCP from `dns_tether`’s dnsmasq, and reaches the internet via `ccmni0` MASQUERADE.
 5. Optional polish: keep `max_num_sta` realistic (driver firmware may cap clients far below 128), consider adding `ignore_broadcast_ssid=0` explicitly, and test 2.4 GHz congestion on channel 6.
 
